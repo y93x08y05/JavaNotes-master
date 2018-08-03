@@ -1,10 +1,9 @@
-package com.jack.coding;
+package com.jack.train;
 
 /**
- * Created by Jack on 7/30/2018 9:39 PM
- * reverse chain and output value
+ * Created by Jack on 8/2/2018 4:28 PM
  */
-public class Main12 {
+public class Main5 {
     private static class Node {
         int val;
         Node next;
@@ -16,10 +15,12 @@ public class Main12 {
     private static Node current;
     public static void main(String[] args) {
         int [] a = {1,2,3,4,5};
+        int m = 1;
+        int n = 2;
         for (int i=0;i<a.length;i++) {
             createNode(a[i]);
         }
-        Node node = reverseChain(head);
+        Node node = reverseChain(head,m,n);
         while (node != null) {
             System.out.print(node.val + " ");
             node = node.next;
@@ -34,18 +35,26 @@ public class Main12 {
             current = current.next;
         }
     }
-    private static Node reverseChain(Node node) {
-        if (node == null) {
-            return null;
+    private static Node reverseChain(Node node,int m,int n) {
+        if (m >= n)
+            return node;
+        Node current = node.next;
+        int i;
+        for (i=1;i<m-1;i++) {
+            node = current;
+            current = current.next;
         }
-        Node pre = null;
+        Node pre = current;
+        current = current.next;
+        n--;
         Node next;
-        while (node != null) {
-            next = node.next;
-            node.next = pre;
-            pre = node;
-            node = next;
+        for (;i<n;i++) {
+            next = current.next;
+            current.next = node.next;
+            node.next = current;
+            pre.next = next;
+            current = next;
         }
-        return pre;
+        return node;
     }
 }
