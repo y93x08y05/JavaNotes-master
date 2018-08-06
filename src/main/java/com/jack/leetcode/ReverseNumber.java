@@ -1,12 +1,13 @@
 package com.jack.leetcode;
 
 /**
- * Created by jack on 7/21/2018 3:58 PM
+ * Created by Jack on 7/21/2018 3:58 PM
+ * LeetCode 7
  * 给定一个32位有符号整数，将整数中的数字进行反转。
  * 假设只能存储32位有符号整数，其数值范围是[−231,231−1]。
  * 根据这个假设，如果反转后的整数溢出，则返回0。
  */
-public class Main {
+public class ReverseNumber {
     public static void main(String[] args) {
         System.out.println(reverse(-123));
     }

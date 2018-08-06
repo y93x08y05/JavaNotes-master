@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * Created by Jack on 8/5/2018 9:15 PM
+ * 递增或递减子序列
  */
 public class MaxMin {
     private static int min = Integer.MAX_VALUE;
