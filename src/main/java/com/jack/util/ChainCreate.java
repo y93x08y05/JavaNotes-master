@@ -3,7 +3,7 @@ package com.jack.util;
 /**
  * 创建一个单链表
  */
-public class Chain {
+public class ChainCreate {
     class Node{
         int data;
         Node next;
@@ -11,15 +11,13 @@ public class Chain {
             this.data = data;
         }
     }
-    public static Node head;
-    public static Node current;
-    public static Chain chain = new Chain();
-    public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5};
+    public  Node head;
+    public  Node current;
+    public Node create(int [] arr) {
         for (int i=0;i<arr.length;i++) {
-            chain.add(i+1);
+            add(arr[i]);
         }
-        chain.print(head);
+        return head;
     }
     public void add(int data) {
         if (head == null) {
