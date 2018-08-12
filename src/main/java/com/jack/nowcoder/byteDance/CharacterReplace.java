@@ -1,5 +1,9 @@
 package com.jack.nowcoder.byteDance;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+
 /**
  * Created by Jack on 8/9/2018 9:37 PM
  * 字符串S由小写字母构成，长度为n。定义一种操作，每次都可以挑选字符串中任意的两个相邻字母
@@ -17,6 +21,21 @@ package com.jack.nowcoder.byteDance;
  */
 public class CharacterReplace {
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int a = sc.nextInt();
+        HashSet<Character> set = new HashSet<>();
+        for (int i=0;i<s.length();i++)
+            set.add(s.charAt(i));
+        ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+        for (char c : set) {
+            ArrayList<Integer> list = new ArrayList<>();
+            for (int i=0;i<s.length();i++) {
+                if (c==s.charAt(i))
+                    list.add(i);
+            }
+            ArrayList<Integer> list1 = (ArrayList<Integer>) list.clone();
+            lists.add(list1);
+        }
     }
 }
