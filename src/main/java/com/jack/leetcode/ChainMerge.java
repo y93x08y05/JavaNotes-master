@@ -1,4 +1,6 @@
-package com.jack.util;
+package com.jack.leetcode;
+
+import com.jack.util.ChainCreate;
 
 /**
  * Created by Jack on 8/8/2018 11:17 AM
