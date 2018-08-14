@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementRemove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainInsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainNodeDelete1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainNodeDelete2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainReverse2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainSortMinTimeMinSpace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CountAndSay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MiddleNodeOfChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringCompress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LastWordLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringTransferInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/util/ChainCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/util/ChainCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/util/ChainMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/util/ChainNodeDelete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainCreate$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainCreate$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainCreate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainMerge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/Util/ChainNodeDelete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/QueensN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/QueensN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/ChainSortMinTimeMinSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/ChainSortMinTimeMinSpace.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,17 +27,40 @@
       <file leaf-file-name="ChainInsertSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainInsertSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="306">
               <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChainSortMinTimeMinSpace.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChainSortMinTimeMinSpace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainSortMinTimeMinSpace.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="StringTransferInteger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringTransferInteger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="121">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LastWordLength.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LastWordLength.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatrixZero.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -68,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>compare</find>
       <find>generation</find>
       <find>pool</find>
       <find>flip()</find>
@@ -98,6 +107,7 @@
       <find>CHain</find>
       <find>LeetCode 9</find>
       <find>8/13/2018</find>
+      <find>8/14/2018</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -109,9 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/sort/mergeSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/sort/heapSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/sort/shellSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/sort/cardinalitySort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/sort/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/arrowOffer/Main15.java" />
@@ -160,6 +167,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementRemove.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainInsertSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainSortMinTimeMinSpace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringTransferInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LastWordLength.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java" />
       </list>
     </option>
   </component>
@@ -208,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChainSortMinTimeMinSpace">
+  <component name="RunManager" selected="Application.LastWordLength">
     <configuration name="ChainElementRemove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainElementRemove" />
       <module name="SDK" />
@@ -231,17 +241,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ChainNodeDelete2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainNodeDelete2" />
-      <module name="SDK" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="ChainSortMinTimeMinSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainSortMinTimeMinSpace" />
       <module name="SDK" />
@@ -253,8 +252,19 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="MiddleNodeOfChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.MiddleNodeOfChain" />
+    <configuration name="LastWordLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.LastWordLength" />
+      <module name="SDK" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="StringTransferInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.StringTransferInteger" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -329,19 +339,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SKD" />
-      <item itemvalue="Application.MiddleNodeOfChain" />
-      <item itemvalue="Application.ChainNodeDelete2" />
       <item itemvalue="Application.ChainElementRemove" />
       <item itemvalue="Application.ChainInsertSort" />
       <item itemvalue="Application.ChainSortMinTimeMinSpace" />
+      <item itemvalue="Application.StringTransferInteger" />
+      <item itemvalue="Application.LastWordLength" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LastWordLength" />
+        <item itemvalue="Application.StringTransferInteger" />
         <item itemvalue="Application.ChainSortMinTimeMinSpace" />
         <item itemvalue="Application.ChainInsertSort" />
         <item itemvalue="Application.ChainElementRemove" />
-        <item itemvalue="Application.ChainNodeDelete2" />
-        <item itemvalue="Application.MiddleNodeOfChain" />
       </list>
     </recent_temporary>
   </component>
@@ -375,6 +385,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.185625" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -387,21 +398,20 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29040736" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29040736" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -414,7 +424,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -436,27 +446,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/arrowOffer/Main7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/arrowOffer/Main8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/arrowOffer/Main10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/arrowOffer/Main12.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -701,10 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,15 +754,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainInsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="306">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainSortMinTimeMinSpace.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringTransferInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="121">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LastWordLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
