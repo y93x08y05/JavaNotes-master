@@ -53,7 +53,7 @@ public class MatrixZero {
         int rowLength = arr.length;
         int colLength = arr[0].length;
         for (int i=0;i<rowLength;i++) {
-            int index = 0;
+            int index;
             for (index=0;index<colLength;index++) {
                 if (arr[i][index]==0)
                     break;
