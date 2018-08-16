@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainRotateRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestValidParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/RegexMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/demo/SortDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/dp/dynamicProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/dp/dynamicProgramming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MatrixZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/dp/dynamicProgramming.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/dp/dynamicProgramming.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/LastWordLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/LastWordLength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/ChainRotateRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/ChainRotateRight.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,50 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegexMatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/RegexMatch.java">
+      <file leaf-file-name="ChainElementAdd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementAdd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestValidParentheses.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestValidParentheses.java">
+      <file leaf-file-name="LongestSubStringNoDuplicateChar.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChainDeleteDuplicate1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChainDeleteDuplicate2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChainRotateRight.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainRotateRight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="188">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -90,8 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pool</find>
-      <find>flip()</find>
       <find>capacity</find>
       <find>rewind</find>
       <find>flip</find>
@@ -120,6 +83,8 @@
       <find>8/13/2018</find>
       <find>8/14/2018</find>
       <find>8/15/2018</find>
+      <find>chainCreate2</find>
+      <find>8/16/2018</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -131,10 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/ValueInterestingMax1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/ValueInterestingMax2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/AppleDeliver2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/AppleDeliver3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/byteDance/CharacterReplace.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/toutiao/TOUTIAO20180812/Main5.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/toutiao/TOUTIAO20180812/Main4.java" />
@@ -182,6 +143,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainRotateRight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/demo/SortDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sort/ChainElementAdd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementAdd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java" />
       </list>
     </option>
   </component>
@@ -193,8 +158,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="9" />
+    <option name="x" value="-74" />
+    <option name="y" value="41" />
     <option name="width" value="1607" />
     <option name="height" value="494" />
   </component>
@@ -203,7 +168,76 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/t-tazhan/IdeaProjects/JavaNotes/src/main/java/com/jack/nowcoder/wangyi/WY20180811/Main.java" />
@@ -230,9 +264,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChainRotateRight">
-    <configuration name="ChainDeleteDuplicate1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainDeleteDuplicate1" />
+  <component name="RunManager" selected="Application.LongestSubStringNoDuplicateChar">
+    <configuration name="ChainElementAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainElementAdd" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -242,8 +276,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ChainDeleteDuplicate2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainDeleteDuplicate2" />
+    <configuration name="ChainMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ChainMerge" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -264,8 +298,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="LongestValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.LongestValidParentheses" />
+    <configuration name="LongestSubStringNoDuplicateChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.LongestSubStringNoDuplicateChar" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -275,13 +309,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RegexMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.RegexMatch" />
+    <configuration name="SortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.demo.SortDemo" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.leetcode.*" />
+          <option name="PATTERN" value="com.jack.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,19 +385,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SKD" />
-      <item itemvalue="Application.RegexMatch" />
-      <item itemvalue="Application.LongestValidParentheses" />
-      <item itemvalue="Application.ChainDeleteDuplicate1" />
-      <item itemvalue="Application.ChainDeleteDuplicate2" />
       <item itemvalue="Application.ChainRotateRight" />
+      <item itemvalue="Application.SortDemo" />
+      <item itemvalue="Application.ChainElementAdd" />
+      <item itemvalue="Application.ChainMerge" />
+      <item itemvalue="Application.LongestSubStringNoDuplicateChar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestSubStringNoDuplicateChar" />
+        <item itemvalue="Application.ChainElementAdd" />
+        <item itemvalue="Application.ChainMerge" />
+        <item itemvalue="Application.SortDemo" />
         <item itemvalue="Application.ChainRotateRight" />
-        <item itemvalue="Application.ChainDeleteDuplicate2" />
-        <item itemvalue="Application.ChainDeleteDuplicate1" />
-        <item itemvalue="Application.LongestValidParentheses" />
-        <item itemvalue="Application.RegexMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +430,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.185625" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.173125" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -413,29 +447,29 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29040736" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185625" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.173125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19448094" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29697767" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49277267" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -458,62 +492,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/ValueInterestingMax1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/AppleDeliver1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/AppleDeliver2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/AppleDeliver3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/wangyi/WY20180811/ValueInterestingMax2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/byteDance/bracelet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/byteDance/CharacterReplace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/byteDance/userPrefer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -635,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/util/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -755,11 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestValidParentheses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -767,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,22 +747,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="476">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/train/Main13.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/train/Main2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/sort/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/sort/ChooseSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/sort/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/demo/SortDemo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainMerge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainRotateRight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="76">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
