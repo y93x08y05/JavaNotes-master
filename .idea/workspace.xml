@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringConvertZhi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringMultiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ThreeSumClosest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/TwoNumberDivide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/ProduceConsumer/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/produceConsumer/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/ProduceConsumer/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/produceConsumer/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/ProduceConsumer/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/produceConsumer/Main3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1$Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1$Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1$Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1$Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2$Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2$Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2$Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2$Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3$Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3$Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3$Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3$Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/ProduceConsumer/Main3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/LongestSubStringNoDuplicateChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/LongestSubStringNoDuplicateChar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main2$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main2$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/shell/Main3.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,49 +31,40 @@
       <file leaf-file-name="StockMaxProfit5.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit5.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoNumberDivide.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/TwoNumberDivide.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeSumClosest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ThreeSumClosest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringMultiply.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringMultiply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringAdd.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringAdd.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeInterval2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/toutiao/TOUTIAO20180812/MergeInterval2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -148,10 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MoveArrayMin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MoveArrayMin1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MoveArrayMin2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/SearchInsertPosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/VersionControl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/RangeStartEndElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CombinationSum.java" />
@@ -199,6 +170,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/TwoNumberDivide.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ThreeSumClosest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringMultiply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringAdd.java" />
       </list>
     </option>
   </component>
@@ -220,67 +195,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
-              <item name="shell" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/t-tazhan/IdeaProjects/JavaNotes/src/main/java/com/jack/nowcoder/wangyi/WY20180811/Main.java" />
@@ -307,29 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main3">
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.nowcoder.shell.Main1" />
-      <module name="SDK" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.nowcoder.shell.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.nowcoder.shell.Main2" />
-      <module name="SDK" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.nowcoder.shell.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.StringAdd">
     <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.nowcoder.shell.Main3" />
       <module name="SDK" />
@@ -341,8 +234,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="StockMaxProfit4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.StockMaxProfit4" />
+    <configuration name="StringAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.StringAdd" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -352,8 +245,30 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="StockMaxProfit5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.StockMaxProfit5" />
+    <configuration name="StringMultiply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.StringMultiply" />
+      <module name="SDK" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ThreeSumClosest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ThreeSumClosest" />
+      <module name="SDK" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TwoNumberDivide" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.TwoNumberDivide" />
       <module name="SDK" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -428,19 +343,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SKD" />
-      <item itemvalue="Application.StockMaxProfit4" />
-      <item itemvalue="Application.StockMaxProfit5" />
-      <item itemvalue="Application.Main1" />
-      <item itemvalue="Application.Main2" />
       <item itemvalue="Application.Main3" />
+      <item itemvalue="Application.TwoNumberDivide" />
+      <item itemvalue="Application.ThreeSumClosest" />
+      <item itemvalue="Application.StringMultiply" />
+      <item itemvalue="Application.StringAdd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringAdd" />
+        <item itemvalue="Application.StringMultiply" />
+        <item itemvalue="Application.ThreeSumClosest" />
+        <item itemvalue="Application.TwoNumberDivide" />
         <item itemvalue="Application.Main3" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.StockMaxProfit5" />
-        <item itemvalue="Application.StockMaxProfit4" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +389,6 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.173125" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -487,33 +401,34 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26018396" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.173125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49277267" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -535,30 +450,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/RangeStartEndElement.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CombinationSum1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/util/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/util/BinaryTreeCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/QueensN.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -749,21 +640,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,13 +671,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
@@ -833,36 +708,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/toutiao/TOUTIAO20180812/MergeInterval2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="594">
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="17">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/shell/Main3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="374">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StockMaxProfit5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/TwoNumberDivide.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ThreeSumClosest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringMultiply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/StringAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
