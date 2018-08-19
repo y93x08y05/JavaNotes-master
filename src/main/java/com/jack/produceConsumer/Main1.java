@@ -1,25 +1,19 @@
-package com.jack.ProduceConsumer;
-
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package com.jack.produceConsumer;
 
 /**
- * Created by Jack on 7/30/2018 10:16 AM
+ * Created by Jack on 7/30/2018 9:52 AM
  */
-public class Main2 {
+public class Main1 {
     private static Integer count = 0;
     private final Integer FULL = 5;
-    final Lock lock = new ReentrantLock();
-    final Condition put = lock.newCondition();
-    final Condition get = lock.newCondition();
+    private static String lock = "lock";
 
     public static void main(String[] args) {
-        Main2 main2 = new Main2();
-        new Thread(main2.new Producer()).start();
-        new Thread(main2.new Consumer()).start();
-        new Thread(main2.new Producer()).start();
-        new Thread(main2.new Consumer()).start();
+        Main1 main1 = new Main1();
+        new Thread(main1.new Producer()).start();
+        new Thread(main1.new Consumer()).start();
+        new Thread(main1.new Producer()).start();
+        new Thread(main1.new Consumer()).start();
     }
     class Producer implements Runnable {
         public void run() {
@@ -29,20 +23,17 @@ public class Main2 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                lock.lock();
-                try {
+                synchronized (lock) {
                     while (count == FULL) {
                         try {
-                            put.await();
+                            lock.wait();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
                     count++;
                     System.out.println("生产者：" + Thread.currentThread().getName() + "已生产,商品数量" + count);
-                    get.signal();
-                } finally {
-                    lock.unlock();
+                    lock.notifyAll();
                 }
             }
         }
@@ -55,20 +46,17 @@ public class Main2 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                lock.lock();
-                try {
+                synchronized (lock) {
                     while (count == 0) {
                         try {
-                            get.await();
+                            lock.wait();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
                     count--;
                     System.out.println("消费者：" + Thread.currentThread().getName() + "已消费,剩余产品数量：" + count);
-                    put.signal();
-                } finally {
-                    lock.unlock();
+                    lock.notify();
                 }
             }
         }
