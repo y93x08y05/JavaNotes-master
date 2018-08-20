@@ -1,4 +1,4 @@
-package com.jack.thoughtsWorks;
+package com.jack.nowcoder.autumn.thoughtsWorks;
 
 import java.util.Scanner;
 
