@@ -16,13 +16,11 @@ public class Main1 {
     public static void main(String [] args) {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(Main1.class);
-        enhancer.setCallback(new MethodInterceptor() {
-            public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-                System.out.println("before method run...");
-                Object result = methodProxy.invokeSuper(o,objects);
-                System.out.println("after method run...");
-                return result;
-            }
+        enhancer.setCallback((MethodInterceptor) (o, method, objects, methodProxy) -> {
+            System.out.println("before method run...");
+            Object result = methodProxy.invokeSuper(o,objects);
+            System.out.println("after method run...");
+            return result;
         });
         Main1 main1 = (Main1) enhancer.create();
         main1.test();

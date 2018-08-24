@@ -2,7 +2,6 @@ package com.jack.arrowOffer;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -21,12 +20,10 @@ public class Main19 {
         for (int i=0;i<arr.length;i++) {
             list.add(String.valueOf(arr[i]));
         }
-        Collections.sort(list, new Comparator<String>() {
-            public int compare(String o1, String o2) {
-                String m = o1 + o2;
-                String n = o2 + o1;
-                return m.compareTo(n);
-            }
+        Collections.sort(list, (o1, o2) -> {
+            String m = o1 + o2;
+            String n = o2 + o1;
+            return m.compareTo(n);
         });
         StringBuilder sb = new StringBuilder();
         for (int i=0;i<list.size();i++) {
