@@ -16,27 +16,23 @@ public class CountDownLatchDemo {
                 System.out.println(Thread.currentThread().getName() + " count down is ok");
             }
         };
-        Thread thread1 = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(Thread.currentThread().getName() + " is done");
-                countDownLatch.countDown();
+        Thread thread1 = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            System.out.println(Thread.currentThread().getName() + " is done");
+            countDownLatch.countDown();
         },"thread1");
-        Thread thread2 = new Thread(new Runnable() {
-            public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(Thread.currentThread().getName() + " is done");
-                countDownLatch.countDown();
+        Thread thread2 = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            System.out.println(Thread.currentThread().getName() + " is done");
+            countDownLatch.countDown();
         },"thread2");
         thread1.start();
         thread2.start();
