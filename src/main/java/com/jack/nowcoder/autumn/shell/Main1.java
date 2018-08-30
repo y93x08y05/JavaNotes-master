@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 5
  * 4 1 8 2 5
  * 村庄修道路，使得费用最少问题，以两个村庄最大值为修路费用
- * sum-min means sort array and sum-array[0];
+ * sum-min means mergeSort array and sum-array[0];
  */
 public class Main1 {
     public static void main(String[] args) {

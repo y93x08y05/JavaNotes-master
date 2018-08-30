@@ -8,7 +8,7 @@ package com.jack.algorithm.sortAlgorithm;
  */
 public class sortHeap {
     public static void main(String[] args) {
-        int[] data5 = new int[] { 5, 3, 6, 2, 1, 9, 4, 8, 7 };
+        int[] data5 = new int[] { 5, 3, 6, 2, 1, 4, 8, 7 };
         print(data5);
         heapSort(data5);
         System.out.println("排序后的数组：");

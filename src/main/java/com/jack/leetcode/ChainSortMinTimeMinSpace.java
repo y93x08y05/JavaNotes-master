@@ -5,7 +5,7 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/13/2018 10:38 PM
  * LeetCode 148
- * sort chain and control time complexity is less than O(nlogn) and space complexity
+ * mergeSort chain and control time complexity is less than O(nlogn) and space complexity
  */
 public class ChainSortMinTimeMinSpace {
     public static void main(String[] args) {

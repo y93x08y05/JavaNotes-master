@@ -2,7 +2,7 @@ package com.jack.algorithm.sort;
 
 /**
  * Created by jack on 7/23/2018 10:03 PM
- * heap sort not stable
+ * heap mergeSort not stable
  */
 public class heapSort {
     public static void main(String[] args) {

@@ -15,14 +15,14 @@ public class sortMerge {
     }
 
     public static void mergeSort(int[] data) {
-        sort(data, 0, data.length - 1);
+        mergeSort(data, 0, data.length - 1);
     }
-    public static void sort(int[] data, int left, int right) {
+    public static void mergeSort(int[] data, int left, int right) {
         if (left>=right)
             return;
         int center=(left+right)/2;
-        sort(data,left,center);
-        sort(data,center+1,right);
+        mergeSort(data,left,center);
+        mergeSort(data,center+1,right);
         merge(data,left,center,right);
         print(data);
     }

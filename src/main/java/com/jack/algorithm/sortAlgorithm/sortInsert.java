@@ -8,9 +8,12 @@ package com.jack.algorithm.sortAlgorithm;
 public class sortInsert {
     public static void main(String[] args) {
         int[] data = new int[] { 5, 3, 6, 2, 1, 9, 4, 8, 7 };
+        System.out.println("排序前：");
         print(data);
+        System.out.println("排序中：");
         insertSort(data);
         print(data);
+        System.out.println("排序后：");
     }
     public static void insertSort(int[] data) {
         for (int i = 1; i < data.length; i++) {

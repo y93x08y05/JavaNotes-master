@@ -2,7 +2,7 @@ package com.jack.algorithm.sort;
 
 /**
  * Created by jack on 7/23/2018 8:56 PM
- * quick sort not stable
+ * quick mergeSort not stable
  */
 public class QuickSort {
     public static void main(String[] args) {

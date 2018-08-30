@@ -64,7 +64,7 @@ public class Toutiao_2018_1 {
 //        for(int i=0;i<num;i++){
 //            number[i] = Integer.parseInt(str[i]);
 //        }
-//        Arrays.sort(number);
+//        Arrays.mergeSort(number);
 //        for(int j=num;j>0;j--){
 //            sum+=j;
 //        }
@@ -84,7 +84,7 @@ public class Toutiao_2018_1 {
 //                }
 //            }
 //        }
-//        Arrays.sort(number);
+//        Arrays.mergeSort(number);
 //        System.out.println(number[number.length - 1]);
 //    }
 }

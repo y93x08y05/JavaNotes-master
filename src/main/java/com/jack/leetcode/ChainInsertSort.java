@@ -5,7 +5,7 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/13/2018 10:29 PM
  * LeetCode 147
- * use insert sort algorithm to sort chain element
+ * use insert mergeSort algorithm to mergeSort chain element
  */
 public class ChainInsertSort {
     public static void main(String[] args) {

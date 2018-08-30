@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by jack on 7/24/2018 10:18 PM
- * cardinality sort stable
+ * cardinality mergeSort stable
  */
 public class cardinalitySort {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class cardinalitySort {
     }
 
     /**
-     * has some error in this sort method
+     * has some error in this mergeSort method
      * @param arr
      */
     public static void sort(int [] arr) {

@@ -9,8 +9,8 @@ package com.jack.algorithm.sortAlgorithm;
  */
 public class sortQuick {
     public static void main(String[] args) {
-        int[] data = new int[] { 5, 3, 6, 2, 1, 9, 4, 8, 7 };
-//        int[] data = new int[] { 46, 79, 56, 38, 40, 84 };
+//        int[] data = new int[] { 8, 9, 7, 6, 5, 4, 3, 2, 1 };
+        int[] data = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         print(data);
         quickSort(data, 0, data.length - 1);
         System.out.println("排序后的数组：");
@@ -44,12 +44,9 @@ public class sortQuick {
                 break;
             }
         }
-        //交换 j和分界点的值
         swap(data, start, j);
         print(data);
-        //递归左子序列
         quickSort(data, start, j - 1);
-        //递归右子序列
         quickSort(data, j + 1, end);
     }
     public static void print(int[] data) {
