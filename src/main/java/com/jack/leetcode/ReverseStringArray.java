@@ -7,20 +7,23 @@ package com.jack.leetcode;
 public class ReverseStringArray {
     public static void main(String[] args) {
         String s="A man, a plan, a canal: Panama";
-        System.out.println(reverseString(s));
+        System.out.println(reverseString0(s));
+        System.out.println(reverseString1(s));
     }
-    private static String reverseString(String s) {
-        if (s==" ")
-            return " ";
-        String []str=s.split(" ");
-        StringBuilder sb=new StringBuilder();
-        for (int i=str.length-1;i>=0;i--) {
-            for (int j=str[i].length()-1;j>=0;j--) {
-                sb.append(str[i].charAt(j));
-            }
-            if (i!=0)
-                sb.append(" ");
+    private static String reverseString0(String s) {
+        return new StringBuilder(s).reverse().toString();
+    }
+    private static String reverseString1(String s) {
+        char[] ch = s.toCharArray();
+        int start = 0;
+        int end = ch.length - 1;
+        while (start < end) {
+            ch[start] = (char) (ch[start] ^ ch[end]);
+            ch[end] = (char) (ch[start] ^ ch[end]);
+            ch[start] = (char) (ch[start] ^ ch[end]);
+            start++;
+            end--;
         }
-        return sb.toString();
+        return new String(ch);
     }
 }
