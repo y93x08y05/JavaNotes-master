@@ -14,22 +14,37 @@ public class CloselyString {
         System.out.println(ifCloselyString(A, B));
     }
     private static boolean ifCloselyString(String A,String B) {
-        if (A==null&&B!=null)
+        if (A.length() != B.length())
             return false;
-        if (A!=null&&B==null)
+        char[] charsA = A.toCharArray();
+        char[] charsB = B.toCharArray();
+        if (A.equals(B)){
+            int [] count = new int[26];
+            for ( char chars : charsA){
+                count[chars - 'a'] ++;
+            }
+            for (int c : count) {
+                if (c > 1) {
+                    return true;
+                }
+            }
             return false;
-        if (A.length()!=B.length())
-            return false;
-        if (A==B)
-            return false;
-        for (int i=0;i<A.length();i++) {
-            if (A.charAt(i)!=B.charAt(i)) {
-                char temp=A.charAt(i);
-                for (int j=0;j<B.length();j++) {
-                    if (B.charAt(j)==temp) {
+        }else {
+            int first = 0;
+            int second = 0;
+            for (int i = 0; i < charsA.length; i++){
+                if (charsA[i] != charsB[i]){
+                    if (first == 0){
+                        first = i;
+                    }else if (second == 0){
+                        second = i;
+                    }else {
+                        return false;
                     }
                 }
             }
+            if (charsA[first] != charsB[second] || charsA[second] != charsB[first])
+                return false;
         }
         return true;
     }
