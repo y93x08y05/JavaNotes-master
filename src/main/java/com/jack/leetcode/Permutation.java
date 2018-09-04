@@ -56,6 +56,7 @@ public class Permutation {
         int temp=arr[m];
         arr[m]=arr[n];
         arr[n]=temp;
+        String s=new String();
     }
     private static List<List<Integer>> permute1(int []arr) {
         List<List<Integer>> lists=new ArrayList<>();

@@ -33,13 +33,13 @@ public class ArrayToBST {
     }
     private void printTree(Node root) {
         if (root!=null) {
-            printTree(root.left);
             System.out.print(root.value+" ");
+            printTree(root.left);
             printTree(root.right);
         }
     }
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5,6};
+        int [] arr = {1,2,3};
         ArrayToBST test1 = new ArrayToBST();
         Node root=test1.sortedArrayToBST(arr);
         test1.printTree(root);
