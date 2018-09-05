@@ -27,10 +27,12 @@ public class ValidAnagrams {
         char []c2=s2.toCharArray();
         Arrays.sort(c1);
         Arrays.sort(c2);
-        if (c1==c2)
+        String s3=new String(c1);
+        String s4=new String(c2);
+        System.out.println(s3+s4);
+        if (s3.equals(s4))
             return true;
         else
             return false;
-
     }
 }
