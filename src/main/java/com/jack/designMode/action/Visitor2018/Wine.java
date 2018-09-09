@@ -1,6 +1,6 @@
 package com.jack.designMode.action.Visitor2018;
 
-public class Wine implements Goods{
+public class Wine implements Goods {
     private int count;
     private float price;
     public double acceptByBottle(){

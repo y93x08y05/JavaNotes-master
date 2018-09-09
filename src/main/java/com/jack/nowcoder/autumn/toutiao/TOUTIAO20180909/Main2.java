@@ -14,44 +14,43 @@ import java.util.Scanner;
  * 0 0 1 0 0
  */
 public class Main2 {
-    public static int [][] arr1 = new int[1000][1000];
-    public static int [][] arr2 = new int[1000][1000];
-    public static int p=0,q=0;
-    public static int sum,n;
-    public static int [][] location= {{1,0},{0,1},{-1,0},{0,-1},
-            {1,1},{1,-1},{-1,1},{-1,-1}};
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int  n = sc.nextInt();
+        int [][]arr=new int[n][n];
         for (int i=0;i<n;i++) {
             for (int j=0;j<n;j++) {
-                arr1[i][j] = sc.nextInt();
+                arr[i][j] = sc.nextInt();
             }
         }
-        for (int i=0;i<n;i++) {
-            for (int j=0;j<n;j++) {
-                if (arr1[i][j]==1&&arr2[i][j]==0) {
-                    sum = 0;
-                    p++;
-                    dfs(i,j);
+        System.out.println(findNumberLand(arr));
+    }
+    private static int findNumberLand(int [][]arr) {
+        if (arr==null||arr.length==0||arr[0].length==0)
+            return 0;
+        int rows=arr.length;
+        int cols=arr[0].length;
+        int count=0;
+        for (int i=0;i<rows;i++) {
+            for (int j=0;j<cols;j++) {
+                if (arr[i][j]==1) {
+                    count++;
+                    dfsSearch(arr,i,j,rows,cols);
                 }
             }
         }
-        System.out.println(p);
+        return count++;
     }
-    private static void dfs(int h, int l) {
-        sum++;
-        arr2[h][l] = 1;
-        for (int i=0;i<8;i++) {
-            int h1 = location[i][0] + h;
-            int l1 = location[i][1] + l;
-            if (check(h1,l1))
-                dfs(h1,l1);
+    private static void dfsSearch(int [][]grid,int i,int j,int rows,int cols) {
+        if (i<0||i>=rows||j<0||j>=cols) {
+            return;
         }
-    }
-    private static boolean check(int h2,int l2) {
-        if (h2>=0&&h2<n&&l2>=0&&l2<n&&arr1[h2][l2]==1&&arr2[h2][l2]==0)
-            return true;
-        return false;
+        if (grid[i][j]!=1)
+            return;
+        grid[i][j]=0;
+        dfsSearch(grid,i+1,j,rows,cols);
+        dfsSearch(grid,i-1,j,rows,cols);
+        dfsSearch(grid,i,j+1,rows,cols);
+        dfsSearch(grid,i,j-1,rows,cols);
     }
 }
