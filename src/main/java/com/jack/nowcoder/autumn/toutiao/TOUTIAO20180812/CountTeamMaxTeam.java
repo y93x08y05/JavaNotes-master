@@ -36,6 +36,8 @@ public class CountTeamMaxTeam {
             {1,1},{1,-1},{-1,1},{-1,-1}};
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+//        int n=sc.nextInt();
+//        m=n;
         String s = sc.nextLine();
         String [] strings = s.split(",");
         n = Integer.parseInt(strings[0]);
@@ -44,6 +46,7 @@ public class CountTeamMaxTeam {
             String str = sc.nextLine();
             String [] num = str.split(",");
             for (int j=0;j<m;j++) {
+//                arr1[i][j]=sc.nextInt();
                 arr1[i][j] = Integer.parseInt(num[j]);
             }
         }
