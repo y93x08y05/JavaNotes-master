@@ -5,7 +5,19 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/6/2018 2:35 PM
  * LeetCode 326
- * input a number and judge is power of three or not
+ * 给定一个整数，写一个函数来判断它是否是 3 的幂次方。
+ * 例1:
+ * 输入: 27
+ * 输出: true
+ * 例2:
+ * 输入: 0
+ * 输出: false
+ * 例3:
+ * 输入: 9
+ * 输出: true
+ * 例4:
+ * 输入: 45
+ * 输出: false
  */
 public class PowerOfThree {
     public static void main(String[] args) {

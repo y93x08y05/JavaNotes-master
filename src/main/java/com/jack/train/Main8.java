@@ -19,11 +19,5 @@ public class Main8 {
             ans++;
         }
         return ans;
-//        int count = 0;
-//        while (n > 0) {
-//            count++;
-//            n = n & (n-1);
-//        }
-//        return count;
     }
 }

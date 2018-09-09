@@ -8,7 +8,8 @@ import java.util.List;
 /**
  * Created by Jack on 8/9/2018 2:35 PM
  * LeetCode 653
- * inOrder could get a list from small to big because BST
+ * 给定一个二叉搜索树和一个目标结果，
+ * 如果 BST 中存在两个元素且它们的和等于给定的目标结果，则返回 true。
  */
 public class SumTwoNumberFromTree {
     public static void main(String[] args) {

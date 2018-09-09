@@ -5,7 +5,18 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/6/2018 2:13 PM
  * LeetCode 231
- * give a number and judge is power of 2 or not
+ * 给定一个整数，编写一个函数来判断它是否是 2 的幂次方。
+ * 例1:
+ * 输入: 1
+ * 输出: true
+ * 解释: 20 = 1
+ * 例2:
+ * 输入: 16
+ * 输出: true
+ * 解释: 24 = 16
+ * 例3:
+ * 输入: 218
+ * 输出: false
  */
 public class PowerOfTwo {
     public static void main(String[] args) {

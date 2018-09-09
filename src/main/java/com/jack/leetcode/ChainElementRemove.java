@@ -5,7 +5,9 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/13/2018 4:18 PM
  * LeetCode 203
- * delete all node if node.data equals given val
+ * 删除链表中等于给定值 val 的所有节点。
+ * 输入: 1->2->6->3->4->5->6, val = 6
+ * 输出: 1->2->3->4->5
  */
 public class ChainElementRemove {
     public static void main(String[] args) {

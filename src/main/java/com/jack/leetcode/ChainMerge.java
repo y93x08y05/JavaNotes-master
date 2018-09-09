@@ -5,7 +5,10 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/8/2018 11:17 AM
  * LeetCode 21
- * merge two single chain table
+ * 将两个有序链表合并为一个新的有序链表并返回。
+ * 新链表是通过拼接给定的两个链表的所有节点组成的。
+ * 输入：1->2->4, 1->3->4
+ * 输出：1->1->2->3->4->4
  */
 public class ChainMerge {
     public static void main(String[] args) {

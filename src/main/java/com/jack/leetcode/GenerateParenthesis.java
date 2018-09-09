@@ -7,7 +7,16 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/7/2018 3:52 PM
  * LeetCode 22
- * use '(' and ')' and to generate valid
+ * 给出 n 代表生成括号的对数，
+ * 请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
+ * 例如，给出 n = 3，生成结果为：
+ * [
+ *   "((()))",
+ *   "(()())",
+ *   "(())()",
+ *   "()(())",
+ *   "()()()"
+ * ]
  */
 public class GenerateParenthesis {
     public static void main(String[] args) {

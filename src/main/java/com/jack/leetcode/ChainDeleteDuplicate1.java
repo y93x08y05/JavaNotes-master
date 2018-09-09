@@ -5,7 +5,13 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/15/2018 9:33 PM
  * LeetCode 83
- * delete duplicate element of chain
+ * 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
+ * 例1:
+ * 输入: 1->1->2
+ * 输出: 1->2
+ * 例2:
+ * 输入: 1->1->2->3->3
+ * 输出: 1->2->3
  */
 public class ChainDeleteDuplicate1 {
     public static void main(String[] args) {

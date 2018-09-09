@@ -6,7 +6,19 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/9/2018 3:40 PM
  * LeetCode 516
- * find longest palindrome subSequence from String and get it', length and output
+ * 给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
+ * 例1:
+ * 输入:
+ * "bbbab"
+ * 输出:
+ * 4
+ * 一个可能的最长回文子序列为 "bbbb"。
+ * 例2:
+ * 输入:
+ * "cbbd"
+ * 输出:
+ * 2
+ * 一个可能的最长回文子序列为 "bb"。
  */
 public class LongestPalindromeSubSequence {
     public static void main(String[] args) {

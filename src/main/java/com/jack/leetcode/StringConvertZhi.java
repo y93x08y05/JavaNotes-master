@@ -5,7 +5,19 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/18/2018 9:26 AM
  * LeetCode 6
- * convert string as from up to down from left to right
+ * 将字符串 "PAYPALISHIRING" 以Z字形排列成给定的行数：
+ * 之后从左往右，逐行读取字符："PAHNAPLSIIGYIR"
+ * 例1:
+ * 输入: s = "PAYPALISHIRING", numRows = 3
+ * 输出: "PAHNAPLSIIGYIR"
+ * 例2:
+ * 输入: s = "PAYPALISHIRING", numRows = 4
+ * 输出: "PINALSIGYAHRPI"
+ * 解释:
+ * P     I    N
+ * A   L S  I G
+ * Y A   H R
+ * P     I
  */
 public class StringConvertZhi {
     public static void main(String[] args) {

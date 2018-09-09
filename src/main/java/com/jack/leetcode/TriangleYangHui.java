@@ -6,7 +6,16 @@ import java.util.List;
 /**
  * Created by Jack on 8/6/2018 12:08 PM
  * LeetCode 118
- * give a number and print Triangle YangHui
+ * 给定一个非负整数 numRows，生成杨辉三角的前 numRows 行。
+ * 输入: 5
+ * 输出:
+ * [
+ *      [1],
+ *     [1,1],
+ *    [1,2,1],
+ *   [1,3,3,1],
+ *  [1,4,6,4,1]
+ * ]
  */
 public class TriangleYangHui {
     public static void main(String[] args) {

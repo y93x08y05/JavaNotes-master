@@ -3,9 +3,17 @@ package com.jack.leetcode;
 /**
  * Created by Jack on 8/24/2018 8:43 PM
  * LeetCode 50
- * time complexity is O(n)
- * time complexity is O(logn)
- * pow(x,n) = pow(x,n/2)*pow(x,n-n/2)
+ * 实现 pow(x, n) ，即计算 x 的 n 次幂函数。
+ * 例1:
+ * 输入: 2.00000, 10
+ * 输出: 1024.00000
+ * 例2:
+ * 输入: 2.10000, 3
+ * 输出: 9.26100
+ * 例3:
+ * 输入: 2.00000, -2
+ * 输出: 0.25000
+ * 解释: 2-2 = 1/22 = 1/4 = 0.25
  */
 public class Pow1 {
     public static void main(String[] args) {

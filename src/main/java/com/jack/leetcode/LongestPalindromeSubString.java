@@ -5,9 +5,9 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/9/2018 3:00 PM
  * LeetCode 5
- * find longest palindrome subString from String
- * findLongestPalindrome1 using center search
- * findLongestPalindrome2 using dynamics programming
+ * 最长回文子串
+ * findLongestPalindrome1用中心搜索求解
+ * findLongestPalindrome2用动态规划求解
  */
 public class LongestPalindromeSubString {
     public static void main(String[] args) {

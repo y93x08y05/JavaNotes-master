@@ -5,7 +5,13 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/13/2018 10:38 PM
  * LeetCode 148
- * mergeSort chain and control time complexity is less than O(nlogn) and space complexity
+ * 在 O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。
+ * 例1:
+ * 输入: 4->2->1->3
+ * 输出: 1->2->3->4
+ * 例2:
+ * 输入: -1->5->3->4->0
+ * 输出: -1->0->3->4->5
  */
 public class ChainSortMinTimeMinSpace {
     public static void main(String[] args) {

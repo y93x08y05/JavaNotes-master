@@ -6,7 +6,14 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/6/2018 3:02 PM
  * LeetCode 136
- * number in array only appear once and then output
+ * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。
+ * 找出那个只出现了一次的元素。
+ * 例1:
+ * 输入: [2,2,1]
+ * 输出: 1
+ * 例2:
+ * 输入: [4,1,2,1,2]
+ * 输出: 4
  */
 public class SingleNumber {
     public static void main(String[] args) {

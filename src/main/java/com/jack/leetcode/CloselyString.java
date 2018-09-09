@@ -5,6 +5,24 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/30/2018 4:51 PM
  * LeetCode 859
+ * 亲密字符串
+ * 给定两个由小写字母构成的字符串 A 和 B ，
+ * 只要我们可以通过交换 A 中的两个字母得到与 B 相等的结果，就返回 true ；否则返回 false 。
+ * 例1：
+ * 输入： A = "ab", B = "ba"
+ * 输出： true
+ * 例2：
+ * 输入： A = "ab", B = "ab"
+ * 输出： false
+ * 例3:
+ * 输入： A = "aa", B = "aa"
+ * 输出： true
+ * 例4：
+ * 输入： A = "aaaaaaabc", B = "aaaaaaacb"
+ * 输出： true
+ * 例5：
+ * 输入： A = "", B = "aa"
+ * 输出： false
  */
 public class CloselyString {
     public static void main(String[] args) {

@@ -8,6 +8,8 @@ import java.util.Queue;
 /**
  * Created by Jack on 8/27/2018 2:28 PM
  * LeetCode 637
+ *  二叉树的层平均值
+ *  给定一个非空二叉树, 返回一个由每层节点平均值组成的数组.
  */
 public class LevelOrderTreeAverage {
     class Node{

@@ -6,7 +6,15 @@ import java.util.Stack;
 /**
  * Created by Jack on 8/15/2018 2:18 PM
  * LeetCode 32
- * find longest valid parentheses
+ * 给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
+ * 例1:
+ * 输入: "(()"
+ * 输出: 2
+ * 解释: 最长有效括号子串为 "()"
+ * 例2:
+ * 输入: ")()())"
+ * 输出: 4
+ * 解释: 最长有效括号子串为 "()()"
  */
 public class LongestValidParentheses {
     public static void main(String[] args) {

@@ -16,7 +16,7 @@ public class Main10 {
         }
     }
     public static List<Integer> getArray(int [] arr) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         int len = arr.length;
         int temp = len/3;
         int m = 0;

@@ -15,18 +15,18 @@ public class Main13 {
         int t = 2147483647;
         System.out.println(ifRepeat(arr, k, t));
     }
-    private static boolean ifRepeat(int [] nums,int k,int t) {
-         if (nums == null || nums.length == 0 || k <= 0)
+    private static boolean ifRepeat(int [] num,int k,int t) {
+         if (num == null || num.length == 0 || k <= 0)
              return false;
          TreeSet<Long> ts = new TreeSet();
-         for (int i = 0; i < nums.length; ++i) {
-             Long right = ts.floor((long) nums[i] + t);
-             Long left = ts.ceiling((long) nums[i] - t);
+         for (int i = 0; i < num.length; ++i) {
+             Long right = ts.floor((long) num[i] + t);
+             Long left = ts.ceiling((long) num[i] - t);
              if (right != null && left != null && right >= left)
                  return true;
-             ts.add((long) nums[i]);
+             ts.add((long) num[i]);
              if (i >= k)
-                 ts.remove((long) nums[i - k]);
+                 ts.remove((long) num[i - k]);
          }
         return false;
     }

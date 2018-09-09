@@ -5,10 +5,17 @@ import java.util.*;
 /**
  * Created by Jack on 8/26/2018 10:27 AM
  * LeetCode 884
- * give two sentence and contain some word
- * find one sentence this word is appear once and
- * other sentence this word is appear zero
- * and then add this word to array
+ * 给定两个句子 A 和 B 。
+ * 句子是一串由空格分隔的单词。每个单词仅由小写字母组成。
+ * 如果一个单词在其中一个句子中只出现一次，
+ * 在另一个句子中却没有出现，那么这个单词就是不常见的。
+ * 返回所有不常用单词的列表，您可以按任何顺序返回列表。
+ * 例1：
+ * 输入：A = "this apple is sweet", B = "this apple is sour"
+ * 输出：["sweet","sour"]
+ * 例2：
+ * 输入：A = "apple apple", B = "banana"
+ * 输出：["banana"]
  */
 public class UnCommonFromSentences {
     public static void main(String[] args) {

@@ -5,8 +5,14 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/12/2018 3:48 PM
  * LeetCode 633
- * give a number named c and check if have a and b let a^2+b^2=c
- * if have return true else return false
+ * 给定一个非负整数 c ，你要判断是否存在两个整数 a 和 b，使得 a2 + b2 = c。
+ * 例1:
+ * 输入: 5
+ * 输出: True
+ * 解释: 1 * 1 + 2 * 2 = 5
+ * 例2:
+ * 输入: 3
+ * 输出: False
  */
 public class SquareSum {
     public static void main(String[] args) {

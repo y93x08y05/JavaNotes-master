@@ -6,8 +6,26 @@ import java.util.Stack;
 /**
  * Created by Jack on 8/7/2018 1:17 PM
  * LeetCode 20
- * give a string only include '(' ')' '[' ']' '{' '}'
- * and check if valid or not
+ * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+ * 有效字符串需满足：
+ * 左括号必须用相同类型的右括号闭合。
+ * 左括号必须以正确的顺序闭合。
+ * 空字符串可被认为是有效字符串。
+ * 例1:
+ * 输入: "()"
+ * 输出: true
+ * 例2:
+ * 输入: "()[]{}"
+ * 输出: true
+ * 例3:
+ * 输入: "(]"
+ * 输出: false
+ * 例4:
+ * 输入: "([)]"
+ * 输出: false
+ * 例5:
+ * 输入: "{[]}"
+ * 输出: true
  */
 public class ValidSymbol {
     public static void main(String[] args) {

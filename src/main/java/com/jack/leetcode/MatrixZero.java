@@ -5,8 +5,19 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/14/2018 11:15 PM
  * LeetCode 73
- * let matrix row element or column all element is zero
- * if row or column have zero
+ * 给定一个 m x n 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0
+ * 输入:
+ * [
+ *   [1,1,1],
+ *   [1,0,1],
+ *   [1,1,1]
+ * ]
+ * 输出:
+ * [
+ *   [1,0,1],
+ *   [0,0,0],
+ *   [1,0,1]
+ * ]
  */
 public class MatrixZero {
     public static void main(String[] args) {

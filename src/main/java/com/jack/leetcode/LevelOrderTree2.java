@@ -8,6 +8,8 @@ import java.util.Queue;
 /**
  * Created by Jack on 8/27/2018 2:08 PM
  * LeetCode 107
+ * 给定一个二叉树，返回其节点值自底向上的层次遍历。
+ * （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
  */
 public class LevelOrderTree2 {
     class Node{

@@ -5,7 +5,15 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/19/2018 10:06 PM
  * LeetCode 43
- * two String multiply and return a new String
+ * 给定两个以字符串形式表示的非负整数num1和num2，
+ * 返回num1和num2的乘积，它们的乘积也用新的字符串表示。
+ * 两个字符串相乘并返回一个新的字符串
+ * 例1：
+ * 输入：num1="2",num2="3"
+ * 输出："6"
+ * 例2：
+ * 输入：num1="123",num2="456"
+ * 输出："56088"
  */
 public class StringMultiply {
     public static void main(String[] args) {

@@ -5,7 +5,11 @@ import com.jack.util.ChainCreate;
 /**
  * Created by Jack on 8/13/2018 10:29 PM
  * LeetCode 147
- * use insert mergeSort algorithm to mergeSort chain element
+ * 对链表进行插入排序。
+ * 插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。
+ * 每次迭代中，插入排序只从输入数据中移除一个待排序的元素，
+ * 找到它在序列中适当的位置，并将其插入。
+ * 重复直到所有输入数据插入完为止。
  */
 public class ChainInsertSort {
     public static void main(String[] args) {

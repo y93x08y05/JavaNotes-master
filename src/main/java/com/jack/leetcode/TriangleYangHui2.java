@@ -6,7 +6,10 @@ import java.util.List;
 /**
  * Created by Jack on 8/6/2018 1:02 PM
  * LeetCode 119
- * give a number k ,and k <= 33 return line k
+ * 给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
+ * 在杨辉三角中，每个数是它左上方和右上方的数的和。
+ * 输入: 3
+ * 输出: [1,3,3,1]
  */
 public class TriangleYangHui2 {
     public static void main(String[] args) {
