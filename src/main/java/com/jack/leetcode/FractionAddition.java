@@ -38,26 +38,28 @@ public class FractionAddition {
         System.out.println(findExpression(expression));
     }
     private static String findExpression(String expression) {
-//        if (expression.length()<=5)
-            return expression;
-//        int []t1=
+        int n=0,d=1,index=0,i,j;
+        if (expression.charAt(0)!='-')
+            expression="+"+expression;
+        while (index<expression.length()) {
+            for (i=index+1;expression.charAt(i)!='/';i++);
+            for (j=i+1;j<expression.length()&&expression.charAt(j)!='+'&&expression.charAt(j)!='-';j++);
+            int nn=Integer.parseInt(expression.substring(index+1,i));
+            int dd=Integer.parseInt(expression.substring(i+1,j));
+            int gcd1=gcd(d,dd);
+            n=n*dd/gcd1+(expression.charAt(index)=='-'?-1:1)*nn*d/gcd1;
+            d=d*dd/gcd1;
+            index=j;
+        }
+        int gcd2=gcd(Math.abs(n),d);
+        return String.valueOf(n/gcd2)+"/"+String.valueOf(d/gcd2);
     }
-    private static int [] find(String expression) {
-//        return
-        int []res=new int[3];
-        return res;
-////        int i=0;
-//        if (expression.charAt(i)=='-'||expression.charAt(i)=='+')
-//            i++;
-//        String s=new String();
-//        while (expression.charAt(i)!='/') {
-//            s+=String.valueOf(expression.charAt(i++));
-//        }
-//        res[0]=Integer.parseInt(s);
-//        if (expression.charAt(0)=='-')
-//            res[0]=-res[0];
-//        i++;
-//        String s1=new String();
-//        while (i<expression.length()&&expression.charAt(i)!=)
+    private static int gcd(int a,int b) {
+        while (b!=0) {
+            int temp=b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
     }
 }

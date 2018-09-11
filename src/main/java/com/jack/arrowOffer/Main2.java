@@ -2,7 +2,7 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/30/2018 8:03 PM
- * replace String space as "%20"
+ * 用%20替换空格
  */
 public class Main2 {
     public static String str = "We Are Happy";

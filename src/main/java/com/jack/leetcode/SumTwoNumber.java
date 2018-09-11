@@ -5,7 +5,14 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/28/2018 10:01 PM
  * LeetCode 371
- * find sum of two integer
+ * 两整数之和
+ * 不使用运算符 + 和 - ​​​​​​​，计算两整数 ​​​​​​​a 、b ​​​​​​​之和。
+ * 例1:
+ * 输入: a = 1, b = 2
+ * 输出: 3
+ * 例2:
+ * 输入: a = -2, b = 3
+ * 输出: 1
  * 0+0=0
  * 1+0=1
  * 0+1=1

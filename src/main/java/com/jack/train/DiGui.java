@@ -3,7 +3,7 @@ package com.jack.train;
 /**
  * Created by Jack on 8/9/2018 9:34 AM
  */
-public class DiGUI {
+public class DiGui {
     public static void main(String[] args) {
         int depth = 2;
         System.out.print("吓得我抱起了");

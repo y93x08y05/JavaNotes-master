@@ -2,7 +2,14 @@ package com.jack.leetcode;
 
 /**
  * Created by Jack on 8/28/2018 10:19 PM
- * LeetCode 334
+ * LeetCode 344
+ * 编写一个函数，其作用是将输入的字符串反转过来。
+ * 例1:
+ * 输入: "hello"
+ * 输出: "olleh"
+ * 例2:
+ * 输入: "A man, a plan, a canal: Panama"
+ * 输出: "amanaP :lanac a ,nalp a ,nam A"
  */
 public class ReverseStringArray {
     public static void main(String[] args) {

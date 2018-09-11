@@ -5,7 +5,13 @@ import java.util.Scanner;
 /**
  * Created by Jack on 8/30/2018 2:09 PM
  * LeetCode 541
- * abcdefg 2
+ * 反转字符串
+ * 给定一个字符串和一个整数k，你需要对从字符串开头算起的每个2k个字符的前k个字符
+ * 进行反转。如果剩余小于k个字符，则将剩余的所有全部反转，如果有小于2k但大于或者
+ * 等于k个字符，则反转前k个字符，并将剩余的字符保持原样。
+ * 例1：
+ * 输入: s = "abcdefg", k = 2
+ * 输出: "bacdfeg"
  */
 public class ReverseStringArray2 {
     public static void main(String[] args) {
