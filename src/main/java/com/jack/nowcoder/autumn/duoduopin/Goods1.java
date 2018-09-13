@@ -23,7 +23,7 @@ public class Goods1 {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         String [] strings = str.split(" ");
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i=0;i<strings.length;i++) {
             list.add(Integer.valueOf(strings[i]));
         }

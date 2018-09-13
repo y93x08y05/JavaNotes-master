@@ -72,7 +72,7 @@ public class P6 {
                     break;
                 }
                 arrayList.remove(t);
-                cnt[x] = cnt[x] < 0 ? 0 : 1;//cnt[x]小于0取0，大于1取1
+                cnt[x] = cnt[x] < 0 ? 0 : 1;//count[x]小于0取0，大于1取1
             }
             la[x] = i;//记录优惠券的行数到优惠券所在编号为下标的数组列表
         }
