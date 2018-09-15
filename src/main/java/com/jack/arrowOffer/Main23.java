@@ -2,11 +2,9 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 8/1/2018 11:21 AM
- * if tree is not empty
- * if left tree is not empty,
- * all of value left tree less than value of root;
- * if right tree is not empty,
- * all of value right tree more than value of root.
+ * 如果树不为空
+ * 如果左子树不为空，所有左子树的值小于根节点的值
+ * 如果右子树不为空，所有右子树的值小于根节点的值
  */
 public class Main23 {
     public static void main(String[] args) {

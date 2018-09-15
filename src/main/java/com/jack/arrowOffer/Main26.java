@@ -1,25 +1,23 @@
 package com.jack.arrowOffer;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Jack on 8/1/2018 8:28 PM
- * find the first character that appears only once ina string
- * and return its position.If the string is empty return -1
+ * 找到第一个不重复的字符，并返回其在字符串中的位置。
  */
 public class Main26 {
     public static void main(String[] args) {
         String s = "abcdafgblc";
-        findNotRepeatingChar(s);
+        System.out.println(findNotRepeatingChar(s));
     }
     public static int findNotRepeatingChar(String str) {
-        HashMap<Character,Integer> map = new HashMap<Character, Integer>();
+        Map<Character,Integer> map = new HashMap<>();
         for (int i=0;i<str.length();i++) {
             char c = str.charAt(i);
             if (map.containsKey(c)) {
-                int time = map.get(c);
-                time++;
-                map.put(c,time);
+                map.put(c,map.get(c)+1);
             } else {
                 map.put(c,1);
             }

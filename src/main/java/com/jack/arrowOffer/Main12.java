@@ -2,7 +2,7 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/30/2018 9:39 PM
- * reverse chain and output value
+ * 反转链表并且输出节点的值
  */
 public class Main12 {
     private static class Node {
@@ -35,9 +35,8 @@ public class Main12 {
         }
     }
     private static Node reverseChain(Node node) {
-        if (node == null) {
+        if (node == null)
             return null;
-        }
         Node pre = null;
         Node next;
         while (node != null) {

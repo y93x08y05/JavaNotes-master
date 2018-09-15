@@ -2,7 +2,7 @@ package com.jack.util;
 
 /**
  * Created by Jack on 8/9/2018 10:26 AM
- * generate balance binary tree using sorted array
+ * 利用数组创建二叉树
  */
 public class BinaryTreeCreate {
     public class Node{

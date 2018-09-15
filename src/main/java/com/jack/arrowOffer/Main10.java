@@ -2,7 +2,7 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/30/2018 9:08 PM
- * justify sequence let odd in front and even is back
+ * 调整数组顺序让奇数在前，偶数在后
  */
 public class Main10 {
     public static void main(String[] args) {

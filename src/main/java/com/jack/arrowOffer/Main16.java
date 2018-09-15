@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 /**
  * Created by Jack on 7/31/2018 10:10 PM
- * a number in the array that appears more than half of the number
- * if exists output this number else output 0
+ * 找到在数组中出现次数超过一半的数，如果找到了则输出，否则输出0
  */
 public class Main16 {
     public static void main(String[] args) {

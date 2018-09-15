@@ -1,28 +1,30 @@
 package com.jack.arrowOffer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 /**
  * Created by Jack on 7/30/2018 10:27 PM
+ * 输入一个字符串，输出这个字符串的全排列
  * input abc
  * output abc,acb,bac,bca,cab,cba
  */
 public class Main15 {
     public static void main(String[] args) {
-        String s = "aazz";
-        ArrayList<String> list = permutation(s);
+        String s = "abc";
+        List<String> list = permutation(s);
         for (int i=0;i<list.size();i++) {
             System.out.println(list.get(i));
         }
     }
-    public static ArrayList<String> permutation(String s) {
-        ArrayList<String> result = new ArrayList<String>();
+    public static List<String> permutation(String s) {
+        List<String> result = new ArrayList<>();
         if (s == null || s.length() == 0) {
             return result;
         }
         char [] chars = s.toCharArray();
-        TreeSet<String> treeSet = new TreeSet<String>();
+        TreeSet<String> treeSet = new TreeSet<>();
         permutation(chars,0,s.length()-1,treeSet);
         result.addAll(treeSet);
         return result;

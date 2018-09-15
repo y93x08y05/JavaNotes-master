@@ -5,8 +5,7 @@ import java.util.List;
 
 /**
  * Created by Jack on 8/1/2018 9:51 AM
- * enter a matrix to print each number in a clockwise order from
- * the outside to the inside.
+ * 输入一个矩阵，从外向里去打印矩阵中的元素
  */
 public class Main21 {
     public static void main(String[] args) {

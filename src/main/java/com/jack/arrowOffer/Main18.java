@@ -2,11 +2,11 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/31/2018 10:25 PM
- * find the number of occurrences of any non negative integer range 1
+ * 统计1到N之间数字1出现的次数
  */
 public class Main18 {
     public static void main(String[] args) {
-        int n = 13;
+        int n = 4;
         System.out.println(getNumber(n));
     }
     public static int getNumber(int n) {

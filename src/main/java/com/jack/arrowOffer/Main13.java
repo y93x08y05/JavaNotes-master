@@ -2,6 +2,7 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/30/2018 9:57 PM
+ * 合并两个有序链表
  */
 public class Main13 {
     private static class Node {

@@ -7,8 +7,7 @@ import java.util.Queue;
 
 /**
  * Created by Jack on 8/1/2018 10:06 AM
- * Print out every node of binary tree from top to bottom.
- * The same layer node print from left to right
+ * 从上往下打印二叉树中所有节点的值，同一层节点的值，从左向右打印
  */
 public class Main22 {
     private static int [] arr = {1,2,3,4,5,6,7,8,9};

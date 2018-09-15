@@ -2,6 +2,7 @@ package com.jack.arrowOffer;
 
 /**
  * Created by Jack on 7/30/2018 9:21 PM
+ * 创建链表并查找链表的倒数第k个节点的值
  */
 public class Main11 {
     private static class Node{

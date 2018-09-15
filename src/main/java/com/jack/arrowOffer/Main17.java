@@ -2,10 +2,11 @@ package com.jack.arrowOffer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by Jack on 7/31/2018 10:17 PM
- * enter n integers to find smallest k integers
+ * 输入包含N个正整数的数组，返回最小的K个正整数
  */
 public class Main17 {
     public static void main(String[] args) {
@@ -13,8 +14,8 @@ public class Main17 {
         int k = 4;
         getSmallestK(arr,k);
     }
-    public static ArrayList<Integer> getSmallestK(int [] arr,int k) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+    public static List<Integer> getSmallestK(int [] arr,int k) {
+        List<Integer> list = new ArrayList<>();
         if (arr.length < k) {
             return list;
         }

@@ -2,10 +2,11 @@ package com.jack.arrowOffer;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Jack on 8/1/2018 2:09 PM
- * find the maximum sum of the consecutive subarray contain negative numbers
+ * 找到连续子数组的最大和
  */
 public class Main25 {
     private static int [] arr = {6,-3,-2,7,-15,1,2,2};
@@ -13,7 +14,7 @@ public class Main25 {
         System.out.println(findGreatestSum(arr));
     }
     private static int findGreatestSum(int [] arr) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int i=0;i<arr.length;i++) {
             int sum = 0;
             for (int j=i;j<arr.length;j++) {

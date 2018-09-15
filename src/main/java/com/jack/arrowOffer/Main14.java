@@ -5,10 +5,10 @@ import java.util.Stack;
 
 /**
  * Created by Jack on 7/30/2018 10:15 PM
- * min function to get stack most min element
+ * 得到栈中的最小元素的方法
  */
 public class Main14 {
-    private static Stack<Integer> stack = new Stack<Integer>();
+    private static Stack<Integer> stack = new Stack<>();
     private static void push(int node) {
         stack.push(node);
     }

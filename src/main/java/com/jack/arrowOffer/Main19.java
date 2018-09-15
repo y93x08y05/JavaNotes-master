@@ -6,8 +6,8 @@ import java.util.List;
 
 /**
  * Created by Jack on 7/31/2018 10:32 PM
- * enter an array of integers and splicing all the numbers in the array
- * into a single number and print the smallest number
+ * 输入一个包含多个数的数组，并且拼接这个数组中的所有元素，找到拼接之后
+ * 最小的一个数并输出。
  */
 public class Main19 {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main19 {
     }
     public static long getSmallest(long [] arr) {
         long result;
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         for (int i=0;i<arr.length;i++) {
             list.add(String.valueOf(arr[i]));
         }
