@@ -1,4 +1,4 @@
-package com.jack.demo.ThreadLocalDemo;
+package com.jack.basic.demo.ThreadLocalDemo;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,17 +7,17 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by Jack on 8/23/2018 1:17 PM
+ * Created by Jack on 8/23/2018 1:24 PM
  */
-public class ThreadLocalDemo1 {
+public class ThreadLocalDemo2 {
     public static void main(String[] args) {
-        //SimpleDateFormat被多线程访问
+        //ThreadLocal为每一个线程分配一个实例
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         for (int i=0;i<1000;i++) {
             executorService.execute(new ParseDate(i));
         }
     }
-    private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    static ThreadLocal<SimpleDateFormat> simpleDateFormatThreadLocal = new ThreadLocal<SimpleDateFormat>();
     public static class ParseDate implements Runnable{
         int i=0;
         public ParseDate(int i) {
@@ -26,7 +26,10 @@ public class ThreadLocalDemo1 {
         @Override
         public void run() {
             try {
-                Date date = sdf.parse("2015-03-29 16:26:"+i%60);
+                if (simpleDateFormatThreadLocal.get()==null) {
+                    simpleDateFormatThreadLocal.set(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+                }
+                Date date = simpleDateFormatThreadLocal.get().parse("2015-03-29 16:26:"+i%60);
                 System.out.println(i+":"+date);
             } catch (ParseException e) {
                 e.printStackTrace();

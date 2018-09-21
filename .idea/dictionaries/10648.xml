@@ -7,6 +7,8 @@
       <w>abccefg</w>
       <w>abcd</w>
       <w>abcdefg</w>
+      <w>barfoor</w>
+      <w>barfoothefoobarman</w>
       <w>bian</w>
       <w>bytedance</w>
       <w>cheng</w>
@@ -20,12 +22,15 @@
       <w>jian</w>
       <w>levenshtein</w>
       <w>nums</w>
+      <w>pqrs</w>
       <w>sudoku</w>
       <w>sudotu</w>
       <w>toutiaoa</w>
       <w>toutiaoapp</w>
       <w>toutiaoh</w>
       <w>toutiaohao</w>
+      <w>wordgoodstudentgoodword</w>
+      <w>wxyz</w>
       <w>xiao</w>
       <w>zhang</w>
     </words>

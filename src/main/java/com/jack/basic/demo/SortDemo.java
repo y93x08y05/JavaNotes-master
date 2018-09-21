@@ -1,4 +1,4 @@
-package com.jack.demo;
+package com.jack.basic.demo;
 
 /**
  * Created by Jack on 8/16/2018 9:46 AM

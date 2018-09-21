@@ -1,4 +1,4 @@
-package com.jack.demo;
+package com.jack.basic.demo;
 
 import java.util.ArrayList;
 import java.util.HashMap;

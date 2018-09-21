@@ -1,4 +1,4 @@
-package com.jack.produceConsumer;
+package com.jack.algorithm.produceConsumer;
 
 /**
  * Created by Jack on 7/30/2018 9:52 AM

@@ -1,4 +1,4 @@
-package com.jack.produceConsumer;
+package com.jack.algorithm.produceConsumer;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

@@ -1,10 +1,7 @@
-package com.jack.cglib;
+package com.jack.basic.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
-
-import java.lang.reflect.Method;
 
 /**
  * Created by jack on 7/24/2018 9:53 PM

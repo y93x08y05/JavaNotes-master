@@ -1,8 +1,7 @@
-package com.jack.demo;
+package com.jack.basic.demo;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by Jack on 8/30/2018 10:30 AM

@@ -1,4 +1,4 @@
-package com.jack.produceConsumer;
+package com.jack.algorithm.produceConsumer;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
