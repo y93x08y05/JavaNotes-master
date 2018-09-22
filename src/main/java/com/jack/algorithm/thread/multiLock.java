@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by zhangta on 1/4/2018.
+ * Created by Jack on 1/4/2018.
  * 设置一个锁，然后休眠，另外一个线程获取这个锁时
  * 如果这个锁有人在使用的就不跳过
  */
