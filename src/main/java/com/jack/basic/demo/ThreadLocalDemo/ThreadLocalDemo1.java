@@ -19,7 +19,7 @@ public class ThreadLocalDemo1 {
     }
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     public static class ParseDate implements Runnable{
-        int i=0;
+        int i;
         public ParseDate(int i) {
             this.i=i;
         }

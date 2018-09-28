@@ -8,6 +8,9 @@ import java.util.concurrent.Executors;
 
 /**
  * Created by Jack on 8/23/2018 1:24 PM
+ * ThreadLocal为变量在每个线程中都创建了一个副本，
+ * 每个线程可以访问自己内部的副本变量
+ *
  */
 public class ThreadLocalDemo2 {
     public static void main(String[] args) {
@@ -17,19 +20,19 @@ public class ThreadLocalDemo2 {
             executorService.execute(new ParseDate(i));
         }
     }
-    static ThreadLocal<SimpleDateFormat> simpleDateFormatThreadLocal = new ThreadLocal<SimpleDateFormat>();
+    static ThreadLocal<SimpleDateFormat> formatThreadLocal = new ThreadLocal<>();
     public static class ParseDate implements Runnable{
-        int i=0;
+        int i;
         public ParseDate(int i) {
             this.i=i;
         }
         @Override
         public void run() {
             try {
-                if (simpleDateFormatThreadLocal.get()==null) {
-                    simpleDateFormatThreadLocal.set(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+                if (formatThreadLocal.get()==null) {
+                    formatThreadLocal.set(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
                 }
-                Date date = simpleDateFormatThreadLocal.get().parse("2015-03-29 16:26:"+i%60);
+                Date date = formatThreadLocal.get().parse("2015-03-29 16:26:"+i%60);
                 System.out.println(i+":"+date);
             } catch (ParseException e) {
                 e.printStackTrace();
