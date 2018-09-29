@@ -2,6 +2,9 @@
   <dictionary name="10648">
     <words>
       <w>aabc</w>
+      <w>aabcc</w>
+      <w>aadbbbaccc</w>
+      <w>aadbbcbcac</w>
       <w>abac</w>
       <w>abca</w>
       <w>abcb</w>
@@ -10,6 +13,8 @@
       <w>abccefg</w>
       <w>abcd</w>
       <w>abcdefg</w>
+      <w>applepen</w>
+      <w>applepenapple</w>
       <w>baca</w>
       <w>baidu</w>
       <w>barfoor</w>
@@ -17,9 +22,11 @@
       <w>bian</w>
       <w>bytedance</w>
       <w>catsanddog</w>
+      <w>catsandog</w>
       <w>cheng</w>
       <w>chong</w>
       <w>clinit</w>
+      <w>dbbca</w>
       <w>huai</w>
       <w>iesa</w>
       <w>iesaweme</w>
@@ -27,8 +34,10 @@
       <w>iestiktok</w>
       <w>jian</w>
       <w>leet</w>
+      <w>leetcode</w>
       <w>levenshtein</w>
       <w>nums</w>
+      <w>pineapplepenapple</w>
       <w>pqrs</w>
       <w>sudoku</w>
       <w>sudotu</w>
