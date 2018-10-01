@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Created by zhangta on 3/11/2018.
@@ -23,23 +22,20 @@ import java.util.Comparator;
  * 12312
  * 7424613
  */
-public class shuchuan {
+public class ShuChuan {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int N  = Integer.parseInt(bf.readLine().toString());
+        int N  = Integer.parseInt(bf.readLine());
         String[] str = bf.readLine().split(" ");
-        Arrays.sort(str, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                String s1 = o1+o2;
-                String s2 = o2+o1;
-                return s1.compareTo(s2);
-                /**
-                 * 取出两个字符串的长度，比较较小的长度内，两者是否相等
-                 * 若不相等，直接返回该位置ASCII码相减后的值
-                 * 若各位置都相等，将两个字符串长度的差值返回
-                 */
-            }
+        Arrays.sort(str, (o1, o2) -> {
+            String s1 = o1+o2;
+            String s2 = o2+o1;
+            return s1.compareTo(s2);
+            /**
+             * 取出两个字符串的长度，比较较小的长度内，两者是否相等
+             * 若不相等，直接返回该位置ASCII码相减后的值
+             * 若各位置都相等，将两个字符串长度的差值返回
+             */
         });
         StringBuffer sb = new StringBuffer();
         for(int i= str.length-1; i>=0; i--){

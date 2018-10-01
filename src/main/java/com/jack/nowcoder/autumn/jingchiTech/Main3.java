@@ -129,6 +129,7 @@ public class Main3 {
     public static int find(Map<Integer,Integer> map1,Map<Integer,Integer> map2) {
         String s1=find(map1);
         String s2=find(map2);
+        return 0;
     }
     public static String find(Map<Integer,Integer> map) {
         if (map.size()==2) {
@@ -144,5 +145,6 @@ public class Main3 {
 
 
         }
+        return "";
     }
 }
