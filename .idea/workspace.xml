@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LargestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Rob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Rob2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Rob3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/SimplifyPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180930/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180930/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180930/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/train/Main5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/train/Main6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/Huffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/MinHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ReverseWords.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180913/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180913/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/VMware/VM20180913/Main3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/jingchiTech/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/jingchiTech/Main3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/campus2017/shuchuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/campus2017/ShuChuan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/VMware/Main1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/VMware/Main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/VMware/Main3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/yidianzixun/Main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/yidianzixun/Main1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/spring/campus2017/shuchuan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/spring/campus2017/shuchuan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/spring/campus2017/shuchuan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/maxRepeatString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/maxRepeatString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/basic/Other1/maxRepeatString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/basic/Other1/maxRepeatString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/Rob2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/Rob2.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,32 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LargestNumber.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LargestNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoinChange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MaxProfit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="99">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -93,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>质数</find>
       <find>32</find>
       <find>转换</find>
       <find>大写</find>
@@ -123,6 +81,7 @@
       <find>LeetCode 19</find>
       <find>LeetCode 179</find>
       <find>LeetCode 714</find>
+      <find>red</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -138,11 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/networkProgramming/nio/NinNonBlockingHttpClientThreadPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/networkProgramming/nio/NioNonBlockingHttpClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/networkProgramming/nio/NioBlockingHttpClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/multiLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/train/Main3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/xiaomi/Main2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/xiaomi/Main1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/campus2017/grid.java" />
@@ -189,6 +143,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LargestNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/maxRepeatString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/MinHeap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/Huffman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanTest.java" />
       </list>
     </option>
   </component>
@@ -206,17 +165,76 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1372" />
-    <option name="y" value="10" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/t-tazhan/IdeaProjects/JavaNotes/src/main/java/com/jack/nowcoder/wangyi/WY20180811/Main.java" />
@@ -251,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Rob2">
+  <component name="RunManager" selected="Application.HuffmanTest">
     <configuration name="ExistWordMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ExistWordMatrix" />
       <module name="JavaNotes" />
@@ -263,6 +281,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="HuffmanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.Huffman.HuffmanTest" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.algorithm.Huffman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.produceConsumer.Main2" />
       <module name="JavaNotes" />
@@ -270,28 +299,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jack.algorithm.produceConsumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main6$Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.train.Main6$Temp" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.train.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.train.Main6" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -331,6 +338,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="maxRepeatString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.basic.Other1.maxRepeatString" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.basic.Other1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -394,19 +412,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SDK" />
-      <item itemvalue="Application.Main6$Temp" />
-      <item itemvalue="Application.Main6" />
       <item itemvalue="Application.Main2" />
       <item itemvalue="Application.Rob" />
       <item itemvalue="Application.Rob2" />
+      <item itemvalue="Application.maxRepeatString" />
+      <item itemvalue="Application.HuffmanTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HuffmanTest" />
+        <item itemvalue="Application.maxRepeatString" />
         <item itemvalue="Application.Rob2" />
         <item itemvalue="Application.Rob" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main6" />
-        <item itemvalue="Application.Main6$Temp" />
       </list>
     </recent_temporary>
   </component>
@@ -433,8 +451,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
@@ -451,30 +468,30 @@
       <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.6413223" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
       <window_info id="DB Browser" order="2" weight="0.32980332" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.43305784" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.56859505" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292683" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.2624811" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3289256" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="8" side_tool="true" weight="0.32969153" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3289256" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.43305784" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.56859505" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -488,10 +505,10 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info id="Job Explorer" order="1" weight="0.32980332" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3289256" />
       <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2624811" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Message" order="2" />
@@ -499,8 +516,8 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Console" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3289256" />
       <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.6413223" />
     </layout-to-restore>
   </component>
@@ -564,48 +581,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="163" column="26" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/ObjectOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/ObjectInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/Externalizable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/demo/ThreadLocalDemo/ThreadLocalDemo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/AIQ/Main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/bianlifeng/Main3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -888,9 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,10 +873,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="1803" column="19" selection-start-line="1803" selection-start-column="16" selection-end-line="1803" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#91089#0" expanded="true" />
+            <element signature="e#68631#68632#0" expanded="true" />
+            <element signature="e#68682#68683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/maxRepeatString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/Huffman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/MinHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1009">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="99">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

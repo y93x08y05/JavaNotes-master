@@ -3,7 +3,7 @@ package com.jack.basic.Other1;
 import java.util.Scanner;
 
 /**
- * Created by zhangta on 1/21/2018.
+ * Created by Jack on 1/21/2018.
  * 给定一个字符串,求出其最长的重复子串。
  */
 public class maxRepeatString {
@@ -36,9 +36,8 @@ public class maxRepeatString {
         return res;
     }
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-//        String s = "eabcdabcf";
-//        System.out.println(new maxRepeatString().findStr(s));
+        String s=new String("19950311");
+        System.out.println(s.hashCode());
         Scanner sc = new Scanner(System.in);
         System.out.println(new maxRepeatString().findStr(sc.next()));
     }
