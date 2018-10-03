@@ -1,4 +1,4 @@
-package com.jack.algorithm.Huffman;
+package com.jack.algorithm.guideline.Huffman算法;
 
 import java.util.ArrayList;
 import java.util.List;

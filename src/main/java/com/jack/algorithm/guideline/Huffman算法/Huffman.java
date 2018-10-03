@@ -1,4 +1,4 @@
-package com.jack.algorithm.Huffman;
+package com.jack.algorithm.guideline.Huffman算法;
 
 /**
  * @Author: Jack
