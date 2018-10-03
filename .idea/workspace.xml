@@ -2,23 +2,268 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/CglibProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/DynamicProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/ProxyPerformanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/Target.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/Huffman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/HuffmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/Huffman/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/MinHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/Huffman/Huffman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/Huffman/HuffmanNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/Huffman/HuffmanTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/Huffman/MinHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainDefinition/LinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainDefinition/LinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainDefinition/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainDefinition/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainDefinition/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainDefinition/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainDefinition/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainDefinition/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/Test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/chain/chainTable/util/Chain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/util/Chain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/classicAlgorithm/ArrayAddWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/ArrayAddWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/classicAlgorithm/FindKthInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/FindKthInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/classicAlgorithm/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/LRU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/AtomicMarkableReferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/AtomicMarkableReferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/AtomicStampedReferenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/AtomicStampedReferenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/ThreadPoolExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/ThreadPoolExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/ThreadPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/ThreadPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentBlockingDeque1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentBlockingDeque1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentBlockingDeque2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentBlockingDeque2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentBlockingQueue1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentBlockingQueue1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentBlockingQueue2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentBlockingQueue2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentFuture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/concurrent/concurrentSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/并发包/concurrentSemaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/dp/dynamicProgramming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/动态规划/dynamicProgramming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/HuffmanNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/HuffmanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/MinHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/KMP算法/KMP1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/KMP算法/KMP2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/produceConsumer/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/生产者消费者/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/produceConsumer/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/生产者消费者/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/produceConsumer/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/生产者消费者/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortBubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortBubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortBucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortBucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortInsertBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortInsertBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortMultiKeyRadix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortMultiKeyRadix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortQuick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortQuick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortSelect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/sortAlgorithm/sortShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/SpinLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/SpinLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/ThreadExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/ThreadExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/childThreadParentThread1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/childThreadParentThread1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/childThreadParentThread2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/childThreadParentThread2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/deadLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/deadLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/doubleThreadAddSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/doubleThreadAddSub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/multiLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/multiLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/multiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/multiThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/nonFairAndFairLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/nonFairAndFairLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/produceConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/produceConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/ticketThreadRunnable1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/ticketThreadRunnable1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/thread/ticketThreadRunnable2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/多线程/ticketThreadRunnable2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/ArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/ArrayToBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/ConstructTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/ConstructTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/FromTopToBottomPrintTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/FromTopToBottomPrintTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/IfBalanceTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/IfBalanceTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/IfCompleteTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/IfCompleteTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/IfPostOrderTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/IfPostOrderTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/PreInPostTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/PreInPostTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/PrintTreeAsZhi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/PrintTreeAsZhi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/PrintTreeStorageCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/PrintTreeStorageCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/ReverseTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/ReverseTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/SubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/SubTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/SymmetricalTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/SymmetricalTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/TreeBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/TreeBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/TreeDepth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/TreeDepth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/tree/TreeDepthWidth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/树/TreeDepthWidth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/volatileKeyWord/VolatileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Volatile关键字/VolatileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/volatileKeyWord/VolatileTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Volatile关键字/VolatileTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/volatileKeyWord/VolatileTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Volatile关键字/VolatileTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/volatileKeyWord/VolatileTest4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Volatile关键字/VolatileTest4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/basic/cglib/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/TargetImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/countdownlatch/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/countdownlatch/CountDownLatchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/cyclicbarrier/CyclicBarrierDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/cyclicbarrier/CyclicBarrierDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/semaphore/SemaphoreDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/concurrent/semaphore/SemaphoreDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FrequencySort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FrequencySort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Rob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Rob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StoneGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/StoneGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/creditCardCenter/test2018/DemoThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/creditCardCenter/test2018/DemoThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/A163/A2017/A163_2017_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/A163/A2017/A163_2017_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/BBaidu/BaiDu_2017_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/BBaidu/BaiDu_2017_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/campus2017/money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/campus2017/money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainDefinition/LinkList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainDefinition/List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainDefinition/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainDefinition/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test1$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test2$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test3$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test4$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test5$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test6$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test7$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test9$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/Test9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/util/Chain$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/chain/chainTable/util/Chain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/classicAlgorithm/ArrayAddWater.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/classicAlgorithm/FindKthInArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/classicAlgorithm/LRU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/AtomicMarkableReferenceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/AtomicStampedReferenceTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/AtomicStampedReferenceTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/AtomicStampedReferenceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/MainTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/SubTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/TaskWithResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/TestRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPoolExecutorTest$MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPoolExecutorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPrint$ThreadA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPrint$ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPrint$ThreadC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/ThreadPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentBlockingDeque1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentBlockingDeque2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentBlockingQueue1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentBlockingQueue2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentCyclicBarrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentExecutorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentFuture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentSemaphore$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/concurrent/concurrentSemaphore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/dp/dynamicProgramming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/Huffman算法/Huffman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/Huffman算法/HuffmanNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/Huffman算法/HuffmanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/Huffman算法/MinHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/KMP算法/KMP1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/KMP算法/KMP2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication1$ThreadA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication1$ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication2$ThreadA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication2$ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication3$ThreadA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication3$ThreadB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Communication3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Run1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Run2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/guideline/线程通信/Run3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main1$Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main1$Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main2$Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main2$Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main3$Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main3$Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/produceConsumer/Main3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortBubble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortBucket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortInsert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortInsertBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortMerge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortMultiKeyRadix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortQuick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortSelect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/sortAlgorithm/sortShell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/Get.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/MyThread1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/MyThread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/Set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/SpinLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/ThreadExample$PrimeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/ThreadExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/childThreadParentThread1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/childThreadParentThread1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/childThreadParentThread2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/childThreadParentThread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/deadLock$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/deadLock$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/deadLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/doubleThreadAddSub$Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/doubleThreadAddSub$Sub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/doubleThreadAddSub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/multiLock$Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/multiLock$Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/multiLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/multiThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/multiThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/nonFairAndFairLock$FairTestThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/nonFairAndFairLock$NonFairTestThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/nonFairAndFairLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/produceConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/ticketThreadRunnable1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/thread/ticketThreadRunnable2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ArrayToBST$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ArrayToBST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ConstructTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ConstructTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/FromTopToBottomPrintTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/FromTopToBottomPrintTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfBalanceTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfBalanceTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfCompleteTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfCompleteTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfPostOrderTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/IfPostOrderTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PathSum$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PathSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PreInPostTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PreInPostTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PrintTreeAsZhi$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PrintTreeAsZhi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PrintTreeStorageCollection$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/PrintTreeStorageCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ReverseTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/ReverseTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/SubTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/SubTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/SymmetricalTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/SymmetricalTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeBinary$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeDepth$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeDepth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeDepthWidth$TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/tree/TreeDepthWidth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/volatileKeyWord/VolatileTest4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/basic/cglib/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/creditCardCenter/test2018/DemoThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/nowcoder/autumn/creditCardCenter/test2018/DemoThread.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,89 +284,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MaxProfit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java">
+      <file leaf-file-name="Target.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/Target.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="392">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Communication1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication1.java">
+      <file leaf-file-name="TargetImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/TargetImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="36">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Communication2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Communication3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Run3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -133,6 +313,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -184,12 +365,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/basic/demo/ThreadLocalDemo/ThreadLocalDemo2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordBreak.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordBreak2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ReverseWords.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsInterleave.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/UniquePathWithObstacles.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/UniquePaths.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MinPathSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/AIQ/Main3.java" />
@@ -235,6 +410,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/Target.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/DynamicProxyTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/CglibProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/ProxyPerformanceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/TargetImpl.java" />
       </list>
     </option>
   </component>
@@ -251,11 +432,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -315,7 +496,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jack" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="guideline" type="462c0819:PsiDirectoryNode" />
+              <item name="动态代理" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
@@ -324,18 +505,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="guideline" type="462c0819:PsiDirectoryNode" />
-              <item name="线程通信" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,18 +547,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Run3">
-    <configuration name="Communication1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.guideline.线程通信.Communication1" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.guideline.线程通信.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.ProxyPerformanceTest">
     <configuration name="ExistWordMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ExistWordMatrix" />
       <module name="JavaNotes" />
@@ -411,52 +570,63 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="KMP2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.guideline.KMP算法.KMP2" />
+    <configuration name="ProxyPerformanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.动态代理.ProxyPerformanceTest" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.guideline.KMP算法.*" />
+          <option name="PATTERN" value="com.jack.algorithm.动态代理.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="Run1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.guideline.线程通信.Run1" />
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.概览.线程通信.Run1" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.guideline.线程通信.*" />
+          <option name="PATTERN" value="com.jack.algorithm.概览.线程通信.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="Run2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.guideline.线程通信.Run2" />
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.概览.线程通信.Run2" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.guideline.线程通信.*" />
+          <option name="PATTERN" value="com.jack.algorithm.概览.线程通信.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="Run3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.guideline.线程通信.Run3" />
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.概览.线程通信.Run3" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.guideline.线程通信.*" />
+          <option name="PATTERN" value="com.jack.algorithm.概览.线程通信.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="sortBubble" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.概览.排序算法.sortBubble" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.algorithm.概览.排序算法.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -520,19 +690,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SDK" />
-      <item itemvalue="Application.KMP2" />
-      <item itemvalue="Application.Communication1" />
       <item itemvalue="Application.Run1" />
       <item itemvalue="Application.Run2" />
       <item itemvalue="Application.Run3" />
+      <item itemvalue="Application.sortBubble" />
+      <item itemvalue="Application.ProxyPerformanceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyPerformanceTest" />
+        <item itemvalue="Application.sortBubble" />
         <item itemvalue="Application.Run3" />
         <item itemvalue="Application.Run2" />
         <item itemvalue="Application.Run1" />
-        <item itemvalue="Application.Communication1" />
-        <item itemvalue="Application.KMP2" />
       </list>
     </recent_temporary>
   </component>
@@ -559,8 +729,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
@@ -582,7 +751,7 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.41322315" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.8545455" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292683" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.2624811" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.8380165" />
@@ -600,7 +769,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.56859505" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.41322315" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -614,7 +783,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.2624811" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2624811" />
       <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -690,55 +859,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsInterleave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/UniquePathWithObstacles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/UniquePaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/AIQ/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/zoom/Main3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/yidianzixun/Main3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/yidianzixun/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/yidianzixun/Main1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -847,7 +967,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/produceConsumer/Main2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/生产者消费者/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
@@ -944,14 +1064,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/HuffmanTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/Huffman.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/Huffman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
@@ -966,7 +1086,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/MinHeap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/MinHeap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3900">
           <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
@@ -976,7 +1096,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/Huffman算法/HuffmanNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/Huffman算法/HuffmanNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1009">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
@@ -987,13 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/d.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -1001,49 +1114,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/KMP算法/KMP2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/KMP算法/KMP1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/KMP算法/KMP1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="344">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
@@ -1057,7 +1149,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Communication1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Run1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/线程通信/Communication1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -1074,10 +1194,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/guideline/线程通信/Run3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/MaxProfit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/排序算法/sortBubble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/ProxyPerformanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/CglibProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/DynamicProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/动态代理/TargetImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

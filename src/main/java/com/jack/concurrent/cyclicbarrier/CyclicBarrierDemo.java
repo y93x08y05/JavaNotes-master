@@ -5,9 +5,9 @@ import java.util.concurrent.*;
 /**
  * Created by Jack on 7/27/2018 1:19 PM
  * Comparison of CountDownLatch and CyclicBarrier
- * 1. CountDownLatch is a wait between thread group, one or more thread execute after N
- * thread has completed something. CyclicBarrier is a wait within thread group, each thread
- * waits for each other, they are executed in turn after N thread are intercepted.
+ * 1. CountDownLatch is a wait between 多线程 group, one or more 多线程 execute after N
+ * 多线程 has completed something. CyclicBarrier is a wait within 多线程 group, each 多线程
+ * waits for each other, they are executed in turn after N 多线程 are intercepted.
  * 2. CountDownLatch is counting down method, CyclicBarrier is counting add method.
  * 3. CountDownLatch counting can not be reset if counting down to 0, CyclicBarrier counting
  * can be reset if counting reaches the initial value.

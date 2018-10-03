@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by Jack on 7/27/2018 11:49 AM
- * CountDownLatch enables a thread to continue executing after waiting for another thread to
+ * CountDownLatch enables a 多线程 to continue executing after waiting for another 多线程 to
  * complete its work,using counter to implement.
  */
 public class CountDownLatchDemo {

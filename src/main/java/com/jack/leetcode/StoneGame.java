@@ -27,9 +27,9 @@ public class StoneGame {
      * 最优处理，每次只能拿两端的石头堆，考虑拿了两端之后剩下的最优情况
      * 分为子问题，两个相邻石头堆-->三个相邻石头堆
      * 设dp[i][j]为piles[i]~piles[j]Alex最多可以赢Lee的分数
-     * 因此:dp[i][j]=max(piles[i]-dp[i+1][j], piles[j]-dp[i][j-1])
-     * 其中piles[i]-dp[i+1][j]表示Alex取走i上的石头堆，
-     * piles[j]-dp[i][j-1]表示Alex取走的是j上的石头堆。
+     * 因此:动态规划[i][j]=max(piles[i]-动态规划[i+1][j], piles[j]-动态规划[i][j-1])
+     * 其中piles[i]-动态规划[i+1][j]表示Alex取走i上的石头堆，
+     * piles[j]-动态规划[i][j-1]表示Alex取走的是j上的石头堆。
      * 注意，为什么dp[i+1][j]表示piles[i+1]~piles[j]之间Alex最多可以赢Lee的分数，
      * 而piles[i]要减去该值而不是加上该值呢？
      * 由于我们的要求是每一步Alex和Lee采取的都是最优策略，

@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 9999999999999X 3
  * 输出例子
  * 4
- * dp：状态转移方程dp[i][newJ] += dp[i-1][J].其中i代表数字串的长度，J代表余数，
+ * 动态规划：状态转移方程dp[i][newJ] += 动态规划[i-1][J].其中i代表数字串的长度，J代表余数，
  * 结果值代表i长度的数字串中求余n余J的所有可能结果总数
  * 根据以上的说明，显而易见newJ==(J*10+k)%n ，k代表当前数字串中个位的值
  * （也就是数字串的第i位）
@@ -56,21 +56,21 @@ public class A163_2017_12 {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         int n = sc.nextInt();
-        long[][] dp = new long[str.length()+1][]; //不用long的话通过率只能为90%
+        long[][] 动态规划 = new long[str.length()+1][]; //不用long的话通过率只能为90%
         for(int i = 0;i<=str.length();i++){
-            dp[i] = new long[n];
+            动态规划[i] = new long[n];
         }
-        dp[0][0] = 1;
+        动态规划[0][0] = 1;
         for(int i = 1;i<=str.length();i++){
             char c = str.charAt(i-1);
             for(int j = 0;j<n;j++){
                 for(int k = 0;k<10;k++){
                     if(c=='X'||c=='0'+k){
-                        dp[i][(j*10+k)%n]+=dp[i-1][j];
+                        动态规划[i][(j*10+k)%n]+=动态规划[i-1][j];
                     }
                 }
              }
          }
-        System.out.println(dp[str.length()][0]);
+        System.out.println(动态规划[str.length()][0]);
     }
  */

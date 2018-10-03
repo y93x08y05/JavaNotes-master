@@ -40,8 +40,8 @@ public class Rob {
     }
     /**
      * 状态转移方程
-     * dp[i]=Math.max(dp[i-2],dp[i-3])+arr[i]
-     * dp[i]表示打劫到第i间房屋时累计取得的金钱最大值
+     * 动态规划[i]=Math.max(动态规划[i-2],动态规划[i-3])+arr[i]
+     * 动态规划[i]表示打劫到第i间房屋时累计取得的金钱最大值
      * @param arr
      * @return
      */

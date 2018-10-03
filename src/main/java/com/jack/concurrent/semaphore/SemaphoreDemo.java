@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Jack on 7/27/2018 10:50 AM
- * Semaphore are often used to limit the number of thread that acquire resource.
+ * Semaphore are often used to limit the number of 多线程 that acquire resource.
  */
 public class SemaphoreDemo {
     static class Student implements Runnable {

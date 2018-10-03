@@ -19,7 +19,7 @@ public class money {
         while((line=br.readLine())!=null){
             int n = Integer.parseInt(line.trim());
             int [] moneys = {1,5,10,20,50,100};
-            long [] dp = new long[n+1];//dp[i]代表拼凑i元的方法数
+            long [] dp = new long[n+1];//动态规划[i]代表拼凑i元的方法数
             dp[0] = 1;
             for(int i=0;i<moneys.length;i++){
                 for(int j=1;j<=n;j++){

@@ -8,9 +8,9 @@ class DemoThread extends Thread {
         DemoThread threadOne = new DemoThread();
         DemoThread threadTwo = new DemoThread();
         threadOne.start();
-        System.out.print("thread one.");
+        System.out.print("多线程 one.");
         threadTwo.start();
-        System.out.print("thread two.");
+        System.out.print("多线程 two.");
     }
     public void run() {
         System.out.print("Thread.");
