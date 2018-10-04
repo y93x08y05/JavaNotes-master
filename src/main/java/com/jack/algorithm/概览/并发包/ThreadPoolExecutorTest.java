@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by zhangta on 1/8/2018.
+ * Created by Jack on 1/8/2018.
  * 有多个构造方法，可实现自定义的线程池
  * corePoolSize：线程池中所保存的核心线程数，包括空闲线程
  * maximumPoolSize：池中允许的最大线程数

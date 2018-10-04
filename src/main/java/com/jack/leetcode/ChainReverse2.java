@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * Created by Jack on 8/13/2018 2:29 PM
  * LeetCode 92
- * 反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。
+ * 反转从位置m到n的链表。请使用一趟扫描完成反转。
  * 1 ≤ m ≤ n ≤ 链表长度。
  * 输入: 1->2->3->4->5->NULL, m = 2, n = 4
  * 输出: 1->4->3->2->5->NULL
