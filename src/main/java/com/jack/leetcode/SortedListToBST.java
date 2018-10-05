@@ -1,6 +1,7 @@
 package com.jack.leetcode;
 
 import com.jack.util.ChainCreate;
+import com.jack.util.TreeNode;
 
 /**
  * @Author: Jack
@@ -43,13 +44,5 @@ public class SortedListToBST {
         root.left=find(head,slow);
         root.right=find(slow.next,tail);
         return root;
-    }
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val=x;
-        }
     }
 }

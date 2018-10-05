@@ -36,16 +36,16 @@ public class TreeDepthWidth {
             System.out.println("empty 树");
             return;
         }
-        ArrayDeque<TreeNode> arrayDeque = new ArrayDeque<TreeNode>();
-        arrayDeque.push(root);
-        while (arrayDeque.isEmpty() == false){
-            TreeNode node = arrayDeque.pop();
+        ArrayDeque<TreeNode> deque = new ArrayDeque<>();
+        deque.push(root);
+        while (deque.isEmpty() == false){
+            TreeNode node = deque.pop();
             System.out.print(node.value + " ");
             if (node.right != null){
-                arrayDeque.push(node.right);
+                deque.push(node.right);
             }
             if (node.left != null){
-                arrayDeque.push(node.left);
+                deque.push(node.left);
             }
         }
         System.out.println("\n");
@@ -58,16 +58,16 @@ public class TreeDepthWidth {
             System.out.print("empty 树");
             return;
         }
-        ArrayDeque<TreeNode> arrayDeque = new ArrayDeque<TreeNode>();
-        arrayDeque.add(root);
-        while (arrayDeque.isEmpty() == false){
-            TreeNode node = arrayDeque.remove();
+        ArrayDeque<TreeNode> deque = new ArrayDeque<>();
+        deque.add(root);
+        while (deque.isEmpty() == false){
+            TreeNode node = deque.remove();
             System.out.print(node.value + " ");
             if (node.left != null){
-                arrayDeque.add(node.left);
+                deque.add(node.left);
             }
             if (node.right != null){
-                arrayDeque.add(node.right);
+                deque.add(node.right);
             }
         }
         System.out.println("\n");

@@ -2,16 +2,14 @@ package com.jack.util;
 
 /**
  * Created by Jack on 7/30/2018 11:47 AM
- * find if have value in array or not, if not return -1 else return subscript which first appear
+ * 二分法搜索，如果能够找到则返回数组的下标，否则返回-1
  */
 public class BinarySearch {
-    public static void main(String[] args) {
-        int [] a = {1,3,5,7,9};
-        int m = a.length;
-        int val = 3;
-        System.out.println(getPosition(a, m, val));
+    public int getPosition(int []arr,int val) {
+        int m = arr.length;
+        return getPosition(arr, m, val);
     }
-    public static int getPosition(int [] a,int m,int val) {
+    public int getPosition(int [] a,int m,int val) {
         int result = -1;
         int position;
         int left = 0;

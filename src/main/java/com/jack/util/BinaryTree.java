@@ -8,35 +8,25 @@ import java.util.List;
  * 创建一棵二叉树，并对其进行前序中序后序遍历
  */
 public class BinaryTree {
-    private static int [] arr = {1,2,3,4,5,6,7,8,9};
-    private static List<Node> list = null;
-    private static class Node{
-        Node left;
-        Node right;
-        int data;
-        Node(int data) {
-            left = null;
-            right = null;
-            this.data = data;
-        }
-    }
+    private static Integer [] arr = {1,2,3,4,5,6,7,8,9};
+    private static List<TreeNode> list = null;
     public static void main(String [] args) {
-        createBinaryTree(arr);
-        Node node = list.get(0);
+        new BinaryTree().createBinaryTree(arr);
+        TreeNode node = list.get(0);
         System.out.println("preOrder:");
-        preOrderTraverse(node);
+        new BinaryTree().preOrderTraverse(node);
         System.out.println();
         System.out.println("inOrder");
-        inOrderTraverse(node);
+        new BinaryTree().inOrderTraverse(node);
         System.out.println();
         System.out.println("postOrder");
-        postOrderTraverse(node);
+        new BinaryTree().postOrderTraverse(node);
         System.out.println();
     }
-    private static void createBinaryTree(int [] arr) {
-        list = new LinkedList<Node>();
+    public void createBinaryTree(Integer [] arr) {
+        list = new LinkedList<>();
         for (int i=0;i<arr.length;i++) {
-            list.add(new Node(arr[i]));
+            list.add(new TreeNode(arr[i]));
         }
         for (int i=0;i<arr.length/2-1;i++) {
             list.get(i).left = list.get(i*2+1);
@@ -48,25 +38,41 @@ public class BinaryTree {
             list.get(lastIndex).right = list.get(lastIndex*2+2);
         }
     }
-    public static void preOrderTraverse(Node node) {
+    public TreeNode createTree(Integer [] arr) {
+        list = new LinkedList<>();
+        for (int i=0;i<arr.length;i++) {
+            list.add(new TreeNode(arr[i]));
+        }
+        for (int i=0;i<arr.length/2-1;i++) {
+            list.get(i).left = list.get(i*2+1);
+            list.get(i).right = list.get(i*2+2);
+        }
+        int lastIndex = arr.length/2-1;
+        list.get(lastIndex).left = list.get(lastIndex*2+1);
+        if (arr.length%2==1) {
+            list.get(lastIndex).right = list.get(lastIndex*2+2);
+        }
+        return list.get(0);
+    }
+    public void preOrderTraverse(TreeNode node) {
         if (node == null)
             return;
-        System.out.print(node.data + " ");
+        System.out.print(node.val + " ");
         preOrderTraverse(node.left);
         preOrderTraverse(node.right);
     }
-    public static void inOrderTraverse(Node node) {
+    public void inOrderTraverse(TreeNode node) {
         if (node == null)
             return;
         inOrderTraverse(node.left);
-        System.out.print(node.data + " ");
+        System.out.print(node.val + " ");
         inOrderTraverse(node.right);
     }
-    public static void postOrderTraverse(Node node) {
+    public void postOrderTraverse(TreeNode node) {
         if (node == null)
             return;
         postOrderTraverse(node.left);
         postOrderTraverse(node.right);
-        System.out.print(node.data + " ");
+        System.out.print(node.val + " ");
     }
 }
