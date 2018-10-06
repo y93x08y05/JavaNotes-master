@@ -1,0 +1,54 @@
+package com.jack.leetcode;
+
+/**
+ * @Author: Jack
+ * @Date: 2018/10/6 14:21
+ * LeetCode 566
+ * 重塑矩阵
+ * 在MATLAB中，有一个非常有用的函数 reshape，
+ * 它可以将一个矩阵重塑为另一个大小不同的新矩阵，但保留其原始数据。
+ * 给出一个由二维数组表示的矩阵，以及两个正整数r和c，分别表示想要的重构的矩阵的行数和列数。
+ * 重构后的矩阵需要将原始矩阵的所有元素以相同的行遍历顺序填充。
+ * 如果具有给定参数的reshape操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
+ * 例1:
+ * 输入:
+ * nums =
+ * [[1,2],
+ *  [3,4]]
+ * r = 1, c = 4
+ * 输出:
+ * [[1,2,3,4]]
+ * 解释:
+ * 行遍历nums的结果是 [1,2,3,4]。新的矩阵是 1 * 4 矩阵, 用之前的元素值一行一行填充新矩阵。
+ * 例2:
+ * 输入:
+ * nums =
+ * [[1,2],
+ *  [3,4]]
+ * r = 2, c = 4
+ * 输出:
+ * [[1,2],
+ *  [3,4]]
+ * 解释:
+ * 没有办法将 2 * 2 矩阵转化为 2 * 4 矩阵。 所以输出原矩阵。
+ */
+public class MatrixReshape {
+    public static void main(String[] args) {
+        int [][]arr={{1,2},{3,4}};
+        int r=1;
+        int c=4;
+        new MatrixReshape().find(arr,r,c);
+    }
+    private int [][] find(int [][]arr,int r,int c) {
+        int originalR=arr.length;
+        int originalC=arr[0].length;
+        if (originalR*originalC==r*c) {
+            int [][] result=new int[r][c];
+            for (int i=0;i<r*c;i++) {
+                result[i/c][i%c]=arr[i/originalC][i%originalC];
+            }
+            return result;
+        } else
+            return arr;
+    }
+}

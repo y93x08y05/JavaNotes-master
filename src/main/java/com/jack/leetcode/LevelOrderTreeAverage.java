@@ -1,5 +1,7 @@
 package com.jack.leetcode;
 
+import com.jack.util.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,38 +14,30 @@ import java.util.Queue;
  *  给定一个非空二叉树, 返回一个由每层节点平均值组成的数组.
  */
 public class LevelOrderTreeAverage {
-    class Node{
-        int val;
-        Node left = null;
-        Node right = null;
-        Node(int val) {
-            this.val = val;
-        }
-    }
     public static void main(String[] args) {
         LevelOrderTreeAverage printTree=new LevelOrderTreeAverage();
         int [] arr = {1,2,3,4,5,6,7};
-        Node root = printTree.createTree(arr,0,arr.length-1);
+        TreeNode root = printTree.createTree(arr,0,arr.length-1);
         List<Double> lists = printTree.print(root);
         for (int i=0;i<lists.size();i++) {
             System.out.println(lists.get(i));
         }
     }
-    private Node createTree(int [] a , int left , int right) {
+    private TreeNode createTree(int [] a , int left , int right) {
         if (left > right) {
             return null;
         }
-        Node node = new Node(a[(left + right) / 2]);
+        TreeNode node = new TreeNode(a[(left + right) / 2]);
         node.val = a[(left + right) / 2];
         node.left = createTree(a,left,(left + right)/2-1);
         node.right = createTree(a,(left+right)/2+1,right);
         return node;
     }
-    private List<Double> print(Node root) {
+    private List<Double> print(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         ArrayList<Integer> arrayList = new ArrayList<>();
         List<Double> lists=new ArrayList<>();
-        Queue<Node> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         if (root == null) {
             return lists;
         }
@@ -51,7 +45,7 @@ public class LevelOrderTreeAverage {
         int start = 0;
         int end = 1;
         while (!queue.isEmpty()) {
-            Node node = queue.poll();
+            TreeNode node = queue.poll();
             end--;
             arrayList.add(node.val);
             if (node.left != null) {
