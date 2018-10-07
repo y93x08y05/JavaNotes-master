@@ -6,12 +6,15 @@
       <w>aadbbbaccc</w>
       <w>aadbbcbcac</w>
       <w>abac</w>
+      <w>abbxxxxzyy</w>
+      <w>abbxxxxzzy</w>
       <w>abca</w>
       <w>abcb</w>
       <w>abcc</w>
       <w>abcced</w>
       <w>abccefg</w>
       <w>abcd</w>
+      <w>abcdddeeeeaabbbcd</w>
       <w>abcdefg</w>
       <w>applepen</w>
       <w>applepenapple</w>
@@ -45,6 +48,7 @@
       <w>preorder</w>
       <w>sudoku</w>
       <w>sudotu</w>
+      <w>toeplitz</w>
       <w>toutiaoa</w>
       <w>toutiaoapp</w>
       <w>toutiaoh</w>
@@ -52,6 +56,7 @@
       <w>wordgoodstudentgoodword</w>
       <w>wxyz</w>
       <w>xiao</w>
+      <w>xxxx</w>
       <w>zhang</w>
     </words>
   </dictionary>
