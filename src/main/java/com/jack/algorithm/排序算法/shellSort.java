@@ -2,7 +2,7 @@ package com.jack.algorithm.排序算法;
 
 /**
  * Created by jack on 7/24/2018 9:43 PM
- * shell mergeSort not stable
+ * shell MergeSort not stable
  */
 public class shellSort {
     public static void main(String[] args) {

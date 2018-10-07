@@ -1,32 +1,32 @@
 package com.jack.algorithm.排序算法;
 
 /**
- * Created by jack on 7/23/2018 10:03 PM
- * heap mergeSort not stable
+ * Created by Jack on 7/23/2018 10:03 PM
+ * 堆排序是不稳定的
  */
-public class heapSort {
+public class HeapSort {
     public static void main(String[] args) {
         int a[] = {2,5,7,1,3,9,6,8,4};
         int n = a.length;
         int temp;
-        initGreatestHeap(a,n);
+        new HeapSort().initGreatestHeap(a,n);
         for (int i=n-1;i>0;i--) {
             temp = a[0];
             a[0] = a[i];
             a[i] = temp;
-            greatestHeap(a,i,0);
+            new HeapSort().greatestHeap(a,i,0);
         }
         for (int i=0;i<a.length;i++) {
             System.out.print(a[i] + " ");
         }
 
     }
-    public static void initGreatestHeap(int a[],int n) {
+    public void initGreatestHeap(int a[],int n) {
         for (int i=(n-1)/2;i>=0;i--) {
             greatestHeap(a,n,i);
         }
     }
-    public static void greatestHeap(int a[] , int n ,int h) {
+    public void greatestHeap(int a[] , int n ,int h) {
         int i,j,flag;
         int temp;
         i = h;

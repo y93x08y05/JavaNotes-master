@@ -46,7 +46,7 @@ public class ImportanceEmployee {
         }
         return importance;
     }
-    //suitable id not mergeSort
+    //suitable id not MergeSort
     private static int getImportance1(List<Employee> employees,int id) {
         int importance=0;
         List<Integer> subordinates;

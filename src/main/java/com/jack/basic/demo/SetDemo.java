@@ -6,8 +6,8 @@ import java.util.TreeSet;
 
 /**
  * Created by Jack on 8/8/2018 9:42 AM
- *  LinkedHashSet mergeSort element as insert sequence
- *  TreeSet mergeSort element as upper sequence
+ *  LinkedHashSet MergeSort element as insert sequence
+ *  TreeSet MergeSort element as upper sequence
  *  HashSet storage element ad hash method, not special sequence
  */
 public class SetDemo {

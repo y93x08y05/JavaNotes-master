@@ -1,44 +1,36 @@
 package com.jack.algorithm.排序算法;
 
 /**
- * Created by jack on 7/23/2018 9:29 PM
- * bubble mergeSort stable
+ * Created by Jack on 7/23/2018 9:29 PM
+ * 冒泡排序是稳定的
  */
 public class BubbleSort {
     public static void main(String[] args) {
-        int a[] = {2,5,7,1,3,9,6,8,4};
-        sort1(a);
-        sort2(a);
+        new BubbleSort().method1(PrintSortedValue.a);
+        new BubbleSort().method2(PrintSortedValue.a);
     }
-    private static void sort1(int []a) {
-        int temp;
-        for (int i=0;i<a.length;i++) {
-            for (int j=0;j<a.length-1-i;j++) {
+    public void method1(int []a) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length - 1 - i; j++) {
                 if (a[j] > a[j+1]) {
-                    temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
+                    a[j] = a[j] + a[j+1];
+                    a[j+1] = a[j] - a[j+1];
+                    a[j] = a[j] - a[j+1];
                 }
             }
         }
-        for (int i=0;i<a.length;i++) {
-            System.out.print(a[i] + " ");
-        }
-        System.out.println();
+        new PrintSortedValue().printValue(a);
     }
-    private static void sort2(int []a) {
-        int temp;
-        for (int i=0;i<a.length-1;i++) {
-            for (int j=i+1;j<a.length;j++) {
+    public void method2(int []a) {
+        for (int i = 0; i < a.length-1; i++) {
+            for (int j = i + 1; j < a.length; j++) {
                 if (a[i] > a[j]) {
-                    temp = a[j];
-                    a[j] = a[i];
-                    a[j] = temp;
+                    a[i] = a[i] + a[j];
+                    a[j] = a[i] - a[j];
+                    a[i] = a[i] - a[j];
                 }
             }
         }
-        for (int i=0;i<a.length;i++) {
-            System.out.print(a[i] + " ");
-        }
+        new PrintSortedValue().printValue(a);
     }
 }

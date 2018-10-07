@@ -4,23 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jack on 7/24/2018 10:18 PM
- * cardinality mergeSort stable
+ * Created by Jack on 7/24/2018 10:18 PM
+ * 基数排序是稳定的
  */
-public class cardinalitySort {
+public class CardinalitySort {
     public static void main(String[] args) {
-        int a[] = {2,5,7,1,3,9,6,8,4};
-        sort(a);
-        for (int i=0;i<a.length;i++) {
-            System.out.print(a[i] + " ");
-        }
+        new CardinalitySort().method(PrintSortedValue.a);
+        new PrintSortedValue().printValue(PrintSortedValue.a);
     }
-
-    /**
-     * has some error in this mergeSort method
-     * @param arr
-     */
-    public static void sort(int [] arr) {
+    public void method(int [] arr) {
         int max = arr[0];
         for (int i=1;i<arr.length;i++) {
             if (arr[i] > max) {

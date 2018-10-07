@@ -1,37 +1,34 @@
 package com.jack.algorithm.排序算法;
 
 /**
- * Created by jack on 7/23/2018 8:56 PM
- * quick mergeSort not stable
+ * Created by Jack on 7/23/2018 8:56 PM
+ * 快速排序是不稳定的
  */
 public class QuickSort {
     public static void main(String[] args) {
-        int a[] = {5,9,4,2,1,8,3,6,7};
-        quickSort(a,0,a.length-1);
-        for (int i=0;i<a.length;i++) {
-            System.out.print(a[i] + " ");
-        }
+        new QuickSort().method(PrintSortedValue.a,0,PrintSortedValue.a.length-1);
     }
-    public static void quickSort(int [] list,int low,int high) {
+    public void method(int [] a, int low, int high) {
         if (low < high) {
-            int middle = getMiddle(list,low,high);
-            quickSort(list,low,middle-1);
-            quickSort(list,middle+1,high);
+            int mid = getMid(a,low,high);
+            method(a,low,mid-1);
+            method(a,mid+1,high);
         }
     }
-    public static int getMiddle(int [] list,int low,int high) {
-        int temp = list[low];
+    public int getMid(int [] a, int low, int high) {
+        int temp = a[low];
         while (low < high) {
-            while (low < high && list[high] >= temp) {
+            while (low < high && a[high] >= temp) {
                 high--;
             }
-            list[low] = list[high];
-            while (low < high && list[low] <= temp) {
+            a[low] = a[high];
+            while (low < high && a[low] <= temp) {
                 low++;
             }
-            list[high] = list[low];
+            a[high] = a[low];
         }
-        list[low] = temp;
+        a[low] = temp;
+        new PrintSortedValue().printValue(a);
         return low;
     }
 }
