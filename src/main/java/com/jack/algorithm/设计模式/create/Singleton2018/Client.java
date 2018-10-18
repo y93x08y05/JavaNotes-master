@@ -11,5 +11,7 @@ package com.jack.algorithm.设计模式.create.Singleton2018;
 public class Client {
     public static void main(String [] args){
         LogManager2018.log("设计模式从入门到精通");
+        Singleton1.getInstance();
+        Singleton2.getInstance();
     }
 }

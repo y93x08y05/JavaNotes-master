@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Properties;
 
 public class LogManager2018 {
-    public static final String DefalutLogFilePathName = "d:\\love.log";
+    public static final String D_LOVE_LOG = "d:\\love.log";
     private static LogManager2018 logManager2018;
     private static InputStream inputStream;
     private static Properties properties;
@@ -37,8 +37,7 @@ public class LogManager2018 {
                 if (printWriter == null){
                     printWriter = new PrintWriter(new FileWriter(logFileName,true),true);
                 }
-            }
-            catch (IOException e){
+            } catch (IOException e){
                 System.out.println("无法打开日志文件" + logFileName);
                 e.printStackTrace();
                 printWriter = null;
@@ -73,6 +72,6 @@ public class LogManager2018 {
             System.out.println("无法打开属性配置文件:log.properties");
             e.printStackTrace();
         }
-        return properties.getProperty("logfile",DefalutLogFilePathName);
+        return properties.getProperty("logfile", D_LOVE_LOG);
     }
 }
