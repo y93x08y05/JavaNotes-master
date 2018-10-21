@@ -26,27 +26,29 @@ import java.util.Scanner;
  * ¤ ¤
  * 因为第四行不完整，所以返回3.
  * 最大行如果为m，则m满足m*(m+1)/2<=n
+ * 等差数列求和公式 Sn=n(a1+an)/2
+ * 在这个题中，a1 = 1 ，an = n ，所以用最大行公式进行求解
  * 二分查找的特征：
  * (1)二分查找基本上每次都会将范围降低为原来的一半
  * (2)二分查找需要建立在待查找数值具有次序的基础上
  */
 public class ArrangeCoin {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findMaxRow(n));
     }
     private static int findMaxRow(int n) {
-        int start=0;
-        int end=n;
+        int start = 0;
+        int end = n;
         int mid;
-        while (start<=end) {
-            mid=(start+end)>>1;
-            if ((0.5*mid*mid+0.5*mid)<=n)
-                start=mid+1;
+        while (start <= end) {
+            mid = (start + end) >> 1;
+            if ((0.5 * mid * mid + 0.5 * mid) <= n)
+                start = mid + 1;
             else
-                end=mid-1;
+                end = mid - 1;
         }
-        return start-1;
+        return start - 1;
     }
 }

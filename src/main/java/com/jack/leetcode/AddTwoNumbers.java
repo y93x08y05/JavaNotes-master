@@ -18,42 +18,42 @@ import java.util.Stack;
  */
 public class AddTwoNumbers {
     public static void main(String[] args) {
-        int []arr1={7,2,4,3};
-        int []arr2={5,6,4};
-        ChainCreate.Node head1=new ChainCreate().create(arr1);
-        ChainCreate.Node head2=new ChainCreate().create(arr2);
-        new AddTwoNumbers().find(head1,head2);
+        int []arr1 = {7,2,4,3};
+        int []arr2 = {5,6,4};
+        ChainCreate.Node head1 = new ChainCreate().create(arr1);
+        ChainCreate.Node head2 = new ChainCreate().create(arr2);
+        new AddTwoNumbers().find(head1, head2);
     }
-    private ChainCreate.Node find(ChainCreate.Node head1,ChainCreate.Node head2) {
-        if (head1==null)
+    private ChainCreate.Node find(ChainCreate.Node head1, ChainCreate.Node head2) {
+        if (head1 == null)
             return head2;
-        if (head2==null)
+        if (head2 == null)
             return head1;
-        Stack<Integer> s1=new Stack<>();
-        Stack<Integer> s2=new Stack<>();
-        while (head1!=null) {
+        Stack<Integer> s1 = new Stack<>();
+        Stack<Integer> s2 = new Stack<>();
+        while (head1 != null) {
             s1.push(head1.data);
-            head1=head1.next;
+            head1 = head1.next;
         }
-        while (head2!=null) {
+        while (head2 != null) {
             s2.push(head2.data);
-            head2=head2.next;
+            head2 = head2.next;
         }
-        int sum=0;
-        ChainCreate.Node currentNode=new ChainCreate.Node(0);
-        while (!s1.isEmpty()||!s2.isEmpty()) {
+        int sum = 0;
+        ChainCreate.Node current = new ChainCreate.Node(0);
+        while (!s1.isEmpty() || !s2.isEmpty()) {
             if (!s1.isEmpty())
-                sum+=s1.pop();
+                sum += s1.pop();
             if (!s2.isEmpty())
-                sum+=s2.pop();
-            ChainCreate.Node head=new ChainCreate.Node(sum/10);
-            currentNode.data=sum%10;
-            head.next=currentNode;
-            currentNode=head;
-            sum/=10;
+                sum += s2.pop();
+            ChainCreate.Node head = new ChainCreate.Node(sum / 10);
+            current.data = sum % 10;
+            head.next = current;
+            current = head;
+            sum /= 10;
         }
-        if (currentNode.data==0)
-            currentNode=currentNode.next;
-        return currentNode;
+        if (current.data == 0)
+            current = current.next;
+        return current;
     }
 }

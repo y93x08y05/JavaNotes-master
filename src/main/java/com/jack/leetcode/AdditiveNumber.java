@@ -24,34 +24,34 @@ import java.util.Scanner;
  */
 public class AdditiveNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(isAdditiveNumber(s));
     }
     private static boolean isAdditiveNumber(String s) {
-        int L=s.length();
-        for (int i=1;i<=(L-1)/2;i++) {
-            if (s.startsWith("0")&&i>=2)
+        int L = s.length();
+        for (int i = 1; i <= (L - 1) / 2; i++) {
+            if (s.startsWith("0") && i >= 2)
                 break;
-            for (int j=i+1;(L-j)>=i&&(L-j)>=j-i;j++) {
-                if (s.charAt(i)=='0'&&j-i>=2)
+            for (int j = i + 1;(L - j) >= i && (L - j) >= j - i; j++) {
+                if (s.charAt(i) == '0' && j-i >= 2)
                     break;
-                long num1=Long.parseLong(s.substring(0,i));
-                long num2=Long.parseLong(s.substring(i,j));
-                if (isAdditive(s.substring(j),num1,num2)) {
+                long num1 = Long.parseLong(s.substring(0, i));
+                long num2 = Long.parseLong(s.substring(i, j));
+                if (isAdditive(s.substring(j), num1, num2)) {
                     return true;
                 }
             }
         }
         return false;
     }
-    private static boolean isAdditive(String remain,long num1,long num2) {
+    private static boolean isAdditive(String remain, long num1, long num2) {
         if (remain.equals(""))
             return true;
-        long sum=num1+num2;
-        String sumStr=""+sum;
+        long sum = num1 + num2;
+        String sumStr = "" + sum;
         if (!remain.startsWith(sumStr))
             return false;
-        return isAdditive(remain.substring(sumStr.length()),num2,sum);
+        return isAdditive(remain.substring(sumStr.length()), num2, sum);
     }
 }

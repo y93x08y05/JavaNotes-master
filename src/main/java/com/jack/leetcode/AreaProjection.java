@@ -27,23 +27,23 @@ public class AreaProjection {
         System.out.println(projectionArea(arr));
     }
     private static int projectionArea(int [][]grid) {
-        int [] front=new int[grid.length];
-        int [] side=new int[grid[0].length];
-        int top=0;
-        for (int i=0;i<grid.length;i++) {
-            for (int j=0;j<grid[0].length;j++) {
-                if (grid[i][j]==0)
+        int [] front = new int[grid.length];
+        int [] side = new int[grid[0].length];
+        int top = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 0)
                     continue;
-                top+=1;
-                front[i]=Math.max(front[i],grid[i][j]);
-                side[j]=Math.max(side[j],grid[i][j]);
+                top += 1;
+                front[i] = Math.max(front[i], grid[i][j]);
+                side[j] = Math.max(side[j], grid[i][j]);
             }
         }
-        for (int i=0;i<front.length;i++) {
-            top+=front[i];
+        for (int i = 0; i < front.length; i++) {
+            top += front[i];
         }
-        for (int i=0;i<side.length;i++) {
-            top+=side[i];
+        for (int i = 0; i < side.length; i++) {
+            top += side[i];
         }
         return top;
     }

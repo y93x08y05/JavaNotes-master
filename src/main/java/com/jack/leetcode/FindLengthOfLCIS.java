@@ -17,20 +17,20 @@ import java.util.Scanner;
  */
 public class FindLengthOfLCIS {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int []arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindLengthOfLCIS().find(arr));
     }
     public int find(int []arr) {
         if (arr.length == 0 || arr.length == 1)
             return arr.length;
-        int max=1;
-        int count=1;
-        for (int i=0;i<arr.length-1;i++) {
+        int max = 1;
+        int count = 1;
+        for (int i = 0; i < arr.length-1; i++) {
             if (arr[i] < arr[i+1]) {
                 count++;
                 max = Math.max(max,count);

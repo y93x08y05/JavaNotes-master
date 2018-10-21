@@ -23,8 +23,8 @@ import java.util.Scanner;
  */
 public class IsUgly {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(isUgly(n));
     }
     private static boolean isUgly(int num) {
