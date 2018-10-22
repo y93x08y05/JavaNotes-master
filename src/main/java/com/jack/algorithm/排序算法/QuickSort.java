@@ -8,7 +8,7 @@ import java.util.LinkedList;
  */
 public class QuickSort {
     public static void main(String[] args) {
-        quickSort(PrintSortedValue.a,0,PrintSortedValue.a.length-1);
+        new QuickSort().quickSort(PrintSortedValue.a,0,PrintSortedValue.a.length-1);
 //        new QuickSort().method(PrintSortedValue.a,0,PrintSortedValue.a.length-1);
     }
     /*
@@ -20,6 +20,30 @@ public class QuickSort {
             method(a,low,mid-1);
             method(a,mid+1,high);
         }
+    }
+    /*
+     * 快速排序的非递归实现
+     */
+    public void quickSort(int []a, int low, int high) {
+        LinkedList<Integer> stack = new LinkedList<>();
+        if (low < high) {
+            stack.push(high);
+            stack.push(low);
+            while (!stack.isEmpty()) {
+                int l = stack.pop();
+                int r = stack.pop();
+                int mid = getMid(a, l, r);
+                if (l < mid - 1) {
+                    stack.push(mid - 1);
+                    stack.push(l);
+                }
+                if (r > mid + 1) {
+                    stack.push(r);
+                    stack.push(mid + 1);
+                }
+            }
+        }
+        new PrintSortedValue().printValue(a);
     }
     public int getMid(int [] a, int low, int high) {
         int temp = a[low];
@@ -36,45 +60,5 @@ public class QuickSort {
         a[low] = temp;
         new PrintSortedValue().printValue(a);
         return low;
-    }
-
-    /*
-     * 快速排序的非递归实现
-     */
-    private static void quickSort(int []a, int start, int end) {
-        LinkedList<Integer> stack = new LinkedList<>();
-        if (start < end) {
-            stack.push(end);
-            stack.push(start);
-            while (!stack.isEmpty()) {
-                int l = stack.pop();
-                int r = stack.pop();
-                int index = partition(a, l, r);
-                if (l < index - 1) {
-                    stack.push(index - 1);
-                    stack.push(l);
-                }
-                if (r > index + 1) {
-                    stack.push(r);
-                    stack.push(index + 1);
-                }
-            }
-        }
-        new PrintSortedValue().printValue(a);
-    }
-    private static int partition(int []a, int start, int end) {
-        int pivot = a[start];
-        while (start < end) {
-            while (start < end && a[end] >= pivot) {
-                end--;
-            }
-            a[start] = a[end];
-            while (start < end && a[start] <= pivot) {
-                start++;
-            }
-            a[end] = a[start];
-        }
-        a[start] = pivot;
-        return start;
     }
 }

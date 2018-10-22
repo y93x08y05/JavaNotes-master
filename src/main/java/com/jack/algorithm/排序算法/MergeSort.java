@@ -2,18 +2,22 @@ package com.jack.algorithm.排序算法;
 
 /**
  * Created by Jack on 7/23/2018 9:51 PM
- * 归并排序
+ * 归并排序是稳定的排序，时间复杂度是O(NlgN)
+ * 归并排序的形式类似于一棵二叉树，需要比较的次数即二叉树的深度
+ *
  */
 public class MergeSort {
     public static void main(String[] args) {
         new MergeSort().method(PrintSortedValue.a,0,PrintSortedValue.a.length-1);
     }
+    public static int i = 0;
     public void method(int [] a, int low, int high) {
         if (low < high) {
             int center = (low + high) / 2;
             method(a,low,center);
             method(a,center+1,high);
             merge(a,low,center,high);
+            System.out.println("值："+i++);
         }
     }
     public void merge(int [] a,int low,int center,int high) {

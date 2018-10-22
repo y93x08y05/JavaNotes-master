@@ -1,27 +1,32 @@
 package com.jack.剑指Offer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
  * 输入一个链表，从尾到头打印链表
  */
 public class Main28 {
-    private static class ListNode{
+    private  class ListNode{
         int val;
         ListNode next;
+        ListNode(int val) {
+            this.val = val;
+        }
     }
     public static void main(String [] args) {
-        ListNode listNode = new ListNode();
-        printListFromTailToHead(listNode);
+        Main28 main28 = new Main28();
+        ListNode head = main28.new ListNode(0);
+        main28.printListFromTailToHead(head);
     }
-    public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+    public List<Integer> printListFromTailToHead(ListNode head) {
         Stack<Integer> stack = new Stack<>();
-        while (listNode != null) {
-            stack.push(listNode.val);
-            listNode = listNode.next;
+        while (head != null) {
+            stack.push(head.val);
+            head = head.next;
         }
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         while (!stack.isEmpty()) {
             list.add(stack.pop());
         }
