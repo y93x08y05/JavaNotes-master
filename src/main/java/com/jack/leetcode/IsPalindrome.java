@@ -19,22 +19,22 @@ import java.util.Scanner;
  */
 public class IsPalindrome {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        System.out.println(isPalindrome(s));
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(new IsPalindrome().isPalindrome(s));
     }
-    private static boolean isPalindrome(String s) {
-        if (s==null||s.length()<2)
+    private boolean isPalindrome(String s) {
+        if (s == null || s.length() < 2)
             return true;
-        int len=s.length()-1;
+        int len = s.length() - 1;
         char c1,c2;
-        for (int i=0;i<s.length()-1;i++) {
+        for (int i = 0; i < s.length() - 1; i++) {
             if (!isValid(s.charAt(i)))
                 continue;
-            c1=s.charAt(i);
-            while (len>=0&&!isValid(s.charAt(len)))
+            c1 = s.charAt(i);
+            while (len >= 0 && !isValid(s.charAt(len)))
                 len--;
-            c2=s.charAt(len);
+            c2 = s.charAt(len);
             if (!isSame(c1,c2))
                 return false;
             else
@@ -42,22 +42,22 @@ public class IsPalindrome {
         }
         return true;
     }
-    private static boolean isValid(char c) {
-        if (c>='a'&&c<='z'||c>='A'&&c<='Z'||c>='0'&&c<='9') {
+    private boolean isValid(char c) {
+        if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9') {
             return true;
         } else {
             return false;
         }
     }
-    private static boolean isSame(char a,char b) {
-        if (a<65||b<65) {
-            if (a==b) {
+    private boolean isSame(char a,char b) {
+        if (a < 65 || b < 65) {
+            if (a == b) {
                 return true;
             } else {
                 return false;
             }
         } else {
-            if (a==b||Math.abs(a-b)==32)
+            if (a == b || Math.abs(a - b) == 32)
                 return true;
             else
                 return false;

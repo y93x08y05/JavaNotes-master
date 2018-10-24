@@ -4,7 +4,6 @@ package com.jack.algorithm.排序算法;
  * Created by Jack on 7/23/2018 9:51 PM
  * 归并排序是稳定的排序，时间复杂度是O(NlgN)
  * 归并排序的形式类似于一棵二叉树，需要比较的次数即二叉树的深度
- *
  */
 public class MergeSort {
     public static void main(String[] args) {

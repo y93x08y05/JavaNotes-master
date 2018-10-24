@@ -18,7 +18,7 @@ import java.util.*;
  * 输入: "pwwkew"
  * 输出: 3
  * 解释: 无重复字符的最长子串是 "wke"，其长度为 3。
- *      请注意，答案必须是一个子串，"pwke" 是一个子序列 而不是子串。
+ * 请注意，答案必须是一个子串，"pwke" 是一个子序列而不是子串。
  */
 public class LongestSubStringNoDuplicateChar {
     public static void main(String[] args) {
@@ -30,10 +30,10 @@ public class LongestSubStringNoDuplicateChar {
     }
     private static int findLongestSubString1(String s) {
         int res = 0;
-        for (int i=0;i<s.length();i++) {
-            for (int j=i+1;j<=s.length();j++) {
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1;j <= s.length(); j++) {
                 if (isTrue(s,i,j))
-                    res=Math.max(res,j-i);
+                    res = Math.max(res,j-i);
             }
         }
         return res;
@@ -44,12 +44,12 @@ public class LongestSubStringNoDuplicateChar {
         int end = 0;
         int start = 0;
         Set<Character> set = new HashSet<>();
-        while (start<n&&end<n) {
+        while (start < n && end < n) {
             if (set.contains(s.charAt(end)))
                 set.remove(s.charAt(start++));
             else {
                 set.add(s.charAt(end++));
-                res=Math.max(res,end-start);
+                res = Math.max(res,end - start);
             }
         }
         return res;
@@ -60,7 +60,7 @@ public class LongestSubStringNoDuplicateChar {
         int end = 0;
         int start = 0;
         Map<Character,Character> map = new HashMap<>();
-        for (;start<n&&end<n;end++) {
+        for (;start < n && end < n; end++) {
             if (map.containsKey(s.charAt(end)))
                 start = Math.max(map.get(s.charAt(end)),start);
             map.put(s.charAt(end), (char) (end+1));
@@ -70,7 +70,7 @@ public class LongestSubStringNoDuplicateChar {
     }
     private static boolean isTrue(String s,int start,int end) {
         Set<Character> set = new HashSet<>();
-        for (int i=start;i<end;i++) {
+        for (int i = start; i < end; i++) {
             if (set.contains(s.charAt(i)))
                 return false;
             set.add(s.charAt(i));

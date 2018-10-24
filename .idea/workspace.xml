@@ -2,17 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/剑指Offer/Main28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/剑指Offer/Main28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/概览/链表/chainTable/Test4$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/概览/链表/chainTable/Test4$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/概览/链表/chainTable/Test4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/概览/链表/chainTable/Test4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/CoinChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/CoinChange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/剑指Offer/Main28$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/剑指Offer/Main28$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/剑指Offer/Main28$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/剑指Offer/Main28.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/剑指Offer/Main28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/Athlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/AttackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/AttackCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/Coach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Command2018/DefenseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/命令模式/DefenseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Iterator2018/ClientList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Iterator2018/ClientMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example1/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example1/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example1/ComputerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example1/ComputerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example1/PhoneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example1/PhoneClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example1/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example1/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/ComputerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/ComputerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/PhoneClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/PhoneClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/StockObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/StockObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Observer2018/example2/StockSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/观察者模式/example2/StockSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/ApprovedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/ApprovedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/CreatedState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/CreatedState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/CreatingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/CreatingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/SendOneChargeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/SendOneChargeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/SendSuperChargeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/SendSuperChargeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example1/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example1/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/BusyState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/BusyState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/LeaveState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/LeaveState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/LiningState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/LiningState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/LoginingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/LoginingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/QQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/QQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/State2018/example2/QQState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/状态模式/example2/QQState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/Insurance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/InsuranceHeBei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/InsuranceHeBei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/InsuranceJiLin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/InsuranceJiLin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/Salary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/SalaryHeBei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/SalaryHeBei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/SalaryJiLin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/SalaryJiLin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/Tax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/TaxHeBei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/TaxHeBei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/Strategy2018/TaxJiLin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/策略模式/TaxJiLin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/TemplateMethod2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/模板方法模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/TemplateMethod2018/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/模板方法模式/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/TemplateMethod2018/ReportImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/模板方法模式/ReportImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/TemplateMethod2018/ReportImpl1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/action/模板方法模式/ReportImpl1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/AfricaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/AfricaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/AsiaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/AsiaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/Dolphin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/Dolphin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/DolphinAsia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/DolphinAsia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/DophinAfrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/DophinAfrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/Parrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/ParrotAfrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/ParrotAfrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/ParrotAsia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/ParrotAsia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/TigerAfrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/TigerAfrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/AbstractFactory2018/TigerAsia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/抽象工厂模式/TigerAsia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Carcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Carcase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Carcase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Carcase1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Engine1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Engine1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Motorcycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Motorcycle1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Motorcycle1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/MotorcycleBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/MotorcycleBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Tyre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Tyre1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Tyre1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Wheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Wheel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Builder2018/Wheel1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/建造者模式/Wheel1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/Dolphin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/Dolphin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/DolphinFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/DolphinFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/FactoryMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/FactoryMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/Parrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/ParrotFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/ParrotFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/FactoryMethod2018/TigerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/工厂方法模式/TigerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Prototype2018/AluminiumKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/原型模式/AluminiumKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Prototype2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/原型模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Prototype2018/CopperKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/原型模式/CopperKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Prototype2018/KeyPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/原型模式/KeyPrototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/SimpleFactory2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/简单工厂模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/SimpleFactory2018/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/简单工厂模式/Salary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/SimpleFactory2018/SalaryJiLin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/简单工厂模式/SalaryJiLin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/SimpleFactory2018/Salary_HeBei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/简单工厂模式/Salary_HeBei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/SimpleFactory2018/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/简单工厂模式/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/LogManager2018.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/LogManager2018.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Singleton1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Singleton1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Singleton2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Singleton2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Adapter2018/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/适配器模式/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Adapter2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/适配器模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Adapter2018/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/适配器模式/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Adapter2018/ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/适配器模式/ListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Dfmc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Dfmc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Faw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Faw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Bridge2018/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/桥接模式/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/AdPhoneDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/AdPhoneDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/ColorPhoneDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/ColorPhoneDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/PhoneDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/PhoneDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Decorator2018/PhoneImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/装饰器模式/PhoneImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Facade2018/DbCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/外观模式/DbCommon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Facade2018/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/外观模式/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Facade2018/DbConnectionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/外观模式/DbConnectionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/Flyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/Flyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/FlyweightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/FlyweightFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/HaoFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/HaoFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/InterFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/InterFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/ShangFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/ShangFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/TianFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/TianFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/XiFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/XiFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/XiangFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/XiangFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Flyweight2018/XueFlyweight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/享元模式/XueFlyweight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Proxy2018/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/代理模式/Proxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Proxy2018/RealSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/代理模式/RealSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/Proxy2018/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/structure/代理模式/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/排序算法/mergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/排序算法/mergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/IsPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/IsPalindrome.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,30 +171,35 @@
       <file leaf-file-name="FindDifference.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindDifference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="608">
               <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinChange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1837">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="133">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/MergeSort.java">
+      <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsPalindrome.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsPalindrome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -79,10 +219,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LeetCode 561</find>
-      <find>LeetCode 63</find>
-      <find>LeetCode 643</find>
-      <find>LeetCode 69</find>
       <find>LeetCode 695</find>
       <find>LeetCode 46</find>
       <find>LeetCode 300</find>
@@ -109,6 +245,10 @@
       <find>instanceo</find>
       <find>Stack</find>
       <find>add</find>
+      <find>LeetCode 3</find>
+      <find>中位数</find>
+      <find>回文串</find>
+      <find>环</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -124,11 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/toutiao/TOUTIAO20181008/Main2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/toutiao/TOUTIAO20181008/Main4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/toutiao/TOUTIAO20181008/Main3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/weimeng/Main1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/weimeng/Main2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/weimeng/Main3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/haoweilai/Main1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/haoweilai/Main3.java" />
@@ -175,6 +310,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/概览/链表/chainTable/Test4.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton6.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsPalindrome.java" />
       </list>
     </option>
   </component>
@@ -191,9 +331,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1415" />
+    <option name="y" value="28" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -203,6 +343,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,13 +398,39 @@
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="排序算法" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="设计模式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,7 +439,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="studioMain" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/jack/train/csdn/Resolver.java" />
   </component>
   <component name="RecentsManager">
@@ -297,18 +466,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeSort">
-    <configuration name="AddDigits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.AddDigits" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.IsPalindrome">
     <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.CoinChange" />
       <module name="JavaNotes" />
@@ -349,6 +507,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jack.algorithm.Huffman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="IsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.IsPalindrome" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,19 +609,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SDK" />
-      <item itemvalue="Application.AddDigits" />
       <item itemvalue="Application.FindNumberOfLIS" />
       <item itemvalue="Application.CoinChange" />
       <item itemvalue="Application.Test4" />
       <item itemvalue="Application.MergeSort" />
+      <item itemvalue="Application.IsPalindrome" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsPalindrome" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.Test4" />
         <item itemvalue="Application.CoinChange" />
         <item itemvalue="Application.FindNumberOfLIS" />
-        <item itemvalue="Application.AddDigits" />
       </list>
     </recent_temporary>
   </component>
@@ -479,33 +648,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
+      <window_info id="DB Browser" order="2" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.6016529" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289256" />
       <window_info id="Capture Tool" order="9" />
       <window_info id="Designer" order="6" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.041603632" />
       <window_info id="Project Explorer" order="0" weight="0.32980332" />
       <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="bottom" id="Console" order="1" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="7" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.27272728" />
-      <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
-      <window_info id="DB Browser" order="2" weight="0.32980332" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2231405" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289256" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.2473525" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="8" side_tool="true" weight="0.32969153" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.27272728" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -519,7 +689,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3586777" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.6016529" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -538,7 +708,7 @@
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.8380165" />
       <window_info id="Job Explorer" order="1" weight="0.32980332" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.041603632" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
@@ -615,20 +785,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/shangtangkeji/Main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/shangtangkeji/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2334">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/shangtangkeji/Main3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -636,28 +792,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Singleton2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Singleton2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/LogManager2018.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/LogManager2018.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/Singleton1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/Singleton1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
@@ -668,62 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -947,35 +1047,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestSubStringNoDuplicateChar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1652">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindDifference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1837">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="106">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="301">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Singleton6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindDifference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/设计模式/create/单例模式/七种单例模式/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/algorithm/排序算法/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/IsPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
