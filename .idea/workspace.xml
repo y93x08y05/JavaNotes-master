@@ -2,155 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ConvertToTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindComplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberOfLines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/TitleToNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/四位随机数.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberSumThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/weicelve/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/weicelve/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/Athlete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/AttackCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/Coach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Command2018/DefenseCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Iterator2018/ClientList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Iterator2018/ClientMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example1/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example1/ComputerClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example1/PhoneClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example1/Stock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/ComputerClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/PhoneClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/Stock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/StockObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Observer2018/example2/StockSubject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/ApprovedState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/CreatedState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/CreatingState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/SendOneChargeState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/SendSuperChargeState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example1/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/BusyState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/LeaveState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/LiningState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/LoginingState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/QQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/State2018/example2/QQState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/Insurance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/InsuranceHeBei.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/InsuranceJiLin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/Salary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/SalaryHeBei.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/SalaryJiLin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/Strategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/Tax.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/TaxHeBei.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/Strategy2018/TaxJiLin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/TemplateMethod2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/TemplateMethod2018/Report.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/TemplateMethod2018/ReportImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/action/TemplateMethod2018/ReportImpl1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/AfricaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/AsiaFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/Dolphin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/DolphinAsia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/DophinAfrica.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/Parrot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/ParrotAfrica.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/ParrotAsia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/Tiger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/TigerAfrica.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/AbstractFactory2018/TigerAsia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Carcase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Carcase1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Engine1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Motorcycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Motorcycle1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/MotorcycleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Tyre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Tyre1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Wheel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Builder2018/Wheel1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/Dolphin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/DolphinFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/FactoryMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/Parrot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/ParrotFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/Tiger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/FactoryMethod2018/TigerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Prototype2018/AluminiumKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Prototype2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Prototype2018/CopperKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Prototype2018/KeyPrototype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/SimpleFactory2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/SimpleFactory2018/Salary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/SimpleFactory2018/SalaryJiLin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/SimpleFactory2018/Salary_HeBei.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/SimpleFactory2018/SimpleFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/LogManager2018.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/Singleton1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/Singleton2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton5$SingletonHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/create/Singleton2018/七种单例模式/Singleton7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Adapter2018/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Adapter2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Adapter2018/Facade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Adapter2018/ListAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Bus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Dfmc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Faw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Manufacturer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Bridge2018/Truck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/AdPhoneDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/ColorPhoneDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/Phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/PhoneDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Decorator2018/PhoneImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Facade2018/DbCommon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Facade2018/DbConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Facade2018/DbConnectionImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/Flyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/FlyweightFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/HaoFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/InterFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/ShangFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/TianFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/XiFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/XiangFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Flyweight2018/XueFlyweight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Proxy2018/Proxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Proxy2018/RealSubject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/设计模式/structure/Proxy2018/Subject.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -171,38 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NumberOfLines.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NumberOfLines.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberOfLines.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="46">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindComplement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindComplement.java">
+      <file leaf-file-name="四位随机数.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/四位随机数.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TitleToNumber.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/TitleToNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConvertToTitle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ConvertToTitle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1568">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="59">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -267,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/shenxinfu/Main3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FIndDifference.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindDifference.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/shangtangkeji/Main3.java" />
@@ -318,6 +152,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindComplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/TitleToNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ConvertToTitle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/四位随机数.java" />
       </list>
     </option>
   </component>
@@ -334,8 +169,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -396,26 +231,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="排序算法" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="设计模式" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jack" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -426,7 +241,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jack" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="Other1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +283,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/t-tazhan/IdeaProjects/JavaNotes/src/main/java/com/jack/nowcoder/wangyi/WY20180811/Main.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jack/arrowOffer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../incubator-dubbo-master" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -499,7 +314,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConvertToTitle">
+  <component name="RunManager" selected="Application.Main8">
+    <configuration name="四位随机数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.basic.Other1.四位随机数" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.basic.Other1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="ConvertToTitle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.ConvertToTitle" />
       <module name="JavaNotes" />
@@ -533,24 +359,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="HuffmanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.Huffman.HuffmanTest" />
+    <configuration name="Main8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.train.Main8" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.Huffman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="IsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.IsPalindrome" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.leetcode.*" />
+          <option name="PATTERN" value="com.jack.train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -642,19 +457,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.SDK" />
-      <item itemvalue="Application.IsPalindrome" />
       <item itemvalue="Application.NumberOfLines" />
       <item itemvalue="Application.FindComplement" />
       <item itemvalue="Application.TitleToNumber" />
       <item itemvalue="Application.ConvertToTitle" />
+      <item itemvalue="Application.Main8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main8" />
         <item itemvalue="Application.ConvertToTitle" />
         <item itemvalue="Application.TitleToNumber" />
         <item itemvalue="Application.FindComplement" />
         <item itemvalue="Application.NumberOfLines" />
-        <item itemvalue="Application.IsPalindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -681,7 +496,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -722,7 +537,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.6016529" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.46115702" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -736,20 +551,20 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.20801815" />
+      <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.8380165" />
-      <window_info id="Job Explorer" order="1" weight="0.32980332" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.20801815" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Console" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.25289255" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.25619835" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -818,13 +633,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/eBay/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/didi/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1136,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberOfLines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-630">
@@ -1190,24 +991,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindComplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/TitleToNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="45">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/ConvertToTitle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1568">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="168">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindComplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/四位随机数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/NumberOfLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
