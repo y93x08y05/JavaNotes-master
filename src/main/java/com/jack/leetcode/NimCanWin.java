@@ -17,13 +17,13 @@ import java.util.Scanner;
  */
 public class NimCanWin {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(canWin(n));
     }
     private static boolean canWin(int n) {
-        int val=n%4;
-        if (val>=1&&val<=3)
+        int val = n % 4;
+        if (val >= 1)
             return true;
         return false;
     }

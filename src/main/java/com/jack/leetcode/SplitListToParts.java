@@ -32,50 +32,50 @@ import com.jack.util.ChainCreate;
  */
 public class SplitListToParts {
     public static void main(String[] args) {
-        int []arr={1,2,3,4,5,6,7,8,9,10};
-        int k=3;
-        ChainCreate.Node [] res=new SplitListToParts().find(new ChainCreate().create(arr),k);
-        for (int i=0;i<res.length;i++) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int k = 3;
+        ChainCreate.Node[] res = new SplitListToParts().find(new ChainCreate().create(arr), k);
+        for (int i = 0; i < res.length; i++) {
             new ChainCreate().print(res[i]);
             System.out.println();
         }
     }
-    private ChainCreate.Node [] find(ChainCreate.Node root,int k) {
-        ChainCreate.Node []res=new ChainCreate.Node[k];
-        if (root==null||root.next==null) {
-            res[0]=root;
+    private ChainCreate.Node[] find(ChainCreate.Node root, int k) {
+        ChainCreate.Node[] res = new ChainCreate.Node[k];
+        if (root == null || root.next == null) {
+            res[0] = root;
             return res;
         }
-        int len=0;
-        ChainCreate.Node head=root;
-        while (head!=null) {
+        int len = 0;
+        ChainCreate.Node head = root;
+        while (head != null) {
             len++;
-            head=head.next;
+            head = head.next;
         }
-        int average=len/k;
-        int remain=0;
-        if (len>k)
-            remain=len%k;
-        head=root;
+        int average = len / k;
+        int remain = 0;
+        if (len > k)
+            remain = len % k;
+        head = root;
         ChainCreate.Node current;
-        for (int i=0;i<k;i++) {
-            res[i]=head;
-            current=head.next;
-            for (int j=1;j<average;j++) {
-                head=head.next;
-                if (head==null)
+        for (int i = 0; i < k; i++) {
+            res[i] = head;
+            current = head.next;
+            for (int j = 1; j < average; j++) {
+                head = head.next;
+                if (head == null)
                     break;
-                current=current.next;
+                current = current.next;
             }
-            if (remain>0) {
-                head=head.next;
-                current=current.next;
+            if (remain > 0) {
+                head = head.next;
+                current = current.next;
                 remain--;
             }
-            if (head!=null)
-                head.next=null;
-            head=current;
-            if (head==null)
+            if (head != null)
+                head.next = null;
+            head = current;
+            if (head == null)
                 break;
         }
         return res;

@@ -19,12 +19,12 @@ import java.util.Arrays;
  */
 public class MajorityElement {
     public static void main(String[] args) {
-        int []arr={2,2,1,1,1,2,2};
+        int[] arr = {2, 2, 1, 1, 1, 2, 2};
         System.out.println(majorityElement(arr));
     }
     public static int majorityElement(int[] arr) {
         Arrays.sort(arr);
-        int middle = arr.length/2;
+        int middle = arr.length / 2;
         return arr[middle];
     }
 }

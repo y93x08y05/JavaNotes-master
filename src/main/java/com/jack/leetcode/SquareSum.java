@@ -21,12 +21,12 @@ public class SquareSum {
         System.out.println(ifSquareSum(n));
     }
     private static boolean ifSquareSum(int n) {
-        int half = n>>1;
-        int sb,b;
-        for (int i=0;i*i<=half;++i) {
-            sb=n-i*i;
-            b=(int)Math.sqrt(sb);
-            if (b*b==sb)
+        int half = n >> 1;
+        int sb, b;
+        for (int i = 0; i * i <= half; ++i) {
+            sb = n - i * i;
+            b = (int)Math.sqrt(sb);
+            if (b * b == sb)
                 return true;
         }
         return false;

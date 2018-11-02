@@ -18,25 +18,25 @@ import java.util.Scanner;
  */
 public class MaximumSwap {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findMaximumSwap(n));
     }
     private static int findMaximumSwap(int n) {
-        if (n<=0)
+        if (n <= 0)
             return n;
-        char []chars=String.valueOf(n).toCharArray();
-        int []digitalCount=new int[10];
-        for (int i=0;i<chars.length;i++) {
-            digitalCount[chars[i]-'0']=i;
+        char[] chars = String.valueOf(n).toCharArray();
+        int[] digitalCount = new int[10];
+        for (int i = 0; i < chars.length; i++) {
+            digitalCount[chars[i] - '0'] = i;
         }
-        for (int i=0;i<chars.length;i++) {
-            for (int j=9;j>chars[i]-'0';j--) {
-                if (digitalCount[j]>i) {
-                    char temp=chars[i];
-                    chars[i]=chars[digitalCount[j]];
-                    chars[digitalCount[j]]=temp;
-                    String s=new String(chars);
+        for (int i = 0; i < chars.length; i++) {
+            for (int j = 9; j > chars[i] - '0'; j--) {
+                if (digitalCount[j] > i) {
+                    char temp = chars[i];
+                    chars[i] = chars[digitalCount[j]];
+                    chars[digitalCount[j]] = temp;
+                    String s = new String(chars);
                     return Integer.parseInt(s);
                 }
             }

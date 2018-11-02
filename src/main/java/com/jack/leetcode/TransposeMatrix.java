@@ -16,16 +16,16 @@ package com.jack.leetcode;
  */
 public class TransposeMatrix {
     public static void main(String[] args) {
-        int [][]arr={{1,2,3},{4,5,6},{7,8,9}};
+        int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         new TransposeMatrix().find(arr);
     }
-    public int [][] find(int [][]arr) {
-        int n=arr[0].length;
-        int m=arr.length;
-        int [][]res=new int[n][m];
-        for (int i=0;i<n;i++) {
-            for (int j=0;j<m;j++) {
-                res[i][j]=arr[j][i];
+    public int [][] find(int[][] arr) {
+        int n = arr[0].length;
+        int m = arr.length;
+        int[][] res = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                res[i][j] = arr[j][i];
             }
         }
         return res;

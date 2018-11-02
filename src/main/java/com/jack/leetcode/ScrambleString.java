@@ -50,9 +50,9 @@ import java.util.Scanner;
  */
 public class ScrambleString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
         System.out.println(isScramble(s1, s2));
         System.out.println(isScramble2(s1, s2));
     }
@@ -68,52 +68,52 @@ public class ScrambleString {
      * @return
      */
     private static boolean isScramble(String s1, String s2) {
-        int len=s1.length();
+        int len = s1.length();
         if (s1.equals(s2))
             return true;
-        char []chars1=s1.toCharArray();
-        char []chars2=s2.toCharArray();
+        char[] chars1 = s1.toCharArray();
+        char[] chars2 = s2.toCharArray();
         Arrays.sort(chars1);
         Arrays.sort(chars2);
-        for (int i=0;i<len;i++) {
-            if (chars1[i]!=chars2[i])
+        for (int i = 0; i < len; i++) {
+            if (chars1[i] != chars2[i])
                 return false;
         }
-        boolean res=false;
-        for (int i=1;i<len;i++) {
-            res=res||
-                    (isScramble(s1.substring(0,i),s2.substring(0,i))&&
-                    isScramble(s1.substring(i),s2.substring(i)))||
-                    (isScramble(s1.substring(0,i),s2.substring(len-i))&&
-                    isScramble(s1.substring(i),s2.substring(0,len-i)));
+        boolean res = false;
+        for (int i = 1; i < len; i++) {
+            res = res ||
+                    (isScramble(s1.substring(0, i), s2.substring(0, i)) &&
+                    isScramble(s1.substring(i), s2.substring(i))) ||
+                    (isScramble(s1.substring(0,i), s2.substring(len - i)) &&
+                    isScramble(s1.substring(i), s2.substring(0, len - i)));
         }
         return res;
     }
-    private static boolean isScramble2(String s1,String s2) {
-        char []v1=s1.toCharArray();
-        char []v2=s2.toCharArray();
-        return isScramble(v1,0,v1.length-1,v2,0,v2.length-1);
+    private static boolean isScramble2(String s1, String s2) {
+        char[] v1 = s1.toCharArray();
+        char[] v2 = s2.toCharArray();
+        return isScramble(v1, 0, v1.length - 1, v2, 0, v2.length - 1);
     }
-    private static boolean isScramble(char []v1,int start1,int end1,char []v2,int start2,int end2) {
-        int []letters=new int[26];
-        boolean isSame=true;
-        for (int i=start1,j=start2;i<=end1;i++,j++) {
-            letters[v1[i]-'a']++;
-            letters[v2[j]-'a']--;
-            isSame=isSame&&v1[i]==v2[j];
+    private static boolean isScramble(char[] v1, int start1, int end1, char[] v2, int start2, int end2) {
+        int[] letters = new int[26];
+        boolean isSame = true;
+        for (int i=start1, j = start2; i <= end1; i++, j++) {
+            letters[v1[i] - 'a']++;
+            letters[v2[j] - 'a']--;
+            isSame = isSame && v1[i] == v2[j];
         }
         if (isSame)
             return true;
-        for (int i=0;i<26;i++) {
-            if (letters[i]!=0)
+        for (int i = 0; i < 26; i++) {
+            if (letters[i] != 0)
                 return false;
         }
-        for (int i=start1,j=start2;i<end1;i++,j++) {
-            if (isScramble(v1,start1,i,v2,start2,j)
-                    &&isScramble(v1,i+1,end1,v2,j+1,end2))
+        for (int i = start1, j = start2; i < end1; i++, j++) {
+            if (isScramble(v1, start1, i, v2, start2, j)
+                    &&isScramble(v1, i + 1, end1, v2, j + 1, end2))
                 return true;
-            if (isScramble(v1,start1,i,v2,end2-j+start2,end2)
-                    &&isScramble(v1,i+1,end1,v2,start2,end2-j+start2-1))
+            if (isScramble(v1, start1, i, v2, end2 - j + start2, end2)
+                    &&isScramble(v1, i + 1, end1, v2, start2, end2 - j + start2 - 1))
                 return true;
         }
         return false;

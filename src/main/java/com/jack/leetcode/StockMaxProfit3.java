@@ -28,7 +28,7 @@ package com.jack.leetcode;
  */
 public class StockMaxProfit3 {
     public static void main(String[] args) {
-        int [] arr = {1,4,2};
+        int[] arr = {1, 4, 2};
         System.out.println(findMaxProfit1(arr));
         System.out.println(findMaxProfit2(arr));
         System.out.println(findMaxProfit3(arr));
@@ -50,42 +50,42 @@ public class StockMaxProfit3 {
      * @param arr
      * @return
      */
-    private static int findMaxProfit1(int [] arr) {
-        if (arr.length==0||arr==null)
+    private static int findMaxProfit1(int[] arr) {
+        if (arr==null || arr.length == 0)
             return 0;
-        int buy1=Integer.MIN_VALUE,buy2=Integer.MIN_VALUE;
-        int sell1=0,sell2=0;
-        for (int i=0;i<arr.length;i++) {
-            sell2=Math.max(sell2,buy2+arr[i]);
-            buy2=Math.max(buy2,sell1-arr[i]);
-            sell1=Math.max(sell1,buy1+arr[i]);
-            buy1=Math.max(buy1,-arr[i]);
+        int buy1 = Integer.MIN_VALUE, buy2 = Integer.MIN_VALUE;
+        int sell1 = 0, sell2 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sell2 = Math.max(sell2, buy2 + arr[i]);
+            buy2 = Math.max(buy2, sell1 - arr[i]);
+            sell1 = Math.max(sell1, buy1 + arr[i]);
+            buy1 = Math.max(buy1, -arr[i]);
         }
         return sell2;
     }
-    private static int findMaxProfit2(int [] arr) {
-        if (arr.length==0)
+    private static int findMaxProfit2(int[] arr) {
+        if (arr.length == 0)
             return 0;
         int max = 0;
-        int [] left = new int[arr.length];
-        int [] right = new int[arr.length];
-        process(arr,left,right);
-        for (int i=0;i<arr.length;i++)
-            max=Math.max(max,left[i]+right[i]);
+        int[] left = new int[arr.length];
+        int[] right = new int[arr.length];
+        process(arr, left, right);
+        for (int i = 0; i < arr.length; i++)
+            max = Math.max(max, left[i] + right[i]);
         return max;
     }
-    private static void process(int [] arr,int [] left,int [] right) {
+    private static void process(int[] arr, int[] left, int[] right) {
         left[0] = 0;
         int min = arr[0];
-        for (int i=1;i<left.length;i++) {
-            left[i] = Math.max(left[i-1],arr[i]-min);
-            min = Math.min(min,arr[i]);
+        for (int i = 1; i < left.length; i++) {
+            left[i] = Math.max(left[i - 1], arr[i] - min);
+            min = Math.min(min, arr[i]);
         }
-        right[right.length-1] = 0;
-        int max = arr[right.length-1];
-        for (int i=right.length-2;i>=0;i--) {
-            right[i] = Math.max(right[i+1],max-arr[i]);
-            max = Math.max(max,arr[i]);
+        right[right.length - 1] = 0;
+        int max = arr[right.length - 1];
+        for (int i = right.length - 2; i >= 0; i--) {
+            right[i] = Math.max(right[i + 1], max - arr[i]);
+            max = Math.max(max, arr[i]);
         }
     }
 
@@ -94,23 +94,23 @@ public class StockMaxProfit3 {
      * @param arr
      * @return
      */
-    private static int findMaxProfit3(int [] arr) {
+    private static int findMaxProfit3(int[] arr) {
         int target = 2;//number of transactions
-        return findMaxProfit3(arr,target);
+        return findMaxProfit3(arr, target);
     }
-    private static int findMaxProfit3(int [] arr,int target) {
+    private static int findMaxProfit3(int[] arr, int target) {
         int len = arr.length;
-        if (len==0)
+        if (len == 0)
             return 0;
-        int [][] local = new int[len][target+1];
-        int [][] global = new int[len][target+1];
-        for (int i=1;i<len;i++) {
-            int diff = arr[i]-arr[i-1];
-            for (int j=1;j<=target;j++) {
-                local[i][j] = Math.max(global[i-1][j-1]+Math.max(diff,0),local[i-1][j]+diff);
-                global[i][j] = Math.max(global[i-1][j],local[i][j]);
+        int[][] local = new int[len][target + 1];
+        int[][] global = new int[len][target + 1];
+        for (int i = 1; i < len; i++) {
+            int diff = arr[i] - arr[i - 1];
+            for (int j = 1; j <= target; j++) {
+                local[i][j] = Math.max(global[i - 1][j - 1] + Math.max(diff, 0), local[i - 1][j] + diff);
+                global[i][j] = Math.max(global[i - 1][j], local[i][j]);
             }
         }
-        return global[len-1][target];
+        return global[len - 1][target];
     }
 }

@@ -48,24 +48,24 @@ public class SolveSudoku {
         System.out.println(result);
         for(char[] ch : chars2){
             for(char c : ch){
-                System.out.print(String.valueOf(c)+" ");
+                System.out.print(String.valueOf(c) + " ");
             }
             System.out.println();
         }
 
     }
-    private static void solveSudotu0(char [][]board) {
+    private static void solveSudotu0(char[][] board) {
         solve(board);
     }
-    private static boolean solve(char [][]board) {
-        for (int row=0;row<9;row++) {
-            for (int col=0;col<9;col++) {
-                if (board[row][col]=='.') {
-                    for (char i='1';i<='9';i++) {
-                        board[row][col]=i;
-                        if (isValid0(board,row,col)&&solve(board))
+    private static boolean solve(char[][] board) {
+        for (int row = 0; row < 9; row++) {
+            for (int col = 0; col < 9; col++) {
+                if (board[row][col] == '.') {
+                    for (char i = '1'; i <= '9'; i++) {
+                        board[row][col] = i;
+                        if (isValid0(board, row, col) && solve(board))
                             return true;
-                        board[row][col]='.';
+                        board[row][col] = '.';
                     }
                     return false;
                 }
@@ -73,20 +73,20 @@ public class SolveSudoku {
         }
         return true;
     }
-    private static boolean isValid0(char [][]board, int row, int col) {
-        for (int i=0;i<9;i++) {
-            if (i!=col&&board[row][i]==board[row][col])
+    private static boolean isValid0(char[][] board, int row, int col) {
+        for (int i = 0; i < 9; i++) {
+            if (i != col && board[row][i] == board[row][col])
                 return false;
         }
-        for (int i=0;i<9;i++) {
-            if (i!=row&&board[i][col]==board[row][col])
+        for (int i = 0; i < 9; i++) {
+            if (i != row && board[i][col] == board[row][col])
                 return false;
         }
-        int beginRow=3*(row/3);
-        int beginCol=3*(col/3);
-        for (int i=beginRow;i<beginRow+3;i++) {
-            for (int j=beginCol;j<beginCol+3;j++) {
-                if (i!=row&&j!=col&&board[i][j]==board[row][col])
+        int beginRow = 3 * (row / 3);
+        int beginCol = 3 * (col / 3);
+        for (int i = beginRow; i < beginRow + 3; i++) {
+            for (int j = beginCol; j < beginCol + 3; j++) {
+                if (i != row&&j != col && board[i][j] == board[row][col])
                     return false;
             }
         }
@@ -104,18 +104,18 @@ public class SolveSudoku {
         int line = Node / 10;
         int col = Node % 10;
         for(int node : list){
-            board[line][col] = (char)(node+'0');
+            board[line][col] = (char)(node + '0');
             int nextNode = nextNode(board);
             if(nextNode == -1){
                 return true;
-            }else if(solveSudoku(board,nextNode)){
+            }else if(solveSudoku(board, nextNode)){
                 return true;
             }
         }
         board[line][col] = '.';
         return false;
     }
-    private List<Integer> available(char[][] board,int Node){
+    private List<Integer> available(char[][] board, int Node){
         boolean[] flags = new boolean[9];
         int line = Node / 10;
         int col = Node % 10;
@@ -123,34 +123,34 @@ public class SolveSudoku {
             for(int n = 0; n < 3; n++){
                 char ch = board[m + line / 3 * 3][n + col / 3 * 3];
                 if(ch != '.'){
-                    flags[Integer.parseInt(String.valueOf(ch))-1] = true;
+                    flags[Integer.parseInt(String.valueOf(ch)) - 1] = true;
                 }
             }
         }
         for(char ch : board[line]){
             if(ch != '.'){
-                flags[Integer.parseInt(String.valueOf(ch))-1] = true;
+                flags[Integer.parseInt(String.valueOf(ch)) - 1] = true;
             }
         }
         for(int i = 0; i < 9; i++){
             char ch = board[i][col];
             if(ch != '.'){
-                flags[Integer.parseInt(String.valueOf(ch))-1] = true;
+                flags[Integer.parseInt(String.valueOf(ch)) - 1] = true;
             }
         }
         List<Integer> result = new ArrayList<>();
         for(int i = 0; i < 9; i++){
-            if(flags[i] == false){
-                result.add(i+1);
+            if(!flags[i]){
+                result.add(i + 1);
             }
         }
         return result;
     }
     private int nextNode(char[][] board){
-        for(int i = 0; i < board.length;i++){
+        for(int i = 0; i < board.length; i++){
             for(int j = 0; j < board[i].length; j++){
                 if(board[i][j] == '.'){
-                    return (i*10+j);
+                    return (i * 10 + j);
                 }
             }
         }

@@ -29,60 +29,60 @@ import java.util.Scanner;
  */
 public class ShortestSubArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findShortestSubArray1(arr));
         System.out.println(findShortestSubArray2(arr));
     }
-    private static int findShortestSubArray1(int []arr) {
-        int minLength=50000;
+    private static int findShortestSubArray1(int[] arr) {
+        int minLength = 50000;
         int currentLength;
-        int maxFrequency=0;
-        int []frequency=new int[50001];
-        int []pos=new int[50001];
-        if (arr.length==1)
+        int maxFrequency = 0;
+        int[] frequency = new int[50001];
+        int[] pos = new int[50001];
+        if (arr.length == 1)
             return 1;
-        for (int i=1;i<arr.length+1;i++) {
-            if (pos[arr[i-1]]!=0) {
-                frequency[arr[i-1]]++;
-                currentLength=i-pos[arr[i-1]]+1;
-                if (frequency[arr[i-1]]>maxFrequency) {
-                    maxFrequency=frequency[arr[i-1]];
+        for (int i = 1; i < arr.length + 1; i++) {
+            if (pos[arr[i - 1]] != 0) {
+                frequency[arr[i - 1]]++;
+                currentLength = i - pos[arr[i - 1]] + 1;
+                if (frequency[arr[i - 1]] > maxFrequency) {
+                    maxFrequency = frequency[arr[i - 1]];
                     minLength=currentLength;
-                } else if (frequency[arr[i-1]]==maxFrequency) {
-                    minLength=currentLength<minLength?currentLength:minLength;
+                } else if (frequency[arr[i - 1]] == maxFrequency) {
+                    minLength = currentLength < minLength ? currentLength : minLength;
                 }
             } else {
-                pos[arr[i-1]]=i;
+                pos[arr[i - 1]] = i;
             }
         }
-        if (maxFrequency==0) {
+        if (maxFrequency == 0) {
             return 1;
         }
         return minLength;
     }
-    private static int findShortestSubArray2(int []arr) {
-        Map<Integer,Integer> mapStart=new HashMap<>();
-        Map<Integer,Integer> mapEnd=new HashMap<>();
-        Map<Integer,Integer> mapCount=new HashMap<>();
-        int maxCount=0;
-        for (int i=0;i<arr.length;i++) {
+    private static int findShortestSubArray2(int[] arr) {
+        Map<Integer, Integer> mapStart = new HashMap<>();
+        Map<Integer, Integer> mapEnd = new HashMap<>();
+        Map<Integer, Integer> mapCount = new HashMap<>();
+        int maxCount = 0;
+        for (int i = 0; i < arr.length; i++) {
             if (!mapCount.containsKey(arr[i])) {
-                mapCount.put(arr[i],0);
-                mapStart.put(arr[i],i);
+                mapCount.put(arr[i], 0);
+                mapStart.put(arr[i], i);
             }
-            mapCount.put(arr[i],mapCount.get(arr[i])+1);
-            mapEnd.put(arr[i],i);
-            maxCount=Math.max(maxCount,mapCount.get(arr[i]));
+            mapCount.put(arr[i], mapCount.get(arr[i]) + 1);
+            mapEnd.put(arr[i], i);
+            maxCount=Math.max(maxCount, mapCount.get(arr[i]));
         }
-        int minLength=Integer.MAX_VALUE;
-        for (Integer key:mapCount.keySet()) {
-            if (mapCount.get(key)==maxCount) {
-                minLength=Math.min(minLength,mapEnd.get(key)-mapStart.get(key)+1);
+        int minLength = Integer.MAX_VALUE;
+        for (Integer key : mapCount.keySet()) {
+            if (mapCount.get(key) == maxCount) {
+                minLength = Math.min(minLength, mapEnd.get(key) - mapStart.get(key) + 1);
             }
         }
         return minLength;

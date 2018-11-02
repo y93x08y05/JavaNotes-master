@@ -14,35 +14,35 @@ import java.util.Scanner;
  */
 public class RestoreIPAddresses {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(restore(s));
     }
     private static List<String> restore(String s) {
-        List<String> list=new ArrayList<>();
-        if (s.length()<4||s.length()>12)
+        List<String> list = new ArrayList<>();
+        if (s.length() < 4 || s.length() > 12)
             return list;
-        findIP(s,"",list,1);
+        findIP(s, "", list, 1);
         return list;
     }
-    private static void findIP(String s,String temp,List<String> list,int count) {
-        if (count==4&&isValid(s)) {
-            list.add(temp+s);
+    private static void findIP(String s, String temp, List<String> list, int count) {
+        if (count == 4 && isValid(s)) {
+            list.add(temp + s);
             return;
         }
-        int len=Math.min(4,s.length());
-        for (int i=1;i<len;i++) {
-            String s1=s.substring(0,i);
+        int len = Math.min(4, s.length());
+        for (int i = 1; i < len; i++) {
+            String s1 = s.substring(0, i);
             if (isValid(s1)) {
-                findIP(s.substring(i),temp+s1+".",list,count+1);
+                findIP(s.substring(i), temp + s1 + ".", list, count + 1);
             }
         }
     }
     private static boolean isValid(String s) {
-        if (s.charAt(0)=='0')
+        if (s.charAt(0) == '0')
             return s.equals("0");
-        int val=Integer.parseInt(s);
-        if (0<val&&val<256)
+        int val = Integer.parseInt(s);
+        if (0 < val && val < 256)
             return true;
         else
             return false;

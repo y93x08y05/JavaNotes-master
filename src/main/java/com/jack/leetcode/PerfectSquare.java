@@ -22,9 +22,9 @@ public class PerfectSquare {
         System.out.println(isPerfectSquare(n));
     }
     private static boolean isPerfectSquare(int n) {
-        for (int i=1;n>0;i+=2) {
-            n-=i;
+        for (int i = 1; n > 0; i += 2) {
+            n -= i;
         }
-        return 0==n;
+        return 0 == n;
     }
 }

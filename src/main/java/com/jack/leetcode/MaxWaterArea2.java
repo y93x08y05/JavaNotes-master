@@ -9,7 +9,7 @@ package com.jack.leetcode;
  */
 public class MaxWaterArea2 {
     public static void main(String[] args) {
-        int []arr={0,1,0,2,1,0,1,3,2,1,2,1};
+        int[] arr = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         System.out.println(findMaxWaterArea(arr));
     }
 
@@ -31,22 +31,22 @@ public class MaxWaterArea2 {
      * @param arr
      * @return
      */
-    private static int findMaxWaterArea(int []arr) {
-        if (arr.length<3)
+    private static int findMaxWaterArea(int[] arr) {
+        if (arr.length < 3)
             return 0;
-        int start=0;
-        int end=arr.length-1;
-        int leftMax=0;
-        int rightMax=0;
-        int max=0;
-        while (start<end) {
-            leftMax=Math.max(leftMax,arr[start]);
-            rightMax=Math.max(rightMax,arr[end]);
-            if (leftMax<rightMax) {
-                max+=leftMax-arr[start];
+        int start = 0;
+        int end = arr.length - 1;
+        int leftMax = 0;
+        int rightMax = 0;
+        int max = 0;
+        while (start < end) {
+            leftMax = Math.max(leftMax, arr[start]);
+            rightMax = Math.max(rightMax, arr[end]);
+            if (leftMax < rightMax) {
+                max += leftMax - arr[start];
                 start++;
             } else {
-                max+=rightMax-arr[end];
+                max += rightMax - arr[end];
                 end--;
             }
         }

@@ -22,19 +22,19 @@ public class PlusOne {
         Scanner sc = new Scanner(System.in);
         String [] str = sc.nextLine().split(" ");
         int [] arr = new int[str.length];
-        for (int i=0;i<arr.length;i++)
+        for (int i = 0; i < arr.length; i++)
             arr[i] = Integer.valueOf(str[i]);
         int [] temp = plusOne(arr);
-        for (int i=0;i<temp.length;i++)
+        for (int i = 0; i < temp.length; i++)
             System.out.print(temp[i] + " ");
         System.out.println();
     }
-    private static int [] plusOne(int [] digits) {
+    private static int [] plusOne(int[] digits) {
         if (digits.length == 0)
             return null;
         int len = digits.length;
         int flag = 0;
-        for (int i=len-1;i>=0;i--) {
+        for (int i = len - 1; i >= 0; i--) {
             if (i == len - 1) {
                 if (digits[i] + 1 > 9 ) {
                     digits[i] = digits[i] + 1 - 10;
@@ -57,8 +57,8 @@ public class PlusOne {
         if (flag == 1) {
             int [] result = new int[len+1];
             result[0] = 1;
-            for (int i=0;i<len;i++)
-                result[i+1] = digits[i];
+            for (int i = 0; i < len; i++)
+                result[i + 1] = digits[i];
             return result;
         }
         return digits;

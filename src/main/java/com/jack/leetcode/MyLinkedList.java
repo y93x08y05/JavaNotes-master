@@ -27,7 +27,7 @@ package com.jack.leetcode;
  */
 public class MyLinkedList {
     public static void main(String[] args) {
-        MyLinkedList linkedList=new MyLinkedList();
+        MyLinkedList linkedList = new MyLinkedList();
         linkedList.addAtHead(1);
         linkedList.addAtTail(3);
         linkedList.addAtIndex(1,2);
@@ -42,66 +42,65 @@ public class MyLinkedList {
 
         }
         public Entry(int n) {
-            val=n;
+            val = n;
         }
     }
     Entry head;
     int size;
     public MyLinkedList() {
-        head=new Entry();
-        size=0;
+        head = new Entry();
+        size = 0;
     }
     public int get(int index) {
-        if (index>=size||index<0)
+        if (index >= size || index < 0)
             return -1;
-        Entry t=head;
-        for (int i=0;i<=index;i++)
-            t=t.next;
+        Entry t = head;
+        for (int i = 0; i <= index; i++)
+            t = t.next;
         return t.val;
     }
     public void addAtHead(int val) {
-        Entry t=new Entry(val);
-        if (head.next==null)
-            head.next=t;
+        Entry t = new Entry(val);
+        if (head.next == null)
+            head.next = t;
         else {
-            t.next=head.next;
-            head.next=t;
+            t.next = head.next;
+            head.next = t;
         }
         size++;
     }
     public void addAtTail(int val) {
-        Entry t=new Entry(val);
-        Entry x=head;
-        while (x.next!=null)
-            x=x.next;
-        x.next=t;
+        Entry t = new Entry(val);
+        Entry x = head;
+        while (x.next != null)
+            x = x.next;
+        x.next = t;
         size++;
     }
-    public void addAtIndex(int index,int val) {
-        if (index>size||index<0)
-            return;
-        else if (index==size)
+    public void addAtIndex(int index, int val) {
+        if (index > size || index < 0) {
+        } else if (index == size)
             addAtTail(val);
         else {
-            Entry x=head;
-            for (int i=0;i<index;i++)
-                x=x.next;
-            Entry t=new Entry(val);
-            t.next=x.next;
-            x.next=t;
+            Entry x =  head;
+            for (int i = 0; i < index; i++)
+                x = x.next;
+            Entry t = new Entry(val);
+            t.next = x.next;
+            x.next = t;
             size++;
         }
     }
     public void deleteAtIndex(int index) {
-        if (index>=size||index<0)
+        if (index >= size || index < 0)
             return;
         else {
-            Entry x=head;
-            for (int i=0;i<index;i++)
-                x=x.next;
-            Entry del=x.next;
-            x.next=del.next;
-            del.next=null;
+            Entry x = head;
+            for (int i = 0; i < index; i++)
+                x = x.next;
+            Entry del = x.next;
+            x.next = del.next;
+            del.next = null;
         }
         size--;
     }

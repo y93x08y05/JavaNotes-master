@@ -25,82 +25,82 @@ package com.jack.leetcode;
  */
 public class SurfaceArea {
     public static void main(String[] args) {
-        int [][]grid={{2,2,2},{2,1,2},{2,2,2}};
+        int[][] grid = {{2, 2, 2}, {2, 1, 2}, {2, 2, 2}};
         System.out.println(findSurfaceArea0(grid));
         System.out.println(findSurfaceArea1(grid));
     }
-    private static int findSurfaceArea0(int [][]grid) {
-        int x=0;
-        int sum=0;
-        for (int i=0;i<grid.length;i++) {
-            for (int j=0;j<grid[0].length;j++) {
-                if (grid[i][j]!=0)
-                    x+=1;
+    private static int findSurfaceArea0(int[][] grid) {
+        int x = 0;
+        int sum = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0;j < grid[0].length; j++) {
+                if (grid[i][j] != 0)
+                    x += 1;
             }
         }
-        for (int i=0;i<grid.length;i++)
-            for (int j=0;j<grid[0].length;j++)
-                sum+=(grid[i][j]*4-2* calculate0(grid,i,j));
-        sum+=2*x;
+        for (int i = 0; i < grid.length; i++)
+            for (int j = 0; j < grid[0].length; j++)
+                sum += (grid[i][j] * 4 - 2 * calculate0(grid, i, j));
+        sum += 2 * x;
         return sum;
     }
-    private static int findSurfaceArea1(int [][]grid) {
-        int x=0;
-        int max=0;
-        int sum=0;
-        for (int i=0;i<grid.length;i++) {
-            for (int j=0;j<grid[0].length;j++) {
-                if (grid[i][j]!=0)
-                    x+=1;
-                if (grid[i][j]>max)
-                    max=grid[i][j];
+    private static int findSurfaceArea1(int[][] grid) {
+        int x = 0;
+        int max = 0;
+        int sum = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] != 0)
+                    x += 1;
+                if (grid[i][j] > max)
+                    max = grid[i][j];
             }
         }
-        for (int h=0;h<max;h++) {
-            int [][] currentLevel=new int[grid.length][grid[0].length];
-            for (int i=0;i<grid.length;i++) {
-                for (int j=0;j<grid[0].length;j++) {
-                    if (grid[i][j]>0) {
-                        currentLevel[i][j]=1;
+        for (int h = 0; h < max; h++) {
+            int[][] currentLevel = new int[grid.length][grid[0].length];
+            for (int i = 0; i < grid.length; i++) {
+                for (int j = 0; j < grid[0].length; j++) {
+                    if (grid[i][j] > 0) {
+                        currentLevel[i][j] = 1;
                         grid[i][j]--;
                     } else {
-                        currentLevel[i][j]=0;
+                        currentLevel[i][j] = 0;
                     }
                 }
             }
-            sum+=levelCalcuate1(currentLevel);
+            sum += levelCalculate1(currentLevel);
         }
-        sum+=2*x;
+        sum += 2 * x;
         return sum;
     }
-    private static int calculate0(int [][]grid, int i, int j) {
-        if (i==0&&j==0)
+    private static int calculate0(int[][] grid, int i, int j) {
+        if (i == 0 && j == 0)
             return 0;
-        else if (i==0&&j!=0)
-            return Math.min(grid[i][j-1],grid[i][j]);
-        else if (i!=0&&j==0)
-            return Math.min(grid[i-1][j],grid[i][j]);
+        else if (i == 0)
+            return Math.min(grid[i][j - 1],grid[i][j]);
+        else if (i !=0 && j == 0)
+            return Math.min(grid[i - 1][j], grid[i][j]);
         else
-            return Math.min(grid[i][j-1],grid[i][j])+Math.min(grid[i-1][j],grid[i][j]);
+            return Math.min(grid[i][j - 1], grid[i][j]) + Math.min(grid[i - 1][j], grid[i][j]);
     }
-    private static int levelCalcuate1(int [][] grid) {
-        int sum=0;
-        for (int i=0;i<grid.length;i++) {
-            for (int j=0;j<grid[0].length;j++) {
-                if (grid[i][j]==1)
-                    sum+=grid[i][j]*4-2*calculate1(grid,i,j);
+    private static int levelCalculate1(int[][] grid) {
+        int sum = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1)
+                    sum += grid[i][j] * 4 - 2 * calculate1(grid, i, j);
             }
         }
         return sum;
     }
-    private static int calculate1(int [][]grid, int i, int j) {
-        if (i==0&&j==0)
+    private static int calculate1(int[][] grid, int i, int j) {
+        if (i == 0 && j == 0)
             return 0;
-        else if (i==0&&j!=0)
-            return grid[i][j-1];
-        else if (i!=0&&j==0)
-            return grid[i-1][j];
+        else if (i == 0)
+            return grid[i][j - 1];
+        else if (j == 0)
+            return grid[i - 1][j];
         else
-            return grid[i][j-1]+grid[i-1][j];
+            return grid[i][j - 1] + grid[i - 1][j];
     }
 }

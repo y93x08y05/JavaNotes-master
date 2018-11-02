@@ -45,7 +45,7 @@ import java.util.HashSet;
  */
 public class ValidSudoku {
     public static void main(String[] args) {
-        char [][] arr={
+        char[][] arr = {
                 {'5','3','.','.','7','.','.','.','.'},
                 {'6','.','.','1','9','5','.','.','.'},
                 {'.','9','8','.','.','.','.','6','.'},
@@ -59,55 +59,55 @@ public class ValidSudoku {
         System.out.println(idValidSudoku0(arr));
         System.out.println(idValidSudoku1(arr));
     }
-    private static boolean idValidSudoku0(char [][]board) {
-        for (int i=0;i<9;i++) {
-            int []bit_row=new int[9];
-            int []bit_col=new int[9];
-            int []bit_cube=new int[9];
-            for (int j=0;j<9;j++) {
-                if (board[i][j]!='.') {
-                    if (bit_row[board[i][j]-'1']==1)
+    private static boolean idValidSudoku0(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            int[] bit_row = new int[9];
+            int[] bit_col = new int[9];
+            int[] bit_cube = new int[9];
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.') {
+                    if (bit_row[board[i][j] - '1'] == 1)
                         return false;
                     else
-                        bit_row[board[i][j]-'1']=1;
+                        bit_row[board[i][j] - '1'] = 1;
                 }
-                if (board[j][i]!='.') {
-                    if (bit_col[board[j][i]-'1']==1) {
+                if (board[j][i] != '.') {
+                    if (bit_col[board[j][i] - '1'] == 1) {
                         return false;
                     } else {
-                        bit_col[board[j][i]-'1']=1;
+                        bit_col[board[j][i] - '1'] = 1;
                     }
                 }
-                int rowIndex=3*(i/3)+j/3;
-                int colIndex=3*(i%3)+j%3;
-                int val=board[rowIndex][colIndex];
-                if (val!='.') {
-                    if (bit_cube[val-'1']==1) {
+                int rowIndex = 3 * (i / 3) + j / 3;
+                int colIndex = 3 * (i % 3) + j % 3;
+                int val = board[rowIndex][colIndex];
+                if (val != '.') {
+                    if (bit_cube[val - '1'] == 1) {
                         return false;
                     } else {
-                        bit_cube[val-'1']=1;
+                        bit_cube[val - '1'] = 1;
                     }
                 }
             }
         }
         return true;
     }
-    private static boolean idValidSudoku1(char [][]board) {
-        for (int i=0;i<9;i++) {
-            HashSet<Character> row=new HashSet<>();
-            HashSet<Character> column=new HashSet<>();
-            HashSet<Character> cube=new HashSet<>();
-            for (int j=0;j<9;j++) {
-                if (board[i][j]!='.'&&!row.add(board[i][j])) {
+    private static boolean idValidSudoku1(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            HashSet<Character> row = new HashSet<>();
+            HashSet<Character> column = new HashSet<>();
+            HashSet<Character> cube = new HashSet<>();
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.' && !row.add(board[i][j])) {
                         return false;
                 }
-                if (board[j][i]!='.'&&!column.add(board[j][i])) {
+                if (board[j][i] != '.' && !column.add(board[j][i])) {
                         return false;
                 }
-                int rowIndex=3*(i/3)+j/3;
-                int colIndex=3*(i%3)+j%3;
-                char val=board[rowIndex][colIndex];
-                if (val!='.'&&!cube.add(val)) {
+                int rowIndex = 3 * (i / 3) + j / 3;
+                int colIndex = 3 * (i % 3) + j % 3;
+                char val = board[rowIndex][colIndex];
+                if (val != '.' && !cube.add(val)) {
                         return false;
                 }
             }

@@ -19,43 +19,43 @@ import java.util.*;
  */
 public class PalindromePairs {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        String []words=new String[n];
-        for (int i=0;i<n;i++) {
-            words[i]=sc.next();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String[] words = new String[n];
+        for (int i = 0; i < n; i++) {
+            words[i] = sc.next();
         }
         findPairs0(words);
         findPairs1(words);
     }
-    private static List<List<Integer>> findPairs0(String []words) {
-        List<List<Integer>> lists=new ArrayList<>();
-        if (words==null)
+    private static List<List<Integer>> findPairs0(String[] words) {
+        List<List<Integer>> lists = new ArrayList<>();
+        if (words == null)
             return lists;
-        Map<String,Integer> map=new HashMap<>();
-        for (int i=0;i<words.length;i++) {
-            map.put(words[i],i);
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            map.put(words[i], i);
         }
-        for (int i=0;i<words.length;i++) {
-            int l=0;
-            int r=0;
-            while (l<=r) {
-                String subStr=words[i].substring(l,r);
-                Integer j=map.get(new StringBuilder(subStr).reverse().toString());
-                if (j!=null&&i!=j&&l==0&&isPalindrome(words[i].substring(r,words[i].length()))) {
-                    List<Integer> list=new ArrayList<>();
+        for (int i = 0; i < words.length; i++) {
+            int l = 0;
+            int r = 0;
+            while (l <= r) {
+                String subStr = words[i].substring(l, r);
+                Integer j = map.get(new StringBuilder(subStr).reverse().toString());
+                if (j != null && i != j && l == 0 && isPalindrome(words[i].substring(r, words[i].length()))) {
+                    List<Integer> list = new ArrayList<>();
                     list.add(i);
                     list.add(j);
                     lists.add(list);
                 } else {
-                    if (j!=null&&i!=j&&l!=0&&isPalindrome(words[i].substring(0,l))) {
-                        List<Integer> list=new ArrayList<>();
+                    if (j != null && i != j && l != 0 && isPalindrome(words[i].substring(0, l))) {
+                        List<Integer> list = new ArrayList<>();
                         list.add(j);
                         list.add(i);
                         lists.add(list);
                     }
                 }
-                if (r==words[i].length())
+                if (r == words[i].length())
                     l++;
                 else
                     r++;
@@ -68,15 +68,15 @@ public class PalindromePairs {
      * @param words
      * @return
      */
-    private static List<List<Integer>> findPairs1(String []words) {
-        List<List<Integer>> lists=new ArrayList<>();
-        for (int i=0;i<words.length;i++) {
-            for (int j=0;j<words.length;j++) {
-                if (i!=j) {
-                    String s1=new StringBuilder(words[i]).append(words[j]).toString();
-                    String s2=new StringBuilder(s1).reverse().toString();
+    private static List<List<Integer>> findPairs1(String[] words) {
+        List<List<Integer>> lists = new ArrayList<>();
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words.length; j++) {
+                if (i != j) {
+                    String s1 = new StringBuilder(words[i]).append(words[j]).toString();
+                    String s2 = new StringBuilder(s1).reverse().toString();
                     if (s1.equals(s2)) {
-                        List<Integer> list=new ArrayList<>();
+                        List<Integer> list = new ArrayList<>();
                         list.add(i);
                         list.add(j);
                         lists.add(list);
@@ -88,10 +88,10 @@ public class PalindromePairs {
         return lists;
     }
     private static boolean isPalindrome(String s) {
-        if (s==null)
+        if (s == null)
             return false;
-        for (int i=0;i<s.length()/2;i++) {
-            if (s.charAt(i)!=s.charAt(s.length()-1-i))
+        for (int i = 0; i < s.length() / 2; i++) {
+            if (s.charAt(i) != s.charAt(s.length() - 1 - i))
                 return false;
         }
         return true;

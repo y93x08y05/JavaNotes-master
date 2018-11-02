@@ -27,25 +27,25 @@ import java.util.Scanner;
  */
 public class MaxProfit {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int fee=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int fee = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr, fee));
     }
-    private static int find(int []arr,int fee) {
-        int res=0;
-        int n=arr.length;
-        if (n<2)
+    private static int find(int[] arr, int fee) {
+        int res = 0;
+        int n = arr.length;
+        if (n < 2)
             return res;
-        int hold=-arr[0];
-        for (int i=1;i<arr.length;i++) {
-            int temp=res;
-            res=Math.max(temp,hold+arr[i]-fee);
-            hold=Math.max(hold,temp-arr[i]);
+        int hold = -arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            int temp = res;
+            res = Math.max(temp, hold + arr[i] - fee);
+            hold = Math.max(hold, temp - arr[i]);
         }
         return res;
     }

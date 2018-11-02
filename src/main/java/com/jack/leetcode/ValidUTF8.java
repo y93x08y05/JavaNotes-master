@@ -36,39 +36,39 @@ import java.util.Scanner;
  */
 public class ValidUTF8 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(validUTF8(arr));
     }
-    private static boolean validUTF8(int []arr) {
-        int len=arr.length;
-        int res=0;
-        int i=0;
-        while (i<len) {
-            if (res>0) {
-                if (arr[i]<192&&arr[i]>=128) {
+    private static boolean validUTF8(int[] arr) {
+        int len = arr.length;
+        int res = 0;
+        int i = 0;
+        while (i < len) {
+            if (res > 0) {
+                if (arr[i] < 192 && arr[i] >= 128) {
                     res--;
                 } else {
                     return false;
                 }
-            } else if (arr[i]>=248) {
+            } else if (arr[i] >= 248) {
                 return false;
-            } else if (arr[i]>=240) {
-                res=3;
-            } else if (arr[i]>=224) {
-                res=2;
-            } else if (arr[i]>=192) {
-                res=1;
-            } else if (arr[i]>=128) {
+            } else if (arr[i] >= 240) {
+                res = 3;
+            } else if (arr[i] >= 224) {
+                res = 2;
+            } else if (arr[i] >= 192) {
+                res = 1;
+            } else if (arr[i] >= 128) {
                 return false;
             }
             i++;
         }
-        if (res==0)
+        if (res == 0)
             return true;
         else
             return false;

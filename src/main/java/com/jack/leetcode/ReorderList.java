@@ -17,39 +17,39 @@ import com.jack.util.ChainCreate;
  */
 public class ReorderList {
     public static void main(String[] args) {
-        int []arr={1,2,3,4,5};
+        int[] arr = {1, 2, 3, 4, 5};
         new ReorderList().find(new ChainCreate().create(arr));
     }
     public void find(ChainCreate.Node head) {
-        if (head==null||head.next==null||head.next.next==null)
+        if (head == null || head.next == null || head.next.next == null)
             return;
-        ChainCreate.Node slow=head;
-        ChainCreate.Node fast=head;
-        while (fast.next!=null&&fast.next.next!=null) {
-            fast=fast.next.next;
-            slow=slow.next;
+        ChainCreate.Node slow = head;
+        ChainCreate.Node fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
         }
-        ChainCreate.Node second=slow.next;
-        slow.next=null;
-        second=reverse(second);
-        ChainCreate.Node first=head;
-        while (second!=null) {
-            ChainCreate.Node next=first.next;
-            first.next=second;
-            second=second.next;
-            first=first.next;
-            first.next=next;
-            first=first.next;
+        ChainCreate.Node second = slow.next;
+        slow.next = null;
+        second = reverse(second);
+        ChainCreate.Node first = head;
+        while (second != null) {
+            ChainCreate.Node next = first.next;
+            first.next = second;
+            second = second.next;
+            first = first.next;
+            first.next = next;
+            first = first.next;
         }
     }
     private ChainCreate.Node reverse(ChainCreate.Node head) {
-        ChainCreate.Node prev=null;
+        ChainCreate.Node prev = null;
         ChainCreate.Node next;
-        while (head!=null) {
-            next=head.next;
-            head.next=prev;
-            prev=head;
-            head=next;
+        while (head != null) {
+            next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
         }
         return prev;
     }

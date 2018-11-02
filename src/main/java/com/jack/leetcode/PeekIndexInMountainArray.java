@@ -20,17 +20,17 @@ import java.util.Scanner;
  */
 public class PeekIndexInMountainArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<arr.length;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findIndexOfMountain(arr));
     }
-    private static int findIndexOfMountain(int []arr) {
-        for (int i=0;i<arr.length-1;i++) {
-            if (arr[i]>arr[i+1])
+    private static int findIndexOfMountain(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1])
                 return i;
         }
         return 0;

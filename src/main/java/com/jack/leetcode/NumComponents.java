@@ -33,11 +33,11 @@ import java.util.Set;
  */
 public class NumComponents {
     public static void main(String[] args) {
-        int []arr={0,1,2,3};
-        int []G={0,1,3};
+        int[] arr = {0, 1, 2, 3};
+        int[] G = {0, 1, 3};
         System.out.println(new NumComponents().find(new ChainCreate().create(arr), G));
     }
-    private int find(ChainCreate.Node head,int []G) {
+    private int find(ChainCreate.Node head, int[] G) {
         Set<Integer> exist = new HashSet<>();
         for (int tmp : G)
             exist.add(tmp);
@@ -46,7 +46,7 @@ public class NumComponents {
         while (current.next != null) {
             if (!exist.contains(current.data) && exist.contains(current.next.data))
                 ans++;
-            current=current.next;
+            current = current.next;
         }
         return ans;
     }

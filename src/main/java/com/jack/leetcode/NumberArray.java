@@ -12,24 +12,24 @@ package com.jack.leetcode;
  * sumRange(0, 5) -> -3
  */
 public abstract class NumberArray {
-    int []val;
-    public NumberArray(int []num) {
-        val=new int[num.length];
-        if (val.length==0)
+    int[] val;
+    public NumberArray(int[] num) {
+        val = new int[num.length];
+        if (val.length == 0)
             return;
-        val[0]=num[0];
-        for (int i=1;i<num.length;i++) {
-            val[i]=val[i-1]+num[i];
+        val[0] = num[0];
+        for (int i = 1; i < num.length; i++) {
+            val[i] = val[i-1] + num[i];
         }
     }
-    public int sumRange(int i,int j) {
-        if (val.length==0)
+    public int sumRange(int i, int j) {
+        if (val.length == 0)
             return 0;
-        if (j>val.length-1)
-            j=val.length-1;
-        if (i<=0)
+        if (j > val.length - 1)
+            j = val.length - 1;
+        if (i <= 0)
             return val[j];
-        return val[j]-val[i-1];
+        return val[j] - val[i - 1];
     }
     public static void main(String[] args) {
 

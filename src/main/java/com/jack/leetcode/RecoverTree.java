@@ -42,32 +42,32 @@ import java.util.List;
  */
 public class RecoverTree {
     public static void main(String[] args) {
-        Integer []arr={0,3,1,4,0,0,2};
+        Integer []arr = {0,3,1,4,0,0,2};
         new RecoverTree().find(new BinaryTreeNew().makeBinaryByArray(arr));
     }
     List<TreeNode> list;
     public void find(TreeNode root) {
-        list=new ArrayList<>();
+        list = new ArrayList<>();
         inOrder(root);
-        int size=list.size();
-        TreeNode first=null,second=null;
-        for (int i=0;i<size-1;i++) {
-            TreeNode prev=list.get(i);
-            TreeNode next=list.get(i+1);
-            if (prev.val>next.val) {
-                if (first==null) {
-                    first=prev;
-                    second=next;
+        int size = list.size();
+        TreeNode first = null, second = null;
+        for (int i = 0; i < size - 1; i++) {
+            TreeNode prev = list.get(i);
+            TreeNode next = list.get(i + 1);
+            if (prev.val > next.val) {
+                if (first == null) {
+                    first = prev;
+                    second = next;
                 } else
-                    second=next;
+                    second = next;
             }
         }
-        int val=first.val;
-        first.val=second.val;
-        second.val=val;
+        int val = first.val;
+        first.val = second.val;
+        second.val = val;
     }
     public void inOrder(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return;
         inOrder(root.left);
         list.add(root);

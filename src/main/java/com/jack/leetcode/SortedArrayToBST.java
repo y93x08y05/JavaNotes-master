@@ -22,22 +22,22 @@ import com.jack.util.TreeNode;
  */
 public class SortedArrayToBST {
     public static void main(String[] args) {
-        int []arr={-10,-3,0,5,9};
-        TreeNode res=new SortedArrayToBST().find(arr);
+        int[] arr = {-10, -3, 0, 5, 9};
+        TreeNode res = new SortedArrayToBST().find(arr);
         new BinaryTree().preOrderTraverse(res);
     }
-    public TreeNode find(int []arr) {
-        if (arr.length==0)
+    public TreeNode find(int[] arr) {
+        if (arr.length == 0)
             return null;
-        return find(arr,0,arr.length-1);
+        return find(arr, 0, arr.length - 1);
     }
-    public TreeNode find(int []arr,int start,int end) {
-        if (start>end)
+    public TreeNode find(int[] arr, int start, int end) {
+        if (start > end)
             return null;
-        int mid=start+(end-start)/2;
-        TreeNode node=new TreeNode(arr[mid]);
-        node.left=find(arr,start,mid-1);
-        node.right=find(arr,mid+1,end);
+        int mid = start + (end - start) / 2;
+        TreeNode node = new TreeNode(arr[mid]);
+        node.left = find(arr, start, mid - 1);
+        node.right = find(arr, mid + 1, end);
         return node;
     }
 }

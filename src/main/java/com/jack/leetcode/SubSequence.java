@@ -25,55 +25,55 @@ import java.util.Scanner;
  */
 public class SubSequence {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        String t=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        String t = sc.next();
         System.out.println(isSubSequence0(s, t));
         System.out.println(isSubSequence1(s, t));
         System.out.println(isSubSequence2(s, t));
     }
     private static boolean isSubSequence0(String s, String t) {
-        int len1=s.length();
-        int len2=t.length();
-        int index=0;
-        for (int i=0;i>len2&&index<len1;i++) {
-            if (s.charAt(index)==t.charAt(i))
+        int len1 = s.length();
+        int len2 = t.length();
+        int index = 0;
+        for (int i = 0; i < len2 && index < len1; i++) {
+            if (s.charAt(index) == t.charAt(i))
                 index++;
         }
-        return index==len1;
+        return index == len1;
     }
     private static boolean isSubSequence1(String s, String t) {
-        int index1=0;
-        int index2=0;
-        int len1=s.length();
-        int len2=t.length();
+        int index1 = 0;
+        int index2 = 0;
+        int len1 = s.length();
+        int len2 = t.length();
         char first1;
         char first2;
-        while (index1<len1&&index2<len2) {
-            first1=s.charAt(index1);
-            first2=t.charAt(index2);
-            if (first1==first2) {
+        while (index1 < len1 && index2 < len2) {
+            first1 = s.charAt(index1);
+            first2 = t.charAt(index2);
+            if (first1 == first2) {
                 index1++;
                 index2++;
             } else
                 index2++;
         }
-        return index1==len1;
+        return index1 == len1;
     }
     private static boolean isSubSequence2(String s, String t) {
-        Queue<Character> queue1=new LinkedList<>();
-        Queue<Character> queue2=new LinkedList<>();
-        for (int i=0;i<s.length();i++) {
+        Queue<Character> queue1 = new LinkedList<>();
+        Queue<Character> queue2 = new LinkedList<>();
+        for (int i = 0; i < s.length(); i++) {
             queue1.add(s.charAt(i));
         }
-        for (int i=0;i<t.length();i++) {
+        for (int i = 0; i < t.length(); i++) {
             queue2.add(t.charAt(i));
         }
         Character first1;
         Character first2;
-        while (queue1.size()!=0&&queue2.size()!=0) {
-            first1=queue1.peek();
-            first2=queue2.peek();
+        while (queue1.size() != 0 && queue2.size() != 0) {
+            first1 = queue1.peek();
+            first2 = queue2.peek();
             if (first1.equals(first2)) {
                 queue1.remove();
                 queue2.remove();
@@ -81,6 +81,6 @@ public class SubSequence {
                 queue2.remove();
             }
         }
-        return queue1.size()==0;
+        return queue1.size() == 0;
     }
 }

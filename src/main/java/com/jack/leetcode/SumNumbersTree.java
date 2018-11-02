@@ -37,11 +37,11 @@ import com.jack.util.TreeNode;
  * 因此，数字总和 = 495 + 491 + 40 = 1026.
  */
 public class SumNumbersTree {
-    private int result=0;
-    private int num=0;
+    private int result = 0;
+    private int num = 0;
     public static void main(String[] args) {
-        Integer []arr={0,1,2,3};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 1, 2, 3};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new SumNumbersTree().find(root));
     }
     public int find(TreeNode root) {
@@ -51,11 +51,11 @@ public class SumNumbersTree {
     public void sum(TreeNode root) {
         if (root != null) {
             num = num * 10 + root.val;
-            if (root.left==null&&root.right==null)
-                result+=num;
+            if (root.left == null && root.right == null)
+                result += num;
             sum(root.left);
             sum(root.right);
-            num/=10;
+            num /= 10;
         }
     }
 }

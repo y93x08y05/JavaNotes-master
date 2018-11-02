@@ -17,19 +17,19 @@ import java.util.Scanner;
  */
 public class ReverseWords {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(new ReverseWords().find(s));
     }
     private String find(String s){
         if (s.equals(""))
             return "";
-        String []str=s.split("\\s+");
-        int len=str.length;
-        if (len==0)
+        String[] str = s.split("\\s+");
+        int len = str.length;
+        if (len == 0)
             return "";
-        StringBuilder sb=new StringBuilder();
-        for (int i=len-1;i>=0;i--){
+        StringBuilder sb = new StringBuilder();
+        for (int i = len - 1; i >= 0; i--){
             if (!str[i].equals("")){
                 sb.append(str[i]);
                 sb.append(" ");

@@ -35,53 +35,53 @@ import java.util.Scanner;
  */
 public class MaxNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr1=new int[n];
-        for (int i=0;i<arr1.length;i++) {
-            arr1[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr1 = new int[n];
+        for (int i = 0; i < arr1.length; i++) {
+            arr1[i] = sc.nextInt();
         }
-        int m=sc.nextInt();
-        int []arr2=new int[m];
-        for (int i=0;i<arr2.length;i++) {
-            arr2[i]=sc.nextInt();
+        int m = sc.nextInt();
+        int[] arr2 = new int[m];
+        for (int i = 0; i < arr2.length; i++) {
+            arr2[i] = sc.nextInt();
         }
-        int k=sc.nextInt();
-        findMaxNumber(arr1,arr2,k);
+        int k = sc.nextInt();
+        findMaxNumber(arr1, arr2, k);
     }
-    private static int [] findMaxNumber(int []arr1, int []arr2, int k) {
-        int n=arr1.length;
-        int m=arr2.length;
-        int []ans=new int[k];
-        for (int i=Math.max(0,k-m);i<=k&&i<=n;i++) {
-            int []candidate=merge(maxArray(arr1,i),maxArray(arr2,k-i),k);
-            if (greater(candidate,0,ans,0))
-                ans=candidate;
+    private static int [] findMaxNumber(int[] arr1, int[] arr2, int k) {
+        int n = arr1.length;
+        int m = arr2.length;
+        int[] ans = new int[k];
+        for (int i = Math.max(0, k - m); i <= k && i <= n; i++) {
+            int[] candidate = merge(maxArray(arr1, i), maxArray(arr2, k - i), k);
+            if (greater(candidate, 0, ans, 0))
+                ans = candidate;
         }
         return ans;
     }
-    private static int [] merge(int []arr1, int []arr2, int k) {
-        int []ans=new int[k];
-        for (int i=0,j=0,r=0;r<k;r++) {
-            ans[r]=greater(arr1,i,arr2,j)?arr1[i++]:arr2[j++];
+    private static int [] merge(int[] arr1, int[] arr2, int k) {
+        int[] ans = new int[k];
+        for (int i = 0, j = 0, r = 0; r < k; r++) {
+            ans[r] = greater(arr1, i, arr2, j) ? arr1[i++] : arr2[j++];
         }
         return ans;
     }
-    private static boolean greater(int []arr1, int i, int []arr2, int j) {
-        while (i<arr1.length&&j<arr2.length&&arr1[i]==arr2[j]) {
+    private static boolean greater(int[] arr1, int i, int[] arr2, int j) {
+        while (i < arr1.length && j < arr2.length && arr1[i] == arr2[j]) {
             i++;
             j++;
         }
-        return j==arr2.length||(i<arr1.length&&arr1[i]>arr2[j]);
+        return j == arr2.length || (i < arr1.length && arr1[i] > arr2[j]);
     }
-    private static int [] maxArray(int []arr, int k) {
-        int n=arr.length;
-        int []ans=new int[k];
-        for (int i=0,j=0;i<n;i++) {
-            while (n-i>k-j&&j>0&&arr[i]>ans[j-1])
+    private static int [] maxArray(int[] arr, int k) {
+        int n = arr.length;
+        int[] ans = new int[k];
+        for (int i = 0, j = 0; i < n; i++) {
+            while (n - i > k - j && j > 0 && arr[i] > ans[j - 1])
                 j--;
-            if (j<k)
-                ans[j++]=arr[i];
+            if (j < k)
+                ans[j++] = arr[i];
         }
         return ans;
     }

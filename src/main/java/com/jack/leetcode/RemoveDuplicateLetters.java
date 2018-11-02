@@ -19,20 +19,20 @@ import java.util.Scanner;
  */
 public class RemoveDuplicateLetters {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println(removeDuplicate(sc.next()));
     }
     private static String removeDuplicate(String s) {
-        int []cnt=new int[26];
-        int pos=0;
-        for (int i=0;i<s.length();i++)
-            cnt[s.charAt(i)-'a']++;
-        for (int i=0;i<s.length();i++) {
-            if (s.charAt(i)<s.charAt(pos))
-                pos=i;
-            if (--cnt[s.charAt(i)-'a']==0)
+        int []cnt = new int[26];
+        int pos = 0;
+        for (int i = 0; i < s.length(); i++)
+            cnt[s.charAt(i) - 'a']++;
+        for (int i  = 0; i < s.length(); i++) {
+            if (s.charAt(i) < s.charAt(pos))
+                pos = i;
+            if (--cnt[s.charAt(i) - 'a'] == 0)
                 break;
         }
-        return s.length()==0?"":s.charAt(pos)+removeDuplicate(s.substring(pos+1).replaceAll(""+s.charAt(pos),""));
+        return s.length() == 0 ? "" : s.charAt(pos) + removeDuplicate(s.substring(pos + 1).replaceAll("" + s.charAt(pos), ""));
     }
 }

@@ -20,40 +20,41 @@ import com.jack.util.ChainCreate;
  */
 public class ReverseKGroup {
     public static void main(String[] args) {
-        int []arr={1,2,3,4,5};
-        new ChainCreate().print(new ReverseKGroup().find(new ChainCreate().create(arr),2));
+        int[] arr = {1, 2, 3, 4, 5};
+        int k = 2;
+        new ChainCreate().print(new ReverseKGroup().find(new ChainCreate().create(arr), k));
     }
-    private ChainCreate.Node find(ChainCreate.Node head,int k) {
-        if (head==null)
+    private ChainCreate.Node find(ChainCreate.Node head, int k) {
+        if (head == null)
             return null;
-        ChainCreate.Node res=new ChainCreate.Node(0);
-        res.next=head;
-        int count=0;
-        ChainCreate.Node pre=res;
-        ChainCreate.Node cur=head;
-        while (cur!=null) {
+        ChainCreate.Node res = new ChainCreate.Node(0);
+        res.next = head;
+        int count = 0;
+        ChainCreate.Node pre = res;
+        ChainCreate.Node cur = head;
+        while (cur != null) {
             count++;
-            ChainCreate.Node next=cur.next;
-            if (count==k) {
-                pre=find(pre,next);
-                count=0;
+            ChainCreate.Node next = cur.next;
+            if (count == k) {
+                pre = find(pre, next);
+                count = 0;
             }
-            cur=next;
+            cur = next;
         }
         return res.next;
     }
-    private ChainCreate.Node find(ChainCreate.Node pre,ChainCreate.Node end) {
-        if (pre==null||pre.next==null)
+    private ChainCreate.Node find(ChainCreate.Node pre, ChainCreate.Node end) {
+        if (pre == null || pre.next == null)
             return pre;
-        ChainCreate.Node head=pre.next;
-        ChainCreate.Node cur=pre.next.next;
-        while (cur!=end) {
-            ChainCreate.Node next=cur.next;
-            cur.next=pre.next;
-            pre.next=cur;
-            cur=next;
+        ChainCreate.Node head = pre.next;
+        ChainCreate.Node cur = pre.next.next;
+        while (cur != end) {
+            ChainCreate.Node next = cur.next;
+            cur.next = pre.next;
+            pre.next = cur;
+            cur = next;
         }
-        head.next=cur;
+        head.next = cur;
         return head;
     }
 }

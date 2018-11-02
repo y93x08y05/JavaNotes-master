@@ -27,41 +27,41 @@ import java.util.*;
  */
 public class SimilarityString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String A=sc.nextLine();
-        String B=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String A = sc.nextLine();
+        String B = sc.nextLine();
         System.out.println(find(A, B));
     }
-    private static int find(String A,String B) {
+    private static int find(String A, String B) {
         int i;
-        int len=B.length();
-        for (i=0;i<A.length();i++) {
-            if (A.charAt(i)!=B.charAt(i))
+        int len = B.length();
+        for (i = 0; i < A.length(); i++) {
+            if (A.charAt(i) != B.charAt(i))
                 break;
         }
-        Queue<Pair> queue=new LinkedList<>();
-        queue.offer(new Pair(A,i));
-        Set<String> set=new HashSet<>();
+        Queue<Pair> queue = new LinkedList<>();
+        queue.offer(new Pair(A, i));
+        Set<String> set = new HashSet<>();
         set.add(A);
-        int res=0;
+        int res = 0;
         while (!queue.isEmpty()) {
-            int n=queue.size();
-            for (int k=0;k<n;k++) {
-                int index=queue.peek().f;
-                String str=queue.peek().s;
+            int n = queue.size();
+            for (int k = 0; k < n; k++) {
+                int index = Objects.requireNonNull(queue.peek()).f;
+                String str = Objects.requireNonNull(queue.peek()).s;
                 queue.poll();
                 if (str.equals(B))
                     return res;
-                while (index<len&&str.charAt(index)==B.charAt(index))
+                while (index < len && str.charAt(index) == B.charAt(index))
                     index++;
-                for (int j=index+1;j<len;j++) {
-                    if (str.charAt(j)==B.charAt(index)&&str.charAt(j)!=B.charAt(j)) {
-                        str=swap(str,index,j);
+                for (int j = index + 1; j < len; j++) {
+                    if (str.charAt(j) == B.charAt(index) && str.charAt(j) != B.charAt(j)) {
+                        str = swap(str, index, j);
                         if (!set.contains(str)) {
-                            queue.offer(new Pair(str,index+1));
+                            queue.offer(new Pair(str, index + 1));
                             set.add(str);
                         }
-                        str=swap(str,index,j);
+                        str=swap(str, index, j);
                     }
                 }
             }
@@ -69,17 +69,17 @@ public class SimilarityString {
         }
         return res;
     }
-    private static String swap(String m,int a,int b) {
-        StringBuilder sb=new StringBuilder();
-        sb.append(m, 0, a).append(m, b, b+1).append(m,a+1,b).append(m,a,a+1).append(m.substring(b+1));
+    private static String swap(String m, int a, int b) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(m, 0, a).append(m, b, b + 1).append(m, a + 1, b).append(m, a, a + 1).append(m.substring(b + 1));
         return sb.toString();
     }
     static class Pair {
         String s;
         int f;
-        public Pair(String s,int f) {
-            this.s=s;
-            this.f=f;
+        public Pair(String s, int f) {
+            this.s = s;
+            this.f = f;
         }
     }
 }

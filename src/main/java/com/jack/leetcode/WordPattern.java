@@ -28,27 +28,27 @@ import java.util.Scanner;
  */
 public class WordPattern {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
         System.out.println(wordPattern(s1, s2));
     }
-    private static boolean wordPattern(String s1,String s2) {
-        char []patterns=s1.toCharArray();
-        Map<Character,String> map=new HashMap<>();
-        String []str=s2.split(" ");
-        if (patterns.length!=str.length)
+    private static boolean wordPattern(String s1, String s2) {
+        char[] patterns = s1.toCharArray();
+        Map<Character, String> map = new HashMap<>();
+        String[] str = s2.split(" ");
+        if (patterns.length != str.length)
             return false;
-        for (int i=0;i<patterns.length;i++) {
-            char c=patterns[i];
+        for (int i = 0; i < patterns.length; i++) {
+            char c = patterns[i];
             if (map.containsKey(c)) {
-                String value=map.get(c);
+                String value = map.get(c);
                 if (!value.equals(str[i]))
                     return false;
             } else {
                 if (map.containsValue(str[i]))
                     return false;
-                map.put(c,str[i]);
+                map.put(c, str[i]);
             }
         }
         return true;

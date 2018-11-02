@@ -22,7 +22,7 @@ public class PowerOfFour {
     private static boolean isPowerOfFour(int num) {
         while (num > 1) {
             if (num % 4 == 0 && (num % 10 == 4 || num % 10 == 6))
-                num/=4;
+                num /= 4;
             else
                 return false;
         }

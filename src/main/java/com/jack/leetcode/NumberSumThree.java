@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class NumberSumThree {
     public static void main(String[] args) {
-        int [] num = {-1,0,1,2,-1,-4};
+        int[] num = {-1, 0, 1, 2, -1, -4};
         for (List<Integer> i : findSumThree1(num))
             System.out.println(i);
         for (List<Integer> i : findSumThree2(num))
@@ -32,7 +32,7 @@ public class NumberSumThree {
      * @param arr
      * @return
      */
-    private static List<List<Integer>> findSumThree1(int [] arr) {
+    private static List<List<Integer>> findSumThree1(int[] arr) {
         Arrays.sort(arr);
         List<List<Integer>> lists = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
@@ -57,7 +57,7 @@ public class NumberSumThree {
         }
         return lists;
     }
-    private static List<List<Integer>> findSumThree2(int [] arr) {
+    private static List<List<Integer>> findSumThree2(int[] arr) {
         Arrays.sort(arr);
         List<List<Integer>> lists = new ArrayList<>();
         for (int i = 0; i < arr.length - 2; i++) {
@@ -68,7 +68,7 @@ public class NumberSumThree {
             while (left < right) {
                 int sum = arr[left] + arr[right] + arr[i];
                 if (sum == 0) {
-                    lists.add(Arrays.asList(new Integer[]{arr[i],arr[left],arr[right]}));
+                    lists.add(Arrays.asList(arr[i],arr[left],arr[right]));
                     while (left < right && arr[left] == arr[left + 1]) {
                         left++;
                     }

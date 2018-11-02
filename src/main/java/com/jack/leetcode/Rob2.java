@@ -26,30 +26,30 @@ import java.util.Scanner;
  */
 public class Rob2 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr));
     }
-    public static int find(int []arr) {
-        if (arr==null||arr.length==0)
+    public static int find(int[] arr) {
+        if (arr == null || arr.length == 0)
             return 0;
-        if (arr.length==1)
+        if (arr.length == 1)
             return arr[0];
-        if (arr.length==2)
-            return Math.max(arr[0],arr[1]);
-        return Math.max(find(arr,0,arr.length-2),find(arr,1,arr.length-1));
+        if (arr.length == 2)
+            return Math.max(arr[0], arr[1]);
+        return Math.max(find(arr, 0, arr.length-2),find(arr, 1, arr.length - 1));
     }
-    private static int find(int []arr,int s,int e) {
-        int n=e-s+1;
-        int []dp=new int[n];
-        dp[0]=arr[s];
-        dp[1]=Math.max(arr[s],arr[s+1]);
-        for (int i=2;i<n;i++)
-            dp[i]=Math.max(dp[i-2]+arr[s+i],dp[i-1]);
-        return dp[n-1];
+    private static int find(int[] arr, int s, int e) {
+        int n = e - s + 1;
+        int[] dp = new int[n];
+        dp[0] = arr[s];
+        dp[1] = Math.max(arr[s], arr[s + 1]);
+        for (int i = 2; i < n; i++)
+            dp[i] = Math.max(dp[i - 2] + arr[s + i], dp[i - 1]);
+        return dp[n - 1];
     }
 }

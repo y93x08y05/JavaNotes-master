@@ -28,7 +28,7 @@ public class PowerOfThree {
     private static boolean isPowerOfThree(int n) {
         while (n > 1) {
             if (n % 3 == 0 && (n % 10 == 1 || n % 10 == 3 || n % 10 == 7 || n % 10 == 9))
-                n/=3;
+                n /= 3;
             else
                 return false;
         }

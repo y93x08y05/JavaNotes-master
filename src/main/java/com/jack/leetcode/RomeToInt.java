@@ -52,88 +52,76 @@ public class RomeToInt {
         int sum = 0;
         boolean flag = false;
         if (s.length() > 1) {
-            for (int i=0;i<s.length()-1;i++) {
+            for (int i = 0; i < s.length() - 1; i++) {
                 if (s.charAt(i) == 'M') {
-                    sum+=1000;
-                    continue;
+                    sum += 1000;
                 } else if (s.charAt(i) == 'V') {
-                    sum+=5;
-                    continue;
+                    sum += 5;
                 } else if (s.charAt(i) == 'L') {
-                    sum+=50;
-                    continue;
+                    sum += 50;
                 } else if (s.charAt(i) == 'D') {
-                    sum+=500;
-                    continue;
+                    sum += 500;
                 } else if (s.charAt(i) == 'I') {
-                    if (s.charAt(i+1) == 'V') {
-                        sum+=4;
+                    if (s.charAt(i + 1) == 'V') {
+                        sum += 4;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
                         continue;
-                    } else if (s.charAt(i+1) == 'X') {
-                        sum+=9;
+                    } else if (s.charAt(i + 1) == 'X') {
+                        sum += 9;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
-                        continue;
                     } else {
                         sum+=1;
-                        continue;
                     }
                 } else if (s.charAt(i) == 'X') {
-                    if (s.charAt(i+1) == 'L') {
-                        sum+=40;
+                    if (s.charAt(i + 1) == 'L') {
+                        sum += 40;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
-                        continue;
-                    } else if (s.charAt(i+1) == 'C') {
-                        sum+=90;
+                    } else if (s.charAt(i + 1) == 'C') {
+                        sum += 90;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
-                        continue;
                     } else {
-                        sum+=10;
-                        continue;
+                        sum += 10;
                     }
                 } else if (s.charAt(i) == 'C') {
-                    if (s.charAt(i+1) == 'D') {
-                        sum+=400;
+                    if (s.charAt(i + 1) == 'D') {
+                        sum += 400;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
-                        continue;
-                    } else if (s.charAt(i+1) == 'M') {
-                        sum+=900;
+                    } else if (s.charAt(i + 1) == 'M') {
+                        sum += 900;
                         i++;
-                        if (i == s.length()-1)
+                        if (i == s.length() - 1)
                             flag = true;
-                        continue;
                     } else {
-                        sum+=100;
-                        continue;
+                        sum += 100;
                     }
                 }
             }
         }
         if (!flag) {
-            if (s.charAt(s.length()-1) == 'I') {
-                sum+=1;
-            } else if (s.charAt(s.length()-1) == 'V') {
-                sum+=5;
-            } else if (s.charAt(s.length()-1) == 'X') {
-                sum+=10;
-            } else if (s.charAt(s.length()-1) == 'L') {
-                sum+=50;
-            } else if (s.charAt(s.length()-1) == 'C') {
-                sum+=100;
-            } else if (s.charAt(s.length()-1) == 'D') {
-                sum+=500;
-            } else if (s.charAt(s.length()-1) == 'M') {
-                sum+=1000;
+            if (s.charAt(s.length() - 1) == 'I') {
+                sum += 1;
+            } else if (s.charAt(s.length() - 1) == 'V') {
+                sum += 5;
+            } else if (s.charAt(s.length() - 1) == 'X') {
+                sum += 10;
+            } else if (s.charAt(s.length() - 1) == 'L') {
+                sum += 50;
+            } else if (s.charAt(s.length() - 1) == 'C') {
+                sum += 100;
+            } else if (s.charAt(s.length() - 1) == 'D') {
+                sum += 500;
+            } else if (s.charAt(s.length() - 1) == 'M') {
+                sum += 1000;
             }
         }
         return sum;

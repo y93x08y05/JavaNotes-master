@@ -13,14 +13,14 @@ package com.jack.leetcode;
  */
 public class SumTwoNumberFromArray {
     public static void main(String[] args) {
-        int [] arr = {2,7,11,15};
+        int[] arr = {2, 7, 11, 15};
         int target = 9;
-        findSum(arr,target);
+        findSum(arr, target);
     }
-    private static int [] findSum(int [] arr,int target) {
-        int [] temp = new int[2];
-        for (int i=0;i<arr.length-1;i++) {
-            for (int j=i+1;j<arr.length;j++) {
+    private static int [] findSum(int[] arr, int target) {
+        int[] temp = new int[2];
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == target) {
                     temp[0] = i + 1;
                     temp[1] = j + 1;

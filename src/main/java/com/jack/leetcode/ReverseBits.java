@@ -16,14 +16,14 @@ public class ReverseBits {
         int n = 43261596;
         String s = Integer.toBinaryString(n);
         StringBuilder sb = new StringBuilder();
-        for (int i=0;i<32-s.length();i++) {
+        for (int i = 0; i < 32 - s.length(); i++) {
             sb.append(0);
         }
         s = sb.append(s).toString();
         int sum = 0;
-        for (int i=0;i<s.length();i++) {
+        for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '1')
-            sum += (int) Math.pow(2,i);
+            sum += (int) Math.pow(2, i);
         }
         System.out.println(sum);
         getNumber(n);

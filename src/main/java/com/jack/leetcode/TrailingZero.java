@@ -18,8 +18,8 @@ import java.util.Scanner;
  */
 public class TrailingZero {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findZeroCount(n));
     }
 
@@ -30,12 +30,12 @@ public class TrailingZero {
      * @return
      */
     private static int findZeroCount(int n) {
-        if (n<=0)
+        if (n <= 0)
             return 0;
-        int count=0;
-        while (n/5!=0) {
-            n/=5;
-            count+=n;
+        int count = 0;
+        while (n / 5 != 0) {
+            n /= 5;
+            count += n;
         }
         return count;
     }

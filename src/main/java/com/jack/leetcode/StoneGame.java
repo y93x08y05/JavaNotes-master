@@ -38,25 +38,25 @@ public class StoneGame {
      * @param args
      */
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<arr.length;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findIfWin(arr));
     }
-    private static boolean findIfWin(int []arr) {
-        int n=arr.length;
-        int [][]dp=new int[n][n];
-        for (int i=0;i<n;i++) {
-            dp[i][i]=arr[i];
+    private static boolean findIfWin(int[] arr) {
+        int n = arr.length;
+        int[][] dp = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = arr[i];
         }
-        for (int j=1;j<n;j++) {
-            for (int i=0;i<n-j;i++) {
-                dp[i][i+j]=Math.max(arr[i]-dp[i+1][i+j],arr[i+j]-dp[i][i+j-1]);
+        for (int j = 1; j < n; j++) {
+            for (int i = 0; i < n - j; i++) {
+                dp[i][i + j] = Math.max(arr[i] - dp[i + 1][i + j], arr[i + j] - dp[i][i + j - 1]);
             }
         }
-        return dp[0][n-1]>0;
+        return dp[0][n - 1] > 0;
     }
 }

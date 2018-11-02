@@ -25,33 +25,33 @@ public class TwoNumberDivide {
         int n = sc.nextInt();
         System.out.println(findDivide(m, n));
     }
-    private static int findDivide(int m,int n) {
-        int flag=1;
-        if ((m<0&&n>0)||(m>0&&n<0))
-            flag=-1;
+    private static int findDivide(int m, int n) {
+        int flag = 1;
+        if ((m < 0 && n > 0) || (m > 0 && n < 0))
+            flag = -1;
         long a = Math.abs((long)m);
         long b = Math.abs((long)n);
-        if (a==0||a<b)
+        if (a == 0 || a < b)
             return 0;
-        if (b==0)
+        if (b == 0)
             return Integer.MAX_VALUE;
-        long res = findDivide(a,b);
+        long res = findDivide(a, b);
         int ans;
-        if (res>Integer.MAX_VALUE)
-            ans=flag==1?Integer.MAX_VALUE:Integer.MIN_VALUE;
+        if (res > Integer.MAX_VALUE)
+            ans = flag == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         else
-            ans=(int)(flag*res);
+            ans = (int)(flag * res);
         return ans;
     }
-    private static long findDivide(long a,long b) {
-        if (a<b)
+    private static long findDivide(long a, long b) {
+        if (a < b)
             return 0;
-        long res=1;
-        long sum=b;
-        while (sum+sum<=a) {
-            sum+=sum;
-            res+=res;
+        long res = 1;
+        long sum = b;
+        while (sum + sum <= a) {
+            sum += sum;
+            res += res;
         }
-        return res+findDivide(a-sum,b);
+        return res + findDivide(a - sum, b);
     }
 }

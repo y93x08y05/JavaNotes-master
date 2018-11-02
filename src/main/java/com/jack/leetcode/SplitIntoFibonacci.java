@@ -37,53 +37,53 @@ import java.util.Scanner;
  */
 public class SplitIntoFibonacci {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(splitFibonacci(s));
     }
     private static List<Integer> splitFibonacci(String s) {
-        int n=s.length();
-        for (int i=1;i<n;i++) {
-            String s1=s.substring(0,i);
-            Long a=Long.valueOf(s1);
-            if (a>Integer.MAX_VALUE)
+        int n = s.length();
+        for (int i = 1; i < n; i++) {
+            String s1 = s.substring(0, i);
+            Long a = Long.valueOf(s1);
+            if (a > Integer.MAX_VALUE)
                 break;
-            for (int j=1;j+i+1<n;j++) {
-                String s2=s.substring(i,i+j);
-                Long b=Long.valueOf(s2);
-                if (b>Integer.MAX_VALUE)
+            for (int j = 1; j + i + 1 < n; j++) {
+                String s2 = s.substring(i, i + j);
+                Long b = Long.valueOf(s2);
+                if (b > Integer.MAX_VALUE)
                     break;
-                if ((a==0&&s1.length()>1)||(b==0&&s2.length()>1))
+                if ((a == 0 && s1.length() > 1) || (b == 0 && s2.length() > 1))
                     continue;
-                List<Integer> res=find(a.intValue(),b.intValue(),s.substring(i+j));
-                if (res!=null&&res.size()>=3)
+                List<Integer> res = find(a.intValue(), b.intValue(), s.substring(i + j));
+                if (res != null && res.size() >= 3)
                     return res;
             }
         }
         return new ArrayList<>();
     }
-    private static List<Integer> find(int a,int b,String s) {
-        List<Integer> res=new ArrayList<>();
+    private static List<Integer> find(int a, int b, String s) {
+        List<Integer> res = new ArrayList<>();
         res.add(a);
         res.add(b);
-        long c=a+b;
-        if (c>Integer.MAX_VALUE)
+        long c = a + b;
+        if (c > Integer.MAX_VALUE)
             return new ArrayList<>();
         int cnt;
-        while (s.length()>0) {
-            c=a+b;
-            if (c<0) {
+        while (s.length() > 0) {
+            c = a + b;
+            if (c < 0) {
                 return new ArrayList<>();
             }
-            cnt=Integer.toString((int) c).length();
+            cnt = Integer.toString((int) c).length();
             if (s.startsWith(Integer.toString((int) c))) {
                 res.add((int) c);
-                s=s.substring(cnt);
+                s = s.substring(cnt);
             } else {
                 return new ArrayList<>();
             }
-            a=b;
-            b= (int) c;
+            a = b;
+            b = (int) c;
         }
         return res;
     }

@@ -18,10 +18,10 @@ import java.util.Arrays;
  */
 public class RotatedSortedArrayRepeatedMin {
     public static void main(String[] args) {
-        int [] arr = {2,2,2,0,1};
+        int[] arr = {2, 2, 2, 0, 1};
         System.out.println(findMinFromRepeatedSortedRotated(arr));
     }
-    private static int findMinFromRepeatedSortedRotated(int [] arr) {
+    private static int findMinFromRepeatedSortedRotated(int[] arr) {
         Arrays.sort(arr);
         return arr[0];
     }

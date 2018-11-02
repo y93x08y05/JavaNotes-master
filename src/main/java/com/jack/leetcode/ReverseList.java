@@ -14,13 +14,13 @@ import com.jack.util.ChainCreate;
  */
 public class ReverseList {
     public static void main(String[] args) {
-        int []arr={1,2,3,4,5};
+        int[] arr = {1, 2, 3, 4, 5};
         ChainCreate chainCreate = new ChainCreate();
         ChainCreate.Node node = chainCreate.create(arr);
-        ChainCreate.Node node1=reverseList(node);
-        while (node1!=null) {
-            System.out.print(node1.data+" ");
-            node1=node1.next;
+        ChainCreate.Node node1 = reverseList(node);
+        while (node1 != null) {
+            System.out.print(node1.data + " ");
+            node1 = node1.next;
         }
     }
     public static ChainCreate.Node reverseList(ChainCreate.Node head) {

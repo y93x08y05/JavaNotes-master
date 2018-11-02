@@ -27,8 +27,8 @@ public class VersionControl {
     private static int firstBadVersion(int n) {
         int start = 1;
         int end = n;
-        while (start<end) {
-            int mid = start + (end - start)/2;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
             if (isBadVersion(mid)) {
                 end = mid;
             } else {
@@ -44,6 +44,6 @@ public class VersionControl {
          * is false or true use two split method to do
          * to decrease time complexity
          */
-        return val==1;
+        return val == 1;
     }
 }

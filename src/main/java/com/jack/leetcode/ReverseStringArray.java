@@ -13,7 +13,7 @@ package com.jack.leetcode;
  */
 public class ReverseStringArray {
     public static void main(String[] args) {
-        String s="A man, a plan, a canal: Panama";
+        String s = "A man, a plan, a canal: Panama";
         System.out.println(reverseString0(s));
         System.out.println(reverseString1(s));
     }

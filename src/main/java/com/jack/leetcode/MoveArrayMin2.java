@@ -21,17 +21,17 @@ public class MoveArrayMin2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int [] arr = new int[n];
-        for (int i=0;i<n;i++)
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
         System.out.println(findMinMove(arr));
     }
-    private static int findMinMove(int [] arr) {
+    private static int findMinMove(int[] arr) {
         Arrays.sort(arr);
-        int val = arr[arr.length/2];
+        int val = arr[arr.length / 2];
         int res = 0;
-        for (int i=0;i<arr.length;i++) {
-            res+=Math.abs(val-arr[i]);
+        for (int i = 0; i < arr.length; i++) {
+            res += Math.abs(val - arr[i]);
         }
         return res;
     }

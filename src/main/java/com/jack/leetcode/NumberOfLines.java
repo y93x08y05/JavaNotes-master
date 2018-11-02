@@ -36,26 +36,26 @@ public class NumberOfLines {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int []widths = new int[n];
+        int[] widths = new int[n];
         for (int i = 0; i < n; i++) {
             widths[i] = sc.nextInt();
         }
         String s = sc.next();
-        int [] res = new NumberOfLines().find(widths,s);
+        int[] res = new NumberOfLines().find(widths, s);
         System.out.println(res);
     }
-    public int [] find(int [] widths, String S) {
+    public int [] find(int[] widths, String S) {
         int n = S.length();
         int lines = 1;
         int pos = 0;
         for (int i = 0; i < n; i++) {
-            pos +=widths[S.charAt(i) - 'a'];
+            pos += widths[S.charAt(i) - 'a'];
             if (pos > 100) {
                 lines++;
                 pos = 0;
                 i--;
             }
         }
-        return new int[]{lines,pos};
+        return new int[]{lines, pos};
     }
 }

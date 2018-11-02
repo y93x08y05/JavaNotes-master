@@ -22,34 +22,34 @@ import java.util.Scanner;
  */
 public class NextPermutation {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<arr.length;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
         findNextPermutation(arr);
     }
-    private static void findNextPermutation(int []arr) {
-        int index=arr.length-1;
-        while (index>0&&arr[index]<=arr[index-1]) {
+    private static void findNextPermutation(int[] arr) {
+        int index = arr.length - 1;
+        while (index > 0 && arr[index] <= arr[index - 1]) {
             --index;
         }
-        if (index==0) {
+        if (index == 0) {
             Arrays.sort(arr);
             return;
         }
-        int second=Integer.MAX_VALUE;
-        int secondIndex=Integer.MAX_VALUE;
-        for (int i=arr.length-1;i>=index-1;--i) {
-            if (arr[i]>arr[index-1]&&arr[i]<second) {
-                second=arr[i];
-                secondIndex=i;
+        int second = Integer.MAX_VALUE;
+        int secondIndex = Integer.MAX_VALUE;
+        for (int i = arr.length - 1; i >= index - 1; --i) {
+            if (arr[i] > arr[index - 1] && arr[i] < second) {
+                second = arr[i];
+                secondIndex = i;
             }
         }
-        int temp=arr[index-1];
-        arr[index-1]=arr[secondIndex];
-        arr[secondIndex]=temp;
-        Arrays.sort(arr,index,arr.length);
+        int temp = arr[index - 1];
+        arr[index - 1] = arr[secondIndex];
+        arr[secondIndex] = temp;
+        Arrays.sort(arr, index, arr.length);
     }
 }

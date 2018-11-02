@@ -25,28 +25,28 @@ import java.util.Scanner;
  */
 public class SubSet {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         findAllSubSet(arr);
     }
-    private static List<List<Integer>> findAllSubSet(int []arr) {
-        List<List<Integer>> res=new ArrayList<>();
-        List<Integer> temp=new ArrayList<>();
-        if (arr.length==0||arr==null)
+    private static List<List<Integer>> findAllSubSet(int[] arr) {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        if (arr == null || arr.length == 0)
             return res;
-        helper(res,temp,arr,0);
+        helper(res, temp, arr, 0);
         return res;
     }
-    private static void helper(List<List<Integer>> lists,List<Integer> list,int []arr,int index) {
+    private static void helper(List<List<Integer>> lists, List<Integer> list, int[] arr, int index) {
         lists.add(new ArrayList<>(list));
-        for (int i=index;i<arr.length;i++) {
+        for (int i = index; i < arr.length; i++) {
             list.add(arr[i]);
-            helper(lists,list,arr,i+1);
-            list.remove(list.size()-1);
+            helper(lists, list, arr, i + 1);
+            list.remove(list.size() - 1);
         }
     }
 }

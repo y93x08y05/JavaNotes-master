@@ -16,40 +16,40 @@ import java.util.Scanner;
  */
 public class PartitionSubSet {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        int k=sc.nextInt();
+        int k = sc.nextInt();
         System.out.println(ifPartitionSubSet(arr, k));
     }
-    private static boolean ifPartitionSubSet(int []arr, int k) {
-        int n=arr.length;
+    private static boolean ifPartitionSubSet(int[] arr, int k) {
+        int n = arr.length;
         Arrays.sort(arr);
-        int sum=Arrays.stream(arr).sum();
-        int target=sum/k;
-        if (sum%k>0||arr[n-1]>target)
+        int sum = Arrays.stream(arr).sum();
+        int target = sum / k;
+        if (sum % k > 0 || arr[n - 1] > target)
             return false;
-        boolean []dp=new boolean[1<<n];
-        dp[0]=true;
-        int []total=new int[1<<n];
-        for (int state=0;state<(1<<n);state++) {
+        boolean[] dp = new boolean[1 << n];
+        dp[0] = true;
+        int[] total = new int[1 << n];
+        for (int state = 0; state < (1 << n); state++) {
             if (!dp[state])
                 continue;
-            for (int i=0;i<n;i++) {
-                int future=state|(1<<i);
-                if (state!=future&&!dp[future]) {
-                    if (arr[i]<=target-(total[state]%target)) {
-                        dp[future]=true;
-                        total[future]=total[state]+arr[i];
+            for (int i = 0; i < n; i++) {
+                int future = state | (1 << i);
+                if (state != future && !dp[future]) {
+                    if (arr[i] <= target - (total[state] % target)) {
+                        dp[future] = true;
+                        total[future] = total[state] + arr[i];
                     } else {
                         break;
                     }
                 }
             }
         }
-        return dp[(1<<n)-1];
+        return dp[(1 << n) - 1];
     }
  }

@@ -17,23 +17,25 @@ import com.jack.util.ChainCreate;
  */
 public class OddEvenList {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5};
-        ChainCreate.Node node=new ChainCreate().create(arr);
+        int[] arr = {1, 2, 3, 4, 5};
+        ChainCreate.Node node = new ChainCreate().create(arr);
         System.out.println(new OddEvenList().find(node));
     }
     private ChainCreate.Node find(ChainCreate.Node head) {
-        if (head==null)
-            return head;
-        ChainCreate.Node oddHead=head,evenHead=head.next;
-        ChainCreate.Node prevOdd=oddHead,prevEven=evenHead;
-        while (prevOdd.next!=null&&prevEven.next!=null) {
-            prevOdd.next=prevEven.next;
-            prevOdd=prevOdd.next;
-            prevEven.next=prevOdd.next;
-            prevEven=prevEven.next;
+        if (head == null)
+            return null;
+        ChainCreate.Node evenHead = head.next;
+        ChainCreate.Node prevOdd;
+        prevOdd = head;
+        ChainCreate.Node prevEven = evenHead;
+        while (prevOdd.next != null && prevEven.next != null) {
+            prevOdd.next = prevEven.next;
+            prevOdd = prevOdd.next;
+            prevEven.next = prevOdd.next;
+            prevEven = prevEven.next;
         }
-        prevOdd.next=evenHead;
+        prevOdd.next = evenHead;
         new ChainCreate().print(evenHead);
-        return oddHead;
+        return head;
     }
 }

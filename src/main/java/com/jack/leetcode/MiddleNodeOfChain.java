@@ -20,7 +20,7 @@ import com.jack.util.ChainCreate;
  */
 public class MiddleNodeOfChain {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5,6};
+        int[] arr = {1, 2, 3, 4, 5, 6};
         ChainCreate chainCreate1 = new ChainCreate();
         ChainCreate.Node node1 = chainCreate1.create(arr);
         node1 = findMiddleNode(node1);
@@ -32,9 +32,9 @@ public class MiddleNodeOfChain {
     private static ChainCreate.Node findMiddleNode(ChainCreate.Node head) {
         ChainCreate.Node fast = head;
         ChainCreate.Node slow = head;
-        while (fast!=null&&fast.next!=null) {
-            fast=fast.next.next;
-            slow=slow.next;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
         }
         return slow;
     }

@@ -25,19 +25,19 @@ import com.jack.util.TreeNode;
  */
 public class SearchBST {
     public static void main(String[] args) {
-        Integer []arr={0,4,2,7,1,3};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
-        int val=2;
+        Integer[] arr = {0, 4, 2, 7, 1, 3};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
+        int val = 2;
         System.out.println(new SearchBST().find(root, val).val);
     }
-    public TreeNode find(TreeNode root,int val) {
-        if (root==null)
+    public TreeNode find(TreeNode root, int val) {
+        if (root == null)
             return null;
-        if (root.val==val)
+        if (root.val == val)
             return root;
-        else if (root.val<val)
-            return find(root.right,val);
+        else if (root.val < val)
+            return find(root.right, val);
         else
-            return find(root.left,val);
+            return find(root.left, val);
     }
 }

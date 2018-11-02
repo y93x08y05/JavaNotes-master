@@ -23,54 +23,54 @@ import java.util.Scanner;
  */
 public class RotateArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        int k=3;
-        rotate(arr,k);
-        rotate0(arr,k);
-        rotate1(arr,k);
-        rotate2(arr,k);
+        int k = 3;
+        rotate(arr, k);
+        rotate0(arr, k);
+        rotate1(arr, k);
+        rotate2(arr, k);
     }
-    private static void rotate(int []arr,int k) {
-        k%=arr.length;
-        for (int i=0;i<arr.length;i++) {
-            if (i+k>arr.length-1) {
-                arr[i+k-arr.length-1]=arr[i];
+    private static void rotate(int[] arr, int k) {
+        k %= arr.length;
+        for (int i = 0; i < arr.length; i++) {
+            if (i + k > arr.length - 1) {
+                arr[i + k - arr.length - 1] = arr[i];
             } else {
-                arr[i+k]=arr[i];
+                arr[i + k] = arr[i];
             }
         }
     }
-    private static void rotate0(int []arr,int k) {
-        int []ans=new int[arr.length];
-        if (k>=arr.length) {
-            k-=arr.length;
-            rotate0(arr,k);
+    private static void rotate0(int[] arr, int k) {
+        int[] ans = new int[arr.length];
+        if (k >= arr.length) {
+            k -= arr.length;
+            rotate0(arr, k);
         } else {
-            for (int i=0;i<arr.length;i++) {
-                if (i<k) {
-                    ans[i]=arr[ans.length+i-k];
+            for (int i = 0; i < arr.length; i++) {
+                if (i < k) {
+                    ans[i] = arr[ans.length + i - k];
                 } else {
-                    ans[i]=ans[i-k];
+                    ans[i] = ans[i - k];
                 }
             }
-            for (int i=0;i<arr.length;i++) {
-                arr[i]=ans[i];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = ans[i];
             }
         }
     }
-    private static void rotate1(int []arr,int k) {
+    private static void rotate1(int[] arr, int k) {
         int temp;
-        for (int i=0;i<k;i++) {
-            temp=arr[arr.length-1];
-            for (int j=arr.length-1;j>0;--j) {
-                arr[i]=arr[i-1];
+        for (int i = 0; i < k; i++) {
+            temp = arr[arr.length - 1];
+            for (int j = arr.length - 1; j > 0; --j) {
+                arr[i] = arr[i - 1];
             }
-            arr[0]=temp;
+            arr[0] = temp;
         }
     }
     /**
@@ -78,17 +78,17 @@ public class RotateArray {
      * @param arr
      * @param k
      */
-    private static void rotate2(int []arr,int k) {
-        int temp=k%arr.length;
-        reverse(arr,0,arr.length-temp-1);
-        reverse(arr,arr.length-temp,arr.length-1);
-        reverse(arr,0,arr.length-1);
+    private static void rotate2(int[] arr, int k) {
+        int temp = k % arr.length;
+        reverse(arr, 0, arr.length - temp - 1);
+        reverse(arr, arr.length-temp, arr.length-1);
+        reverse(arr, 0, arr.length-1);
     }
-    private static void reverse(int []arr,int start,int end) {
-        for (int i=start,j=end;i<j;i++,j--) {
-            int temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
+    private static void reverse(int[] arr, int start, int end) {
+        for (int i = start ,j = end; i < j; i++, j--) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
     }
 }

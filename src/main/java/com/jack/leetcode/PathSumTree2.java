@@ -31,39 +31,38 @@ import java.util.List;
  */
 public class PathSumTree2 {
     public static void main(String[] args) {
-        Integer []arr={0,5,4,8,11,0,13,4,7,2,0,0,0,0,5,1};
-        int sum=22;
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
-        System.out.println(new PathSumTree2().find(node,sum));
+        Integer[] arr = {0, 5, 4, 8, 11, 0, 13, 4, 7, 2, 0, 0, 0, 0, 5, 1};
+        int sum = 22;
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
+        System.out.println(new PathSumTree2().find(node, sum));
     }
-    public List<List<Integer>> find(TreeNode root,int sum) {
-        List<List<Integer>> result=new ArrayList<>();
-        List<Integer> temp=new ArrayList<>();
-        if (root==null)
+    public List<List<Integer>> find(TreeNode root, int sum) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        if (root == null)
             return result;
-        dfs(result,temp,root,sum);
+        dfs(result, temp, root, sum);
         return result;
     }
-    public void dfs(List<List<Integer>> result,List<Integer> temp,TreeNode root,int sum) {
-        if (root==null)
+    public void dfs(List<List<Integer>> result, List<Integer> temp, TreeNode root, int sum) {
+        if (root == null)
             return;
-        if (root.left==null&&root.right==null) {
+        if (root.left == null && root.right == null) {
             temp.add(root.val);
-            if (find(temp)==sum)
+            if (find(temp) == sum)
                 result.add(new ArrayList<>(temp));
-            temp.remove(temp.size()-1);
-            return;
+            temp.remove(temp.size() - 1);
         } else {
             temp.add(root.val);
-            dfs(result,temp,root.left,sum);
-            dfs(result,temp,root.right,sum);
-            temp.remove(temp.size()-1);
+            dfs(result, temp, root.left, sum);
+            dfs(result, temp, root.right, sum);
+            temp.remove(temp.size() - 1);
         }
     }
     public int find(List<Integer> temp) {
-        int sum=0;
-        for (int i=0;i<temp.size();i++)
-            sum+=temp.get(i);
+        int sum = 0;
+        for (int i = 0; i < temp.size(); i++)
+            sum += temp.get(i);
         return sum;
     }
 }

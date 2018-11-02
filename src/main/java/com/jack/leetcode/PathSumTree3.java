@@ -29,24 +29,24 @@ import com.jack.util.TreeNode;
  */
 public class PathSumTree3 {
     public static void main(String[] args) {
-        Integer []arr={0,10,5,-3,3,2,0,11,3,-2,0,1};
-        int sum=8;
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 10, 5, -3, 3, 2, 0, 11, 3, -2, 0, 1};
+        int sum = 8;
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new PathSumTree3().find(node,sum));
     }
-    public int find(TreeNode root,int sum) {
-        if (root==null)
+    public int find(TreeNode root, int sum) {
+        if (root == null)
             return 0;
-        return dfs(root,sum)+find(root.left,sum)+find(root.right,sum);
+        return dfs(root, sum) + find(root.left, sum) + find(root.right, sum);
     }
-    public int dfs(TreeNode root,int sum) {
-        int res=0;
-        if (root==null)
+    public int dfs(TreeNode root, int sum) {
+        int res = 0;
+        if (root == null)
             return res;
-        if (sum==root.val)
+        if (sum == root.val)
             res++;
-        res+=dfs(root.left,sum-root.val);
-        res+=dfs(root.right,sum-root.val);
+        res += dfs(root.left, sum - root.val);
+        res += dfs(root.right, sum - root.val);
         return res;
     }
 }

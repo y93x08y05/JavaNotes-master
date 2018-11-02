@@ -20,10 +20,10 @@ public class StringIndexOfString {
         String s2 = "a";
         System.out.println(findStringIndexOfString(s1, s2));
     }
-    private static int findStringIndexOfString(String haystack,String needle) {
+    private static int findStringIndexOfString(String haystack, String needle) {
         if (needle.equals(""))
             return 0;
-        if (haystack.length()<needle.length())
+        if (haystack.length() < needle.length())
             return -1;
         int index = haystack.indexOf(needle);
         return index;

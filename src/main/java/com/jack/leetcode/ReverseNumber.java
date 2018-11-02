@@ -20,7 +20,7 @@ public class ReverseNumber {
             if(m.length() >= z.length() && m.compareTo(z) > 0) {
                 return 0;
             }
-            x = Integer.valueOf(m).intValue();
+            x = Integer.valueOf(m);
             return x;
         } else {
             x = -x;
@@ -29,7 +29,7 @@ public class ReverseNumber {
             if(m.length() >= y.length() && m.compareTo(y) > 0){
                 return 0;
             }
-            x = Integer.valueOf(m).intValue();
+            x = Integer.valueOf(m);
             return -x;
         }
     }

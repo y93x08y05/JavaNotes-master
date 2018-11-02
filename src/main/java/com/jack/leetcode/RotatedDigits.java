@@ -21,13 +21,13 @@ import java.util.Scanner;
  */
 public class RotatedDigits {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(rotate(n));
     }
     private static int rotate(int n) {
-        int sum=0;
-        for (int i=1;i<=n;i++) {
+        int sum = 0;
+        for (int i = 1;i <= n; i++) {
             if (judge(i)) {
                 sum++;
             }
@@ -35,31 +35,31 @@ public class RotatedDigits {
         return sum;
     }
     private static boolean judge(int i) {
-        int x=i;
-        int y=0;
-        int z=0;
-        int k=0;
-        while (x!=0) {
-            int temp=x%10;
-            x/=10;
+        int x = i;
+        int y = 0;
+        int z = 0;
+        int k = 0;
+        while (x != 0) {
+            int temp = x % 10;
+            x /= 10;
             k++;
-            if (temp==2||temp==6) {
-                temp+=3;
+            if (temp == 2 || temp == 6) {
+                temp += 3;
             }
-            else if (temp==5||temp==9) {
-                temp-=3;
-            } else if (temp==0||temp==1||temp==8) {
+            else if (temp == 5 || temp == 9) {
+                temp -= 3;
+            } else if (temp == 0 || temp == 1 || temp == 8) {
 
             } else
                 return false;
-            y=y*10+temp;
+            y = y * 10 + temp;
         }
-        while (k!=0) {
-            z=z*10+y%10;
-            y/=10;
+        while (k != 0) {
+            z = z * 10 + y % 10;
+            y /= 10;
             k--;
         }
-        if (z!=i)
+        if (z != i)
             return true;
         else
             return false;

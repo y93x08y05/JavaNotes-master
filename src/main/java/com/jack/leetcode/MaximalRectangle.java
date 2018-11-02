@@ -1,6 +1,7 @@
 package com.jack.leetcode;
 
 import java.util.LinkedList;
+import java.util.Objects;
 
 /**
  * @Author: Jack
@@ -18,7 +19,7 @@ import java.util.LinkedList;
  */
 public class MaximalRectangle {
     public static void main(String[] args) {
-        char [][]chars={
+        char[][] chars = {
                 {'1','0','1','0','0'},
                 {'1','0','1','1','1'},
                 {'1','1','1','1','1'},
@@ -26,36 +27,36 @@ public class MaximalRectangle {
         };
         System.out.println(findMaxRectangle(chars));
     }
-    private static int findMaxRectangle(char [][]matrix) {
-        if (matrix==null||matrix.length==0||matrix[0].length==0)
+    private static int findMaxRectangle(char[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
             return 0;
-        int maxArea=0;
-        int []height=new int[matrix[0].length];
-        for (int i=0;i<matrix.length;i++) {
-            for (int j=0;j<matrix[0].length;j++) {
-                height[j]=matrix[i][j]=='0'?0:height[j]+1;
+        int maxArea = 0;
+        int[] height = new int[matrix[0].length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                height[j] = matrix[i][j] == '0' ? 0 : height[j] + 1;
             }
-            maxArea=Math.max(largestRectangleArea(height),maxArea);
+            maxArea = Math.max(largestRectangleArea(height), maxArea);
         }
         return maxArea;
     }
-    private static int largestRectangleArea(int []height) {
-        if (height==null||height.length==0)
+    private static int largestRectangleArea(int[] height) {
+        if (height == null || height.length == 0)
             return 0;
-        int maxArea=0;
-        LinkedList<Integer> stack=new LinkedList<>();
-        for (int i=0;i<height.length;i++) {
-            while (!stack.isEmpty()&&height[i]<=height[stack.peek()]) {
-                int index=stack.poll();
-                int currentArea=stack.isEmpty()?i*height[index]:(i-stack.peek()-1)*height[index];
-                maxArea=Math.max(maxArea,currentArea);
+        int maxArea = 0;
+        LinkedList<Integer> stack = new LinkedList<>();
+        for (int i = 0; i < height.length; i++) {
+            while (!stack.isEmpty() && height[i] <= height[Objects.requireNonNull(stack.peek())]) {
+                int index = Objects.requireNonNull(stack.poll());
+                int currentArea = stack.isEmpty() ? i * height[index] : (i - Objects.requireNonNull(stack.peek()) - 1) * height[index];
+                maxArea = Math.max(maxArea, currentArea);
             }
             stack.push(i);
         }
         while (!stack.isEmpty()) {
-            int index=stack.pop();
-            int currentArea=stack.isEmpty()?height.length*height[index]:(height.length-stack.peek()-1)*height[index];
-            maxArea=Math.max(maxArea,currentArea);
+            int index = stack.pop();
+            int currentArea = stack.isEmpty() ? height.length * height[index] : (height.length - Objects.requireNonNull(stack.peek()) - 1) * height[index];
+            maxArea = Math.max(maxArea, currentArea);
         }
         return maxArea;
     }

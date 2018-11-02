@@ -23,23 +23,23 @@ import java.util.Scanner;
  */
 public class NumSquares {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(numSquare(n));
     }
     private static int numSquare(int n) {
         List<Integer> square = new ArrayList<>();
-        for(int i=1;i*i<=n;i++) {
-            square.add(i*i);
+        for(int i = 1; i * i <= n; i++) {
+            square.add(i * i);
         }
-        int [] dp = new int[n+1];
-        for(int i=1;i<=n;i++) {
+        int[] dp = new int[n + 1];
+        for(int i = 1; i <= n; i++) {
             dp[i] = i;
-            for(int num=0;num<square.size();num++) {
+            for(int num = 0; num < square.size(); num++) {
                 if (square.get(num) > i) {
                     break;
                 }
-                dp[i] = Math.min(dp[i],1+dp[i-square.get(num)]);
+                dp[i] = Math.min(dp[i], 1 + dp[i - square.get(num)]);
             }
         }
         return dp[n];

@@ -24,82 +24,82 @@ public class MatrixZero {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
         int n = sc.nextInt();
-        int [][] arr = new int[m][n];
-        for (int i=0;i<arr.length;i++) {
-            for (int j=0;j<arr[0].length;j++) {
+        int[][] arr = new int[m][n];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0 ;j < arr[0].length; j++) {
                 arr[i][j] = sc.nextInt();
             }
         }
         setMatrixZero1(arr);
         setMatrixZero2(arr);
     }
-    private static void setMatrixZero1(int [][] arr) {
+    private static void setMatrixZero1(int[][] arr) {
         int rowLength = arr.length;
         int colLength = arr[0].length;
-        boolean [] rowFlag = new boolean[rowLength];
-        boolean [] colFlag = new boolean[colLength];
-        for (int i=0;i<rowLength;i++) {
-            for (int j=0;j<colLength;j++) {
-                if (arr[i][j]==0) {
+        boolean[] rowFlag = new boolean[rowLength];
+        boolean[] colFlag = new boolean[colLength];
+        for (int i = 0; i < rowLength; i++) {
+            for (int j = 0; j < colLength; j++) {
+                if (arr[i][j] == 0) {
                     rowFlag[i] = true;
                     colFlag[j] = true;
                 }
             }
         }
-        for (int i=0;i<rowLength;i++) {
+        for (int i = 0; i < rowLength; i++) {
             if (rowFlag[i]) {
-                for (int j=0;j<colLength;j++)
+                for (int j = 0; j < colLength; j++)
                     arr[i][j] = 0;
             }
         }
-        for (int i=0;i<colLength;i++) {
+        for (int i = 0; i < colLength; i++) {
             if (colFlag[i]) {
-                for (int j=0;j<rowLength;j++)
+                for (int j = 0; j < rowLength; j++)
                     arr[j][i] = 0;
             }
         }
     }
-    private static void setMatrixZero2(int [][] arr) {
+    private static void setMatrixZero2(int[][] arr) {
         int noZeroRowIndex = -1;
         int rowLength = arr.length;
         int colLength = arr[0].length;
-        for (int i=0;i<rowLength;i++) {
+        for (int i = 0; i < rowLength; i++) {
             int index;
-            for (index=0;index<colLength;index++) {
-                if (arr[i][index]==0)
+            for (index = 0; index < colLength; index++) {
+                if (arr[i][index] == 0)
                     break;
             }
-            if (index==colLength) {
+            if (index == colLength) {
                 noZeroRowIndex = i;
                 break;
             }
         }
-        if (noZeroRowIndex==-1) {
-            for (int i=0;i<rowLength;i++) {
-                for (int j=0;j<colLength;j++) {
+        if (noZeroRowIndex == -1) {
+            for (int i = 0; i < rowLength; i++) {
+                for (int j = 0; j < colLength; j++) {
                     arr[i][j] = 0;
                 }
             }
         } else {
-            for (int i=0;i<rowLength;i++) {
-                for (int j=0;j<colLength;j++) {
-                    if (arr[i][j]==0)
-                        arr[noZeroRowIndex][j]=0;
+            for (int i = 0; i < rowLength; i++) {
+                for (int j = 0; j < colLength; j++) {
+                    if (arr[i][j] == 0)
+                        arr[noZeroRowIndex][j] = 0;
                 }
             }
-            for (int i=0;i<rowLength;i++) {
-                for (int j=0;j<colLength;j++) {
-                    if (i==noZeroRowIndex)
+            for (int i = 0; i < rowLength; i++) {
+                for (int j = 0; j < colLength; j++) {
+                    if (i == noZeroRowIndex)
                         continue;
-                    if (arr[i][j]==0)
-                        for (int j2=0;j2<colLength;j2++)
-                            arr[i][j2]=0;
+                    if (arr[i][j] == 0)
+                        for (int j2 = 0; j2 < colLength; j2++)
+                            arr[i][j2] = 0;
                 }
             }
-            for (int i=0;i<colLength;i++) {
-                if (arr[noZeroRowIndex][i]==0)
-                    for (int j=0;j<rowLength;j++)
-                        arr[j][i]=0;
+            for (int i = 0; i < colLength; i++) {
+                if (arr[noZeroRowIndex][i] == 0)
+                    for (int j = 0; j < rowLength; j++)
+                        arr[j][i] = 0;
             }
         }
     }

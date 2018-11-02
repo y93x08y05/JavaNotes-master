@@ -20,20 +20,20 @@ import java.util.Scanner;
  */
 public class SelfDividingNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int left=sc.nextInt();
-        int right=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int left = sc.nextInt();
+        int right = sc.nextInt();
         System.out.println(selfDividingNumber(left, right));
     }
-    private static List<Integer> selfDividingNumber(int left,int right) {
-        List<Integer> list=new ArrayList<>();
-        for (int i=left;i<=right;i++) {
-            int j=i;
-            for (;j>0;j=j/10) {
-                if ((j%10==0)||(i%(j%10))!=0)
+    private static List<Integer> selfDividingNumber(int left, int right) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = left; i <= right; i++) {
+            int j = i;
+            for (; j > 0; j = j / 10) {
+                if ((j % 10 == 0) || (i % (j % 10)) != 0)
                     break;
             }
-            if (j==0)
+            if (j == 0)
                 list.add(i);
         }
         return list;

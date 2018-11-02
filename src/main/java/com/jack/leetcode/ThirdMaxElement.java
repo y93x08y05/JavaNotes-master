@@ -24,38 +24,38 @@ import java.util.Scanner;
  */
 public class ThirdMaxElement {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findThirdMax(arr));
     }
-    private static int findThirdMax(int []arr) {
-        int max=Integer.MIN_VALUE;
-        int second=Integer.MIN_VALUE;
-        int third=Integer.MIN_VALUE;
-        int status=7;
-        for (int i=0;i<arr.length;i++) {
-            if ((arr[i]==max&&(status&4)==0)||
-                    (arr[i]==second&&(status&2)==0||
-                            (arr[i]==third&&(status&1)==0))) {
+    private static int findThirdMax(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        int third = Integer.MIN_VALUE;
+        int status = 7;
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] == max && (status & 4) == 0)||
+                    (arr[i] == second && (status & 2) == 0 ||
+                            (arr[i] == third && (status & 1) == 0))) {
                 continue;
             }
-            status=status>>1;
-            if (arr[i]>max) {
-                third=second;
-                second=max;
-                max=arr[i];
-            } else if (arr[i]>second) {
-                third=second;
-                second=arr[i];
-            } else if (arr[i]>third) {
-                third=arr[i];
+            status = status >> 1;
+            if (arr[i] > max) {
+                third = second;
+                second = max;
+                max = arr[i];
+            } else if (arr[i] > second) {
+                third = second;
+                second = arr[i];
+            } else if (arr[i] > third) {
+                third = arr[i];
             }
         }
-        if ((status&7)!=0)
+        if ((status & 7) != 0)
             return max;
         else
             return third;

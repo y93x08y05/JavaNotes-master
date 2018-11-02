@@ -17,32 +17,32 @@ import java.util.Scanner;
  */
 public class SortArrayByParity {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         new SortArrayByParity().find(arr);
     }
-    public int [] find(int []arr) {
-        int n=arr.length;
-        if (n==1)
+    public int [] find(int[] arr) {
+        int n = arr.length;
+        if (n == 1)
             return arr;
-        int i=0;
-        int j=n-1;
-        while (i<j) {
-            if (arr[i]%2==0) {
+        int i = 0;
+        int j = n - 1;
+        while (i < j) {
+            if (arr[i] % 2 == 0) {
                 i++;
                 continue;
             }
-            if (arr[j]%2==1) {
+            if (arr[j] % 2 == 1) {
                 j--;
                 continue;
             }
-            int temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
             i++;
             j--;
         }

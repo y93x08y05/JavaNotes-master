@@ -15,34 +15,38 @@ import java.util.Scanner;
  */
 public class ReverseStringArray2 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        int k=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int k = sc.nextInt();
         System.out.println(reverseString(s, k));
-        System.out.println(reverseString("abcd"));
+        String s1 = "abcd";
+        System.out.println(reverseString(s1));
     }
-    private static String reverseString(String s,int k) {
-        int len=s.length();
-        String result="";
-        for (int i=0;i<len;i+=2*k) {
-            if (len-i<k) {
-                String temp=new StringBuilder(s.substring(i,len)).reverse().toString();
-                result+=temp;
-            } else if (len-i<2*k&&len-i>=k) {
-                String temp=new StringBuilder(s.substring(i,i+k)).reverse().toString();
-                result+=temp+s.substring(i+k,len);
+    private static String reverseString(String s, int k) {
+        int len = s.length();
+        String result = "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < len; i += 2 * k) {
+            if (len - i < k) {
+                String temp = new StringBuilder(s.substring(i, len)).reverse().toString();
+                sb.append(temp);
+            } else if (len - i < 2 * k && len - i >= k) {
+                String temp = new StringBuilder(s.substring(i, i + k)).reverse().toString();
+                sb.append(temp);
+                sb.append(s, i + k, len);
             } else {
-                String temp=new StringBuilder(s.substring(i,i+k)).reverse().toString();
-                result+=temp+s.substring(i+k,i+2*k);
+                String temp = new StringBuilder(s.substring(i, i + k)).reverse().toString();
+                sb.append(temp);
+                sb.append(s, i + k, i + 2 * k);
             }
         }
         return result;
     }
     private static String reverseString(String s) {
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         int len = s.length();
         for (int i = 0; i < len; i++)
-            result = s.charAt(i) + result;
-        return result;
+            sb.append(s.charAt(i));
+        return sb.toString();
     }
 }

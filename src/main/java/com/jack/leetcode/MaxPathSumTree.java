@@ -27,10 +27,10 @@ import com.jack.util.TreeNode;
  * 输出: 42
  */
 public class MaxPathSumTree {
-    int maxSum=Integer.MIN_VALUE;
+    int maxSum = Integer.MIN_VALUE;
     public static void main(String[] args) {
-        Integer []arr={0,-10,9,20,0,0,15,7};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, -10, 9, 20, 0, 0, 15, 7};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new MaxPathSumTree().find(root));
     }
     /*
@@ -40,22 +40,22 @@ public class MaxPathSumTree {
      * 公式有：value=value+(leftMax>0?leftMax:0)+(rightMax>0?rightMax:0)
      */
     public int find(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return 0;
         getMaxSumNode(root);
         return maxSum;
     }
     public int getMaxSumNode(TreeNode currentNode) {
-        int leftMax=0;
-        int rightMax=0;
-        int value=currentNode.val;
-        if (currentNode.left!=null)
-            leftMax=getMaxSumNode(currentNode.left);
-        if (currentNode.right!=null)
-            rightMax=getMaxSumNode(currentNode.right);
-        value=value+(leftMax>0?leftMax:0)+(rightMax>0?rightMax:0);
-        if (value>maxSum)
-            maxSum=value;
-        return currentNode.val+Math.max(leftMax>0?leftMax:0,rightMax>0?rightMax:0);
+        int leftMax = 0;
+        int rightMax = 0;
+        int value = currentNode.val;
+        if (currentNode.left != null)
+            leftMax = getMaxSumNode(currentNode.left);
+        if (currentNode.right != null)
+            rightMax = getMaxSumNode(currentNode.right);
+        value = value + (leftMax > 0 ? leftMax : 0) + (rightMax > 0 ? rightMax : 0);
+        if (value > maxSum)
+            maxSum = value;
+        return currentNode.val + Math.max(leftMax > 0 ? leftMax : 0, rightMax > 0 ? rightMax : 0);
     }
 }

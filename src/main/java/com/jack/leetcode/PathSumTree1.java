@@ -24,20 +24,20 @@ import com.jack.util.TreeNode;
  */
 public class PathSumTree1 {
     public static void main(String[] args) {
-        Integer []arr={0,5,4,8,11,13,4,7,2,0,1};
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 5, 4, 8, 11, 13, 4, 7, 2, 0, 1};
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new PathSumTree1().find(node));
     }
     public boolean find(TreeNode root) {
-        int sum=22;
-        return find(root,sum);
+        int sum = 22;
+        return find(root, sum);
     }
-    public boolean find(TreeNode root,int sum) {
-        if (root==null)
+    public boolean find(TreeNode root, int sum) {
+        if (root == null)
             return false;
-        if (root.left==null&&root.right==null&&sum==root.val)
+        if (root.left == null && root.right == null && sum == root.val)
             return true;
         else
-            return find(root.left,sum-root.val)||find(root.right,sum-root.val);
+            return find(root.left, sum - root.val) || find(root.right, sum - root.val);
     }
 }

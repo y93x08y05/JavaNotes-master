@@ -24,22 +24,22 @@ package com.jack.leetcode;
  */
 public class NumMagicSquaresInside {
     public static void main(String[] args) {
-        int [][]arr = {{4,3,8,4},{9,5,1,9},{2,7,6,2}};
+        int[][] arr = {{4, 3, 8, 4}, {9, 5, 1, 9}, {2, 7, 6, 2}};
         System.out.println(new NumMagicSquaresInside().find(arr));
     }
-    public int find(int [][]arr) {
+    public int find(int[][] arr) {
         int n = arr.length;
         int m = arr[0].length;
         int res = 0;
         for (int i = 0; i < n - 2; i++) {
             for (int j = 0; j < m - 2; j++) {
-                res += judge(i,j,arr);
+                res += judge(i, j, arr);
             }
         }
         return res;
     }
-    private int judge(int x,int y,int [][]g) {
-        int []a = new int[10];
+    private int judge(int x, int y, int[][] g) {
+        int[] a = new int[10];
         for (int i = x; i < x + 3; i++) {
             for (int j = y; j < y + 3; j++) {
                 if (g[i][j] >= 10 || g[i][j] <= 0)
@@ -51,7 +51,7 @@ public class NumMagicSquaresInside {
         }
         int sum = -1;
         int temp;
-        for (int i = x;i < x + 3; i++) {
+        for (int i = x; i < x + 3; i++) {
             temp = 0;
             for (int j = y; j < y + 3; j++) {
                 temp += g[i][j];
@@ -69,10 +69,10 @@ public class NumMagicSquaresInside {
             if (sum != temp)
                 return 0;
         }
-        temp = g[x][y] + g[x+1][y+1] + g[x+2][y+2];
+        temp = g[x][y] + g[x + 1][y + 1] + g[x + 2][y + 2];
         if (sum != temp)
             return 0;
-        temp = g[x][y+2] + g[x+1][y+1] + g[x+2][y];
+        temp = g[x][y + 2] + g[x + 1][y + 1] + g[x + 2][y];
         if (sum != temp)
             return 0;
         return 1;

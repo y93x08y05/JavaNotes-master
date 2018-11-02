@@ -16,33 +16,34 @@ import java.util.*;
  */
 public class TopKFrequent {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        findTopK(arr,k);
+        findTopK(arr, k);
     }
-    private static List<Integer> findTopK(int []arr,int k) {
-        Map<Integer,Integer> map=new HashMap<>();
-        for (int val:arr) {
+    @SuppressWarnings("unchecked")
+    private static List<Integer> findTopK(int[] arr, int k) {
+        Map<Integer,Integer> map = new HashMap<>();
+        for (int val : arr) {
             if (map.containsKey(val))
-                map.put(val,map.get(val)+1);
+                map.put(val, map.get(val) + 1);
             else
-                map.put(val,1);
+                map.put(val, 1);
         }
-        List<Integer>[]bucket=new List[arr.length+1];
-        for (int key:map.keySet()) {
-            int count=map.get(key);
-            if (bucket[count]==null)
-                bucket[count]=new ArrayList<>();
+        List<Integer>[] bucket = new List[arr.length + 1];
+        for (int key : map.keySet()) {
+            int count = map.get(key);
+            if (bucket[count] == null)
+                bucket[count] = new ArrayList<>();
             bucket[count].add(key);
         }
-        List<Integer> result=new ArrayList<>();
-        for (int i=arr.length;i>0;i--) {
-            if (bucket[i]!=null&&result.size()<k)
+        List<Integer> result = new ArrayList<>();
+        for (int i = arr.length; i > 0; i--) {
+            if (bucket[i] != null && result.size() < k)
                 result.addAll(bucket[i]);
         }
         return result;

@@ -25,45 +25,45 @@ import java.util.*;
  */
 public class WordBreak {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        String []str=sc.nextLine().split(" ");
-        List<String> list=new ArrayList<>();
-        for (int i=0;i<str.length;i++){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String[] str = sc.nextLine().split(" ");
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < str.length; i++){
             list.add(str[i]);
         }
         System.out.println(find1(s, list));
         System.out.println(find2(s, list));
     }
-    private static boolean find1(String s,List<String> wordDict) {
-        int len=s.length();
-        boolean []dp=new boolean[len+1];
-        dp[0]=true;
-        for (int i=1;i<=len;i++) {
-            for (int j=0;j<i;j++) {
-                String temp=s.substring(j,i);
-                if (dp[j]&&wordDict.contains(temp)) {
-                    dp[i]=true;
+    private static boolean find1(String s, List<String> wordDict) {
+        int len = s.length();
+        boolean[] dp = new boolean[len + 1];
+        dp[0] = true;
+        for (int i = 1; i <= len; i++) {
+            for (int j = 0; j < i; j++) {
+                String temp = s.substring(j, i);
+                if (dp[j] && wordDict.contains(temp)) {
+                    dp[i] = true;
                     break;
                 }
             }
         }
         return dp[len];
     }
-    private static boolean find2(String s,List<String> wordDict) {
+    private static boolean find2(String s, List<String> wordDict) {
         if (wordDict.contains(s))
             return true;
-        Queue<Integer> queue=new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
         queue.offer(0);
-        Set<Integer> visited=new HashSet<>();
+        Set<Integer> visited = new HashSet<>();
         visited.add(0);
         while (!queue.isEmpty()){
-            int currentIndex=queue.poll();
-            for (int i=currentIndex+1;i<=s.length();i++){
+            int currentIndex = queue.poll();
+            for (int i = currentIndex + 1; i <= s.length(); i++){
                 if (visited.contains(i))
                     continue;
-                if (wordDict.contains(s.substring(currentIndex,i))){
-                    if (i==s.length())
+                if (wordDict.contains(s.substring(currentIndex, i))){
+                    if (i == s.length())
                         return true;
                     queue.offer(i);
                     visited.add(i);

@@ -29,36 +29,36 @@ import java.util.Scanner;
  */
 public class UniquePathWithObstacles {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int m=sc.nextInt();
-        int n=sc.nextInt();
-        int [][]arr=new int[m][n];
-        for (int i=0;i<m;i++){
-            for (int j=0;j<n;j++){
-                arr[i][j]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] arr = new int[m][n];
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+                arr[i][j] = sc.nextInt();
             }
         }
         System.out.println(new UniquePathWithObstacles().find(arr));
     }
-    private int find(int [][]grid) {
-        int [][]path=new int[grid.length][grid[0].length];
-        int i=0;
-        int j=0;
-        for (i=0;i<grid.length;i++) {
-            for (j=0;j<grid[0].length;j++) {
-                if (grid[i][j]==1) {
-                    path[i][j]=0;
-                } else if (i==0&&j==0) {
-                    path[i][j]=1;
-                } else if (i==0&&j>0) {
-                    path[i][j]=path[i][j-1];
-                } else if (j==0&&i>0) {
-                    path[i][j]=path[i-1][j];
+    private int find(int[][] grid) {
+        int[][] path = new int[grid.length][grid[0].length];
+        int i;
+        int j = 0;
+        for (i = 0; i < grid.length; i++) {
+            for (j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    path[i][j] = 0;
+                } else if (i == 0 && j == 0) {
+                    path[i][j] = 1;
+                } else if (i == 0) {
+                    path[i][j] = path[i][j - 1];
+                } else if (j == 0) {
+                    path[i][j] = path[i - 1][j];
                 } else {
-                    path[i][j]=path[i-1][j]+path[i][j-1];
+                    path[i][j] = path[i - 1][j] + path[i][j - 1];
                 }
             }
         }
-        return path[i-1][j-1];
+        return path[i - 1][j - 1];
     }
 }

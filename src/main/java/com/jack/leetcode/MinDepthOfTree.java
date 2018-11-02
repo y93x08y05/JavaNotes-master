@@ -14,19 +14,19 @@ import com.jack.util.TreeNode;
  */
 public class MinDepthOfTree {
     public static void main(String[] args) {
-        Integer []arr={0,3,9,20,0,0,15,7};
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0,3,9,20,0,0,15,7};
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new MinDepthOfTree().find(node));
     }
     public int find(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return 0;
-        if (root.left==null&&root.right==null)
+        if (root.left == null && root.right == null)
             return 1;
-        if (root.left==null)
-            return find(root.right)+1;
-        if (root.right==null)
-            return find(root.left)+1;
-        return Math.min(find(root.left)+1,find(root.right)+1);
+        if (root.left == null)
+            return find(root.right) + 1;
+        if (root.right == null)
+            return find(root.left) + 1;
+        return Math.min(find(root.left) + 1, find(root.right) + 1);
     }
 }

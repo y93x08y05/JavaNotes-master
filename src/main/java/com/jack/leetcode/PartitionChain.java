@@ -16,30 +16,30 @@ import com.jack.util.ChainCreate;
  */
 public class PartitionChain {
     public static void main(String[] args) {
-        int []arr={1,4,3,2,5,2};
-        int x=3;
+        int[] arr = {1, 4, 3, 2, 5, 2};
+        int x = 3;
         new ChainCreate().print(new PartitionChain().find(new ChainCreate().create(arr),x));
     }
-    private ChainCreate.Node find(ChainCreate.Node head,int x) {
-        ChainCreate.Node preHead=new ChainCreate.Node(0);
-        preHead.next=head;
-        ChainCreate.Node pre=preHead;
-        ChainCreate.Node cur=head;
-        ChainCreate.Node insertPos=null;
-        while (cur!=null) {
-            if ((cur.data>=x)&&insertPos==null) {
-                insertPos=pre;
+    private ChainCreate.Node find(ChainCreate.Node head, int x) {
+        ChainCreate.Node preHead = new ChainCreate.Node(0);
+        preHead.next = head;
+        ChainCreate.Node pre = preHead;
+        ChainCreate.Node cur = head;
+        ChainCreate.Node insertPos = null;
+        while (cur != null) {
+            if ((cur.data >= x) && insertPos == null) {
+                insertPos = pre;
             }
-            if (cur.data<x&&insertPos!=null) {
-                pre.next=pre.next.next;
-                cur.next=insertPos.next;
-                insertPos.next=cur;
-                insertPos=insertPos.next;
-                cur=pre.next;
+            if (cur.data < x && insertPos != null) {
+                pre.next = pre.next.next;
+                cur.next = insertPos.next;
+                insertPos.next = cur;
+                insertPos = insertPos.next;
+                cur = pre.next;
                 continue;
             }
-            pre=pre.next;
-            cur=cur.next;
+            pre = pre.next;
+            cur = cur.next;
         }
         return preHead.next;
     }

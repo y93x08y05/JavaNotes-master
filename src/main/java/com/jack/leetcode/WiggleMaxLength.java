@@ -28,28 +28,28 @@ import java.util.Scanner;
  */
 public class WiggleMaxLength {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(wiggle(arr));
     }
-    private static int wiggle(int []arr) {
-        if (arr.length<=1)
+    private static int wiggle(int[] arr) {
+        if (arr.length <= 1)
             return arr.length;
-        int len=arr.length;
-        int flag=-1;
+        int len = arr.length;
+        int flag = -1;
         //flag为0时，差小于0，flag为1时，差大于0，连续数相同时为2
-        for (int i=1;i<arr.length;i++) {
-            int dif=arr[i]-arr[i-1];
-            if (i==1||flag==2)
-                flag=(dif!=0)?((dif>0)?1:0):2;
-            if (flag==0&&dif<0)
-                flag=1;
-            else if (flag==1&&dif>0)
-                flag=0;
+        for (int i = 1; i < arr.length; i++) {
+            int dif = arr[i] - arr[i - 1];
+            if (i == 1 || flag == 2)
+                flag = (dif != 0) ? ((dif > 0) ? 1 : 0) : 2;
+            if (flag == 0 && dif < 0)
+                flag = 1;
+            else if (flag == 1 && dif > 0)
+                flag = 0;
             else
                 len--;
         }

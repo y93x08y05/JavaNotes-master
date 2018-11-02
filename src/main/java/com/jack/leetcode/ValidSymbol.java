@@ -39,7 +39,7 @@ public class ValidSymbol {
         boolean result = false;
         Stack stack = new Stack();
         stack.push(str.charAt(0));
-        for (int i=1;i<str.length();i++) {
+        for (int i = 1; i < str.length(); i++) {
             char c = getChar(str.charAt(i));
             if (!stack.isEmpty()) {
                 if (stack.peek().equals(c)) {

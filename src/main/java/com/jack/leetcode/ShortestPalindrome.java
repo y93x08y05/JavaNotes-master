@@ -22,27 +22,27 @@ import java.util.Scanner;
  */
 public class ShortestPalindrome {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(findShortestPalindrome(s));
     }
     private static String findShortestPalindrome(String s) {
-        String temp=s+"#"+new StringBuilder(s).reverse().toString();
-        int []table=getTable(temp);
-        return new StringBuilder(s.substring(table[table.length-1])).reverse().toString()+s;
+        String temp = s + "#" + new StringBuilder(s).reverse().toString();
+        int[] table = getTable(temp);
+        return new StringBuilder(s.substring(table[table.length - 1])).reverse().toString() + s;
     }
     private static int[] getTable(String s) {
-        int len=s.length();
-        int []table=new int[len];
-        char []chars=s.toCharArray();
-        for (int i=1,k=0;i<len;i++) {
-            while (k>0&&chars[i]!=chars[k]) {
-                k=table[k-1];
+        int len = s.length();
+        int[] table = new int[len];
+        char[] chars = s.toCharArray();
+        for (int i = 1, k = 0; i < len; i++) {
+            while (k > 0 && chars[i] != chars[k]) {
+                k = table[k - 1];
             }
-            if (chars[i]==chars[k]) {
+            if (chars[i] == chars[k]) {
                 k++;
             }
-            table[i]=k;
+            table[i] = k;
         }
         return table;
     }

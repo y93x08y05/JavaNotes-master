@@ -28,42 +28,42 @@ import java.util.Scanner;
  */
 public class MinSwapsCouples {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr));
     }
-    private static int find(int []arr) {
-        int []pos=new int[arr.length];
+    private static int find(int[] arr) {
+        int[] pos = new int[arr.length];
         //记录每一个人在数组中的位置
-        for (int i=0;i<arr.length;i++) {
-            pos[arr[i]]=i;
+        for (int i = 0; i < arr.length; i++) {
+            pos[arr[i]] = i;
         }
-        int res=0;
-        for (int i=0;i<arr.length;i+=2) {
-            if (arr[i]/2==arr[i+1]/2) {//如果是夫妇，则不需要调整
+        int res = 0;
+        for (int i = 0; i < arr.length; i += 2) {
+            if (arr[i] / 2 == arr[i + 1] / 2) {//如果是夫妇，则不需要调整
                 continue;
             }
             int where;//表示另一半的位置
             //如果为偶数，则另一半比自己大1，否则另一半比自己小1
-            if (arr[i]%2==0) {
-                where=pos[arr[i]/2*2+1];
+            if (arr[i] % 2 == 0) {
+                where = pos[arr[i] / 2 * 2 + 1];
             } else {
-                where=pos[arr[i]/2*2];
+                where = pos[arr[i] / 2 * 2];
             }
             res++;
-            pos[arr[i+1]]=where;//更新位置数组并交换位置使得夫妇相邻
-            swap(i+1,where,arr);
+            pos[arr[i + 1]] = where;//更新位置数组并交换位置使得夫妇相邻
+            swap(i + 1, where, arr);
         }
         return res;
     }
-    private static void swap(int i,int j,int []arr) {
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+    private static void swap(int i, int j, int[] arr) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
     /**
      * O(n)解法，一次考虑两个凳子，假设不为夫妇，为了让这两个位置坐的

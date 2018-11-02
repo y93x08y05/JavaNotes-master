@@ -11,20 +11,20 @@ package com.jack.leetcode;
  * 从而对数列进行修改。
  */
 public class NumberArray2 {
-    int[] processed;
+    private int[] processed;
     int[] num;
     int length;
     public NumberArray2(int[] num) {
         length = num.length;
-        processed = new int[length+1];
+        processed = new int[length + 1];
         this.num = num;
-        for(int i = 1;i<=length;i++){
+        for(int i = 1; i <= length; i++){
             int sum = 0;
             int count = 1;
             int counter = lowBit(i);
 
             while(count <= counter){
-                sum += num[i-count];
+                sum += num[i - count];
                 count++;
             }
             processed[i] = sum;
@@ -35,7 +35,7 @@ public class NumberArray2 {
         int gap = val - num[i];
         num[i] = val;
 
-        int index = i+1;
+        int index = i + 1;
         while(index <= length){
             processed[index] += gap;
             index += lowBit(index);
@@ -43,7 +43,7 @@ public class NumberArray2 {
     }
 
     public int sumRange(int i, int j) {
-        return sum(j+1) - sum(i);
+        return sum(j + 1) - sum(i);
     }
 
     private int sum(int index){
@@ -54,7 +54,7 @@ public class NumberArray2 {
         }
         return sum;
     }
-    private int lowBit(int index){
+    private int lowBit(int index) {
         return index & (-index);
     }
     public static void main(String[] args) {

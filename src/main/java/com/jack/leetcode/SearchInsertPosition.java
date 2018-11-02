@@ -27,16 +27,16 @@ public class SearchInsertPosition {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int target = sc.nextInt();
-        int [] arr = new int[n];
-        for (int i=0;i<n;i++) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println(findPosition(arr, target));
     }
-    private static int findPosition(int [] arr,int target) {
-        int m = Arrays.binarySearch(arr,target);
-        if (m<0)
-            return Math.abs(m+1);
+    private static int findPosition(int[] arr, int target) {
+        int m = Arrays.binarySearch(arr, target);
+        if (m < 0)
+            return Math.abs(m + 1);
         else
             return m;
     }

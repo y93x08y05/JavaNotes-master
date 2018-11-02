@@ -30,33 +30,33 @@ import java.util.Scanner;
  */
 public class SolveEquation {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(solveEquation(s));
     }
     private static String solveEquation(String s) {
-        int []res1=evaluateExpression(s.split("=")[0]);
-        int []res2=evaluateExpression(s.split("=")[1]);
-        res1[0]-=res2[0];
-        res1[1]=res2[1]-res1[1];
-        if (res1[0]==0&&res1[1]==0)
+        int[] res1 = evaluateExpression(s.split("=")[0]);
+        int[] res2 = evaluateExpression(s.split("=")[1]);
+        res1[0] -= res2[0];
+        res1[1] = res2[1] - res1[1];
+        if (res1[0] == 0 && res1[1] == 0)
             return "Infinite solutions";
-        if (res1[0]==0)
+        if (res1[0] == 0)
             return "No solution";
-        return "x="+res1[1]/res1[0];
+        return "x=" + res1[1] / res1[0];
     }
     private static int[] evaluateExpression(String exp) {
-        String []tokens=exp.split("(?=[-+])");
-        int []res=new int[2];
-        for (String token:tokens) {
-            if (token.equals("+x")||token.equals("x"))
-                res[0]+=1;
+        String[] tokens = exp.split("(?=[-+])");
+        int[] res = new int[2];
+        for (String token : tokens) {
+            if (token.equals("+x") || token.equals("x"))
+                res[0] += 1;
             else if (token.equals("-x"))
-                res[0]-=1;
+                res[0] -= 1;
             else if (token.contains("x"))
-                res[0]+=Integer.parseInt(token.substring(0,token.indexOf("x")));
+                res[0] += Integer.parseInt(token.substring(0, token.indexOf("x")));
             else
-                res[1]+=Integer.parseInt(token);
+                res[1] += Integer.parseInt(token);
         }
         return res;
     }

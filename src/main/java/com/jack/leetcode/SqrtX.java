@@ -24,6 +24,6 @@ public class SqrtX {
         System.out.println(findSqrt(x));
     }
     private static int findSqrt(int x) {
-        return Integer.valueOf(String.valueOf(Math.sqrt(x)).substring(0,String.valueOf(Math.sqrt(x)).indexOf(".")));
+        return Integer.valueOf(String.valueOf(Math.sqrt(x)).substring(0, String.valueOf(Math.sqrt(x)).indexOf(".")));
     }
 }

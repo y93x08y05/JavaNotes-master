@@ -22,12 +22,12 @@ import java.util.Scanner;
  */
 public class PalindromePartition {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(new PalindromePartition().find(s));
     }
     public List<List<String>> find(String s) {
-        int [][]dp = new int[s.length()][s.length()];
+        int[][] dp = new int[s.length()][s.length()];
         List<List<String>> result = new ArrayList<>();
         List<String> r = new ArrayList<>();
         for (int i = 0; i < s.length(); i++) {
@@ -41,7 +41,7 @@ public class PalindromePartition {
                     dp[i][j] = 1;
             }
         }
-        dfs(0,s,dp,r,result);
+        dfs(0, s, dp, r, result);
         return result;
     }
     public void dfs(int i, String s, int [][]dp, List<String> r, List<List<String>> result) {
@@ -53,8 +53,8 @@ public class PalindromePartition {
         }
         for (int j = i; j < s.length(); j++) {
             if (dp[i][j] == 1) {
-                r.add(0,s.substring(i,j+1));
-                dfs(j+1,s,dp,r,result);
+                r.add(0,s.substring(i, j + 1));
+                dfs(j + 1, s, dp, r, result);
                 r.remove(0);
             }
         }

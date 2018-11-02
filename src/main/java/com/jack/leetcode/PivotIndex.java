@@ -27,27 +27,27 @@ import java.util.Scanner;
  */
 public class PivotIndex {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int []arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new PivotIndex().find(arr));
     }
-    public int find(int []arr) {
-        if (arr.length<3)
+    public int find(int[] arr) {
+        if (arr.length < 3)
             return -1;
-        for (int i=0;i<arr.length;i++) {
-            int sum1=0;
-            int sum2=0;
-            for (int p=0;p<i;p++) {
-                sum1+=arr[p];
+        for (int i = 0; i < arr.length; i++) {
+            int sum1 = 0;
+            int sum2 = 0;
+            for (int p = 0; p < i; p++) {
+                sum1 += arr[p];
             }
-            for (int q=i+1;q<arr.length;q++) {
-                sum2+=arr[q];
+            for (int q = i + 1; q < arr.length; q++) {
+                sum2 += arr[q];
             }
-            if (sum1==sum2)
+            if (sum1 == sum2)
                 return i;
         }
         return -1;

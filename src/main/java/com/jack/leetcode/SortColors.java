@@ -26,42 +26,42 @@ import java.util.Scanner;
  */
 public class SortColors {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         method1(arr);
         method2(arr);
     }
-    private static void method1(int []arr) {
-        if (arr==null||arr.length<=1)
+    private static void method1(int[] arr) {
+        if (arr == null || arr.length <= 1)
             return;
-        int zero=0;
-        int one=0;
-        int two=0;
-        for (int i=0;i<arr.length;i++) {
-            if (arr[i]==0)
+        int zero = 0;
+        int one = 0;
+        int two = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0)
                 zero++;
-            if (arr[i]==1)
+            if (arr[i] == 1)
                 one++;
-            if (arr[i]==2)
+            if (arr[i] == 2)
                 two++;
         }
-        for (int i=0;i<arr.length;i++) {
-            if (zero>0) {
-                arr[i]=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (zero > 0) {
+                arr[i] = 0;
                 zero--;
                 continue;
             }
-            if (one>0) {
-                arr[i]=1;
+            if (one > 0) {
+                arr[i] = 1;
                 one--;
                 continue;
             }
-            if (two>0) {
-                arr[i]=2;
+            if (two > 0) {
+                arr[i] = 2;
                 two++;
             }
         }
@@ -73,19 +73,19 @@ public class SortColors {
      * 有1则后一个指针前进一步并赋值
      * @param arr
      */
-    private static void method2(int []arr) {
-        if (arr==null||arr.length<=1)
+    private static void method2(int[] arr) {
+        if (arr == null || arr.length <= 1)
             return;
-        int index0=0;
-        int index1=0;
-        for (int i=0;i<arr.length;i++) {
-            if (arr[i]==0) {
-                arr[i]=2;
-                arr[index1++]=1;
-                arr[index0++]=0;
-            } else if (arr[i]==1) {
-                arr[i]=2;
-                arr[index1++]=1;
+        int index0 = 0;
+        int index1 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+                arr[i] = 2;
+                arr[index1++] = 1;
+                arr[index0++] = 0;
+            } else if (arr[i] == 1) {
+                arr[i] = 2;
+                arr[index1++] = 1;
             }
         }
     }

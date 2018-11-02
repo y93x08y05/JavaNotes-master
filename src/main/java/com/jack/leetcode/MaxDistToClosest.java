@@ -27,15 +27,15 @@ import java.util.Scanner;
  */
 public class MaxDistToClosest {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new MaxDistToClosest().find(arr));
     }
-    public int find(int []arr) {
+    public int find(int[] arr) {
         int len = arr.length;
         if (len == 1)
             return 0;
@@ -44,12 +44,12 @@ public class MaxDistToClosest {
         int res = 0;
         for (; i < len && arr[i] == 0; i++)
             count++;
-        res = Math.max(count,res);
+        res = Math.max(count, res);
         count = 0;
         int j = len - 1;
         for (; j >= 0 && arr[j] == 0; j--)
             count++;
-        res = Math.max(count,res);
+        res = Math.max(count, res);
         while (i < j) {
             for (; i < j && arr[i] == 1; i++);
             count = 0;

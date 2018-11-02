@@ -19,28 +19,28 @@ import java.util.Scanner;
  */
 public class MaxLengthRepeatedSubArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int m=sc.nextInt();
-        int []arr1=new int[n];
-        int []arr2=new int[m];
-        for (int i=0;i<arr1.length;i++) {
-            arr1[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[] arr1 = new int[n];
+        int[] arr2 = new int[m];
+        for (int i = 0; i < arr1.length; i++) {
+            arr1[i] = sc.nextInt();
         }
-        for (int i=0;i<arr2.length;i++) {
-            arr2[i]=sc.nextInt();
+        for (int i = 0; i < arr2.length; i++) {
+            arr2[i] = sc.nextInt();
         }
         System.out.println(findCommonLength(arr1, arr2));
     }
-    private static int findCommonLength(int []A, int []B) {
-        int res=0;
-        int [][]dp=new int[A.length+1][B.length+1];
-        for (int i=0;i<A.length;i++) {
-            for (int j=0;j<B.length;j++) {
-                if (A[i]==B[j]) {
-                    dp[i+1][j+1]=dp[i][j]+1;
+    private static int findCommonLength(int[] A, int[] B) {
+        int res = 0;
+        int[][] dp = new int[A.length + 1][B.length + 1];
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < B.length; j++) {
+                if (A[i] == B[j]) {
+                    dp[i + 1][j + 1] = dp[i][j] + 1;
                 }
-                res=Math.max(res,dp[i+1][j+1]);
+                res = Math.max(res, dp[i + 1][j + 1]);
             }
         }
         return res;

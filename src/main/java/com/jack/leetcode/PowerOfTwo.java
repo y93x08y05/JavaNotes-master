@@ -30,7 +30,7 @@ public class PowerOfTwo {
                 return false;
             n = n / 2;
         }
-        if ( n == 1)
+        if (n == 1)
             return true;
         return false;
     }

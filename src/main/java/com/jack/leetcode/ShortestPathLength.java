@@ -24,41 +24,41 @@ import java.util.Queue;
  */
 public class ShortestPathLength {
     public static void main(String[] args) {
-        int [][]arr={{1},{0,2,4},{1,3,4},{2},{1,2}};
+        int[][] arr = {{1}, {0, 2, 4}, {1, 3, 4}, {2}, {1, 2}};
         System.out.println(shortestPathLength(arr));
     }
-    private static int shortestPathLength(int [][]graph) {
-        int n=graph.length;
-        int [][]dp=new int[n][1<<n];
-        Queue<Pair> pairs=new LinkedList<>();
-        for (int i=0;i<n;i++) {
-            Arrays.fill(dp[i],999);
-            pairs.offer(new Pair(i,1<<i));
-            dp[i][1<<i]=0;
+    private static int shortestPathLength(int[][] graph) {
+        int n = graph.length;
+        int[][] dp = new int[n][1 << n];
+        Queue<Pair> pairs = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(dp[i], 999);
+            pairs.offer(new Pair(i, 1 << i));
+            dp[i][1 << i] = 0;
         }
-        int endStatus=(1<<n)-1;
+        int endStatus = (1 << n) - 1;
         while (!pairs.isEmpty()) {
-            Pair pair=pairs.poll();
-            int head=pair.head;
-            int d=dp[head][pair.status];
-            if (pair.status==endStatus)
+            Pair pair = pairs.poll();
+            int head = pair.head;
+            int d = dp[head][pair.status];
+            if (pair.status == endStatus)
                 return d;
-            for (int i=0;i<graph[head].length;i++) {
-                int temp=graph[head][i];
-                int tempStatus=pair.status|(1<<temp);
-                if (d+1<dp[temp][tempStatus]) {
-                    dp[temp][tempStatus]=d+1;
-                    pairs.offer(new Pair(temp,tempStatus));
+            for (int i = 0; i < graph[head].length; i++) {
+                int temp = graph[head][i];
+                int tempStatus = pair.status | (1 << temp);
+                if (d + 1 < dp[temp][tempStatus]) {
+                    dp[temp][tempStatus] = d + 1;
+                    pairs.offer(new Pair(temp, tempStatus));
                 }
             }
         }
         return 0;
     }
     static class Pair {
-        public int head,status;
-        public Pair(int head,int status) {
-            this.head=head;
-            this.status=status;
+        public int head, status;
+        public Pair(int head, int status) {
+            this.head = head;
+            this.status = status;
         }
     }
 }

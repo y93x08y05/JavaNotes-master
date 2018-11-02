@@ -30,11 +30,11 @@ import java.util.Scanner;
  */
 public class Rob {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr));
     }
@@ -45,19 +45,19 @@ public class Rob {
      * @param arr
      * @return
      */
-    private static int find(int []arr) {
-        if (arr.length==0||arr==null)
+    private static int find(int[] arr) {
+        if (arr==null || arr.length == 0)
             return 0;
-        if (arr.length>2)
-            arr[2]+=arr[0];
-        int i=3;
-        for (;i<arr.length;i++)
-            arr[i]+=Math.max(arr[i-2],arr[i-3]);
-        if (arr.length==1)
+        if (arr.length > 2)
+            arr[2] = arr[0];
+        int i = 3;
+        for (; i < arr.length; i++)
+            arr[i] += Math.max(arr[i - 2], arr[i - 3]);
+        if (arr.length == 1)
             return arr[0];
-        else if (arr.length==2)
-            return Math.max(arr[0],arr[1]);
+        else if (arr.length == 2)
+            return Math.max(arr[0], arr[1]);
         else
-            return Math.max(arr[i-1],arr[i-2]);
+            return Math.max(arr[i - 1], arr[i - 2]);
     }
 }

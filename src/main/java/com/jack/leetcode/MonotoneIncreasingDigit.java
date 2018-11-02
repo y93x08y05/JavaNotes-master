@@ -22,23 +22,23 @@ import java.util.Scanner;
  */
 public class MonotoneIncreasingDigit {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findMonotoneIncreasing(n));
     }
     private static int findMonotoneIncreasing(int n) {
-        char []s=(n+"").toCharArray();
-        int begin=s.length;
-        for (int i=s.length-1;i>=1;i--) {
-            if (s[i]>=s[i-1])
-                continue;
-            else {
-                s[i-1]--;
-                begin=i;
+        char[] s = (n + "").toCharArray();
+        int begin = s.length;
+        for (int i = s.length - 1; i >= 1; i--) {
+            if (s[i] >= s[i - 1]) {
+
+            } else {
+                s[i - 1]--;
+                begin = i;
             }
         }
-        for (int i=begin;i<s.length;i++) {
-            s[i]='9';
+        for (int i = begin; i < s.length; i++) {
+            s[i] = '9';
         }
         return Integer.parseInt(String.valueOf(s));
     }

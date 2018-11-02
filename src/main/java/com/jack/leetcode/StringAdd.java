@@ -20,18 +20,18 @@ public class StringAdd {
         System.out.println(computeStringAdd(s1, s2));
     }
     private static String computeStringAdd(String s1, String s2) {
-        int i=s1.length()-1;
-        int j=s2.length()-1;
-        int carry=0;
-        String res="";
-        while (i>=0||j>=0) {
-            if (i>=0)
-                carry+=s1.charAt(i--)-'0';
-            if (j>=0)
-                carry+=s2.charAt(j--)-'0';
-            res=Integer.toString(carry%10)+res;
-            carry/=10;
+        int i = s1.length() - 1;
+        int j = s2.length() - 1;
+        int carry = 0;
+        StringBuilder sb = new StringBuilder();
+        while (i >= 0 || j >= 0) {
+            if (i >= 0)
+                carry += s1.charAt(i--) - '0';
+            if (j >= 0)
+                carry += s2.charAt(j--) - '0';
+            sb.append(Integer.toString(carry % 10));
+            carry /= 10;
         }
-        return carry!=0?"1"+res:res;
+        return carry != 0 ? "1" + sb.toString() : sb.toString();
     }
 }

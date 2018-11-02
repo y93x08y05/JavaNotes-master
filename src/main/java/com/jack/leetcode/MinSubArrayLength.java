@@ -16,31 +16,31 @@ import java.util.Scanner;
  */
 public class MinSubArrayLength {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[]arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        int s=sc.nextInt();
+        int s = sc.nextInt();
         System.out.println(findMinSubArrayLen(arr, s));
     }
-    private static int findMinSubArrayLen(int []arr, int s) {
-        int res=Integer.MAX_VALUE;
+    private static int findMinSubArrayLen(int[] arr, int s) {
+        int res = Integer.MAX_VALUE;
         int sum;
-        for (int i=0;i<arr.length-1;i++) {
-            sum=arr[i];
-            if (sum>=s)
+        for (int i = 0; i < arr.length - 1; i++) {
+            sum = arr[i];
+            if (sum >= s)
                 return 1;
-            for (int j=i+1;j<arr.length;j++) {
-                sum+=arr[j];
-                if (sum>=s) {
-                    if (res>j-i+1)
-                        res=j-i+1;
+            for (int j = i + 1; j < arr.length; j++) {
+                sum += arr[j];
+                if (sum >= s) {
+                    if (res > j - i + 1)
+                        res = j - i + 1;
                     break;
                 }
             }
         }
-        return res==Integer.MAX_VALUE?0:res;
+        return res == Integer.MAX_VALUE ? 0 : res;
     }
 }

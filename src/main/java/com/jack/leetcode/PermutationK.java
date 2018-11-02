@@ -30,26 +30,26 @@ import java.util.Scanner;
  */
 public class PermutationK {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
         System.out.println(findPermutation(n, k));
     }
     private static String findPermutation(int n, int k) {
         k--;
-        List<Integer> list=new ArrayList<>();
-        for (int i=1;i<=n;i++)
+        List<Integer> list = new ArrayList<>();
+        for (int i = 1; i <= n; i++)
             list.add(i);
-        int factorial=1;
-        for (int i=2;i<n;i++)
-            factorial*=i;
-        int round=n-1;
-        StringBuilder sb=new StringBuilder();
-        while (round>=0) {
-            sb.append(list.remove(k/factorial));
-            k%=factorial;
-            if (round!=0)
-                factorial/=round;
+        int factorial = 1;
+        for (int i = 2; i < n; i++)
+            factorial *= i;
+        int round = n - 1;
+        StringBuilder sb = new StringBuilder();
+        while (round >= 0) {
+            sb.append(list.remove(k / factorial));
+            k %= factorial;
+            if (round != 0)
+                factorial /= round;
             round--;
         }
         return sb.toString();

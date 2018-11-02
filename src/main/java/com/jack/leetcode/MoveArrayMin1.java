@@ -21,19 +21,19 @@ public class MoveArrayMin1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int [] arr = new int[n];
-        for (int i=0;i<n;i++)
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
         System.out.println(findMinMove(arr));
     }
-    private static int findMinMove(int [] arr) {
+    private static int findMinMove(int[] arr) {
         int min = Integer.MAX_VALUE;
         int res = 0;
-        for (int i=0;i<arr.length;i++) {
-            if (arr[i]<min)
-                min=arr[i];
-            res+=arr[i];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min)
+                min = arr[i];
+            res += arr[i];
         }
-        return res-min*arr.length;
+        return res - min * arr.length;
     }
 }

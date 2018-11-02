@@ -18,11 +18,11 @@ import java.util.Scanner;
  */
 public class WiggleSort {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         method1(arr);
     }
@@ -34,17 +34,17 @@ public class WiggleSort {
      * [4 5 5 6]升序交替为[4 5 5 6]降序交替为[5 6 4 5]
      * @param arr
      */
-    private static void method1(int []arr) {
-        if (arr.length<=1)
+    private static void method1(int[] arr) {
+        if (arr.length <= 1)
             return;
-        int []temp=Arrays.copyOfRange(arr,0,arr.length);
+        int[] temp = Arrays.copyOfRange(arr, 0, arr.length);
         Arrays.sort(temp);
-        int large=temp.length/2+(temp.length%2==0?-1:0);
-        int small=temp.length-1;
-        for (int i=0,j=1;i<temp.length;i+=2,j+=2) {
-            if (j<temp.length)
-                arr[j]=temp[small--];
-            arr[i]=temp[large--];
+        int large = temp.length / 2 + (temp.length % 2 == 0 ? -1 : 0);
+        int small = temp.length - 1;
+        for (int i = 0, j = 1; i < temp.length; i += 2, j += 2) {
+            if (j < temp.length)
+                arr[j] = temp[small--];
+            arr[i] = temp[large--];
         }
     }
 }

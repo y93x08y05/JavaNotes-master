@@ -16,14 +16,14 @@ public class RepeatedStringMatch {
         String s2 = "cdabcdab";
         System.out.println(findRepeatedStringMatch(s1, s2));
     }
-    private static int findRepeatedStringMatch(String A,String B) {
+    private static int findRepeatedStringMatch(String A, String B) {
         StringBuilder sb = new StringBuilder();
         int lenA = A.length();
         int lenB = B.length();
-        for(int i=0;i<lenB/lenA + 2;i++){
+        for(int i = 0; i < lenB / lenA + 2; i++){
             String str = sb.append(A).toString();
-            if(str.indexOf(B) != -1)
-                return i+1;
+            if(str.contains(B))
+                return i + 1;
         }
         return -1;
     }

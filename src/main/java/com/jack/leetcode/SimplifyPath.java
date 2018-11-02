@@ -16,33 +16,33 @@ import java.util.Stack;
  */
 public class SimplifyPath {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String path=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String path = sc.nextLine();
         System.out.println(find(path));
     }
     private static String find(String path) {
-        Stack<String> stack=new Stack<>();
-        while (path.length()>0) {
-            int start=path.indexOf("/");
-            path=path.substring(start+1);
-            int end=path.indexOf("/");
-            if (end==-1)
-                end=path.length();
-            String part=path.substring(0,end);
-            path=path.substring(end);
-            if (part.equals(".")||part.equals(""))
+        Stack<String> stack = new Stack<>();
+        while (path.length() > 0) {
+            int start = path.indexOf("/");
+            path = path.substring(start + 1);
+            int end = path.indexOf("/");
+            if (end == -1)
+                end = path.length();
+            String part = path.substring(0, end);
+            path = path.substring(end);
+            if (part.equals(".") || part.equals(""))
                 continue;
             if (part.equals("..")) {
-                if (stack.empty()==false)
+                if (!stack.empty())
                     stack.pop();
             } else
                 stack.push("/"+part);
         }
-        String result="";
-        while (stack.isEmpty()==false)
-            result=stack.pop()+result;
-        if (result.length()==0)
+        StringBuilder result = new StringBuilder();
+        while (!stack.isEmpty())
+            result.insert(0, stack.pop());
+        if (result.length() == 0)
             return "/";
-        return result;
+        return result.toString();
     }
 }

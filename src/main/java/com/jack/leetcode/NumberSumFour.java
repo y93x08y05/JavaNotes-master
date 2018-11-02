@@ -23,25 +23,25 @@ import java.util.List;
  */
 public class NumberSumFour {
     public static void main(String[] args) {
-        int [] arr = {1,0,-1,0,-2,2};
+        int[] arr = {1, 0, -1, 0, -2, 2};
         int target = 0;
-        for (List<Integer> i : findSumFour(arr,target))
+        for (List<Integer> i : findSumFour(arr, target))
             System.out.println(i);
     }
-    private static List<List<Integer>> findSumFour(int [] arr,int target) {
+    private static List<List<Integer>> findSumFour(int[] arr, int target) {
         List<List<Integer>> lists = new ArrayList<>();
         HashSet<ArrayList<Integer>> set = new HashSet<>();
-        if (arr.length<=3)
+        if (arr.length <= 3)
             return lists;
         Arrays.sort(arr);
         int sum;
-        for (int i=0;i<arr.length-3;i++) {
-            for (int j=i+1;j<arr.length-2;j++) {
-                int low=j+1;
-                int high=arr.length-1;
-                while (low<high) {
-                    sum=arr[i]+arr[j]+arr[low]+arr[high];
-                    if (sum==target) {
+        for (int i = 0; i < arr.length - 3; i++) {
+            for (int j = i + 1; j < arr.length - 2; j++) {
+                int low = j + 1;
+                int high = arr.length - 1;
+                while (low < high) {
+                    sum = arr[i] + arr[j] + arr[low] + arr[high];
+                    if (sum == target) {
                         ArrayList<Integer> list = new ArrayList<>();
                         list.add(arr[i]);
                         list.add(arr[j]);
@@ -54,7 +54,7 @@ public class NumberSumFour {
                         low++;
                         high--;
                     } else {
-                        if (sum<target)
+                        if (sum < target)
                             low++;
                         else
                             high--;

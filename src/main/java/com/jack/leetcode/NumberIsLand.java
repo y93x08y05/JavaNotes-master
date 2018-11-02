@@ -26,37 +26,37 @@ import java.util.Scanner;
  */
 public class NumberIsLand {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        char [][]arr={{1,1,1,1,0},{1,1,0,1,0},{1,1,0,0,0},{0,0,0,0,0}};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        char[][] arr = {{1, 1, 1, 1, 0}, {1, 1, 0, 1, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 0, 0}};
         System.out.println(findNumberLand(arr));
     }
-    private static int findNumberLand(char [][]arr) {
-        if (arr==null||arr.length==0||arr[0].length==0)
+    private static int findNumberLand(char[][] arr) {
+        if (arr == null || arr.length == 0 || arr[0].length == 0)
             return 0;
-        int rows=arr.length;
-        int cols=arr[0].length;
-        int count=0;
-        for (int i=0;i<rows;i++) {
-            for (int j=0;j<cols;j++) {
-                if (arr[i][j]=='1') {
+        int rows = arr.length;
+        int cols = arr[0].length;
+        int count = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (arr[i][j] == '1') {
                     count++;
-                    dfsSearch(arr,i,j,rows,cols);
+                    dfsSearch(arr, i, j, rows, cols);
                 }
             }
         }
-        return count++;
+        return count += 1;
     }
-    private static void dfsSearch(char [][]grid,int i,int j,int rows,int cols) {
-        if (i<0||i>=rows||j<0||j>=cols) {
+    private static void dfsSearch(char[][] grid, int i, int j, int rows, int cols) {
+        if (i < 0 || i >= rows || j < 0 || j >= cols) {
             return;
         }
-        if (grid[i][j]!='1')
+        if (grid[i][j] != '1')
             return;
-        grid[i][j]='0';
-        dfsSearch(grid,i+1,j,rows,cols);
-        dfsSearch(grid,i-1,j,rows,cols);
-        dfsSearch(grid,i,j+1,rows,cols);
-        dfsSearch(grid,i,j-1,rows,cols);
+        grid[i][j] = '0';
+        dfsSearch(grid, i + 1, j, rows, cols);
+        dfsSearch(grid, i - 1, j, rows, cols);
+        dfsSearch(grid, i, j + 1, rows, cols);
+        dfsSearch(grid, i, j - 1, rows, cols);
     }
 }

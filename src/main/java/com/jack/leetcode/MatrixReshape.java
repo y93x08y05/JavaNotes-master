@@ -34,18 +34,18 @@ package com.jack.leetcode;
  */
 public class MatrixReshape {
     public static void main(String[] args) {
-        int [][]arr={{1,2},{3,4}};
-        int r=1;
-        int c=4;
-        new MatrixReshape().find(arr,r,c);
+        int[][] arr = {{1, 2}, {3, 4}};
+        int r = 1;
+        int c = 4;
+        new MatrixReshape().find(arr, r, c);
     }
-    private int [][] find(int [][]arr,int r,int c) {
-        int originalR=arr.length;
-        int originalC=arr[0].length;
-        if (originalR*originalC==r*c) {
-            int [][] result=new int[r][c];
-            for (int i=0;i<r*c;i++) {
-                result[i/c][i%c]=arr[i/originalC][i%originalC];
+    private int [][] find(int[][] arr, int r, int c) {
+        int originalR = arr.length;
+        int originalC = arr[0].length;
+        if (originalR * originalC == r * c) {
+            int[][] result = new int[r][c];
+            for (int i = 0; i < r * c; i++) {
+                result[i / c][i % c] = arr[i / originalC][i % originalC];
             }
             return result;
         } else

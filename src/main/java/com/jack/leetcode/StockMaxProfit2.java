@@ -25,15 +25,15 @@ package com.jack.leetcode;
  */
 public class StockMaxProfit2 {
     public static void main(String[] args) {
-        int [] arr = {7,1,5,3,6,4};
+        int[] arr = {7, 1, 5, 3, 6, 4};
         System.out.println(findMaxProfit(arr));
     }
-    private static int findMaxProfit(int [] arr) {
+    private static int findMaxProfit(int[] arr) {
         int sum = 0;
-        int length = arr.length-1;
-        for (int i=0;i<length;i++) {
-            if (arr[i]<arr[i+1]) {
-                sum+=arr[i+1]-arr[i];
+        int length = arr.length - 1;
+        for (int i = 0; i < length; i++) {
+            if (arr[i] < arr[i + 1]) {
+                sum += arr[i + 1] - arr[i];
             }
         }
         return sum;

@@ -23,26 +23,26 @@ import com.jack.util.TreeNode;
  */
 public class SortedListToBST {
     public static void main(String[] args) {
-        int []arr={-10,-3,0,5,9};
+        int[] arr = {-10, -3, 0, 5, 9};
         new SortedListToBST().find(new ChainCreate().create(arr));
     }
     public TreeNode find(ChainCreate.Node head) {
-        if (head==null)
+        if (head == null)
             return null;
-        return find(head,null);
+        return find(head, null);
     }
-    public TreeNode find(ChainCreate.Node head,ChainCreate.Node tail) {
-        if (head==tail)
+    public TreeNode find(ChainCreate.Node head, ChainCreate.Node tail) {
+        if (head == tail)
             return null;
-        ChainCreate.Node fast=head;
-        ChainCreate.Node slow=head;
-        while (fast!=tail&&fast.next!=tail) {
-            fast=fast.next.next;
-            slow=slow.next;
+        ChainCreate.Node fast = head;
+        ChainCreate.Node slow = head;
+        while (fast != tail && fast.next != tail) {
+            fast = fast.next.next;
+            slow = slow.next;
         }
-        TreeNode root=new TreeNode(slow.data);
-        root.left=find(head,slow);
-        root.right=find(slow.next,tail);
+        TreeNode root = new TreeNode(slow.data);
+        root.left = find(head, slow);
+        root.right = find(slow.next, tail);
         return root;
     }
 }
