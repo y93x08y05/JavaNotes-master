@@ -31,44 +31,44 @@ import java.util.List;
  */
 public class LowestCommonAncestor2 {
     public static void main(String[] args) {
-        Integer []arr={0,3,5,1,6,2,0,8,0,0,7,4};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
-        TreeNode p=new TreeNode(5);
-        TreeNode q=new TreeNode(1);
-        System.out.println(new LowestCommonAncestor2().find(root,p,q).val);
+        Integer[] arr = {0, 3, 5, 1, 6, 2, 0, 8, 0, 0, 7, 4};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
+        TreeNode p = new TreeNode(5);
+        TreeNode q = new TreeNode(1);
+        System.out.println(new LowestCommonAncestor2().find(root, p, q).val);
     }
-    public TreeNode find(TreeNode root,TreeNode p,TreeNode q) {
-        if (root==null||p==null||q==null)
+    public TreeNode find(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || p == null || q == null)
             return null;
-        List<TreeNode> pathP=new ArrayList<>();
-        List<TreeNode> pathQ=new ArrayList<>();
+        List<TreeNode> pathP = new ArrayList<>();
+        List<TreeNode> pathQ = new ArrayList<>();
         pathP.add(root);
         pathQ.add(root);
-        getPath(root,p,pathP);
-        getPath(root,q,pathQ);
-        TreeNode lca=null;
-        for (int i=0;i<pathP.size()&&i<pathQ.size();i++) {
-            if (pathP.get(i)==pathQ.get(i))
-                lca=pathP.get(i);
+        getPath(root, p, pathP);
+        getPath(root, q, pathQ);
+        TreeNode lca = null;
+        for (int i = 0; i < pathP.size() && i < pathQ.size(); i++) {
+            if (pathP.get(i) == pathQ.get(i))
+                lca = pathP.get(i);
             else
                 break;
         }
         return lca;
     }
-    public boolean getPath(TreeNode root,TreeNode n,List<TreeNode> path) {
-        if (root==n)
+    public boolean getPath(TreeNode root, TreeNode n, List<TreeNode> path) {
+        if (root == n)
             return true;
-        if (root.left!=null) {
+        if (root.left != null) {
             path.add(root.left);
-            if (getPath(root.left,n,path))
+            if (getPath(root.left, n, path))
                 return true;
-            path.remove(path.size()-1);
+            path.remove(path.size() - 1);
         }
-        if (root.right!=null) {
+        if (root.right != null) {
             path.add(root.right);
-            if (getPath(root.right,n,path))
+            if (getPath(root.right, n, path))
                 return true;
-            path.remove(path.size()-1);
+            path.remove(path.size() - 1);
         }
         return false;
     }

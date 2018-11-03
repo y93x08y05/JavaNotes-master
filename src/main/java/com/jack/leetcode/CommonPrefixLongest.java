@@ -15,16 +15,16 @@ package com.jack.leetcode;
  */
 public class CommonPrefixLongest {
     public static void main(String[] args) {
-        String [] strings = {"flower","flow","flight"};
+        String[] strings = {"flower", "flow", "flight"};
         System.out.println(findLongestCommonPrefix(strings));
     }
-    private static String findLongestCommonPrefix(String [] strs) {
-        if (strs.length == 0)
+    private static String findLongestCommonPrefix(String [] strings) {
+        if (strings.length == 0)
             return "";
-        String s = strs[0];
-        for (int i=1;i<strs.length;i++) {
-            while (strs[i].indexOf(s) != 0)
-                s=s.substring(0,s.length()-1);
+        String s = strings[0];
+        for (int i = 1; i < strings.length; i++) {
+            while (strings[i].indexOf(s) != 0)
+                s = s.substring(0, s.length() - 1);
         }
         return s;
     }

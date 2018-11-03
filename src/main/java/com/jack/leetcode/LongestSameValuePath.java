@@ -2,6 +2,8 @@ package com.jack.leetcode;
 
 import com.jack.util.BinaryTreeCreate;
 
+import java.util.Objects;
+
 /**
  * Created by Jack on 8/9/2018 10:36 AM
  * LeetCode 687
@@ -13,7 +15,7 @@ import com.jack.util.BinaryTreeCreate;
 public class LongestSameValuePath {
     private static int max = 0;
     public static void main(String[] args) {
-        int [] arr = {1,4,5,4,4,5};
+        int[] arr = {1, 4, 5, 4, 4, 5};
         BinaryTreeCreate binaryTreeCreate = new BinaryTreeCreate();
         BinaryTreeCreate.Node node = binaryTreeCreate.generateTree(arr);
         System.out.println(longestPath(node));
@@ -36,7 +38,7 @@ public class LongestSameValuePath {
         if (root.left == null && root.right == null) {
             return 0;
         } else if (root.left == null) {
-            if (root.value == root.right.value) {
+            if (root.value == Objects.requireNonNull(root.right).value) {
                 int cur = right + 1;
                 if (cur > max) max = cur;
                 return cur;

@@ -28,8 +28,8 @@ public class FindDifference {
         System.out.println(new FindDifference().find1(s, t));
     }
     public char find0(String s, String t) {
-        int count1[] = new int[26];
-        int count2[] = new int[26];
+        int[] count1 = new int[26];
+        int[] count2 = new int[26];
         int i;
         for (i = 0; i < s.length(); i++)
             count1[s.charAt(i) - 'a']++;

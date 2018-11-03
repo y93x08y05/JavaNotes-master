@@ -24,8 +24,8 @@ import com.jack.util.TreeNode;
  */
 public class InvertTree {
     public static void main(String[] args) {
-        Integer []arr={0,4,2,7,1,3,6,9};
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 4, 2, 7, 1, 3, 6, 9};
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
         new InvertTree().find(node);
     }
     /*
@@ -33,11 +33,11 @@ public class InvertTree {
      * 对左右子树分别执行递归翻转
      */
     public TreeNode find(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return null;
-        TreeNode tempNode=root.left;
-        root.left=find(root.right);
-        root.right=find(tempNode);
+        TreeNode tempNode = root.left;
+        root.left = find(root.right);
+        root.right = find(tempNode);
         return root;
     }
 }

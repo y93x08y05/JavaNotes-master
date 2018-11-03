@@ -23,23 +23,23 @@ import java.util.Scanner;
  */
 public class CanPlaceFlowers {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int len=sc.nextInt();
-        int n=sc.nextInt();
-        int []arr=new int[len];
-        for (int i=0;i<len;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        int n = sc.nextInt();
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new CanPlaceFlowers().find(arr, n));
     }
-    private boolean find(int []arr,int n) {
-        int count=0;
-        for (int i=0;i<arr.length;i++) {
-            if ((arr[i]==0)&&(i==0||arr[i-1]==0)&&(i==arr.length-1||arr[i+1]==0)) {
-                arr[i]=1;
+    private boolean find(int[] arr, int n) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] == 0) && (i == 0 || arr[i - 1] == 0) && (i == arr.length - 1 || arr[i + 1] == 0)) {
+                arr[i] = 1;
                 count++;
             }
-            if (count>=n)
+            if (count >= n)
                 return true;
         }
         return false;

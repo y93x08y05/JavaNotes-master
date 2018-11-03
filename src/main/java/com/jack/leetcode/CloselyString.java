@@ -26,18 +26,18 @@ import java.util.Scanner;
  */
 public class CloselyString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String A=sc.next();
-        String B=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String A =  sc.next();
+        String B = sc.next();
         System.out.println(ifCloselyString(A, B));
     }
-    private static boolean ifCloselyString(String A,String B) {
+    private static boolean ifCloselyString(String A, String B) {
         if (A.length() != B.length())
             return false;
         char[] charsA = A.toCharArray();
         char[] charsB = B.toCharArray();
         if (A.equals(B)){
-            int [] count = new int[26];
+            int[] count = new int[26];
             for ( char chars : charsA){
                 count[chars - 'a'] ++;
             }

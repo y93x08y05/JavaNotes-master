@@ -34,27 +34,27 @@ import java.util.Queue;
  */
 public class FriendCircle {
     public static void main(String[] args) {
-        int [][]arr={{1,1,0},{1,1,0},{0,0,1}};
+        int[][] arr = {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
         System.out.println(findFriendCircleNum1(arr));
         System.out.println(findFriendCircleNum2(arr));
         System.out.println(findFriendCircleNum0(arr));
     }
     //利用并查集进行处理
-    private static int findFriendCircleNum0(int [][]M) {
-        if (M.length==0)
+    private static int findFriendCircleNum0(int[][] M) {
+        if (M.length == 0)
             return 0;
-        int []pre=new int[M.length];
-        for (int i=0;i<M.length;i++) {
-            pre[i]=i;
+        int[] pre = new int[M.length];
+        for (int i = 0; i < M.length; i++) {
+            pre[i] = i;
         }
-        int group=M.length;
-        for (int i=0;i<M.length;i++) {
-            for (int j=0;j<M.length;j++) {
-                if (i!=j&&M[i][j]==1) {
-                    int x1=find(i,pre);
-                    int x2=find(j,pre);
-                    if (x1!=x2) {
-                        pre[x1]=x2;
+        int group = M.length;
+        for (int i = 0; i < M.length; i++) {
+            for (int j = 0; j < M.length; j++) {
+                if (i != j && M[i][j] == 1) {
+                    int x1 = find(i, pre);
+                    int x2 = find(j, pre);
+                    if (x1 != x2) {
+                        pre[x1] = x2;
                         group--;
                     }
                 }
@@ -62,53 +62,53 @@ public class FriendCircle {
         }
         return group;
     }
-    private static int findFriendCircleNum1(int [][]M) {
-        int []visited=new int[M.length];
-        int count=0;
-        for (int i=0;i<M.length;i++) {
-            if (visited[i]==0) {
-                bfs(M,visited,i);
+    private static int findFriendCircleNum1(int[][] M) {
+        int[] visited = new int[M.length];
+        int count = 0;
+        for (int i = 0; i < M.length; i++) {
+            if (visited[i] == 0) {
+                bfs(M, visited, i);
                 count++;
             }
         }
         return count;
     }
-    private static int findFriendCircleNum2(int [][]M) {
-        int []visited=new int[M.length];
-        int count=0;
-        for (int i=0;i<M.length;i++) {
-            if (visited[i]==0) {
-                dfs(M,visited,i);
+    private static int findFriendCircleNum2(int[][] M) {
+        int[] visited = new int[M.length];
+        int count = 0;
+        for (int i = 0; i < M.length; i++) {
+            if (visited[i] == 0) {
+                dfs(M, visited, i);
                 count++;
             }
         }
         return count;
     }
-    private static int find(int x,int []pre) {
-        if (pre[x]==x)
+    private static int find(int x, int[] pre) {
+        if (pre[x] == x)
             return x;
         else
-            return find(pre[x],pre);
+            return find(pre[x], pre);
     }
-    public static Queue<Integer> queue=new LinkedList<>();
-    private static void bfs(int [][]M,int [] visited,int i) {
+    public static Queue<Integer> queue = new LinkedList<>();
+    private static void bfs(int[][] M, int[] visited, int i) {
         queue.offer(i);
-        visited[i]=1;
+        visited[i] = 1;
         while (!queue.isEmpty()) {
-            int node=queue.poll();
-            for (int j=0;j<M.length;j++) {
-                if (visited[j]==0&&M[node][j]==1) {
+            int node = queue.poll();
+            for (int j = 0; j < M.length; j++) {
+                if (visited[j] == 0 && M[node][j] == 1) {
                     queue.offer(j);
-                    visited[j]=1;
+                    visited[j] = 1;
                 }
             }
         }
     }
-    private static void dfs(int [][]M,int []visited,int i) {
-        for (int j=0;j<M.length;j++) {
-            if (M[i][j]==1&&visited[j]==0) {
-                visited[j]=1;
-                dfs(M,visited,j);
+    private static void dfs(int[][] M, int[] visited, int i) {
+        for (int j = 0; j < M.length; j++) {
+            if (M[i][j] == 1 && visited[j] == 0) {
+                visited[j] = 1;
+                dfs(M, visited, j);
             }
         }
     }

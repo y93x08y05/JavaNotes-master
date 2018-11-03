@@ -2,6 +2,8 @@ package com.jack.leetcode;
 
 import com.jack.util.ChainCreate;
 
+import java.util.Objects;
+
 /**
  * Created by Jack on 8/15/2018 10:00 PM
  * LeetCode 82
@@ -16,33 +18,33 @@ import com.jack.util.ChainCreate;
  */
 public class ChainDeleteDuplicate2 {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,3,4,5,6};
+        int[] arr = {1, 2, 3, 3, 4, 5, 6};
         ChainCreate chainCreate = new ChainCreate();
         ChainCreate.Node node = chainCreate.create(arr);
         node = deleteDuplicate(node);
-        while (node!=null) {
-            System.out.print(node.data+" ");
-            node=node.next;
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
         }
     }
     private static ChainCreate.Node deleteDuplicate(ChainCreate.Node head) {
-        if (head==null||head.next==null)
+        if (head == null || head.next == null)
             return head;
         ChainCreate.Node root = new ChainCreate.Node(-1);
         ChainCreate.Node result = root;
         ChainCreate.Node pre = head;
         ChainCreate.Node current = head;
-        while (current!=null&&current.next!=null) {
-            while (current.next!=null&&current.next.data==pre.data)
-                current=current.next;
-            if (current==pre) {
+        while (current != null && current.next != null) {
+            while (current.next != null && current.next.data == Objects.requireNonNull(pre).data)
+                current = current.next;
+            if (current == pre) {
                 result.next = pre;
-                result=result.next;
+                result = result.next;
             }
-            pre=current.next;
-            current=current.next;
+            pre = current.next;
+            current = current.next;
         }
-        result.next=current;
+        result.next = current;
         return root.next;
     }
 }

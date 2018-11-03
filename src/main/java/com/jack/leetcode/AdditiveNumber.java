@@ -33,7 +33,7 @@ public class AdditiveNumber {
         for (int i = 1; i <= (L - 1) / 2; i++) {
             if (s.startsWith("0") && i >= 2)
                 break;
-            for (int j = i + 1;(L - j) >= i && (L - j) >= j - i; j++) {
+            for (int j = i + 1; (L - j) >= i && (L - j) >= j - i; j++) {
                 if (s.charAt(i) == '0' && j-i >= 2)
                     break;
                 long num1 = Long.parseLong(s.substring(0, i));

@@ -19,7 +19,7 @@ import java.util.Stack;
  */
 public class IsPalindromeChain {
     public static void main(String[] args) {
-        int []arr={1,2,3,2,1};
+        int[] arr = {1, 2, 3, 2, 1};
         ChainCreate chainCreate = new ChainCreate();
         ChainCreate.Node node = chainCreate.create(arr);
         System.out.println(isPalindrome(node));
@@ -37,7 +37,7 @@ public class IsPalindromeChain {
             slow = slow.next;
         }
         while(slow != null) {
-            int top = stack.pop().intValue();
+            int top = stack.pop();
             if(top != slow.data) {
                 return false;
             }

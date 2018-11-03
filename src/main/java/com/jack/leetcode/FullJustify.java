@@ -61,41 +61,41 @@ import java.util.Scanner;
  */
 public class FullJustify {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int maxWidth=sc.nextInt();
-        String []str=new String[n];
-        for (int i=0;i<n;i++) {
-            str[i]=sc.next();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int maxWidth = sc.nextInt();
+        String[] str = new String[n];
+        for (int i = 0; i < n; i++) {
+            str[i] = sc.next();
         }
         System.out.println(fullJustify(str, maxWidth));
     }
-    private static List<String> fullJustify(String []words,int maxWidth) {
-        List<String> res=new LinkedList<>();
-        List<String> tmpList=new LinkedList<>();
-        int length=words.length;
-        int count=0;
-        for (int i=0;i<length;i++) {
-            count+=words[i].length()+1;
+    private static List<String> fullJustify(String[] words, int maxWidth) {
+        List<String> res = new LinkedList<>();
+        List<String> tmpList = new LinkedList<>();
+        int length = words.length;
+        int count = 0;
+        for (int i = 0; i < length; i++) {
+            count += words[i].length() + 1;
             tmpList.add(words[i]);
-            if (i+1<length&&count+words[i+1].length()>maxWidth) {
-                int neededSpace=maxWidth-count+1;
-                int size=tmpList.size();
+            if (i + 1 < length && count + words[i + 1].length() > maxWidth) {
+                int neededSpace = maxWidth - count + 1;
+                int size = tmpList.size();
                 int average,extra;
-                if (size==1) {
-                    average=neededSpace;
-                    extra=0;
+                if (size == 1) {
+                    average = neededSpace;
+                    extra = 0;
                 } else {
-                    average=neededSpace/(size-1);
-                    extra=neededSpace%(size-1);
+                    average = neededSpace / (size - 1);
+                    extra = neededSpace % (size - 1);
                 }
-                StringBuilder spaceStr=new StringBuilder();
-                for (int j=0;j<average;j++) {
+                StringBuilder spaceStr = new StringBuilder();
+                for (int j = 0; j < average; j++) {
                     spaceStr.append(' ');
                 }
-                StringBuilder sb=new StringBuilder();
+                StringBuilder sb = new StringBuilder();
                 while (!tmpList.isEmpty()) {
-                    String tmp=tmpList.get(0);
+                    String tmp = tmpList.get(0);
                     tmpList.remove(0);
                     sb.append(tmp);
                     if (tmpList.isEmpty()) {
@@ -103,27 +103,27 @@ public class FullJustify {
                     }
                     sb.append(' ');
                     sb.append(spaceStr);
-                    if (extra>0) {
+                    if (extra > 0) {
                         sb.append(' ');
                         extra--;
                     }
                 }
-                while (sb.length()<maxWidth) {
+                while (sb.length() < maxWidth) {
                     sb.append(' ');
                 }
                 res.add(new String(sb));
-                count=0;
+                count = 0;
             }
         }
-        StringBuilder sb1=new StringBuilder();
+        StringBuilder sb1 = new StringBuilder();
         while (!tmpList.isEmpty()) {
             sb1.append(tmpList.get(0));
             tmpList.remove(0);
             sb1.append(' ');
         }
-        while (sb1.length()<maxWidth)
+        while (sb1.length() < maxWidth)
             sb1.append(' ');
-        if (sb1.length()>maxWidth)
+        if (sb1.length() > maxWidth)
             sb1.deleteCharAt(maxWidth);
         res.add(sb1.toString());
         return res;

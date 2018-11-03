@@ -31,52 +31,52 @@ import java.util.*;
  */
 public class FindAnagrams {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        String p=sc.nextLine();
-        List<Integer> list1= findAnagrams0(s,p);
-        for (Integer i:list1)
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String p = sc.nextLine();
+        List<Integer> list1 = findAnagrams0(s, p);
+        for (Integer i : list1)
             System.out.println(i);
-        List<Integer> list2= findAnagrams1(s,p);
-        for (Integer i:list2)
+        List<Integer> list2 = findAnagrams1(s, p);
+        for (Integer i : list2)
             System.out.println(i);
-        List<Integer> list3= findAnagrams2(s,p);
-        for (Integer i:list3)
+        List<Integer> list3 = findAnagrams2(s, p);
+        for (Integer i : list3)
             System.out.println(i);
     }
     private static List<Integer> findAnagrams0(String s, String p) {
-        List<Integer> list=new ArrayList<>();
-        if (s==null||s.length()==0||p==null||p.length()==0) {
+        List<Integer> list = new ArrayList<>();
+        if (s == null || s.length() == 0 || p == null || p.length() == 0) {
             return list;
         }
-        int []hash=new int[256];//ASCII码长度为256
-        char []chars=p.toCharArray();
-        for (char c:chars) {
+        int[] hash = new int[256];//ASCII码长度为256
+        char[] chars = p.toCharArray();
+        for (char c : chars) {
             hash[c]++;
         }
-        int left=0;
-        int right=0;
-        int count=p.length();
-        while (right<s.length()) {
-            if (hash[s.charAt(right++)]-->0)
+        int left = 0;
+        int right = 0;
+        int count = p.length();
+        while (right < s.length()) {
+            if (hash[s.charAt(right++)]-- > 0)
                 count--;
-            if (count==0)
+            if (count == 0)
                 list.add(left);
-            if (right-left==p.length()&&hash[s.charAt(left++)]++>=0)
+            if (right - left == p.length() && hash[s.charAt(left++)]++ >= 0)
                 count++;
         }
         return list;
     }
     private static List<Integer> findAnagrams1(String s, String p) {
-        List<Integer> list=new ArrayList<>();
-        if (s==null||p==null||s.length()<p.length())
+        List<Integer> list = new ArrayList<>();
+        if (s == null || p == null || s.length() < p.length())
             return list;
-        int len=p.length();
-        int i=0;
-        char []chars=p.toCharArray();
+        int len = p.length();
+        int i = 0;
+        char[] chars = p.toCharArray();
         Arrays.sort(chars);
-        while (i+len<=s.length()) {
-            char []temp=s.substring(i,i+len).toCharArray();
+        while (i + len <= s.length()) {
+            char[] temp = s.substring(i, i + len).toCharArray();
             Arrays.sort(temp);
             if (new String(chars).equals(new String(temp))) {
                 list.add(i);
@@ -86,22 +86,22 @@ public class FindAnagrams {
         return list;
     }
     private static List<Integer> findAnagrams2(String s, String p) {
-        List<Integer> list=new ArrayList<>();
-        int []chars=new int[26];
-        if (s==null||p==null||s.length()<p.length())
+        List<Integer> list = new ArrayList<>();
+        int[] chars = new int[26];
+        if (s == null || p == null || s.length() < p.length())
             return list;
-        for (char c:p.toCharArray()) {
-            chars[c-'a']++;
+        for (char c : p.toCharArray()) {
+            chars[c - 'a']++;
         }
-        int left=0;
-        int right=0;
-        int count=p.length();
-        while (right<s.length()) {
-            if (--chars[s.charAt(right++)]>=0)
+        int left = 0;
+        int right = 0;
+        int count = p.length();
+        while (right < s.length()) {
+            if (--chars[s.charAt(right++)] >= 0)
                 count--;
-            if (count==0)
+            if (count == 0)
                 list.add(left);
-            if (right-left==p.length()&&chars[s.charAt(left++)-'a']++>=0)
+            if (right - left == p.length() && chars[s.charAt(left++) - 'a']++ >= 0)
                 count++;
         }
         return list;

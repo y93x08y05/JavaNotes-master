@@ -33,32 +33,32 @@ import java.util.Scanner;
  */
 public class FractionAddition {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String expression=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String expression = sc.nextLine();
         System.out.println(findExpression(expression));
     }
     private static String findExpression(String expression) {
-        int n=0,d=1,index=0,i,j;
-        if (expression.charAt(0)!='-')
-            expression="+"+expression;
-        while (index<expression.length()) {
-            for (i=index+1;expression.charAt(i)!='/';i++);
-            for (j=i+1;j<expression.length()&&expression.charAt(j)!='+'&&expression.charAt(j)!='-';j++);
-            int nn=Integer.parseInt(expression.substring(index+1,i));
-            int dd=Integer.parseInt(expression.substring(i+1,j));
-            int gcd1=gcd(d,dd);
-            n=n*dd/gcd1+(expression.charAt(index)=='-'?-1:1)*nn*d/gcd1;
-            d=d*dd/gcd1;
-            index=j;
+        int n = 0, d = 1, index = 0, i, j;
+        if (expression.charAt(0) != '-')
+            expression = "+" + expression;
+        while (index < expression.length()) {
+            for (i = index + 1; expression.charAt(i) != '/'; i++);
+            for (j = i + 1; j < expression.length() && expression.charAt(j) != '+' && expression.charAt(j) != '-'; j++);
+            int nn = Integer.parseInt(expression.substring(index + 1, i));
+            int dd = Integer.parseInt(expression.substring(i + 1, j));
+            int gcd1 = gcd(d, dd);
+            n = n * dd / gcd1 + (expression.charAt(index) == '-' ? -1 : 1) * nn * d / gcd1;
+            d = d * dd / gcd1;
+            index = j;
         }
-        int gcd2=gcd(Math.abs(n),d);
-        return String.valueOf(n/gcd2)+"/"+String.valueOf(d/gcd2);
+        int gcd2 = gcd(Math.abs(n), d);
+        return String.valueOf(n / gcd2) + "/" + String.valueOf(d / gcd2);
     }
-    private static int gcd(int a,int b) {
-        while (b!=0) {
-            int temp=b;
-            b=a%b;
-            a=temp;
+    private static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
         return a;
     }

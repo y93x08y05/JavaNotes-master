@@ -19,19 +19,19 @@ import java.util.Scanner;
  */
 public class ArrayPairSum {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new ArrayPairSum().find(arr));
     }
-    private int find(int []arr) {
+    private int find(int[] arr) {
         Arrays.sort(arr);
-        int sum=0;
-        for (int i=0;i<arr.length;i=i+2) {
-            sum+=arr[i];
+        int sum = 0;
+        for (int i = 0; i < arr.length; i = i + 2) {
+            sum += arr[i];
         }
         return sum;
     }

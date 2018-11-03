@@ -24,24 +24,24 @@ import java.util.Map;
  */
 public class FourSumCount {
     public static void main(String[] args) {
-        int [] arr1 = {1,2};
-        int [] arr2 = {-2,-1};
-        int [] arr3 = {-1,2};
-        int [] arr4 = {0,2};
+        int[] arr1 = {1, 2};
+        int[] arr2 = {-2, -1};
+        int[] arr3 = {-1, 2};
+        int[] arr4 = {0, 2};
         System.out.println(addFourNumber(arr1, arr2, arr3, arr4));
     }
-    private static int addFourNumber(int [] A,int [] B,int [] C,int [] D) {
-        Map<Integer,Integer> map = new HashMap<>();
-        for (int i=0;i<C.length;i++) {
-            for (int j=0;j<D.length;j++) {
+    private static int addFourNumber(int[] A, int[] B, int[] C, int[] D) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < C.length; i++) {
+            for (int j = 0; j < D.length; j++) {
                 int sum = C[i] + D[j];
-                map.put(sum,map.getOrDefault(sum,0)+1);
+                map.put(sum, map.getOrDefault(sum, 0) + 1);
             }
         }
         int res = 0;
-        for (int i=0;i<A.length;i++) {
-            for (int j=0;j<B.length;j++) {
-                res += map.getOrDefault(-1*(A[i]+B[j]),0);
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < B.length; j++) {
+                res += map.getOrDefault(-1 * (A[i] + B[j]), 0);
             }
         }
         return res;

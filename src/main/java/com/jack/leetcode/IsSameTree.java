@@ -35,19 +35,19 @@ import com.jack.util.TreeNode;
  */
 public class IsSameTree {
     public static void main(String[] args) {
-        Integer []arr1={0,1,2};
-        Integer []arr2={0,1,0,2};
-        TreeNode node1=new BinaryTreeNew().makeBinaryByArray(arr1);
-        TreeNode node2=new BinaryTreeNew().makeBinaryByArray(arr2);
+        Integer[] arr1 = {0, 1, 2};
+        Integer[] arr2 = {0, 1, 0, 2};
+        TreeNode node1 = new BinaryTreeNew().makeBinaryByArray(arr1);
+        TreeNode node2 = new BinaryTreeNew().makeBinaryByArray(arr2);
         System.out.println(new IsSameTree().find(node1, node2));
     }
-    public boolean find(TreeNode root1,TreeNode root2) {
-        if (root1==null&&root2==null)
+    public boolean find(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null)
             return true;
-        if (root1==null||root2==null)
+        if (root1 == null || root2 == null)
             return false;
-        if (root1.val!=root2.val)
+        if (!root1.val.equals(root2.val))
             return false;
-        return find(root1.left,root2.left)&&find(root1.right,root2.right);
+        return find(root1.left, root2.left) && find(root1.right, root2.right);
     }
 }

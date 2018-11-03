@@ -17,25 +17,25 @@ import java.util.Scanner;
  */
 public class FindMaxConsecutiveOnes {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindMaxConsecutiveOnes().find(arr));
     }
-    private int find(int []arr) {
-        int max=Integer.MIN_VALUE;
-        int temp=0;
-        for (int i=0;i<arr.length;i++) {
-            if (arr[i]==1) {
+    private int find(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        int temp = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1) {
                 temp++;
-                if (i==arr.length-1)
-                    max=max>temp?max:temp;
+                if (i == arr.length - 1)
+                    max = max > temp ? max : temp;
             } else {
-                max=max>temp?max:temp;
-                temp=0;
+                max = max > temp ? max : temp;
+                temp = 0;
             }
         }
         return max;

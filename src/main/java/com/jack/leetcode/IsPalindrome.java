@@ -27,15 +27,15 @@ public class IsPalindrome {
         if (s == null || s.length() < 2)
             return true;
         int len = s.length() - 1;
-        char c1,c2;
+        char c1, c2;
         for (int i = 0; i < s.length() - 1; i++) {
-            if (!isValid(s.charAt(i)))
+            if (isValid(s.charAt(i)))
                 continue;
             c1 = s.charAt(i);
-            while (len >= 0 && !isValid(s.charAt(len)))
+            while (len >= 0 && isValid(s.charAt(len)))
                 len--;
             c2 = s.charAt(len);
-            if (!isSame(c1,c2))
+            if (!isSame(c1, c2))
                 return false;
             else
                 len--;
@@ -44,9 +44,9 @@ public class IsPalindrome {
     }
     private boolean isValid(char c) {
         if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9') {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
     private boolean isSame(char a,char b) {

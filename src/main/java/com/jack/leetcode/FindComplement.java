@@ -38,7 +38,7 @@ public class FindComplement {
         int res = 0;
         for (int i = 0; i < temp.length(); i++) {
             if (temp.charAt(i) == '1') {
-                res += Math.pow(2,temp.length()-1-i);
+                res += Math.pow(2, temp.length() - 1 - i);
             }
         }
         return res;

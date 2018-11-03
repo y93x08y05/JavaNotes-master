@@ -34,30 +34,30 @@ public class CombinationSum1 {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
         int n = sc.nextInt();
-        int [] arr = new int[m];
-        for (int i=0;i<m;i++)
+        int[] arr = new int[m];
+        for (int i = 0; i < m; i++)
             arr[i] = sc.nextInt();
         System.out.println(findAllCombination(arr, n).size());
     }
-    private static List<List<Integer>> findAllCombination(int [] arr,int target) {
+    private static List<List<Integer>> findAllCombination(int[] arr, int target) {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> temp = new ArrayList<>();
         Arrays.sort(arr);
-        DiGui(res,0,0,temp,arr,target);
+        DiGui(res, 0, 0, temp, arr, target);
         return res;
     }
-    private static void DiGui(List<List<Integer>> res,int currentIndex,int count,List<Integer> temp,int [] arr,int target) {
-        if (count>=target) {
-            if (count==target)
+    private static void DiGui(List<List<Integer>> res, int currentIndex, int count, List<Integer> temp, int[] arr, int target) {
+        if (count >= target) {
+            if (count == target)
                 res.add(new ArrayList<>(temp));
             return;
         }
-        for (int i=currentIndex;i<arr.length;i++) {
-            if (count+arr[i]>target)
+        for (int i = currentIndex; i < arr.length; i++) {
+            if (count + arr[i] > target)
                 break;
             temp.add(arr[i]);
-            DiGui(res,i,count+arr[i],temp,arr,target);
-            temp.remove(temp.size()-1);
+            DiGui(res, i, count + arr[i], temp, arr, target);
+            temp.remove(temp.size() - 1);
         }
     }
 }

@@ -21,25 +21,25 @@ package com.jack.leetcode;
  */
 public class FlattenChain {
     public static void main(String[] args) {
-        new FlattenChain().find(new Node(0,null,null,null));
+        new FlattenChain().find(new Node(0, null, null, null));
     }
     private Node find(Node head) {
-        if (head==null)
+        if (head == null)
             return null;
-        if (head.child==null)
-            head.next= find(head.next);
+        if (head.child == null)
+            head.next = find(head.next);
         else {
-            Node n= find(head.next);
-            Node c=head.child;
-            head.child=null;
-            c= find(c);
-            c.prev=head;
-            head.next=c;
-            while (c!=null&&c.next!=null)
-                c=c.next;
-            c.next=n;
-            if (n!=null)
-                n.prev=c;
+            Node n = find(head.next);
+            Node c = head.child;
+            head.child = null;
+            c = find(c);
+            c.prev = head;
+            head.next = c;
+            while (c.next != null)
+                c = c.next;
+            c.next = n;
+            if (n != null)
+                n.prev = c;
         }
         return head;
     }
@@ -49,11 +49,11 @@ public class FlattenChain {
         public Node next;
         public Node child;
         public Node() {}
-        public Node(int val,Node prev,Node next,Node child) {
-            this.val=val;
-            this.prev=prev;
-            this.next=next;
-            this.child=child;
+        public Node(int val, Node prev, Node next, Node child) {
+            this.val = val;
+            this.prev = prev;
+            this.next = next;
+            this.child = child;
         }
     }
 }

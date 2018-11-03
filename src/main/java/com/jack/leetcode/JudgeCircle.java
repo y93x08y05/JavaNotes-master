@@ -29,25 +29,25 @@ import java.util.Scanner;
  */
 public class JudgeCircle {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(ifReturnCircle(s));
     }
     private static boolean ifReturnCircle(String moves) {
-        int len=moves.length();
-        int sumHorizontal=0;
-        int sumVertical=0;
-        for (int n=0;n<len;n++) {
-            if (moves.charAt(n)=='U')
+        int len = moves.length();
+        int sumHorizontal = 0;
+        int sumVertical = 0;
+        for (int n = 0; n < len; n++) {
+            if (moves.charAt(n) == 'U')
                 sumVertical++;
-            if (moves.charAt(n)=='D')
+            if (moves.charAt(n) == 'D')
                 sumVertical--;
-            if (moves.charAt(n)=='L')
+            if (moves.charAt(n) == 'L')
                 sumHorizontal--;
-            if (moves.charAt(n)=='R')
+            if (moves.charAt(n) == 'R')
                 sumHorizontal++;
         }
-        if (sumHorizontal==0&&sumVertical==0)
+        if (sumHorizontal == 0 && sumVertical == 0)
             return true;
         return false;
     }

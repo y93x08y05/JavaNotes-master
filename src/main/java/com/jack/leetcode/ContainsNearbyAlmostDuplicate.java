@@ -21,15 +21,15 @@ import java.util.TreeSet;
  */
 public class ContainsNearbyAlmostDuplicate {
     public static void main(String[] args) {
-        int []arr={1,5,9,1,5,9};
-        int k=2;
-        int t=3;
+        int[] arr = {1, 5, 9, 1, 5, 9};
+        int k = 2;
+        int t = 3;
         System.out.println(containsNearbyAlmost(arr, k, t));
     }
-    private static boolean containsNearbyAlmost(int []arr,int k,int t) {
+    private static boolean containsNearbyAlmost(int[] arr, int k, int t) {
         if (arr == null || arr.length == 0 || k <= 0)
             return false;
-        TreeSet<Long> ts = new TreeSet();
+        TreeSet<Long> ts = new TreeSet<>();
         for (int i = 0; i < arr.length; ++i) {
             Long right = ts.floor((long) arr[i] + t);
             Long left = ts.ceiling((long) arr[i] - t);

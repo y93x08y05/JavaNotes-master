@@ -21,25 +21,24 @@ import java.util.Scanner;
 public class DuplicateRemove {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String [] str = sc.nextLine().split(" ");
-        int [] arr = new int[str.length];
-        for (int i=0;i<arr.length;i++) {
+        String[] str = sc.nextLine().split(" ");
+        int[] arr = new int[str.length];
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.valueOf(str[i]);
         }
         System.out.println(removeDuplicate(arr));
     }
-    private static int removeDuplicate(int [] arr) {
+    private static int removeDuplicate(int[] arr) {
         if (arr == null)
             return 0;
         int res = 0;
-        int [] p = arr;
-        for (int i=0;i<arr.length;i++) {
-            if (p[i] == arr[res]) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[res]) {
 
             } else {
-                arr[++res] = p[i];
+                arr[++res] = arr[i];
             }
         }
-        return res+1;
+        return res + 1;
     }
 }

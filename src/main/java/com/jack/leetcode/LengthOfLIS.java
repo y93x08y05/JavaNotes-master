@@ -16,11 +16,11 @@ import java.util.TreeSet;
  */
 public class LengthOfLIS {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new LengthOfLIS().find1(arr));
         System.out.println(new LengthOfLIS().find2(arr));
@@ -31,24 +31,24 @@ public class LengthOfLIS {
      * 空间复杂度为O(n)
      * maxLens[i]代表arr中第0个到第i个元素以arr[i]为最大值的最大递增序列长度
      */
-    public int find1(int []arr) {
-        int []maxLens=new int[arr.length];
-        int maxLen=0;
-        for (int i=0;i<arr.length;i++) {
-            for (int j=0;j<i;j++) {
-                if (arr[i]>arr[j]) {
-                    maxLens[i]=Math.max(maxLens[j]+1,maxLens[i]);
+    public int find1(int[] arr) {
+        int[] maxLens = new int[arr.length];
+        int maxLen = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[i] > arr[j]) {
+                    maxLens[i] = Math.max(maxLens[j] + 1, maxLens[i]);
                 }
             }
-            maxLen=Math.max(maxLen,maxLens[i]+1);
+            maxLen = Math.max(maxLen, maxLens[i] + 1);
         }
         return maxLen;
     }
-    public int find2(int []arr) {
-        TreeSet<Integer> set=new TreeSet<>();
-        for (int val:arr) {
-            Integer ceil= set.ceiling(val);
-            if (ceil!=null)
+    public int find2(int[] arr) {
+        TreeSet<Integer> set = new TreeSet<>();
+        for (int val : arr) {
+            Integer ceil = set.ceiling(val);
+            if (ceil != null)
                 set.remove(ceil);
             set.add(val);
         }
@@ -60,24 +60,24 @@ public class LengthOfLIS {
      * maxLens[i]代表arr中第0个到第i个元素最大长度为i的最小值是多少
      */
     public int find3(int []arr) {
-        int []maxLens=new int[arr.length+1];
-        int maxLen=0;
-        for (int val:arr) {
-            int len=binarySearch(val,maxLen,maxLens);
-            maxLen=Math.max(len,maxLen);
-            maxLens[len]=val;
+        int[] maxLens = new int[arr.length + 1];
+        int maxLen = 0;
+        for (int val : arr) {
+            int len = binarySearch(val, maxLen, maxLens);
+            maxLen = Math.max(len, maxLen);
+            maxLens[len] = val;
         }
         return maxLen;
     }
-    public int binarySearch(int num,int maxLen,int []maxLens) {
-        int left=1;
-        int right=maxLen;
-        while (left<=right) {
-            int mid=left+(right-left)/2;
-            if (maxLens[mid]<num)
-                left=mid+1;
+    public int binarySearch(int num, int maxLen, int[] maxLens) {
+        int left = 1;
+        int right = maxLen;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (maxLens[mid] < num)
+                left = mid + 1;
             else
-                right=mid-1;
+                right = mid - 1;
         }
         return left;
     }

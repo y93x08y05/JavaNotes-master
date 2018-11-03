@@ -23,12 +23,12 @@ package com.jack.leetcode;
  */
 public class AreaProjection {
     public static void main(String[] args) {
-        int [][]arr={{2,2,2},{2,1,2},{2,2,2}};
+        int[][] arr = {{2, 2, 2}, {2, 1, 2}, {2, 2, 2}};
         System.out.println(projectionArea(arr));
     }
-    private static int projectionArea(int [][]grid) {
-        int [] front = new int[grid.length];
-        int [] side = new int[grid[0].length];
+    private static int projectionArea(int[][] grid) {
+        int[] front = new int[grid.length];
+        int[] side = new int[grid[0].length];
         int top = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {

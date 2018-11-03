@@ -31,19 +31,19 @@ import com.jack.util.TreeNode;
  */
 public class LowestCommonAncestor1 {
     public static void main(String[] args) {
-        Integer []arr={6,2,8,0,4,7,9,0,0,3,5};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
-        TreeNode p=new TreeNode(2);
-        TreeNode q=new TreeNode(4);
-        System.out.println(new LowestCommonAncestor1().find(root,p,q).val);
+        Integer[] arr = {6, 2, 8, 0, 4, 7, 9, 0, 0, 3, 5};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
+        TreeNode p = new TreeNode(2);
+        TreeNode q = new TreeNode(4);
+        System.out.println(new LowestCommonAncestor1().find(root, p, q).val);
     }
     public TreeNode find(TreeNode root, TreeNode p, TreeNode q) {
-        if (root==null||p==null||q==null)
+        if (root == null || p == null || q == null)
             return null;
-        if (Math.max(p.val,q.val)<root.val)
-            return find(root.left,p,q);
-        else if (Math.min(p.val,q.val)>root.val)
-            return find(root.right,p,q);
+        if (Math.max(p.val, q.val) < root.val)
+            return find(root.left, p, q);
+        else if (Math.min(p.val, q.val) > root.val)
+            return find(root.right, p, q);
         else
             return root;
     }

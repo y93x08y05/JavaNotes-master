@@ -20,36 +20,36 @@ import java.util.Scanner;
  */
 public class IntegerBreak {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findMaxMultiply0(n));
         System.out.println(findMaxMultiply1(n));
     }
     private static int findMaxMultiply0(int n) {
-        if (n==2)
+        if (n == 2)
             return 1;
-        if (n==3)
+        if (n == 3)
             return 2;
-        int res=1;
-        while (n>4) {
-            res*=3;
-            n-=3;
+        int res = 1;
+        while (n > 4) {
+            res *= 3;
+            n -= 3;
         }
-        return res*n;
+        return res * n;
     }
     private static int findMaxMultiply1(int n) {
-        if (n==2)
+        if (n == 2)
             return 1;
-        if (n==3)
+        if (n == 3)
             return 2;
         double result;
-        int n3=n/3;
-        int shift=n%3;
-        result=Math.pow(3,n3);
-        if (shift==1)
-            result=result/3*4;
-        else if (shift==2)
-            result*=2;
+        int n3 = n / 3;
+        int shift = n % 3;
+        result = Math.pow(3, n3);
+        if (shift == 1)
+            result = result / 3 * 4;
+        else if (shift == 2)
+            result *= 2;
         return (int) result;
     }
 }

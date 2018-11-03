@@ -19,20 +19,20 @@ import java.util.Scanner;
  */
 public class IntToRoman {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(find(n));
     }
     private static String find(int n) {
-        String ans="";
-        int []arr={1000,900,500,400,100,90,50,40,10,9,5,4,1};
-        String []str={"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
-        for (int i=0;i<arr.length;i++) {
-            while (n>=arr[i]) {
-                ans+=str[i];
-                n-=arr[i];
+        StringBuilder ans = new StringBuilder();
+        int[] arr = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] str = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        for (int i = 0; i < arr.length; i++) {
+            while (n >= arr[i]) {
+                ans.append(str[i]);
+                n -= arr[i];
             }
         }
-        return ans;
+        return ans.toString();
     }
 }

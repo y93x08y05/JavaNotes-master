@@ -18,29 +18,29 @@ import java.util.Scanner;
  */
 public class LargestNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr));
     }
-    private static String find(int []arr) {
-        Integer []res=new Integer[arr.length];
-        int i=0;
-        for (int value:arr)
-            res[i++]=Integer.valueOf(value);
+    private static String find(int[] arr) {
+        Integer[] res = new Integer[arr.length];
+        int i = 0;
+        for (int value : arr)
+            res[i++] = value;
         Arrays.sort(res, (o1, o2) -> {
-            int l1= o1==0?1: (int) (Math.log10(Math.abs(o1)) + 1);
-            int l2= o2==0?1: (int) (Math.log10(Math.abs(o2)) + 1);
-            long a1= (long) (o1*Math.pow(10,l2)+o2);
-            long a2= (long) (o2*Math.pow(10,l1)+o1);
-            return a1>a2?-1:(a1==a2?0:1);
+            int l1 = o1 == 0 ? 1 : (int) (Math.log10(Math.abs(o1)) + 1);
+            int l2 = o2 == 0 ? 1 : (int) (Math.log10(Math.abs(o2)) + 1);
+            long a1 = (long) (o1 * Math.pow(10,l2) + o2);
+            long a2 = (long) (o2 * Math.pow(10,l1) + o1);
+            return Long.compare(a2, a1);
         });
-        StringBuilder sb=new StringBuilder();
-        for (Integer e:res)
+        StringBuilder sb = new StringBuilder();
+        for (Integer e : res)
             sb.append(e);
-        return sb.toString().replaceFirst("^0+(?!$)","");
+        return sb.toString().replaceFirst("^0+(?!$)", "");
     }
 }

@@ -17,29 +17,29 @@ import java.util.Stack;
  */
 public class LargestRectangleArea {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find(arr));
     }
-    private static int find(int []arr) {
-        Stack<Integer> stack=new Stack<>();
-        int n=arr.length;
-        int maxArea=0;
-        int i=0;
+    private static int find(int[] arr) {
+        Stack<Integer> stack = new Stack<>();
+        int n = arr.length;
+        int maxArea = 0;
+        int i = 0;
         int temp;
         int tempTop;
-        while (i<=n) {
-            temp=(i==n)?0:arr[i];
-            if (stack.isEmpty()||arr[stack.peek()]<=temp) {
+        while (i <= n) {
+            temp = (i == n) ? 0 : arr[i];
+            if (stack.isEmpty() || arr[stack.peek()] <= temp) {
                 stack.push(i);
                 i++;
             } else {
-                tempTop=arr[stack.pop()];
-                maxArea=Math.max(maxArea,tempTop*(stack.isEmpty()?i:i-1-stack.peek()));
+                tempTop = arr[stack.pop()];
+                maxArea = Math.max(maxArea, tempTop * (stack.isEmpty() ? i : i - 1 - stack.peek()));
             }
         }
         return maxArea;

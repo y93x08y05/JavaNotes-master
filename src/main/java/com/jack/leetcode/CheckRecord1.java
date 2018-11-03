@@ -23,25 +23,25 @@ import java.util.Scanner;
  */
 public class CheckRecord1 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(checkRecord(s));
     }
     private static boolean checkRecord(String s) {
-        Map<Character,Integer> map=new HashMap<>();
-        for (int i=0;i<s.length();i++) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
             if (map.containsKey(s.charAt(i))) {
-                map.put(s.charAt(i), map.get(s.charAt(i))+1);
+                map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
             } else {
                 map.put(s.charAt(i), 1);
             }
         }
-        if (map.containsKey('A')&&map.get('A')>1)
+        if (map.containsKey('A') && map.get('A') > 1)
             return false;
-        if (s.length()>=3) {
-            for (int i=0;i<s.length()-2;i++) {
-                if (s.charAt(i)=='L'&&s.charAt(i+1)=='L'&&s.charAt(i+2)=='L') {
-                    System.out.println(s.charAt(i)+" "+s.charAt(i+1)+" "+s.charAt(i+2));
+        if (s.length() >= 3) {
+            for (int i = 0; i < s.length() - 2; i++) {
+                if (s.charAt(i) == 'L' && s.charAt(i + 1) == 'L' && s.charAt(i + 2) == 'L') {
+                    System.out.println(s.charAt(i) + " " + s.charAt(i + 1) + " " + s.charAt(i + 2));
                     return false;
                 }
             }

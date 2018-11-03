@@ -17,22 +17,22 @@ import java.util.Scanner;
  */
 public class IsPalindrome2 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(isPalindrome2(s));
     }
     private static boolean isPalindrome2(String s) {
-        if (s.length()<=2)
+        if (s.length() <= 2)
             return true;
-        return checkResult(s,0,s.length()-1,1);
+        return checkResult(s, 0, s.length() - 1, 1);
     }
-    private static boolean checkResult(String s,int l,int r,int count) {
-        char []chars=s.toCharArray();
-        while (l<=r-1) {
-            if (chars[l]!=chars[r]) {
-                if (count<=0)
+    private static boolean checkResult(String s, int l, int r, int count) {
+        char[] chars = s.toCharArray();
+        while (l <= r - 1) {
+            if (chars[l] != chars[r]) {
+                if (count <= 0)
                     return false;
-                return checkResult(s,l+1,r,count-1)||checkResult(s,l,r-1,count-1);
+                return checkResult(s, l + 1, r, count - 1) || checkResult(s, l, r - 1, count - 1);
             }
             l++;
             r--;

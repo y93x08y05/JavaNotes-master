@@ -23,42 +23,42 @@ import com.jack.util.TreeNode;
  * 返回[2].
  */
 public class FindModeFromTree {
-    private int max=0;
-    private int currVal=0;
-    private int currCount=0;
-    private int currModes=0;
-    private int [] modes;
+    private int max = 0;
+    private int currVal = 0;
+    private int currCount = 0;
+    private int currModes = 0;
+    private int[] modes;
     public static void main(String[] args) {
-        Integer []arr={0,1,0,2,0,0,2};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
-        int []res=new FindModeFromTree().find(root);
-        for (int i=0;i<res.length;i++) {
+        Integer[] arr = {0, 1, 0, 2, 0, 0, 2};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
+        int[] res = new FindModeFromTree().find(root);
+        for (int i = 0; i < res.length; i++) {
             System.out.println(res[i]);
         }
     }
-    public int [] find(TreeNode root) {
+    public int[] find(TreeNode root) {
         helper(root);
-        modes=new int[currModes];
-        currCount=0;
-        currModes=0;
+        modes = new int[currModes];
+        currCount = 0;
+        currModes = 0;
         helper(root);
         return modes;
     }
     public void helper(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return;
         helper(root.left);
-        if (root.val!=currVal) {
-            currVal=root.val;
-            currCount=1;
+        if (root.val != currVal) {
+            currVal = root.val;
+            currCount = 1;
         } else
             currCount++;
-        if (currCount>max) {
-            max=currCount;
-            currModes=1;
-        } else if (currCount==max) {
-            if (modes!=null)
-                modes[currModes]=root.val;
+        if (currCount > max) {
+            max = currCount;
+            currModes = 1;
+        } else if (currCount == max) {
+            if (modes != null)
+                modes[currModes] = root.val;
             currModes++;
         }
         helper(root.right);

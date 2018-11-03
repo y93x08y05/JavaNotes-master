@@ -32,25 +32,25 @@ import java.util.Set;
  */
 public class FairCandySwap {
     public static void main(String[] args) {
-        int []A={1,2,5};
-        int []B={2,4};
-        new FairCandySwap().find(A,B);
+        int[] A = {1, 2, 5};
+        int[] B = {2, 4};
+        new FairCandySwap().find(A, B);
     }
-    public int [] find(int []A,int []B) {
-        int sumA=0;
-        int sumB=0;
-        Set<Integer> set=new HashSet<>();
-        for (int i=0;i<A.length;i++) {
-            sumA+=A[i];
+    public int [] find(int[] A, int[] B) {
+        int sumA = 0;
+        int sumB = 0;
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < A.length; i++) {
+            sumA += A[i];
             set.add(A[i]);
         }
-        for (int i=0;i<B.length;i++) {
-            sumB+=B[i];
+        for (int i = 0; i < B.length; i++) {
+            sumB += B[i];
         }
-        for (int i=0;i<B.length;i++) {
-            int x=B[i]+(sumA-sumB)/2;
+        for (int i = 0; i < B.length; i++) {
+            int x = B[i] + (sumA - sumB) / 2;
             if (set.contains(x)) {
-                return new int[]{x,B[i]};
+                return new int[] {x, B[i]};
             }
         }
         return null;

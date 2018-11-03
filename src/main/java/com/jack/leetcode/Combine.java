@@ -23,26 +23,26 @@ import java.util.Scanner;
  */
 public class Combine {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
         System.out.println(find(n, k));
     }
-    private static List<List<Integer>> find(int n,int k) {
-        List<List<Integer>> res=new ArrayList<>();
-        List<Integer> temp=new ArrayList<>();
-        dfs(res,temp,n,k,1);
+    private static List<List<Integer>> find(int n, int k) {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        dfs(res, temp, n, k, 1);
         return res;
     }
-    private static void dfs(List<List<Integer>> res,List<Integer> temp,int n,int k,int m) {
-        if (k==0) {
+    private static void dfs(List<List<Integer>> res, List<Integer> temp, int n, int k, int m) {
+        if (k == 0) {
             res.add(new ArrayList<>(temp));
             return;
         }
-        for (int i=m;i<=n;i++) {
+        for (int i = m; i <= n; i++) {
             temp.add(i);
-            dfs(res,temp,n,k-1,i+1);
-            temp.remove(temp.size()-1);
+            dfs(res, temp, n, k - 1, i + 1);
+            temp.remove(temp.size() - 1);
         }
     }
 }

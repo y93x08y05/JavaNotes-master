@@ -22,19 +22,19 @@ import java.util.Scanner;
  */
 public class IsIsomorphic {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
         System.out.println(isIsomorphic(s1, s2));
     }
-    private static boolean isIsomorphic(String s1,String s2) {
-        int []arr1=new int[128];
-        int []arr2=new int[128];
-        for (int i=0;i< s1.length();i++) {
-            if (arr1[s1.charAt(i)]!=arr2[s2.charAt(i)]) {
+    private static boolean isIsomorphic(String s1, String s2) {
+        int[] arr1 = new int[128];
+        int[] arr2 = new int[128];
+        for (int i = 0; i < s1.length(); i++) {
+            if (arr1[s1.charAt(i)] != arr2[s2.charAt(i)]) {
                 return false;
             }
-            arr1[s1.charAt(i)]=arr2[s2.charAt(i)]=i+1;
+            arr1[s1.charAt(i)] = arr2[s2.charAt(i)] = i + 1;
         }
         return true;
     }

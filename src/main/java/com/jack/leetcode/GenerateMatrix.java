@@ -19,42 +19,47 @@ import java.util.Scanner;
  */
 public class GenerateMatrix {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int [][]res=new GenerateMatrix().find(n);
-        for (int i=0;i<res.length;i++) {
-            for (int j=0;j<res[0].length;j++) {
-                System.out.print(res[i][j]+" ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] res = new GenerateMatrix().find(n);
+        for (int i = 0; i < res.length; i++) {
+            for (int j = 0; j < res[0].length; j++) {
+                System.out.print(res[i][j] + " ");
             }
             System.out.println();
         }
     }
-    public int [][] find(int n) {
-        int [][]arr=new int[n][n];
-        int val=1;
-        int li=0,lj=0,ri=arr.length-1,rj=arr[0].length-1;
-        while (li<=ri&&lj<=rj) {
-            int i=li;
-            int j=lj;
-            while (j<=rj) {
-                arr[i][j]=val++;
+    public int[][] find(int n) {
+        int[][] arr = new int[n][n];
+        int val = 1;
+        int li = 0, lj = 0, ri = arr.length - 1, rj = arr[0].length - 1;
+        while (li <= ri && lj <= rj) {
+            int i = li;
+            int j = lj;
+            while (j <= rj) {
+                arr[i][j] = val++;
                 j++;
             }
-            --j;++i;
-            while (i<=ri) {
-                arr[i][j]=val++;
+            --j;
+            ++i;
+            while (i <= ri) {
+                arr[i][j] = val++;
                 i++;
             }
-            --i;--j;
-            while (j>lj&&li!=ri) {
-                arr[i][j]=val++;
+            --i;
+            --j;
+            while (j > lj && li != ri) {
+                arr[i][j] = val++;
                 j--;
             }
-            while (i>li&&lj!=rj) {
-                arr[i][j]=val++;
+            while (i > li && lj != rj) {
+                arr[i][j] = val++;
                 i--;
             }
-            li++;lj++;ri--;rj--;
+            li++;
+            lj++;
+            ri--;
+            rj--;
         }
         return arr;
     }

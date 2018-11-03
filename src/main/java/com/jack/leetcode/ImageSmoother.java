@@ -24,35 +24,35 @@ package com.jack.leetcode;
  */
 public class ImageSmoother {
     public static void main(String[] args) {
-        int [][]arr={{1,1,1},{1,0,1},{1,1,1}};
+        int[][] arr = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
         new ImageSmoother().find(arr);
     }
-    private static final int[] offset={-1,0,1};
-    public int [][] find(int [][]arr) {
-        if (arr==null||arr.length==0)
+    private static final int[] offset = {-1, 0, 1};
+    public int[][] find(int[][] arr) {
+        if (arr == null || arr.length == 0)
             return null;
-        int height=arr.length;
-        int width=arr[0].length;
-        int [][]result=new int[height][width];
-        for (int h=0;h<height;h++) {
-            for (int w=0;w<width;w++) {
-                int sum=0;
-                int count=0;
-                for (int temp1:offset) {
-                    for (int temp2:offset) {
-                        if (isLegal((h+temp2),(w+temp1),height,width)) {
+        int height = arr.length;
+        int width = arr[0].length;
+        int[][] result = new int[height][width];
+        for (int h = 0; h < height; h++) {
+            for (int w = 0; w < width; w++) {
+                int sum = 0;
+                int count = 0;
+                for (int temp1 : offset) {
+                    for (int temp2 : offset) {
+                        if (isLegal((h + temp2), (w + temp1), height, width)) {
                             count++;
-                            sum+=arr[h+temp2][w+temp1];
+                            sum += arr[h + temp2][w + temp1];
                         }
                     }
                 }
-                result[h][w]=sum/count;
+                result[h][w] = sum / count;
             }
         }
         return result;
     }
-    private boolean isLegal(int hIndex,int wIndex,int height,int width) {
-        if (hIndex<0||wIndex<0||hIndex>=height||wIndex>=width)
+    private boolean isLegal(int hIndex, int wIndex, int height, int width) {
+        if (hIndex < 0 || wIndex < 0 || hIndex >= height || wIndex >= width)
             return false;
         return true;
     }

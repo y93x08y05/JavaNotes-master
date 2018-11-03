@@ -26,64 +26,64 @@ import java.util.*;
  */
 public class FindSubString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        int n=sc.nextInt();
-        String []str=new String[n];
-        for (int i=0;i<n;i++) {
-            str[i]=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int n = sc.nextInt();
+        String[] str = new String[n];
+        for (int i = 0; i < n; i++) {
+            str[i] = sc.next();
         }
         System.out.println(find(s, str));
     }
-    private static List<Integer> find(String s,String []words) {
-        List<Integer> list=new ArrayList<>();
-        if (s==null||s==""||words==null||words.length==0)
+    private static List<Integer> find(String s, String[] words) {
+        List<Integer> list = new ArrayList<>();
+        if (s == null || s.equals("") ||words == null || words.length == 0)
             return list;
-        Map<String,Integer> map=new HashMap<>();
-        int len=words[0].length();
-        int k=len;
-        int count=words.length;
-        for (String tmp:words) {
+        Map<String,Integer> map = new HashMap<>();
+        int len = words[0].length();
+        int k = len;
+        int count = words.length;
+        for (String tmp : words) {
             if (!map.containsKey(tmp)) {
-                map.put(tmp,1);
+                map.put(tmp, 1);
             } else {
-                map.put(tmp,map.get(tmp)+1);
+                map.put(tmp, map.get(tmp) + 1);
             }
         }
         String current;
         int start;
-        for (int i=0;i<k;i++) {
-            Map<String,Integer> copy=new HashMap<>();
-            start=i;
-            for (int j=i;j+k<=s.length();j=j+k) {
-                current=s.substring(j,j+k);
+        for (int i = 0; i < k; i++) {
+            Map<String, Integer> copy = new HashMap<>();
+            start = i;
+            for (int j = i; j + k <= s.length(); j = j + k) {
+                current = s.substring(j, j + k);
                 if (map.containsKey(current)) {
-                    addRight(copy,current);
-                    if (j+k-start>k*count) {
-                        removeLeft(copy,s.substring(start,start+k));
-                        start=start+k;
+                    addRight(copy, current);
+                    if (j + k - start > k * count) {
+                        removeLeft(copy, s.substring(start, start + k));
+                        start = start + k;
                     }
-                    if (j+k-start==k*count&&copy.equals(map))
+                    if (j + k - start == k * count && copy.equals(map))
                         list.add(start);
                 } else {
                     copy.clear();
-                    start=j+k;
+                    start = j + k;
                 }
             }
         }
         return list;
     }
-    public static void addRight(Map<String,Integer> copy,String current) {
+    private static void addRight(Map<String, Integer> copy, String current) {
         if (copy.containsKey(current))
-            copy.put(current,copy.get(current)+1);
+            copy.put(current, copy.get(current) + 1);
         else
-            copy.put(current,1);
+            copy.put(current, 1);
     }
-    public static void removeLeft(Map<String,Integer> copy,String current) {
-        int x=copy.get(current);
-        if (x==1)
+    private static void removeLeft(Map<String, Integer> copy, String current) {
+        int x = copy.get(current);
+        if (x == 1)
             copy.remove(current);
         else
-            copy.put(current,x-1);
+            copy.put(current, x - 1);
     }
 }

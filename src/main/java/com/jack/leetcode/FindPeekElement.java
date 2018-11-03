@@ -21,46 +21,41 @@ import java.util.Scanner;
  */
 public class FindPeekElement {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findPeekElement1(arr));
         System.out.println(findPeekElement2(arr));
     }
-    private static int findPeekElement1(int []arr) {
-        int pre=Integer.MIN_VALUE;
-        int index=0;
-        boolean preCon=false;
-        while (index<arr.length) {
-            int v=arr[index];
-            if (v>pre) {
-                preCon=true;
-            } else if (v<pre){
-                if (preCon)
-                    return index-1;
+    private static int findPeekElement1(int[] arr) {
+        int pre = Integer.MIN_VALUE;
+        int index = 0;
+        while (index < arr.length) {
+            int v = arr[index];
+            if (v > pre) {
+            } else if (v < pre) {
+                return index - 1;
             }
-            pre=v;
+            pre = v;
             index++;
         }
-        return arr.length-1;
+        return arr.length - 1;
     }
-    private static int findPeekElement2(int []arr) {
-        if (arr.length==1)
+    private static int findPeekElement2(int[] arr) {
+        if (arr.length == 1)
             return 0;
-        int p1=0;
-        int p2=arr.length-1;
+        int p1 = 0;
+        int p2 = arr.length - 1;
         int mid;
-        while (p1<p2) {
-            mid=(p1+p2)>>1;
-            if (arr[mid]<arr[mid+1]) {
-                p1=mid+1;
-                continue;
+        while (p1 < p2) {
+            mid = (p1 + p2) >> 1;
+            if (arr[mid] < arr[mid + 1]) {
+                p1 = mid + 1;
             } else {
-                p2=mid;
-                continue;
+                p2 = mid;
             }
         }
         return p1;

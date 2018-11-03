@@ -22,46 +22,46 @@ import java.util.Set;
  */
 public class FirstMissingPositive {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(find0(arr));
         System.out.println(find1(arr));
     }
-    private static int find0(int []arr) {
-        Set<Integer> set=new HashSet<>();
-        int len=arr.length;
-        if (len<=0)
+    private static int find0(int[] arr) {
+        Set<Integer> set = new HashSet<>();
+        int len = arr.length;
+        if (len <= 0)
             return 1;
-        for (int i=0;i<len;i++) {
+        for (int i = 0; i < len; i++) {
             set.add(arr[i]);
         }
-        int index=1;
+        int index = 1;
         while (set.contains(index++));
-        return index-1;
+        return index - 1;
     }
-    private static int find1(int []arr) {
-        int len=arr.length;
-        for (int i=0;i<len;) {
-            if (arr[i]!=i+1&&arr[i]>0&&arr[i]<=len&&arr[i]!=arr[arr[i]-1]) {
-                swap(i,arr[i]-1,arr);
+    private static int find1(int[] arr) {
+        int len = arr.length;
+        for (int i = 0; i < len;) {
+            if (arr[i] != i + 1 && arr[i] > 0 && arr[i] <= len && arr[i] != arr[arr[i] - 1]) {
+                swap(i, arr[i] - 1, arr);
             } else {
                 i++;
             }
         }
-        for (int i=1;i<=len;i++) {
-            if (arr[i-1]!=i) {
+        for (int i = 1; i <= len; i++) {
+            if (arr[i - 1] != i) {
                 return i;
             }
         }
-        return len+1;
+        return len + 1;
     }
-    private static void swap(int i,int j,int []arr) {
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+    private static void swap(int i, int j, int[] arr) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }

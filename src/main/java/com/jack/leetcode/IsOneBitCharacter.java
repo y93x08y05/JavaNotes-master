@@ -29,23 +29,23 @@ import java.util.Scanner;
  */
 public class IsOneBitCharacter {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new IsOneBitCharacter().find(arr));
     }
-    public boolean find(int []arr) {
-        int i=0;
-        while (i<arr.length-1) {
-            if (arr[i]==1) {
-                i+=2;
+    public boolean find(int[] arr) {
+        int i = 0;
+        while (i < arr.length - 1) {
+            if (arr[i] == 1) {
+                i += 2;
             } else {
                 i++;
             }
         }
-        return i==arr.length-1;
+        return i == arr.length - 1;
     }
 }

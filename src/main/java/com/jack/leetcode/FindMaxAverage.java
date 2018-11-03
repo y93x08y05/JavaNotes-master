@@ -17,23 +17,23 @@ import java.util.Scanner;
  */
 public class FindMaxAverage {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int len=sc.nextInt();
-        int k=sc.nextInt();
-        int []arr=new int[len];
-        for (int i=0;i<len;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        int k = sc.nextInt();
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindMaxAverage().find(arr, k));
     }
-    private double find(int []arr,int k) {
-        double res=Integer.MIN_VALUE;
-        for (int i=0;i<=arr.length-k;i++) {
-            int sum=0;
-            for (int j=i;j<k+i;j++) {
-                sum+=arr[j];
+    private double find(int[] arr, int k) {
+        double res = Integer.MIN_VALUE;
+        for (int i = 0; i <= arr.length - k; i++) {
+            int sum = 0;
+            for (int j = i; j < k + i; j++) {
+                sum += arr[j];
             }
-            res=Math.max(res,(double)sum/k);
+            res = Math.max(res, (double) sum / k);
         }
         return res;
     }

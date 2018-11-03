@@ -20,12 +20,12 @@ public class LastWordLength {
         System.out.println(getLengthOfLastWord(s));
     }
     private static int getLengthOfLastWord(String s) {
-        s=s.trim();
-        if (s.length()==0)
+        s = s.trim();
+        if (s.length() == 0)
             return 0;
-        for (int i=s.length()-1;i>0;i--) {
-            if (s.charAt(i)==' ')
-                return s.substring(i+1,s.length()).length();
+        for (int i = s.length() - 1; i > 0; i--) {
+            if (s.charAt(i) == ' ')
+                return s.substring(i + 1, s.length()).length();
         }
         return s.length();
     }

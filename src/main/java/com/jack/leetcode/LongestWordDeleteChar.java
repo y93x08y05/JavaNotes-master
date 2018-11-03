@@ -23,25 +23,25 @@ import java.util.List;
  */
 public class LongestWordDeleteChar {
     public static void main(String[] args) {
-        String s="abpcplea";
-        String [] str={"ale","apple","monkey","plea"};
-        List<String> list=Arrays.asList(str);
+        String s = "abpcplea";
+        String[] str = {"ale", "apple", "monkey", "plea"};
+        List<String> list = Arrays.asList(str);
         System.out.println(findLongestWord(s, list));
     }
-    private static String findLongestWord(String s,List<String> list) {
-        String res="";
-        for (int i=0;i<list.size();i++) {
-            int m,n;
-            for (m=0,n=0;m<s.length()&&n<list.get(i).length();m++) {
-                if (s.charAt(m)==list.get(i).charAt(n))
+    private static String findLongestWord(String s, List<String> list) {
+        String res = "";
+        for (int i = 0; i < list.size(); i++) {
+            int m, n;
+            for (m = 0, n = 0; m < s.length() && n < list.get(i).length(); m++) {
+                if (s.charAt(m) == list.get(i).charAt(n))
                     n++;
             }
             /**
              * only s contain all char of string of list and list string length more than res length
              * or list string length == res length will replace res, let list string as new res.
              */
-            if (n==list.get(i).length()&&(res.length()<list.get(i).length()||(res.length()==list.get(i).length()&&res.compareTo(list.get(i))>0))) {
-                res=list.get(i);
+            if (n == list.get(i).length() && (res.length() < list.get(i).length() || (res.length() == list.get(i).length() && res.compareTo(list.get(i)) > 0))) {
+                res = list.get(i);
             }
         }
         return res;

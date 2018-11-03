@@ -16,27 +16,27 @@ import java.util.*;
  */
 public class InterSection {
     public static void main(String[] args) {
-        int []num1={1,2,2,1};
-        int []num2={2,2};
-        intersection(num1,num2);
+        int[] num1 = {1, 2, 2, 1};
+        int[] num2 = {2, 2};
+        System.out.println(Arrays.toString(intersection(num1, num2)));
     }
-    private static int []intersection(int []num1,int []num2) {
-        List<Integer> list1=new ArrayList<>();
-        List<Integer> list2=new ArrayList<>();
-        for (int i:num1)
+    private static int[] intersection(int[] num1, int[] num2) {
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        for (int i : num1)
             list1.add(i);
-        for (int i:num2)
+        for (int i : num2)
             list2.add(i);
-        Set<Integer> set=new HashSet<>();
-        for (int i=0;i<list1.size();i++) {
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < list1.size(); i++) {
             if (list2.contains(list1.get(i))) {
                 set.add(list1.get(i));
             }
         }
-        int []arr=new int[set.size()];
-        int j=0;
-        for (int i:set)
-            arr[j++]=i;
+        int[] arr = new int[set.size()];
+        int j = 0;
+        for (int i : set)
+            arr[j++] = i;
         return arr;
     }
 }

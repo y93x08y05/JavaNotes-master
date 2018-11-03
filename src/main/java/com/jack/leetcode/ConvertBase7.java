@@ -16,26 +16,26 @@ import java.util.Scanner;
  */
 public class ConvertBase7 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(convertBase7_0(n));
         System.out.println(convertBase7_1(n));
     }
     private static String convertBase7_0(int n) {
-        return Integer.toString(n,7);
+        return Integer.toString(n, 7);
     }
     private static String convertBase7_1(int n) {
-        StringBuilder sb=new StringBuilder();
-        if (n==0)
-            return 0+"";
-        int num=Math.abs(n);
-        while (num!=0) {
-            int res=num%7;
-            num=num/7;
-            sb.insert(0,res+"");
+        StringBuilder sb = new StringBuilder();
+        if (n == 0)
+            return 0 + "";
+        int num = Math.abs(n);
+        while (num != 0) {
+            int res = num % 7;
+            num = num / 7;
+            sb.insert(0, res + "");
         }
-        if (n<0)
-            sb.insert(0,"-");
+        if (n < 0)
+            sb.insert(0, "-");
         return sb.toString();
     }
 }

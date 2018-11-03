@@ -14,20 +14,20 @@ import java.util.Scanner;
  */
 public class CountNumbersWithUniqueDigits {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findCount(n));
     }
     private static int findCount(int n) {
-        if (n==0)
+        if (n == 0)
             return 1;
-        if (n==1)
+        if (n == 1)
             return 10;
-        int digits=9;
-        int val=10;
-        for (int i=2;i<=n;i++) {
-            digits*=(9-i+2);
-            val=val+digits;
+        int digits = 9;
+        int val = 10;
+        for (int i = 2; i <= n; i++) {
+            digits *= (9 - i + 2);
+            val = val + digits;
         }
         return val;
     }

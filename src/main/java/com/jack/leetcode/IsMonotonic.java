@@ -29,27 +29,27 @@ import java.util.Scanner;
  */
 public class IsMonotonic {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new IsMonotonic().find(arr));
     }
-    public boolean find(int []arr) {
-        int len=arr.length;
-        if (len==1)
+    public boolean find(int[] arr) {
+        int len = arr.length;
+        if (len == 1)
             return true;
-        int i=-1,j=0;
-        while (arr[++i]==arr[++j]&&j<len-1);
-        if (j==(len-1))
+        int i = -1, j = 0;
+        while (arr[++i] == arr[++j] && j < len - 1);
+        if (j == (len - 1))
             return true;
-        boolean increasing=arr[i]>arr[j]?false:true;
-        for (int k=j;k<len;k++) {
-            if (increasing&&arr[k]<arr[k-1])
+        boolean increasing = arr[i] <= arr[j];
+        for (int k = j; k < len; k++) {
+            if (increasing && arr[k] < arr[k - 1])
                 return false;
-            if (!increasing&&arr[k]>arr[k-1])
+            if (!increasing && arr[k] > arr[k - 1])
                 return false;
         }
         return true;

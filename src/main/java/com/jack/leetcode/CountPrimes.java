@@ -15,26 +15,26 @@ import java.util.Scanner;
  */
 public class CountPrimes {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(countPrimes(n));
     }
     private static int countPrimes(int n) {
         if(n <= 1) {
             return 0;
         }
-        boolean [] notPrime = new boolean [n];
+        boolean[] notPrime = new boolean[n];
         notPrime[0] = true;
         notPrime[1] = true;
-        for(int i=2;i*i<n;i++) {
+        for(int i = 2; i * i < n; i++) {
             if(!notPrime[i]) {
-                for(int j=2*i;j<n;j+=i) {
+                for(int j = 2 * i; j < n; j += i) {
                     notPrime[j] = true;
                 }
             }
         }
         int result = 0;
-        for(int i=0;i<notPrime.length;i++) {
+        for(int i = 0; i < notPrime.length; i++) {
             if(!notPrime[i]) {
                 result++;
             }

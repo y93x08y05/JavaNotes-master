@@ -34,29 +34,29 @@ import java.util.Scanner;
  */
 public class GrayCode {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(find(n));
     }
     private static List<Integer> find(int n) {
-        if (n==0) {
-            List<Integer> list=new ArrayList<>();
+        if (n == 0) {
+            List<Integer> list = new ArrayList<>();
             list.add(0);
             return list;
         }
-        if (n==1) {
-            List<Integer> list=new ArrayList<>();
+        if (n == 1) {
+            List<Integer> list = new ArrayList<>();
             list.add(0);
             list.add(1);
             return list;
         }
-        List<Integer> gray=find(n-1);
-        List<Integer> list=new ArrayList<>();
-        for (int i=0;i<Math.pow(2,n);i++) {
-            if (i<Math.pow(2,n-1))
+        List<Integer> gray = find(n - 1);
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < Math.pow(2, n); i++) {
+            if (i < Math.pow(2, n - 1))
                 list.add(gray.get(i));
             else {
-                int res=gray.get((int)Math.pow(2,n)-i-1)+(int)Math.pow(2,n-1);
+                int res = gray.get((int)Math.pow(2, n) - i - 1) + (int)Math.pow(2, n - 1);
                 list.add(res);
             }
         }

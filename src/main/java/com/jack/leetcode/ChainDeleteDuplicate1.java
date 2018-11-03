@@ -15,27 +15,27 @@ import com.jack.util.ChainCreate;
  */
 public class ChainDeleteDuplicate1 {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,3,4,5,6};
+        int[] arr = {1, 2, 3, 3, 4, 5, 6};
         ChainCreate chainCreate = new ChainCreate();
         ChainCreate.Node node = chainCreate.create(arr);
         node = deleteDuplicate(node);
-        while (node!=null) {
-            System.out.print(node.data+" ");
-            node=node.next;
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
         }
     }
     private static ChainCreate.Node deleteDuplicate(ChainCreate.Node head) {
-        if (head==null||head.next==null)
+        if (head == null || head.next == null)
             return head;
         ChainCreate.Node pre = head;
         ChainCreate.Node current = head.next;
-        while (current!=null) {
-            if (current.data==pre.data) {
-                pre.next=current.next;
+        while (current != null) {
+            if (current.data == pre.data) {
+                pre.next = current.next;
             } else {
-                pre=pre.next;
+                pre = pre.next;
             }
-            current=current.next;
+            current = current.next;
         }
         return head;
     }

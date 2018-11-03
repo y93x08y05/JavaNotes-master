@@ -36,15 +36,15 @@ import java.util.Set;
  */
 public class ExistWordMatrix2 {
     public static void main(String[] args) {
-        String []words={"oath","pea","eat","rain"};
-        char [][]chars={{'o','a','a','n'},
-                {'e','t','a','e'},
-                {'i','h','k','r'},
-                {'i','f','l','v'}};
-        ExistWordMatrix2 matrix2=new ExistWordMatrix2();
+        String[] words = {"oath", "pea", "eat", "rain"};
+        char[][] chars = {{'o', 'a', 'a', 'n'},
+                {'e', 't', 'a', 'e'},
+                {'i', 'h', 'k', 'r'},
+                {'i', 'f', 'l', 'v'}};
+        ExistWordMatrix2 matrix2 = new ExistWordMatrix2();
         System.out.println(matrix2.findWords(chars, words));
     }
-    Set<String> res=new HashSet<>();
+    Set<String> res = new HashSet<>();
 
     /**
      * 使用dfs不能确定何时结束递归。
@@ -55,38 +55,38 @@ public class ExistWordMatrix2 {
      * @param words
      * @return
      */
-    private List<String> findWords(char [][]board,String []words) {
-        Trie trie=new Trie();
-        for (String s:words) {
+    private List<String> findWords(char[][] board, String[] words) {
+        Trie trie = new Trie();
+        for (String s : words) {
             trie.insert(s);
         }
-        int n=board.length;
-        if (n<1)
+        int n = board.length;
+        if (n < 1)
             return new ArrayList<>(res);
-        int m=board[0].length;
-        boolean [][]visited=new boolean[n][m];
-        for (int i=0;i<n;i++) {
-            for (int j=0;j<m;j++) {
-                findWords(board,visited,"",i,j,trie);
+        int m = board[0].length;
+        boolean[][] visited = new boolean[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                findWords(board, visited, "", i, j, trie);
             }
         }
         return new ArrayList<>(res);
     }
-    public void findWords(char [][]board,boolean [][]visited,String str,int x,int y,Trie trie) {
-        if (x<0||x>=board.length||y<0||y>=board[0].length)
+    public void findWords(char[][] board, boolean[][] visited, String str, int x, int y, Trie trie) {
+        if (x < 0 || x >= board.length || y < 0 || y >= board[0].length)
             return;
         if (visited[x][y])
             return;
-        String newStr=str+board[x][y];
+        String newStr = str + board[x][y];
         if (!trie.startWith(newStr))
             return;
         if (trie.search(newStr))
             res.add(newStr);
-        visited[x][y]=true;
-        findWords(board,visited,newStr,x-1,y,trie);
-        findWords(board,visited,newStr,x+1,y,trie);
-        findWords(board,visited,newStr,x,y-1,trie);
-        findWords(board,visited,newStr,x,y+1,trie);
-        visited[x][y]=false;
+        visited[x][y] = true;
+        findWords(board, visited, newStr, x - 1, y, trie);
+        findWords(board, visited, newStr, x + 1, y, trie);
+        findWords(board, visited, newStr, x, y - 1, trie);
+        findWords(board, visited, newStr, x, y + 1, trie);
+        visited[x][y] = false;
     }
 }

@@ -21,28 +21,28 @@ import java.util.Scanner;
  */
 public class CountSubString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println(findCount(sc.nextLine()));
     }
     private static int findCount(String s) {
-        int len=s.length();
-        int []dp=new int[len];
-        for (int i=1;i<len;i++) {
-            int tmpNum=0;
-            for (int j=0;j<i;j++) {
-                if (s.charAt(i)==s.charAt(j)) {
-                    String subStr=s.substring(j,i+1);
+        int len = s.length();
+        int[] dp = new int[len];
+        for (int i = 1; i < len; i++) {
+            int tmpNum = 0;
+            for (int j = 0; j < i; j++) {
+                if (s.charAt(i) == s.charAt(j)) {
+                    String subStr = s.substring(j, i + 1);
                     if (isPalindromic(subStr))
                         tmpNum++;
                 }
             }
-            dp[i]=dp[i-1]+tmpNum;
+            dp[i] = dp[i - 1] + tmpNum;
         }
-        return dp[len-1]+len;
+        return dp[len - 1] + len;
     }
     private static boolean isPalindromic(String s) {
-        for (int i=0;i<(s.length()/2);i++) {
-            if (s.charAt(i)!=s.charAt(s.length()-1-i))
+        for (int i = 0; i < (s.length() / 2); i++) {
+            if (s.charAt(i) != s.charAt(s.length() - 1 - i))
                 return false;
         }
         return true;

@@ -14,17 +14,17 @@ import java.util.Scanner;
  */
 public class FirstUniqueChar {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(findFirstUniqueChar(s));
     }
     private static int findFirstUniqueChar(String s) {
-        int []a=new int[26];
-        for (int i=0;i<s.length();i++) {
-            a[s.charAt(i)-'a']++;
+        int[] a = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            a[s.charAt(i) - 'a']++;
         }
-        for (int i=0;i<s.length();i++) {
-            if (a[s.charAt(i)-'a']==1)
+        for (int i = 0; i < s.length(); i++) {
+            if (a[s.charAt(i) - 'a'] == 1)
                 return i;
         }
         return -1;

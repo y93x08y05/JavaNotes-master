@@ -32,29 +32,29 @@ import java.util.Scanner;
  */
 public class GenerateTree {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        new GenerateTree().find(n);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(new GenerateTree().find(n));
     }
     private List<TreeNode> find(int n) {
-        if (n==0)
+        if (n == 0)
             return new ArrayList<>();
-        return helper(1,n);
+        return helper(1, n);
     }
-    private List<TreeNode> helper(int left,int right) {
-        List<TreeNode> res=new ArrayList<>();
-        if (left>right) {
+    private List<TreeNode> helper(int left, int right) {
+        List<TreeNode> res = new ArrayList<>();
+        if (left > right) {
             res.add(null);
             return res;
         }
-        for (int i=left;i<=right;i++) {
-            List<TreeNode> leftList=helper(left,i-1);
-            List<TreeNode> rightList=helper(i+1,right);
-            for (int j=0;j<leftList.size();j++) {
-                for (int k=0;k<rightList.size();k++) {
-                    TreeNode root=new TreeNode(i);
-                    root.left=leftList.get(j);
-                    root.right=rightList.get(k);
+        for (int i = left; i <= right; i++) {
+            List<TreeNode> leftList = helper(left, i - 1);
+            List<TreeNode> rightList = helper(i + 1, right);
+            for (int j = 0; j < leftList.size(); j++) {
+                for (int k = 0; k < rightList.size(); k++) {
+                    TreeNode root = new TreeNode(i);
+                    root.left = leftList.get(j);
+                    root.right = rightList.get(k);
                     res.add(root);
                 }
             }

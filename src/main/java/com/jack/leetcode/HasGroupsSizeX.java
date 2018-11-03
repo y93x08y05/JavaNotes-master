@@ -37,18 +37,18 @@ public class HasGroupsSizeX {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int []arr = new int[n];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println(new HasGroupsSizeX().find(arr));
     }
-    public boolean find(int []arr) {
-        int []deck = new int[10002];
+    public boolean find(int[] arr) {
+        int[] deck = new int[10002];
         for (int i = 0; i < arr.length; i++) {
             deck[arr[i]]++;
         }
-        boolean result=false;
+        boolean result = false;
         for (int i = 2; i <= 10000; i++) {
             int j;
             for (j = 0; j < 10000; j++) {

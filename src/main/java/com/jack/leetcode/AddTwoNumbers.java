@@ -18,8 +18,8 @@ import java.util.Stack;
  */
 public class AddTwoNumbers {
     public static void main(String[] args) {
-        int []arr1 = {7,2,4,3};
-        int []arr2 = {5,6,4};
+        int[] arr1 = {7, 2, 4, 3};
+        int[] arr2 = {5, 6, 4};
         ChainCreate.Node head1 = new ChainCreate().create(arr1);
         ChainCreate.Node head2 = new ChainCreate().create(arr2);
         new AddTwoNumbers().find(head1, head2);

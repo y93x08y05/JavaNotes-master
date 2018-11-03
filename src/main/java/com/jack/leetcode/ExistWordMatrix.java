@@ -22,62 +22,62 @@ package com.jack.leetcode;
  */
 public class ExistWordMatrix {
     public static void main(String[] args) {
-        ExistWordMatrix matrix=new ExistWordMatrix();
-        char [][]chars={{'A','B','C','E'},
-                {'S','F','C','S'},
-                {'A','D','E','E'}};
-        String word="ABCCED";
+        ExistWordMatrix matrix = new ExistWordMatrix();
+        char[][] chars = {{'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'}};
+        String word = "ABCCED";
         System.out.println(matrix.exist(chars, word));
     }
-    public boolean resultFlag=false;
-    public boolean exist(char [][]board,String word) {
-        int row=board.length;
-        int col=board[0].length;
-        for (int i=0;i<row;i++) {
-            for (int j=0;j<col;j++) {
-                if (board[i][j]==word.charAt(0)) {
-                    boolean [][]isVisited=new boolean[row][col];
-                    isVisited[i][j]=true;
-                   dfs(board,isVisited,word,1,i,j);
-                   if (resultFlag==true)
+    public boolean resultFlag = false;
+    public boolean exist(char[][] board, String word) {
+        int row = board.length;
+        int col = board[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (board[i][j] == word.charAt(0)) {
+                    boolean[][] isVisited = new boolean[row][col];
+                    isVisited[i][j] = true;
+                   dfs(board, isVisited, word, 1, i, j);
+                   if (resultFlag)
                        return true;
                 }
             }
         }
         return false;
     }
-    public void dfs(char [][]board,boolean [][]isVisited,String word,int index,int row,int col) {
-        if (index==word.length()) {
-            resultFlag=true;
+    public void dfs(char[][] board, boolean[][] isVisited, String word, int index, int row, int col) {
+        if (index == word.length()) {
+            resultFlag = true;
             return;
         }
-        if (row-1>=0&&board[row-1][col]==word.charAt(index)
-                &&isVisited[row-1][col]==false
-                &&resultFlag==false) {
-            isVisited[row-1][col]=true;
-            dfs(board,isVisited,word,index+1,row-1,col);
-            isVisited[row-1][col]=false;
+        if (row - 1 >= 0 && board[row - 1][col] == word.charAt(index)
+                && !isVisited[row - 1][col]
+                && !resultFlag) {
+            isVisited[row - 1][col] = true;
+            dfs(board, isVisited, word, index + 1, row - 1, col);
+            isVisited[row - 1][col] = false;
         }
-        if (row+1<=board.length-1&&board[row+1][col]==word.charAt(index)
-                &&isVisited[row+1][col]==false
-                &&resultFlag==false) {
-            isVisited[row+1][col]=true;
-            dfs(board,isVisited,word,index+1,row+1,col);
-            isVisited[row+1][col]=false;
+        if (row + 1 <= board.length - 1 && board[row + 1][col] == word.charAt(index)
+                && !isVisited[row + 1][col]
+                && !resultFlag) {
+            isVisited[row + 1][col] = true;
+            dfs(board, isVisited, word, index + 1, row + 1, col);
+            isVisited[row + 1][col] = false;
         }
-        if (col-1>=0&&board[row][col-1]==word.charAt(index)
-                &&isVisited[row][col-1]==false
-                &&resultFlag==false) {
-            isVisited[row][col-1]=true;
-            dfs(board,isVisited,word,index+1,row,col-1);
-            isVisited[row][col-1]=false;
+        if (col - 1 >= 0 && board[row][col - 1] == word.charAt(index)
+                && !isVisited[row][col - 1]
+                && !resultFlag) {
+            isVisited[row][col - 1] = true;
+            dfs(board, isVisited, word, index + 1, row, col - 1);
+            isVisited[row][col - 1] = false;
         }
-        if (col+1<=board[0].length-1&&board[row][col+1]==word.charAt(index)
-                &&isVisited[row][col+1]==false
-                &&resultFlag==false) {
-            isVisited[row][col+1]=true;
-            dfs(board,isVisited,word,index+1,row,col+1);
-            isVisited[row][col+1]=false;
+        if (col + 1 <= board[0].length - 1 && board[row][col + 1] == word.charAt(index)
+                && !isVisited[row][col + 1]
+                && !resultFlag) {
+            isVisited[row][col + 1] = true;
+            dfs(board, isVisited, word, index + 1, row, col + 1);
+            isVisited[row][col + 1] = false;
         }
     }
 }

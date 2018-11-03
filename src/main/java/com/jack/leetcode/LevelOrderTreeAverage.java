@@ -2,10 +2,7 @@ package com.jack.leetcode;
 
 import com.jack.util.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by Jack on 8/27/2018 2:28 PM
@@ -15,22 +12,22 @@ import java.util.Queue;
  */
 public class LevelOrderTreeAverage {
     public static void main(String[] args) {
-        LevelOrderTreeAverage printTree=new LevelOrderTreeAverage();
-        int [] arr = {1,2,3,4,5,6,7};
-        TreeNode root = printTree.createTree(arr,0,arr.length-1);
+        LevelOrderTreeAverage printTree = new LevelOrderTreeAverage();
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        TreeNode root = printTree.createTree(arr, 0, arr.length - 1);
         List<Double> lists = printTree.print(root);
-        for (int i=0;i<lists.size();i++) {
+        for (int i = 0; i < lists.size(); i++) {
             System.out.println(lists.get(i));
         }
     }
-    private TreeNode createTree(int [] a , int left , int right) {
+    private TreeNode createTree(int[] a, int left, int right) {
         if (left > right) {
             return null;
         }
         TreeNode node = new TreeNode(a[(left + right) / 2]);
         node.val = a[(left + right) / 2];
-        node.left = createTree(a,left,(left + right)/2-1);
-        node.right = createTree(a,(left+right)/2+1,right);
+        node.left = createTree(a, left, (left + right) / 2 - 1);
+        node.right = createTree(a, (left + right) / 2 + 1, right);
         return node;
     }
     private List<Double> print(TreeNode root) {
@@ -47,7 +44,7 @@ public class LevelOrderTreeAverage {
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             end--;
-            arrayList.add(node.val);
+            arrayList.add(Objects.requireNonNull(node).val);
             if (node.left != null) {
                 queue.add(node.left);
                 start++;
@@ -63,12 +60,12 @@ public class LevelOrderTreeAverage {
                 start = 0;
             }
         }
-        for (int i=0;i<result.size();i++) {
-            double average=0;
-            for (int j=0;j<result.get(i).size();j++) {
-                average+=result.get(i).get(j);
+        for (int i = 0; i < result.size(); i++) {
+            double average = 0;
+            for (int j = 0; j < result.get(i).size(); j++) {
+                average += result.get(i).get(j);
             }
-            average/=result.get(i).size();
+            average /= result.get(i).size();
             lists.add(average);
         }
         return lists;

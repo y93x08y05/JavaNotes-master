@@ -21,25 +21,25 @@ import java.util.Scanner;
  */
 public class CheckPossibility {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++)
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
         System.out.println(new CheckPossibility().find(arr));
     }
-    private boolean find(int []arr) {
-        if (arr==null||arr.length<=1)
+    private boolean find(int[] arr) {
+        if (arr == null || arr.length <= 1)
             return true;
-        boolean found=false;
-        for (int i=1;i<arr.length;i++) {
-            if (arr[i]<arr[i-1]) {
+        boolean found = false;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
                 if (found)
                     return false;
                 else {
-                    if (i-2>=0&&arr[i]<arr[i-2])
-                        arr[i]=arr[i-1];
-                    found=true;
+                    if (i - 2 >= 0 && arr[i] < arr[i - 2])
+                        arr[i] = arr[i - 1];
+                    found = true;
                 }
             }
         }

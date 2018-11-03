@@ -34,29 +34,29 @@ import java.util.Scanner;
  */
 public class ContentChildren {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []g=new int[n];
-        for (int i=0;i<n;i++)
-            g[i]=sc.nextInt();
-        int m=sc.nextInt();
-        int []s=new int[m];
-        for (int i=0;i<m;i++)
-            s[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] g = new int[n];
+        for (int i = 0; i < n; i++)
+            g[i] = sc.nextInt();
+        int m = sc.nextInt();
+        int[] s = new int[m];
+        for (int i = 0; i < m; i++)
+            s[i] = sc.nextInt();
         System.out.println(findMoreContent(g, s));
     }
-    private static int findMoreContent(int []g, int []s) {
-        int res=0;
+    private static int findMoreContent(int[] g, int[] s) {
+        int res = 0;
         Arrays.sort(g);
         Arrays.sort(s);
-        int i=0;
-        int j=0;
-        while (i<g.length&&j<s.length) {
-            if (g[i]<=s[j]) {
+        int i = 0;
+        int j = 0;
+        while (i < g.length && j < s.length) {
+            if (g[i] <= s[j]) {
                 res++;
                 i++;
                 j++;
-            } else if (g[i]>s[j]) {
+            } else if (g[i] > s[j]) {
                 j++;
             }
         }

@@ -25,45 +25,45 @@ import java.util.Scanner;
  */
 public class Candy {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(distributeCandy0(arr));
         System.out.println(distributeCandy1(arr));
     }
-    private static int distributeCandy0(int []ratings) {
-        int A[]=new int[ratings.length];
-        Arrays.fill(A,1);
-        for (int i=1;i<ratings.length;i++)
-            if (ratings[i]>ratings[i-1])
-                A[i]=A[i-1]+1;
-        int sum=A[ratings.length-1];
-        for (int i=ratings.length-2;i>=0;i--) {
-            if (ratings[i]>ratings[i+1]&&A[i]<=A[i+1])
-                A[i]=A[i+1]+1;
-            sum+=A[i];
+    private static int distributeCandy0(int[] ratings) {
+        int[] A = new int[ratings.length];
+        Arrays.fill(A, 1);
+        for (int i = 1; i < ratings.length; i++)
+            if (ratings[i] > ratings[i - 1])
+                A[i] = A[i - 1] + 1;
+        int sum = A[ratings.length - 1];
+        for (int i = ratings.length - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1] && A[i] <= A[i + 1])
+                A[i] = A[i + 1] + 1;
+            sum += A[i];
         }
         return sum;
     }
-    private static int distributeCandy1(int []ratings) {
-        int L[]=new int[ratings.length];
-        int R[]=new int[ratings.length];
-        Arrays.fill(L,1);
-        Arrays.fill(R,1);
-        for (int i=1;i<ratings.length;i++) {
-            if (ratings[i]>ratings[i-1])
-                L[i]=L[i-1]+1;
+    private static int distributeCandy1(int[] ratings) {
+        int[] L = new int[ratings.length];
+        int[] R = new int[ratings.length];
+        Arrays.fill(L, 1);
+        Arrays.fill(R, 1);
+        for (int i = 1; i < ratings.length; i++) {
+            if (ratings[i] > ratings[i - 1])
+                L[i] = L[i - 1] + 1;
         }
-        for (int i=ratings.length-2;i>=0;i--) {
-            if (ratings[i]>ratings[i+1])
-                R[i]=R[i+1]+1;
+        for (int i = ratings.length - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1])
+                R[i] = R[i + 1] + 1;
         }
-        int sum=0;
-        for (int i=0;i<ratings.length;i++) {
-            sum+=Math.max(L[i],R[i]);
+        int sum = 0;
+        for (int i = 0; i < ratings.length; i++) {
+            sum += Math.max(L[i], R[i]);
         }
         return sum;
     }

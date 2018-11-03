@@ -19,26 +19,26 @@ import com.jack.util.TreeNode;
  */
 public class BuildTreePreInOrder {
     public static void main(String[] args) {
-        int []preOrder={3,9,20,15,7};
-        int []inOrder={9,3,15,20,7};
+        int[] preOrder = {3, 9, 20, 15, 7};
+        int[] inOrder = {9, 3, 15, 20, 7};
         new BuildTreePreInOrder().find(preOrder,inOrder);
     }
-    public TreeNode find(int []preOrder,int []inOrder) {
-        return find(preOrder,inOrder,0,0,inOrder.length-1);
+    public TreeNode find(int[] preOrder, int[] inOrder) {
+        return find(preOrder, inOrder, 0, 0, inOrder.length - 1);
     }
-    public TreeNode find(int []pre,int []in,int preStart,int inStart,int inEnd) {
-        if (preStart>pre.length-1||inStart>inEnd)
+    public TreeNode find(int[] pre, int[] in, int preStart, int inStart, int inEnd) {
+        if (preStart > pre.length - 1 || inStart > inEnd)
             return null;
-        TreeNode root=new TreeNode(pre[preStart]);
-        int index=0;
-        for (int i=inStart;i<=inEnd;i++) {
-            if (root.val==in[i]) {
-                index=i;
+        TreeNode root = new TreeNode(pre[preStart]);
+        int index = 0;
+        for (int i = inStart; i <= inEnd; i++) {
+            if (root.val == in[i]) {
+                index = i;
                 break;
             }
         }
-        root.left=find(pre,in,preStart+1,inStart,index-1);
-        root.right=find(pre,in,preStart+index-inStart+1,index+1,inEnd);
+        root.left = find(pre, in, preStart + 1, inStart, index - 1);
+        root.right = find(pre, in, preStart + index - inStart + 1,index + 1, inEnd);
         return root;
     }
 }

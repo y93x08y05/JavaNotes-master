@@ -18,28 +18,28 @@ import java.util.*;
  */
 public class InterSection2 {
     public static void main(String[] args) {
-        int []num1={1,2,2,1};
-        int []num2={2,2};
-        intersection(num1,num2);
+        int[] num1 = {1, 2, 2, 1};
+        int[]num2 = {2, 2};
+        System.out.println(Arrays.toString(intersection(num1, num2)));
     }
-    private static int[] intersection(int []num1,int []num2) {
+    private static int[] intersection(int[] num1, int[] num2) {
         Arrays.sort(num1);
         Arrays.sort(num2);
-        List<Integer> list=new ArrayList<>();
-        for (int i=0,j=0;i<num1.length&&j<num2.length;) {
-            if (num1[i]==num2[j]) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0, j = 0; i < num1.length && j < num2.length;) {
+            if (num1[i] == num2[j]) {
                 list.add(num1[i]);
                 i++;
                 j++;
-            } else if (num1[i]<num2[j]) {
+            } else if (num1[i] < num2[j]) {
                 i++;
             } else {
                 j++;
             }
         }
-        int []res=new int[list.size()];
-        for (int i=0;i<list.size();i++) {
-            res[i]=list.get(i);
+        int[] res = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            res[i] = list.get(i);
         }
         return res;
     }

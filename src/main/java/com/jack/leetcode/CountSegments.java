@@ -13,13 +13,13 @@ import java.util.Scanner;
  */
 public class CountSegments {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(findWordCount(s));
     }
     private static int findWordCount(String s) {
-        String s1=s.trim();
-        if (s1.length()==0)
+        String s1 = s.trim();
+        if (s1.length() == 0)
             return 0;
         else
             return s1.split("\\s+").length;

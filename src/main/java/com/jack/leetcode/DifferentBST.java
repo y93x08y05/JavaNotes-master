@@ -21,18 +21,18 @@ import java.util.Scanner;
  */
 public class DifferentBST {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(new DifferentBST().find1(n));
         System.out.println(new DifferentBST().find2(n));
         System.out.println(new DifferentBST().find3(n));
     }
     private int find1(int n) {
-        if (n==0||n==1)
+        if (n == 0 || n == 1)
             return 1;
-        int result=0;
-        for (int i=0;i<n;i++)
-            result+=find1(i)*find1(n-i-1);
+        int result = 0;
+        for (int i = 0; i < n; i++)
+            result += find1(i) * find1(n - i - 1);
         return result;
     }
     /*
@@ -45,12 +45,12 @@ public class DifferentBST {
      * 即G(n)=G(0)*G(n-1)+G(1)*G(n-2)+...+G(n-1)*G(0)
      */
     private int find2(int n) {
-        int [] G=new int[n+1];
-        G[0]=1;
-        G[1]=1;
-        for (int i=2;i<=n;i++)
-            for (int j=0;j<i;j++)
-                G[i]+=G[j]*G[i-j-1];
+        int[] G = new int[n + 1];
+        G[0] = 1;
+        G[1] = 1;
+        for (int i = 2; i <= n; i++)
+            for (int j = 0; j < i; j++)
+                G[i] += G[j] * G[i - j - 1];
         return G[n];
     }
     /*
@@ -60,9 +60,9 @@ public class DifferentBST {
      * h(n)=C(2n,n)/(n+1)=P(2n,n)/(n+1)!=(2n)!/(n!*(n+1)!)
      */
     private int find3(int n) {
-        long ans=1;
-        for (int i=n+1;i<=2*n;i++)
-            ans=ans*i/(i-n);
-        return (int) (ans/(n+1));
+        long ans = 1;
+        for (int i = n + 1; i <= 2 * n; i++)
+            ans = ans * i / (i - n);
+        return (int) (ans / (n + 1));
     }
 }

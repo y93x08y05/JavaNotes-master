@@ -17,29 +17,29 @@ import java.util.Scanner;
  */
 public class EatingSpeed {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String []str=sc.nextLine().split(" ");
-        int []arr=new int[str.length];
-        for (int i=0;i<arr.length;i++) {
-            arr[i]=Integer.parseInt(str[i]);
+        Scanner sc = new Scanner(System.in);
+        String[] str = sc.nextLine().split(" ");
+        int[] arr = new int[str.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Integer.parseInt(str[i]);
         }
-        int h=sc.nextInt();
+        int h = sc.nextInt();
         System.out.println(findMinValue(arr, h));
     }
-    private static int findMinValue(int []piles,int H) {
+    private static int findMinValue(int[] piles, int H) {
         Arrays.sort(piles);
-        int left=1;
-        int right=piles[piles.length-1]+1;
-        while(left<right) {
-            int m=(right-left)/2+left;
-            int w=0;
-            for(int i=0;i<piles.length;i++) {
-                w+=(piles[i]+m-1)/m;
+        int left = 1;
+        int right = piles[piles.length - 1] + 1;
+        while(left < right) {
+            int m = (right - left) / 2 + left;
+            int w = 0;
+            for(int i = 0; i < piles.length; i++) {
+                w += (piles[i] + m - 1) / m;
             }
-            if(w<=H) {
-                right=m;
+            if(w <= H) {
+                right = m;
             } else {
-                left=m+1;
+                left = m + 1;
             }
         }
         return left;

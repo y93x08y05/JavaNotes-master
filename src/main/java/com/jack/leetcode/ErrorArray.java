@@ -22,29 +22,29 @@ import java.util.Scanner;
  */
 public class ErrorArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
-        int []res=findError(arr);
+        int[] res = findError(arr);
         System.out.println(res[0] + " " + res[1]);
     }
-    private static int[] findError(int []arr) {
-        int []temp=new int[2];
-        Map<Integer,Integer> map=new HashMap<>();
-        for (int i=0;i<arr.length;i++) {
+    private static int[] findError(int[] arr) {
+        int[] temp = new int[2];
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
             if (map.containsKey(arr[i])) {
-                temp[0]=arr[i];
-                map.put(arr[i],map.get(arr[i])+1);
+                temp[0] = arr[i];
+                map.put(arr[i], map.get(arr[i]) + 1);
             } else {
-                map.put(arr[i],1);
+                map.put(arr[i], 1);
             }
         }
-        for (int i=0;i<arr.length;i++) {
-            if (!map.containsKey(i+1)) {
-                temp[1]=i+1;
+        for (int i = 0; i < arr.length; i++) {
+            if (!map.containsKey(i + 1)) {
+                temp[1] = i + 1;
             }
         }
         return temp;

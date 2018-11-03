@@ -38,27 +38,27 @@ import com.jack.util.TreeNode;
  */
 public class DeleteNodeBST {
     public static void main(String[] args) {
-        Integer []arr={0,5,3,6,2,4,0,7};
-        int key=3;
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 5, 3, 6, 2, 4, 0, 7};
+        int key = 3;
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new DeleteNodeBST().find(root, key));
     }
-    public TreeNode find(TreeNode root,int key) {
-        if (root==null)
+    public TreeNode find(TreeNode root, int key) {
+        if (root == null)
             return null;
-        if (key<root.val)
-            root.left=find(root.left,key);
-        else if (key>root.val)
-            root.right=find(root.right,key);
+        if (key < root.val)
+            root.left = find(root.left, key);
+        else if (key > root.val)
+            root.right = find(root.right, key);
         else {
-            if (root.left==null||root.right==null)
-                root=root.left!=null?root.left:root.right;
+            if (root.left == null || root.right == null)
+                root = root.left != null ? root.left : root.right;
             else {
-                TreeNode current=root.right;
-                while (current.left!=null)
-                    current=current.left;
-                root.val=current.val;
-                root.right=find(root.right,current.val);
+                TreeNode current = root.right;
+                while (current.left != null)
+                    current = current.left;
+                root.val = current.val;
+                root.right = find(root.right, current.val);
             }
         }
         return root;

@@ -18,9 +18,9 @@ import java.util.Objects;
  */
 public class LFUCache0 {
     Node head = null;
-    final int capacity;
-    Map<Integer, Integer> valueMap;
-    Map<Integer, Node> nodeMap;
+    private final int capacity;
+    private Map<Integer, Integer> valueMap;
+    private Map<Integer, Node> nodeMap;
     public LFUCache0 (int capacity) {
         this.capacity = capacity;
         valueMap = new HashMap<>(this.capacity, 1f);
@@ -41,31 +41,41 @@ public class LFUCache0 {
         if (node.keys.isEmpty()) remove(node);
     }
     private void remove(Node node) {
-        if (head == node) head = node.next;
-        else node.prev.next = node.next;
-        if (Objects.nonNull(node.next)) node.next.prev = node.prev;
+        if (head == node)
+            head = node.next;
+        else
+            node.prev.next = node.next;
+        if (Objects.nonNull(node.next))
+            node.next.prev = node.prev;
     }
     public void put(int key, int value) {
-        if (0 == this.capacity) return;
+        if (0 == this.capacity)
+            return;
         if (valueMap.containsKey(key)) {
             increase(key, value);
         } else {
-            if (valueMap.size() == this.capacity) remove();
+            if (valueMap.size() == this.capacity)
+                remove();
             valueMap.put(key, value);
             add(key);
         }
     }
     private void add(int key) {
-        if (Objects.isNull(head)) head = new Node(null, null, 1, key);
-        else if (head.count == 1) head.keys.add(key);
-        else head = head.prev = new Node(null, head, 1, key);
+        if (Objects.isNull(head))
+            head = new Node(null, null, 1, key);
+        else if (head.count == 1)
+            head.keys.add(key);
+        else
+            head = head.prev = new Node(null, head, 1, key);
         nodeMap.put(key, head);
     }
     private void remove() {
-        if (Objects.isNull(head)) return;
+        if (Objects.isNull(head))
+            return;
         int oldest = head.keys.iterator().next();
         head.keys.remove(oldest);
-        if (head.keys.isEmpty()) remove(head);
+        if (head.keys.isEmpty())
+            remove(head);
         nodeMap.remove(oldest);
         valueMap.remove(oldest);
     }

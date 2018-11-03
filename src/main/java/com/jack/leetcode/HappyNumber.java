@@ -23,8 +23,8 @@ import java.util.Scanner;
  */
 public class HappyNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(isHappy(n));
     }
     private static boolean isHappy(int n) {
@@ -37,10 +37,10 @@ public class HappyNumber {
         int count = 0;
         while(n != 1) {
             String s = n+"";
-            char [] arr = s.toCharArray();
+            char[] arr = s.toCharArray();
             int sum = 0;
-            for(int i=0;i<arr.length;i++) {
-                sum += Math.pow(Integer.parseInt(arr[i]+""),2);
+            for(int i = 0; i < arr.length; i++) {
+                sum += Math.pow(Integer.parseInt(arr[i] + ""), 2);
             }
             n = sum;
             count++;

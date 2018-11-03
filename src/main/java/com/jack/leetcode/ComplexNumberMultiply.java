@@ -19,27 +19,27 @@ import java.util.Scanner;
  */
 public class ComplexNumberMultiply {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
         System.out.println(complexNumberMultiply(s1, s2));
     }
-    private static String complexNumberMultiply(String s1,String s2) {
-        int []aa=new int[2];
-        int []bb=new int[2];
-        String []str1;
-        String []str2;
-        int real,virtual;
+    private static String complexNumberMultiply(String s1, String s2) {
+        int[] aa = new int[2];
+        int[] bb = new int[2];
+        String[] str1;
+        String[] str2;
+        int real, virtual;
         String res;
-        str1=s1.split("[+]");
-        str2=s2.split("[+]");
-        aa[0]=Integer.parseInt(str1[0]);
-        aa[1]=Integer.parseInt(str1[1].split("i")[0]);
-        bb[0]=Integer.parseInt(str2[0]);
-        bb[1]=Integer.parseInt(str2[1].split("i")[0]);
-        real=aa[0]*bb[0]+(-1)*aa[1]*bb[1];
-        virtual=aa[0]*bb[1]+aa[1]*bb[0];
-        res=real+"+"+virtual+"i";
+        str1 = s1.split("[+]");
+        str2 = s2.split("[+]");
+        aa[0] = Integer.parseInt(str1[0]);
+        aa[1] = Integer.parseInt(str1[1].split("i")[0]);
+        bb[0] = Integer.parseInt(str2[0]);
+        bb[1] = Integer.parseInt(str2[1].split("i")[0]);
+        real = aa[0] * bb[0] + (-1) * aa[1] * bb[1];
+        virtual = aa[0] * bb[1] + aa[1] * bb[0];
+        res = real + "+" + virtual + "i";
         return res;
     }
 }

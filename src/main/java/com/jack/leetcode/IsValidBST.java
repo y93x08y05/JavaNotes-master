@@ -36,25 +36,25 @@ import java.util.Stack;
  */
 public class IsValidBST {
     public static void main(String[] args) {
-        Integer []arr={0,2,1,3};
-        TreeNode root=new BinaryTreeNew().makeBinaryByArray(arr);
+        Integer[] arr = {0, 2, 1, 3};
+        TreeNode root = new BinaryTreeNew().makeBinaryByArray(arr);
         System.out.println(new IsValidBST().find(root));
     }
     public boolean find(TreeNode root) {
-        List<Integer> list=new ArrayList<>();
-        Stack<TreeNode> stack=new Stack<>();
-        while (!stack.isEmpty()||root!=null) {
-            while (root!=null) {
+        List<Integer> list = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
                 stack.push(root);
-                root=root.left;
+                root = root.left;
             }
-            root=stack.pop();
+            root = stack.pop();
             list.add(root.val);
-            root=root.right;
+            root = root.right;
         }
-        int len=list.size();
-        for (int i=0;i<len-1;i++)
-            if (list.get(i)>=list.get(i+1))
+        int len = list.size();
+        for (int i = 0; i < len - 1; i++)
+            if (list.get(i) >= list.get(i + 1))
                 return false;
         return true;
     }

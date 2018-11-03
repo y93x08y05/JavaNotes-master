@@ -18,12 +18,12 @@ package com.jack.leetcode;
 public class HammingWeight {
     public static void main(String[] args) {
         int n = 2147;
-        getNumber(n);
+        System.out.println(getNumber(n));
     }
     public static int getNumber(int n) {
-        int ans=0;
-        String s=Integer.toBinaryString(n);
-        for(char i:s.toCharArray()) {
+        int ans = 0;
+        String s = Integer.toBinaryString(n);
+        for(char i : s.toCharArray()) {
             if(i == '1')
             ans++;
         }

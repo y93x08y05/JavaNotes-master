@@ -47,32 +47,32 @@ import java.util.Scanner;
  */
 public class CheckRecord2 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(findValidRecord(n));
     }
     private static int findValidRecord(int n) {
-        if (n==1)
+        if (n == 1)
             return 3;
-        int mod=1000000007;
-        int []A=new int[n+1];
-        int []L=new int[n+1];
-        int []P=new int[n+1];
-        int []noAL=new int[n+1];
-        int []noAP=new int[n+1];
-        A[1]=L[1]=P[1]=1;
-        L[2]=3;
-        noAL[1]=noAP[1]=1;
-        noAL[2]=noAP[2]=2;
-        for (int i=2;i<=n;i++) {
-            P[i]=((P[i-1]+A[i-1])%mod+L[i-1])%mod;
-            A[i]=(noAP[i-1]+noAL[i-1])%mod;
-            noAP[i]=(noAP[i-1]+noAL[i-1])%mod;
-            if (i>=3) {
-                L[i]=((P[i-1]+A[i-1])%mod+(A[i-2]+P[i-2])%mod)%mod;
-                noAL[i]=(noAP[i-1]+noAP[i-2])%mod;
+        int mod = 1000000007;
+        int[] A = new int[n + 1];
+        int[] L = new int[n + 1];
+        int[] P = new int[n + 1];
+        int[] noAL = new int[n + 1];
+        int[] noAP = new int[n + 1];
+        A[1] = L[1] = P[1] = 1;
+        L[2] = 3;
+        noAL[1] = noAP[1] = 1;
+        noAL[2] = noAP[2] = 2;
+        for (int i = 2; i <= n; i++) {
+            P[i] = ((P[i - 1] + A[i - 1]) % mod + L[i - 1]) % mod;
+            A[i] = (noAP[i - 1] + noAL[i - 1]) % mod;
+            noAP[i] = (noAP[i - 1] + noAL[i - 1]) % mod;
+            if (i >= 3) {
+                L[i] = ((P[i - 1] + A[i - 1]) % mod + (A[i - 2] + P[i - 2]) % mod) % mod;
+                noAL[i] = (noAP[i - 1] +  noAP[i - 2]) % mod;
             }
         }
-        return ((A[n]+P[n])%mod+L[n])%mod;
+        return ((A[n] + P[n]) % mod + L[n]) % mod;
     }
 }

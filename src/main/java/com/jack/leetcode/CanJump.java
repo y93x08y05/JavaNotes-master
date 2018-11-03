@@ -24,18 +24,18 @@ public class CanJump {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int []arr = new int[n];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println(new CanJump().find(arr));
     }
-    public boolean find(int []arr) {
+    public boolean find(int[] arr) {
         int reach = arr[0];
         for (int i = 1; i < arr.length && reach >= i; i++) {
             if (i + arr[i] > reach)
                 reach = i + arr[i];
         }
-        return reach >= arr.length-1 ? true : false;
+        return reach >= arr.length - 1;
     }
 }

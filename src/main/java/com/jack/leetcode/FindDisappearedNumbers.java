@@ -18,23 +18,23 @@ import java.util.*;
  */
 public class FindDisappearedNumbers {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindDisappearedNumbers().find(arr));
     }
-    private List<Integer> find(int []arr) {
+    private List<Integer> find(int[] arr) {
         Arrays.sort(arr);
-        List<Integer> list=new ArrayList<>();
-        Set<Integer> set=new HashSet<>();
-        for (int i=0;i<arr.length;i++)
+        List<Integer> list = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < arr.length; i++)
             set.add(arr[i]);
-        for (int i=0;i<arr.length;i++)
-            if (!set.contains(i+1))
-                list.add(i+1);
+        for (int i = 0; i < arr.length; i++)
+            if (!set.contains(i + 1))
+                list.add(i + 1);
         return list;
     }
 }

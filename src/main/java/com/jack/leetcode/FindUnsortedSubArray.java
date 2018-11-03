@@ -16,11 +16,11 @@ import java.util.Scanner;
  */
 public class FindUnsortedSubArray {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindUnsortedSubArray().find(arr));
     }
@@ -29,20 +29,20 @@ public class FindUnsortedSubArray {
      * 从右往左遍历，当前位置一定是已经遍历到的最小值位置
      * 否则记住起始和终止位置再加1即可
      */
-    private int find(int []arr) {
-        int len=arr.length;
-        int max=arr[0];
-        int min=arr[len-1];
-        int begin=-1;
-        int end=-2;
-        for (int i=1;i<len;i++) {
-            max=Math.max(max,arr[i]);
-            min=Math.min(min,arr[len-i-1]);
-            if (max>arr[i])
-                end=i;
-            if (min<arr[len-i-1])
-                begin=len-i-1;
+    private int find(int[] arr) {
+        int len = arr.length;
+        int max = arr[0];
+        int min = arr[len - 1];
+        int begin = -1;
+        int end = -2;
+        for (int i = 1; i < len; i++) {
+            max = Math.max(max, arr[i]);
+            min = Math.min(min, arr[len - i - 1]);
+            if (max > arr[i])
+                end = i;
+            if (min < arr[len - i - 1])
+                begin = len - i - 1;
         }
-        return end-begin+1;
+        return end - begin + 1;
     }
 }

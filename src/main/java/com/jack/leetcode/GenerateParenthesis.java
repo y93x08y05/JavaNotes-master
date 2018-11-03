@@ -28,17 +28,17 @@ public class GenerateParenthesis {
     }
     private static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
-        addParenthesis(n,n,list,"");
+        addParenthesis(n, n, list, "");
         return list;
     }
-    private static void addParenthesis(int left,int right,List<String> list,String path) {
+    private static void addParenthesis(int left, int right, List<String> list, String path) {
         if (left == 0 && right == 0) {
             list.add(path);
             return;
         }
         if (left != 0)
-            addParenthesis(left-1,right,list,path+"(");
+            addParenthesis(left - 1, right, list, path + "(");
         if (right != 0 && right > left)
-            addParenthesis(left,right-1,list,path+")");
+            addParenthesis(left, right - 1, list, path + ")");
     }
 }

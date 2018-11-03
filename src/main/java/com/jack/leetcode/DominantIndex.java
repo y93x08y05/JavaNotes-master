@@ -23,27 +23,27 @@ import java.util.Scanner;
  */
 public class DominantIndex {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new DominantIndex().find(arr));
     }
-    public int find(int []arr) {
-        if (arr.length<=1||arr==null)
+    public int find(int[] arr) {
+        if (arr.length <= 1)
             return 0;
-        int max=arr[0];
-        int index=0;
-        for (int i=1;i<arr.length;i++) {
-            if (arr[i]>max) {
-                max=arr[i];
-                index=i;
+        int max = arr[0];
+        int index = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                index = i;
             }
         }
         Arrays.sort(arr);
-        if (max>=arr[arr.length-2]*2)
+        if (max >= arr[arr.length - 2] * 2)
             return index;
         else
             return -1;

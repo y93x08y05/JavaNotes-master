@@ -31,32 +31,32 @@ import java.util.*;
  */
 public class FrequencySort {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(frequencySort0(s));
         System.out.println(frequencySort1(s));
     }
     private static String frequencySort0(String s) {
-        Map<Character,Integer> map=new HashMap<>();
-        char []chars=s.toCharArray();
-        for (char c:chars) {
+        Map<Character, Integer> map = new HashMap<>();
+        char[] chars = s.toCharArray();
+        for (char c : chars) {
             if (map.containsKey(c))
-                map.put(c,map.get(c)+1);
+                map.put(c, map.get(c) + 1);
             else
-                map.put(c,1);
+                map.put(c, 1);
         }
-        List<Character> []bucket=new ArrayList[s.length()+1];
-        for (char k:map.keySet()) {
-            int v=map.get(k);
-            if (bucket[v]==null)
-                bucket[v]=new ArrayList<>();
+        ArrayList[] bucket = new ArrayList[s.length()+1];
+        for (char k : map.keySet()) {
+            int v = map.get(k);
+            if (bucket[v] == null)
+                bucket[v] = new ArrayList<>();
             bucket[v].add(k);
         }
-        StringBuilder sb=new StringBuilder();
-        for (int i=bucket.length-1;i>0;i--) {
-            if (bucket[i]!=null) {
-                for (char c:bucket[i]) {
-                    for (int j=0;j<map.get(c);j++) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = bucket.length - 1; i > 0; i--) {
+            if (bucket[i] != null) {
+                for (Object c : bucket[i]) {
+                    for (int j = 0; j < map.get(c); j++) {
                         sb.append(c);
                     }
                 }
@@ -65,20 +65,20 @@ public class FrequencySort {
         return sb.toString();
     }
     private static String frequencySort1(String s) {
-        Map<Character,Integer> map=new HashMap<>();
-        char []chars=s.toCharArray();
-        for (char c:chars) {
+        Map<Character, Integer> map = new HashMap<>();
+        char[] chars = s.toCharArray();
+        for (char c : chars) {
             if (map.containsKey(c))
-                map.put(c,map.get(c)+1);
+                map.put(c,map.get(c) + 1);
             else
-                map.put(c,1);
+                map.put(c, 1);
         }
-        PriorityQueue<Map.Entry<Character,Integer>> priorityQueue=new PriorityQueue<>((o1, o2) -> o2.getValue()-o1.getValue());
+        PriorityQueue<Map.Entry<Character, Integer>> priorityQueue = new PriorityQueue<>((o1, o2) -> o2.getValue()-o1.getValue());
         priorityQueue.addAll(map.entrySet());
-        StringBuilder sb=new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         while (!priorityQueue.isEmpty()) {
-            Map.Entry<Character,Integer> m=priorityQueue.poll();
-            for (int i=0;i<m.getValue();i++)
+            Map.Entry<Character, Integer> m = priorityQueue.poll();
+            for (int i = 0; i < Objects.requireNonNull(m).getValue(); i++)
                 sb.append(m.getKey());
         }
         return sb.toString();

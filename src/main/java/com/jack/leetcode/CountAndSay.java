@@ -25,28 +25,28 @@ public class CountAndSay {
         System.out.println(findStringBaseInt(n));
     }
     private static String findStringBaseInt(int n) {
-        if (n==1)
-            return 1+"";
+        if (n == 1)
+            return 1 + "";
         String result = "1";
-        for (int i=2;i<=n;i++)
-            result=findStringBaseInt(result);
+        for (int i = 2; i <= n; i++)
+            result = findStringBaseInt(result);
         return result;
     }
     private static String findStringBaseInt(String s) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         int count = 0;
         char c = '0';
-        for (int i=0;i<s.length();i++) {
+        for (int i = 0; i < s.length(); i++) {
             c = s.charAt(i);
-            if (count!=0) {
-                if (s.charAt(i-1) != c) {
-                    result=result+count+s.charAt(i-1);
-                    count=0;
+            if (count != 0) {
+                if (s.charAt(i - 1) != c) {
+                    result.append(count).append(s.charAt(i - 1));
+                    count = 0;
                 }
             }
             count++;
         }
-        result=result+count+c;
-        return result;
+        result.append(count).append(c);
+        return result.toString();
     }
 }

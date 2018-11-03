@@ -16,19 +16,19 @@ public class CopyRandomList {
         new CopyRandomList().find(new RandomListNode(2));
     }
     private RandomListNode find(RandomListNode head) {
-        HashMap<RandomListNode,RandomListNode> map=new HashMap<>();
-        RandomListNode current=head;
-        while (current!=null) {
-            RandomListNode node=new RandomListNode(current.label);
-            map.put(current,node);
-            current=current.next;
+        HashMap<RandomListNode, RandomListNode> map = new HashMap<>();
+        RandomListNode current = head;
+        while (current != null) {
+            RandomListNode node = new RandomListNode(current.label);
+            map.put(current, node);
+            current = current.next;
         }
-        current=head;
-        while (current!=null) {
-            RandomListNode node=map.get(current);
-            node.next=map.get(current.next);
-            node.random=map.get(current.random);
-            current=current.next;
+        current = head;
+        while (current != null) {
+            RandomListNode node = map.get(current);
+            node.next = map.get(current.next);
+            node.random = map.get(current.random);
+            current = current.next;
         }
         return map.get(head);
     }
@@ -36,7 +36,7 @@ public class CopyRandomList {
         int label;
         RandomListNode next,random;
         RandomListNode(int x) {
-            this.label=x;
+            this.label = x;
         }
     }
 }

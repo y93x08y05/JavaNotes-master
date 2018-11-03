@@ -22,12 +22,12 @@ import java.util.Scanner;
  */
 public class DetectCapitalUse {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(detectCapitalUse(s));
     }
     private static boolean detectCapitalUse(String s) {
-        if (s.length()==1||s.toUpperCase().equals(s)||s.toLowerCase().equals(s)||s.substring(1,s.length()).toLowerCase().equals(s.substring(1,s.length())))
+        if (s.length() == 1 || s.toUpperCase().equals(s) || s.toLowerCase().equals(s) || s.substring(1, s.length()).toLowerCase().equals(s.substring(1, s.length())))
             return true;
         return false;
     }

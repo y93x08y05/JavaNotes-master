@@ -21,19 +21,19 @@ import java.util.*;
  */
 public class CheckSubArraySum {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new CheckSubArraySum().find(arr, k));
     }
-    public boolean find(int []arr,int k) {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>(){{put(0,-1);}};
+    public boolean find(int[] arr, int k) {
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>(){{put(0, -1);}};
         int runningSum = 0;
-        for (int i=0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
             runningSum += arr[i];
             if (k != 0) runningSum %= k;
             Integer prev = map.get(runningSum);

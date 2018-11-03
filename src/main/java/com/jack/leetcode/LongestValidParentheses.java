@@ -33,24 +33,26 @@ public class LongestValidParentheses {
      */
     private static int findLongestValidParentheses1(String s) {
         Stack<Parentheses> parenthesesStack = new Stack<>();
-        for (int i=0;i<s.length();i++) {
+        for (int i = 0; i < s.length(); i++) {
             char symbol = s.charAt(i);
-            if (symbol==')') {
-                if (!parenthesesStack.isEmpty()&&parenthesesStack.peek().symbol=='(') {
+            if (symbol == ')') {
+                parenthesesStack.peek();
+                if (!parenthesesStack.isEmpty() && Parentheses.symbol == '(') {
                     parenthesesStack.pop();
                     continue;
                 }
             }
-            parenthesesStack.push(new Parentheses(symbol,i));
+            parenthesesStack.push(new Parentheses(symbol, i));
         }
         int maxLength = 0;
         int nextIndex = s.length();
         while (!parenthesesStack.isEmpty()) {
-            int currentIndex = parenthesesStack.pop().index;
-            maxLength = (nextIndex-currentIndex-1)>maxLength?nextIndex-currentIndex-1:maxLength;
+            parenthesesStack.pop();
+            int currentIndex = Parentheses.index;
+            maxLength = (nextIndex - currentIndex - 1) > maxLength ? nextIndex - currentIndex - 1 : maxLength;
             nextIndex = currentIndex;
         }
-        return Math.max(nextIndex,maxLength);
+        return Math.max(nextIndex, maxLength);
     }
 
     /**
@@ -60,10 +62,10 @@ public class LongestValidParentheses {
      */
     private static int findLongestValidParentheses2(String s) {
         Stack<Integer> parenthesesStack = new Stack<>();
-        for (int i=0;i<s.length();i++) {
+        for (int i = 0; i < s.length(); i++) {
             char symbol = s.charAt(i);
-            if (symbol==')') {
-                if (!parenthesesStack.isEmpty()&&s.charAt(parenthesesStack.peek())=='(') {
+            if (symbol == ')') {
+                if (!parenthesesStack.isEmpty() && s.charAt(parenthesesStack.peek()) == '(') {
                     parenthesesStack.pop();
                     continue;
                 }
@@ -74,11 +76,11 @@ public class LongestValidParentheses {
         int nextIndex = s.length();
         while (!parenthesesStack.isEmpty()) {
             int currentIndex = parenthesesStack.pop();
-            int currentLength = nextIndex-currentIndex-1;
-            maxLength = currentLength>maxLength?currentLength:maxLength;
+            int currentLength = nextIndex - currentIndex - 1;
+            maxLength = currentLength > maxLength ? currentLength : maxLength;
             nextIndex = currentIndex;
         }
-        return Math.max(nextIndex,maxLength);
+        return Math.max(nextIndex, maxLength);
     }
 
     /**
@@ -87,17 +89,17 @@ public class LongestValidParentheses {
      * @return
      */
     private static int findLongestValidParentheses3(String s) {
-        int [] maxCount = new int[s.length()];
+        int[] maxCount = new int[s.length()];
         int maxLength = 0;
-        for (int i=1;i<s.length();i++) {
-            if (s.charAt(i)==')') {
-                if (s.charAt(i-1)=='(') {
-                    maxCount[i] = (i>=2?maxCount[i-2]+2:2);
-                    maxLength = Math.max(maxCount[i],maxLength);
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == ')') {
+                if (s.charAt(i - 1) == '(') {
+                    maxCount[i] = (i >= 2 ? maxCount[i - 2] + 2 : 2);
+                    maxLength = Math.max(maxCount[i], maxLength);
                 } else {
-                    if (i-maxCount[i-1]-1>=0&&s.charAt(i-maxCount[i-1]-1)=='(') {
-                        maxCount[i] = maxCount[i-1]+2+((i-maxCount[i-1]-2>=0)?maxCount[i-maxCount[i-1]-2]:0);
-                        maxLength = Math.max(maxCount[i],maxLength);
+                    if (i - maxCount[i - 1] - 1 >=0 && s.charAt(i - maxCount[i - 1] - 1) == '(') {
+                        maxCount[i] = maxCount[i - 1] + 2 + ((i - maxCount[i - 1] - 2 >= 0) ? maxCount[i - maxCount[i - 1] - 2] : 0);
+                        maxLength = Math.max(maxCount[i], maxLength);
                     }
                 }
             }
@@ -111,22 +113,22 @@ public class LongestValidParentheses {
      * @return
      */
     private static int findLongestValidParentheses4(String s) {
-        int [] maxCount = new int[s.length()];
+        int[] maxCount = new int[s.length()];
         int maxLength = 0;
-        for(int i = 1 ; i<s.length() ; i++){
-            if(s.charAt(i) == ')' && i-maxCount[i-1]-1>=0 && s.charAt(i-maxCount[i-1]-1)=='('){
-                maxCount[i] = maxCount[i-1] + 2 + ((i-maxCount[i-1]-2>=0) ? maxCount[i-maxCount[i-1]-2] : 0);
+        for(int i = 1; i<s.length(); i++){
+            if(s.charAt(i) == ')' && i - maxCount[i - 1] - 1 >= 0 && s.charAt(i - maxCount[i - 1] - 1) == '('){
+                maxCount[i] = maxCount[i - 1] + 2 + ((i - maxCount[i - 1] - 2 >= 0) ? maxCount[i - maxCount[i - 1] - 2] : 0);
                 maxLength = Math.max(maxCount[i], maxLength);
             }
         }
         return maxLength;
     }
     public static class Parentheses {
-        public static char symbol;
+        static char symbol;
         public static int index;
-        public Parentheses(char symbol, int index) {
-            this.symbol = symbol;
-            this.index = index;
+        Parentheses(char symbol, int index) {
+            Parentheses.symbol = symbol;
+            Parentheses.index = index;
         }
     }
 }

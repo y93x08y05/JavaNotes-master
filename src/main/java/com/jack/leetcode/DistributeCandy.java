@@ -25,21 +25,21 @@ import java.util.Set;
  */
 public class DistributeCandy {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(findSisterCandy(arr));
     }
-    private static int findSisterCandy(int []candy) {
-        int count=candy.length/2;
-        Set<Integer> set=new HashSet<>();
-        for (int i=0;i<candy.length;i++) {
+    private static int findSisterCandy(int[] candy) {
+        int count = candy.length / 2;
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < candy.length; i++) {
             set.add(candy[i]);
         }
-        if (set.size()>=count)
+        if (set.size() >= count)
             return count;
         return set.size();
     }

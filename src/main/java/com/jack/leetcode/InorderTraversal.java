@@ -24,32 +24,32 @@ import java.util.Stack;
  */
 public class InorderTraversal {
     public static void main(String[] args) {
-        Integer []arr={0,1,0,2,0,0,3};
-        TreeNode node=new BinaryTreeNew().makeBinaryByArray(arr);
-        List<Integer> res1=new InorderTraversal().find0(node);
+        Integer[] arr = {0, 1, 0, 2, 0, 0, 3};
+        TreeNode node = new BinaryTreeNew().makeBinaryByArray(arr);
+        List<Integer> res1 = new InorderTraversal().find0(node);
         System.out.println(res1);
-        List<Integer> res2=new InorderTraversal().find1(node);
+        List<Integer> res2 = new InorderTraversal().find1(node);
         System.out.println(res2);
     }
-    public List<Integer> list=new ArrayList<>();
+    public List<Integer> list = new ArrayList<>();
     public List<Integer> find0(TreeNode root) {
         inOrder(root);
         return list;
     }
     public List<Integer> find1(TreeNode root) {
-        if (root==null)
+        if (root == null)
             return list;
-        Stack<TreeNode> stack=new Stack<>();
-        TreeNode tempNode=root;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode tempNode = root;
         stack.push(tempNode);
         while (!stack.isEmpty()) {
-            while ((tempNode=stack.peek())!=null) {
-                tempNode=tempNode.left;
+            while ((tempNode = stack.peek()) != null) {
+                tempNode = tempNode.left;
                 stack.push(tempNode);
             }
             stack.pop();
             if (!stack.isEmpty()) {
-                tempNode=stack.pop();
+                tempNode = stack.pop();
                 list.add(tempNode.val);
                 stack.push(tempNode.right);
             }
@@ -57,12 +57,12 @@ public class InorderTraversal {
         return list;
     }
     public void inOrder(TreeNode node) {
-        if (node==null)
+        if (node == null)
             return;
-        if (node.left!=null)
+        if (node.left != null)
             inOrder(node.left);
         list.add(node.val);
-        if (node.right!=null)
+        if (node.right != null)
             inOrder(node.right);
     }
 }

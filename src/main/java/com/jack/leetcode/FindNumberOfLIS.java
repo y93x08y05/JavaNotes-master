@@ -22,21 +22,21 @@ public class FindNumberOfLIS {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int []arr = new int[n];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println(new FindNumberOfLIS().find0(arr));
         System.out.println(new FindNumberOfLIS().find1(arr));
     }
-    public int find0(int []arr) {
+    public int find0(int[] arr) {
        if (arr == null || arr.length == 0)
            return 0;
-       int [][]cache = new int[arr.length][3];
+       int[][] cache = new int[arr.length][3];
        int maxLen = 0;
        int count = 0;
        for (int i = 0; i < arr.length; i++) {
-           int []temp = {arr[i], 1, 1};
+           int[] temp = {arr[i], 1, 1};
            for (int j = 0; j < i; j++) {
                if (cache[j][0] < arr[i] && cache[j][1] + 1 == temp[1])
                    temp[2] += cache[j][2];
@@ -55,14 +55,14 @@ public class FindNumberOfLIS {
        }
        return count;
     }
-    public int find1(int [] arr) {
+    public int find1(int[] arr) {
         int n = arr.length;
         int max_len = 1;
         int res = 0;
-        int [] dp = new int[n];
-        int [] cnt = new int[n];
-        Arrays.fill(dp,1);
-        Arrays.fill(cnt,1);
+        int[] dp = new int[n];
+        int[] cnt = new int[n];
+        Arrays.fill(dp, 1);
+        Arrays.fill(cnt, 1);
         for (int i = 1; i < n; ++i) {
             for (int j = 0; j < i; ++j) {
                 if (arr[j] < arr[i] && dp[j] + 1 > dp[i]) {
@@ -72,11 +72,11 @@ public class FindNumberOfLIS {
                     cnt[i] += cnt[j];
                 }
             }
-            max_len = Math.max(max_len,dp[i]);
+            max_len = Math.max(max_len, dp[i]);
         }
         for (int i = 0; i < n; ++i) {
             if (dp[i] == max_len) {
-                res +=cnt[i];
+                res += cnt[i];
             }
         }
         return res;

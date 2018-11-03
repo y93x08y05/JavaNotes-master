@@ -20,60 +20,60 @@ import java.util.Scanner;
  */
 public class CheckInclusion {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
         System.out.println(findIfInclusion1(s1, s2));
         System.out.println(findIfInclusion2(s1, s2));
     }
     private static boolean findIfInclusion1(String s1, String s2) {
-        if (s1.length()>s2.length())
+        if (s1.length() > s2.length())
             return false;
-        int []chars=new int[26];
-        for (int i=0;i<s1.length();i++) {
-            chars[s1.charAt(i)-'a']++;
+        int[] chars = new int[26];
+        for (int i = 0; i < s1.length(); i++) {
+            chars[s1.charAt(i) - 'a']++;
         }
-        for (int i=0;i<=s2.length()-s1.length();i++) {
-            String target=s2.substring(i,i+s1.length());
-            if (helper3(chars,target))
+        for (int i = 0; i <= s2.length() - s1.length(); i++) {
+            String target = s2.substring(i, i + s1.length());
+            if (helper3(chars, target))
                 return true;
         }
         return false;
     }
     private static boolean findIfInclusion2(String s1, String s2) {
-        if (s1.length()>s2.length())
+        if (s1.length() > s2.length())
             return false;
-        int []count=new int[26];
-        for (int i=0;i<s1.length();i++) {
-            count[s1.charAt(i)-'a']++;
-            count[s2.charAt(i)-'a']++;
+        int[] count = new int[26];
+        for (int i = 0; i < s1.length(); i++) {
+            count[s1.charAt(i) - 'a']++;
+            count[s2.charAt(i) - 'a']++;
         }
         if (helper4(count))
             return true;
-        for (int i=s1.length();i<s2.length();i++) {
-            count[s2.charAt(i)-'a']--;
-            count[s2.charAt(i-s1.length())-'a']++;
+        for (int i = s1.length(); i < s2.length(); i++) {
+            count[s2.charAt(i) - 'a']--;
+            count[s2.charAt(i - s1.length()) - 'a']++;
             if (helper4(count))
                 return true;
         }
         return false;
     }
-    private static boolean helper3(int []chars, String target) {
-        int []temp=new int[26];
-        for (int i=0;i<chars.length;i++) {
-            temp[i]=chars[i];
+    private static boolean helper3(int[] chars, String target) {
+        int[] temp = new int[26];
+        for (int i = 0; i < chars.length; i++) {
+            temp[i] = chars[i];
         }
-        for (int i=0;i<target.length();i++) {
-            if (temp[target.charAt(i)-'a']>0)
-                temp[target.charAt(i)-'a']--;
+        for (int i = 0; i < target.length(); i++) {
+            if (temp[target.charAt(i) - 'a'] > 0)
+                temp[target.charAt(i) - 'a']--;
             else
                 return false;
         }
         return true;
     }
-    private static boolean helper4(int []count) {
-        for (int i:count) {
-            if (i!=0)
+    private static boolean helper4(int[] count) {
+        for (int i : count) {
+            if (i != 0)
                 return false;
         }
         return true;

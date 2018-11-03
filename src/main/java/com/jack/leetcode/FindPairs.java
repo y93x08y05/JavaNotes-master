@@ -29,29 +29,29 @@ import java.util.Set;
  */
 public class FindPairs {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int k=sc.nextInt();
-        int []arr=new int[n];
-        for (int i=0;i<n;i++) {
-            arr[i]=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
         }
         System.out.println(new FindPairs().find(arr, k));
     }
-    public int find(int []arr,int k) {
-        int len = arr.length,result = 0;
+    public int find(int[] arr, int k) {
+        int len = arr.length, result = 0;
         Arrays.sort(arr);
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();
         if (k != 0) {
             for (int i = 0; i < len; i++) {
-                if (!set1.contains(arr[i])&&set1.contains(arr[i]-k))
+                if (!set1.contains(arr[i]) && set1.contains(arr[i] - k))
                     result++;
                 set1.add(arr[i]);
             }
         } else {
             for (int i = 0; i < len; i++) {
-                if (!set2.contains(arr[i])&&set1.contains(arr[i])) {
+                if (!set2.contains(arr[i]) && set1.contains(arr[i])) {
                     result++;
                     set2.add(arr[i]);
                 }

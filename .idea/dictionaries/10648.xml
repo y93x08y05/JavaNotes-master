@@ -26,9 +26,12 @@
       <w>abcde</w>
       <w>abcdefg</w>
       <w>abcdefghijklmnopqrstuvwxyz</w>
+      <w>abpcplea</w>
       <w>ahbgdc</w>
+      <w>appl</w>
       <w>applepen</w>
       <w>applepenapple</w>
+      <w>asdfghjkl</w>
       <w>baca</w>
       <w>baidu</w>
       <w>barfoor</w>
@@ -57,6 +60,7 @@
       <w>leet</w>
       <w>leetcode</w>
       <w>levenshtein</w>
+      <w>loveleetcode</w>
       <w>matlab</w>
       <w>nums</w>
       <w>olderest</w>
@@ -65,6 +69,7 @@
       <w>preorder</w>
       <w>pwke</w>
       <w>pwwkew</w>
+      <w>qwertyuiop</w>
       <w>sudoku</w>
       <w>sudotu</w>
       <w>toeplitz</w>
@@ -73,11 +78,13 @@
       <w>toutiaoh</w>
       <w>toutiaohao</w>
       <w>wordgoodstudentgoodword</w>
+      <w>worl</w>
       <w>wxyz</w>
       <w>xiao</w>
       <w>xxxx</w>
       <w>zhang</w>
       <w>zhangta</w>
+      <w>zxcvbnm</w>
     </words>
   </dictionary>
 </component>

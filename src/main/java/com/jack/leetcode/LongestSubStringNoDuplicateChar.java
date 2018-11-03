@@ -31,9 +31,9 @@ public class LongestSubStringNoDuplicateChar {
     private static int findLongestSubString1(String s) {
         int res = 0;
         for (int i = 0; i < s.length(); i++) {
-            for (int j = i + 1;j <= s.length(); j++) {
-                if (isTrue(s,i,j))
-                    res = Math.max(res,j-i);
+            for (int j = i + 1; j <= s.length(); j++) {
+                if (isTrue(s, i, j))
+                    res = Math.max(res, j - i);
             }
         }
         return res;
@@ -49,7 +49,7 @@ public class LongestSubStringNoDuplicateChar {
                 set.remove(s.charAt(start++));
             else {
                 set.add(s.charAt(end++));
-                res = Math.max(res,end - start);
+                res = Math.max(res, end - start);
             }
         }
         return res;
@@ -60,15 +60,15 @@ public class LongestSubStringNoDuplicateChar {
         int end = 0;
         int start = 0;
         Map<Character,Character> map = new HashMap<>();
-        for (;start < n && end < n; end++) {
+        for (; start < n && end < n; end++) {
             if (map.containsKey(s.charAt(end)))
-                start = Math.max(map.get(s.charAt(end)),start);
-            map.put(s.charAt(end), (char) (end+1));
-            res = Math.max(res,end-start+1);
+                start = Math.max(map.get(s.charAt(end)), start);
+            map.put(s.charAt(end), (char) (end + 1));
+            res = Math.max(res, end - start + 1);
         }
         return res;
     }
-    private static boolean isTrue(String s,int start,int end) {
+    private static boolean isTrue(String s, int start, int end) {
         Set<Character> set = new HashSet<>();
         for (int i = start; i < end; i++) {
             if (set.contains(s.charAt(i)))

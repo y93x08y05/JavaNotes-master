@@ -20,34 +20,34 @@ import java.util.Scanner;
  */
 public class LetterCasePermutation {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         System.out.println(findPermutation(s));
     }
     private static List<String> findPermutation(String s) {
-        List<String> list=new ArrayList<>();
-        if (s==null)
+        List<String> list = new ArrayList<>();
+        if (s == null)
             return list;
-        if (s.length()==0) {
+        if (s.length() == 0) {
             list.add(s);
             return list;
         }
-        char []source=s.toCharArray();
-        List<Integer> list1=new ArrayList<>();
-        for (int i=0;i<source.length;i++) {
-            if (source[i]>'9')
+        char[] source = s.toCharArray();
+        List<Integer> list1 = new ArrayList<>();
+        for (int i = 0; i < source.length; i++) {
+            if (source[i] > '9')
                 list1.add(i);
         }
-        int cnt=1<<(list1.size());
-        for (int i=0;i<cnt;i++) {
-            int temp=i;
-            for (int j=0;j<list1.size();j++) {
-                if ((temp&1)==1) {
-                    source[list1.get(j)]=Character.toUpperCase(source[list1.get(j)]);
+        int cnt = 1 << (list1.size());
+        for (int i = 0; i < cnt; i++) {
+            int temp = i;
+            for (int j = 0; j < list1.size(); j++) {
+                if ((temp & 1) == 1) {
+                    source[list1.get(j)] = Character.toUpperCase(source[list1.get(j)]);
                 } else {
-                    source[list1.get(j)]=Character.toLowerCase(source[list1.get(j)]);
+                    source[list1.get(j)] = Character.toLowerCase(source[list1.get(j)]);
                 }
-                temp>>=1;
+                temp >>= 1;
             }
             list.add(String.valueOf(source));
         }

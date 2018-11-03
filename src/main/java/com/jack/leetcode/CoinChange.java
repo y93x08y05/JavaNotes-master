@@ -23,33 +23,33 @@ public class CoinChange {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int mount = sc.nextInt();
-        int []arr = new int[n];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(find0(arr,mount));
-        System.out.println(find1(arr,mount));
+        System.out.println(find0(arr, mount));
+        System.out.println(find1(arr, mount));
     }
     /*
      * dp[i]表示当凑齐i时最少要多少个数字组成
      * 状态转移方程，dp[i]=Math.min(dp[i-k]+1,dp[i])
      */
-    private static int find0(int []coins,int mount) {
-        int []dp = new int[mount+1];
+    private static int find0(int[] coins, int mount) {
+        int[] dp = new int[mount + 1];
         for (int i = 1; i <= mount; i++)
-            dp[i]=Integer.MAX_VALUE;
+            dp[i] = Integer.MAX_VALUE;
         for (int coin : coins)
             for (int i = coin; i <= mount; i++)
-                dp[i] = Math.min(dp[i],dp[i - coin] + 1);
+                dp[i] = Math.min(dp[i], dp[i - coin] + 1);
         return dp[mount] == Integer.MAX_VALUE ? -1 : dp[mount];
     }
-    private static int find1(int []coins,int mount) {
-        int []dp = new int[mount + 1];
+    private static int find1(int[] coins, int mount) {
+        int[] dp = new int[mount + 1];
         for (int i = 1; i <= mount; i++) {
             dp[i] = Integer.MAX_VALUE;
             for (int j = 0; j < coins.length; j++) {
                 if (i >= coins[j] && dp[i - coins[j]] != Integer.MAX_VALUE)
-                    dp[i] = Math.min(dp[i],dp[i - coins[j]] + 1);
+                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
             }
         }
         return dp[mount] == Integer.MAX_VALUE ? -1 : dp[mount];

@@ -27,29 +27,29 @@ import java.util.Scanner;
  */
 public class LargeGroupPositions {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         System.out.println(new LargeGroupPositions().find(s));
     }
     public List<List<Integer>> find(String s) {
-        List<List<Integer>> lists=new ArrayList<>();
-        if (s==null||s.length()<3)
+        List<List<Integer>> lists = new ArrayList<>();
+        if (s == null || s.length() < 3)
             return lists;
-        int i,j;
-        for (i=0;i<s.length()-2;i=j) {
-            for (j=i+1;j<s.length();j++) {
-                if (s.charAt(j)!=s.charAt(i)) {
+        int i, j;
+        for (i = 0; i < s.length() - 2; i = j) {
+            for (j = i + 1; j < s.length(); j++) {
+                if (s.charAt(j) != s.charAt(i)) {
                     if (j - i >= 3) {
-                        List<Integer> list=new ArrayList<>();
+                        List<Integer> list = new ArrayList<>();
                         list.add(i);
-                        list.add(j-1);
+                        list.add(j - 1);
                         lists.add(list);
                     }
                     break;
                 }
-                if (j==s.length()-1) {
+                if (j == s.length() - 1) {
                     if (j - i >= 2) {
-                        List<Integer> list=new ArrayList<>();
+                        List<Integer> list = new ArrayList<>();
                         list.add(i);
                         list.add(j);
                         lists.add(list);
