@@ -19,17 +19,17 @@ public class A163_2018_3 {
         String line = sc.nextLine();
         System.out.printf("%.2f\n", getAveLen(line));
     }
-    public static float getAveLen(String s) {
+    private static float getAveLen(String s) {
         ArrayList<String> list = new ArrayList<>();
         Pattern p = Pattern.compile("([a-z])\\1*");
         Matcher m = p.matcher(s);
-        while(m.find()) {
+        while (m.find()) {
             list.add(m.group());
         }
         float sumLen = 0;
-        for(String str : list) {
-        sumLen += str.length();
+        for (String str : list) {
+            sumLen += str.length();
         }
-        return sumLen/list.size();
+        return sumLen / list.size();
     }
 }

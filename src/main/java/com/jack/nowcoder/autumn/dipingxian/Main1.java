@@ -11,7 +11,7 @@ public class Main1 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         float[] res = new float[n];
-        for (int i = 0; i <n; i++) {
+        for (int i = 0; i < n; i++) {
             res[i] = sc.nextFloat();
         }
         find(res);
