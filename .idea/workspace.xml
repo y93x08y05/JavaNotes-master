@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/跳跃表/SkipList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/跳跃表/SkipNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FlippingAnImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MajorityElement2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/SurroundedRegions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/LRU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/网络编程/socket/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/网络编程/socket/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/网络编程/socket/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/algorithm/网络编程/socket/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/basic/Other2/JavaUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/basic/Other2/JavaUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FindAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/MajorityElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/util/PDFUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/util/PDFUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/Util/PDFUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/Util/PDFUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/经典算法/LRU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/algorithm/经典算法/LRU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/basic/Other2/JavaUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/basic/Other2/JavaUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/MajorityElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/MajorityElement.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,14 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SurroundedRegions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/SurroundedRegions.java">
+      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="81" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="81" selection-end-column="9" />
+            <state relative-caret-position="1259">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#solve1#0;class#SurroundedRegions#0" />
               </folding>
             </state>
           </provider>
@@ -68,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>石子</find>
       <find>子数组</find>
       <find>水仙花</find>
       <find>最长</find>
@@ -98,6 +81,7 @@
       <find>LeetCode 229</find>
       <find>LeetCode 832</find>
       <find>LeetCode 130</find>
+      <find>LeetCode 120</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -113,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CheckPerfectNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CheckInclusion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainSortMinTimeMinSpace.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainRotateRight.java" />
@@ -164,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/algorithm/经典算法/LRU.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/FlippingAnImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/SurroundedRegions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java" />
       </list>
     </option>
   </component>
@@ -194,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,6 +225,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -251,7 +235,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="studioMain" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/jack/train/csdn/Resolver.java" />
   </component>
   <component name="RecentsManager">
@@ -278,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SurroundedRegions">
+  <component name="RunManager" selected="Application.Triangle">
     <configuration name="四位随机数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.basic.Other1.四位随机数" />
       <module name="JavaNotes" />
@@ -334,19 +318,19 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SkipList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.algorithm.经典算法.跳跃表.SkipList" />
+    <configuration name="SurroundedRegions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.SurroundedRegions" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jack.algorithm.经典算法.跳跃表.*" />
+          <option name="PATTERN" value="com.jack.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SurroundedRegions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.SurroundedRegions" />
+    <configuration name="Triangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.Triangle" />
       <module name="JavaNotes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -422,18 +406,18 @@
     <list>
       <item itemvalue="Maven.SDK" />
       <item itemvalue="Application.PDFUtils" />
-      <item itemvalue="Application.SkipList" />
       <item itemvalue="Application.Application" />
       <item itemvalue="Application.FlippingAnImage" />
       <item itemvalue="Application.SurroundedRegions" />
+      <item itemvalue="Application.Triangle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Triangle" />
         <item itemvalue="Application.SurroundedRegions" />
         <item itemvalue="Application.FlippingAnImage" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.PDFUtils" />
-        <item itemvalue="Application.SkipList" />
       </list>
     </recent_temporary>
   </component>
@@ -448,6 +432,14 @@
       <option name="presentableId" value="Default" />
       <updated>1530264110864</updated>
     </task>
+    <task id="LOCAL-00001" summary="add some leetcode">
+      <created>1552627248244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552627248244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +467,7 @@
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="7" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.47272727" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.7338843" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
       <window_info id="DB Browser" order="2" weight="0.32980332" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
@@ -486,6 +478,7 @@
       <window_info anchor="bottom" id="Run" order="4" weight="0.2677686" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289256" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.25037822" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="8" side_tool="true" weight="0.32969153" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -494,9 +487,9 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -504,7 +497,7 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info id="DB Browser" order="2" weight="0.32980332" />
       <window_info id="UI Designer" order="7" />
       <window_info id="Project Explorer" order="0" weight="0.32980332" />
@@ -514,21 +507,20 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25037822" />
+      <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
-      <window_info id="Job Explorer" order="1" weight="0.32980332" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25037822" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Console" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.8380165" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.4852713" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.47272727" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -563,6 +555,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add some leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some leetcode" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -578,11 +574,17 @@
           <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="206" />
+      <option name="time" value="207" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -591,13 +593,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/SolveSudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/autumn/toutiao/TOUTIAO20180812/CountTeamMaxTeam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -939,11 +934,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/SurroundedRegions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="81" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="81" selection-end-column="9" />
+        <state relative-caret-position="159">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#solve1#0;class#SurroundedRegions#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1259">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
