@@ -10,11 +10,11 @@ import java.util.concurrent.Executors;
  */
 public class Application {
     public static void main(String[] args) {
-        ExecutorService service= Executors.newFixedThreadPool(10);
-        for (String host:HttpUtil.HOSTS) {
-            Thread thread=new Thread(() -> new SocketHttpClient().start(host,HttpUtil.PORT));
+        ExecutorService service = Executors.newFixedThreadPool(10);
+        for (String host : HttpUtil.HOSTS) {
+            Thread thread = new Thread(() -> new SocketHttpClient().start(host, HttpUtil.PORT));
             service.submit(thread);
-            new SocketHttpClient().start(host,HttpUtil.PORT);
+            new SocketHttpClient().start(host, HttpUtil.PORT);
         }
     }
 }

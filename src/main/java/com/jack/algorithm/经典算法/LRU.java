@@ -11,17 +11,17 @@ public class LRU {
     private int back ;//定义队尾
     private int currentSize ;//队列中存放元素个数
     private int maxSize = 5;
-    public LRU(){
+    private LRU(){
         array = new int[maxSize];
         back = 0;
         currentSize = 0;
     }
     public void queue(int a [] ){
-        for (int i=0;i<a.length;i++){
-            enQuene(a[i]);
+        for (int anA : a) {
+            enQuene(anA);
         }
     }
-    public void enQuene(int x ){
+    private void enQuene(int x){
         beUsed(x);//入队判断是否存在该页号，存在则删除
         if (currentSize < maxSize){
             array[back] = x;
@@ -38,20 +38,20 @@ public class LRU {
         }
         System.out.println();
     }
-    public void beUsed(int x){
-        for (int i=0;i<currentSize;i++){
-            if (array[i] == x){
-                for (int j=i;j<currentSize-1;j++){
-                    array[j] = array[j+1];
+    private void beUsed(int x) {
+        for (int i = 0; i < currentSize; i++){
+            if (array[i] == x) {
+                for (int j = i; j < currentSize - 1; j++){
+                    array[j] = array[j + 1];
                 }
                 currentSize--;
                 back--;
             }
         }
     }
-    public static void main(String [] args){
+    public static void main (String [] args) {
         LRU lru = new LRU();
-        int a [] = {4,7,0,7,1,0,1,2,1,2,6};
+        int a [] = {4, 7, 0, 7, 1, 0, 1, 2, 1, 2, 6};
         lru.queue(a);
     }
 }

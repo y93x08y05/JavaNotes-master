@@ -11,7 +11,7 @@ import java.io.IOException;
  */
 public class PDFUtils {
     public static void main(String[] args) {
-        File file = new File("F:/123.pdf");
+        File file = new File("F:/终稿5.pdf");
         PDDocument document = null;
         try {
             document = PDDocument.load(file);
@@ -19,12 +19,12 @@ public class PDFUtils {
             e.printStackTrace();
         }
         if (document != null) {
-            document.removePage(8);
+            document.removePage(6);
         }
         System.out.println("Page one removed");
         try {
             if (document != null) {
-                document.save("F:/123.pdf");
+                document.save("F:/终稿5.pdf");
             }
         } catch (IOException e) {
             e.printStackTrace();

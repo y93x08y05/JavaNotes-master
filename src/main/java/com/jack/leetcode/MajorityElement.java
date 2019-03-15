@@ -22,7 +22,7 @@ public class MajorityElement {
         int[] arr = {2, 2, 1, 1, 1, 2, 2};
         System.out.println(majorityElement(arr));
     }
-    public static int majorityElement(int[] arr) {
+    private static int majorityElement(int[] arr) {
         Arrays.sort(arr);
         int middle = arr.length / 2;
         return arr[middle];
