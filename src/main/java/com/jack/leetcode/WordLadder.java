@@ -30,9 +30,7 @@ import java.util.*;
  * beginWord = "hit"
  * endWord = "cog"
  * wordList = ["hot","dot","dog","lot","log"]
- *
  * 输出: 0
- *
  * 解释: endWord "cog" 不在字典中，所以无法进行转换。
  */
 public class WordLadder {
