@@ -1,4 +1,4 @@
-package com.jack.nowcoder.spring.TTouTiao;
+package com.jack.nowcoder.spring.TTouTiao.春招2018;
 
 /**
  * P为给定的二维平面整数点集。

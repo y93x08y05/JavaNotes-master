@@ -47,9 +47,9 @@ public class CoinChange {
         int[] dp = new int[mount + 1];
         for (int i = 1; i <= mount; i++) {
             dp[i] = Integer.MAX_VALUE;
-            for (int j = 0; j < coins.length; j++) {
-                if (i >= coins[j] && dp[i - coins[j]] != Integer.MAX_VALUE)
-                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+            for (int coin : coins) {
+                if (i >= coin && dp[i - coin] != Integer.MAX_VALUE)
+                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
             }
         }
         return dp[mount] == Integer.MAX_VALUE ? -1 : dp[mount];

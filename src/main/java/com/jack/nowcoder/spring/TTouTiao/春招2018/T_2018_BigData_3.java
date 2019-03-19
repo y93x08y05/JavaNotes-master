@@ -1,4 +1,4 @@
-package com.jack.nowcoder.spring.TTouTiao;
+package com.jack.nowcoder.spring.TTouTiao.春招2018;
 
 /**
  * 产品经理(PM)有很多好的idea，而这些idea需要程序员实现。

@@ -1,4 +1,4 @@
-package com.jack.nowcoder.spring.TTouTiao;
+package com.jack.nowcoder.spring.TTouTiao.春招2018;
 
 import java.util.Arrays;
 import java.util.Scanner;
