@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="add some leetcode">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestHarmoniousSubsequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NRepeatedElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third.java" afterDir="false" />
+    <list default="true" id="92dfebc3-8f0f-40cc-a7cc-a604772bfcea" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/10648.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/T_2018_BigData_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/T_2018_BigData_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/T_2018_BigData_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/T_2018_BigData_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/T_2018_BigData_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/T_2018_BigData_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/T_2018_BigData_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/T_2018_BigData_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/T_2018_BigData_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/T_2018_BigData_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/Toutiao_2018_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/Toutiao_2018_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/Toutiao_2018_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/Toutiao_2018_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/Toutiao_2018_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2018/Toutiao_2018_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/CoinChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Jack/leetcode/CoinChange.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,17 +31,60 @@
       <file leaf-file-name="First.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinChange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
+      <file leaf-file-name="First2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="63" />
+            <state relative-caret-position="200">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Second2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Third2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-43">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Four2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+              <folding>
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,26 +92,17 @@
       <file leaf-file-name="Second.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="735">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordLadder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Third.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Third.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="66">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,20 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Candy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/Candy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Four.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="351">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>中位数</find>
       <find>回文串</find>
       <find>环</find>
       <find>LeetCode 80</find>
@@ -156,6 +167,7 @@
       <find>leetcode 767</find>
       <find>woo</find>
       <find>LeetCOde 135</find>
+      <find>StringB</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -171,10 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementRemove.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainElementAdd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/ChainDeleteDuplicate1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CanPlaceFlowers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CanJump.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Candy.java" />
@@ -216,12 +224,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/Triangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/LongestHarmoniousSubsequence.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/NRepeatedElement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four2.java" />
       </list>
     </option>
   </component>
@@ -239,10 +251,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1345" />
+    <option name="y" value="31" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -252,8 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -295,12 +305,47 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jack" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="TTouTiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaNotes-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaNotes-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jack" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="TTouTiao" type="462c0819:PsiDirectoryNode" />
+              <item name="春招2019" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Third">
+  <component name="RunManager" selected="Application.First2">
     <configuration name="四位随机数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.basic.Other1.四位随机数" />
       <module name="JavaNotes" />
@@ -381,6 +426,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="First2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jack.nowcoder.spring.TTouTiao.春招2019.First2" />
+      <module name="JavaNotes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jack.nowcoder.spring.TTouTiao.春招2019.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Second" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jack.nowcoder.spring.TTouTiao.春招2019.Second" />
       <module name="JavaNotes" />
@@ -399,17 +455,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jack.nowcoder.spring.TTouTiao.春招2019.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="WordLadder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jack.leetcode.WordLadder" />
-      <module name="JavaNotes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jack.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -480,18 +525,18 @@
     <list>
       <item itemvalue="Maven.SDK" />
       <item itemvalue="Application.Second" />
-      <item itemvalue="Application.WordLadder" />
       <item itemvalue="Application.First" />
       <item itemvalue="Application.Candy" />
       <item itemvalue="Application.Third" />
+      <item itemvalue="Application.First2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.First2" />
         <item itemvalue="Application.Third" />
         <item itemvalue="Application.Candy" />
         <item itemvalue="Application.Second" />
         <item itemvalue="Application.First" />
-        <item itemvalue="Application.WordLadder" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552632533077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add some leetcode">
+      <created>1552970523720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552970523720</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add some leetcode">
+      <created>1552970607092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552970607092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -540,34 +599,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
-      <window_info id="DB Browser" order="2" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.38677686" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289256" />
       <window_info id="Capture Tool" order="9" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.25037822" />
       <window_info id="Project Explorer" order="0" weight="0.32980332" />
       <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="bottom" id="Console" order="1" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="7" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.34545454" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
+      <window_info id="DB Browser" order="2" weight="0.32980332" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.38677686" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289256" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.25037822" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="8" side_tool="true" weight="0.32969153" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.34545454" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -577,14 +636,15 @@
       <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info id="Designer" order="6" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2677686" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.38677686" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
       <window_info id="DB Browser" order="2" weight="0.32980332" />
       <window_info id="UI Designer" order="7" />
       <window_info id="Project Explorer" order="0" weight="0.32980332" />
@@ -594,11 +654,11 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289256" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25037822" />
       <window_info id="Job Explorer" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.329429" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25037822" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3292683" />
@@ -606,9 +666,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Console" order="1" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3272727" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3338843" />
-      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.7338843" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="5" weight="0.34545454" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -681,76 +740,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5209">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="2563" column="9" lean-forward="true" selection-start-line="2563" selection-start-column="9" selection-end-line="2563" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant/1.10.3/ant-1.10.3.jar!/org/apache/tools/ant/taskdefs/Ant.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6279">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/train/Main8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/Recursion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="160" column="7" lean-forward="true" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1040" column="21" lean-forward="true" selection-start-line="1040" selection-start-column="21" selection-end-line="1040" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/util/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.13/pdfbox-2.0.13.jar!/org/apache/pdfbox/pdmodel/PDDocument.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -988,37 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/Candy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1026,19 +984,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/WordLadder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="779">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/basic/Other1/四位随机数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/StringIndexOutOfBoundsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/IndexOutOfBoundsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56544">
+          <caret line="3073" selection-start-line="3073" selection-end-line="3073" />
+          <folding>
+            <element signature="e#120889#120890#0" expanded="true" />
+            <element signature="e#120932#120933#0" expanded="true" />
+            <element signature="e#121727#121728#0" expanded="true" />
+            <element signature="e#121769#121770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding>
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1909#1910#0" expanded="true" />
+            <element signature="e#15923#15924#0" expanded="true" />
+            <element signature="e#15973#15974#0" expanded="true" />
+            <element signature="e#33488#33489#0" expanded="true" />
+            <element signature="e#33534#33535#0" expanded="true" />
+            <element signature="e#34503#34504#0" expanded="true" />
+            <element signature="e#34547#34548#0" expanded="true" />
+            <element signature="e#38267#38268#0" expanded="true" />
+            <element signature="e#38325#38326#0" expanded="true" />
+            <element signature="e#47001#47002#0" expanded="true" />
+            <element signature="e#47057#47058#0" expanded="true" />
+            <element signature="e#49011#49012#0" expanded="true" />
+            <element signature="e#49067#49068#0" expanded="true" />
+            <element signature="e#53351#53352#0" expanded="true" />
+            <element signature="e#53421#53422#0" expanded="true" />
+            <element signature="e#54191#54192#0" expanded="true" />
+            <element signature="e#54237#54238#0" expanded="true" />
+            <element signature="e#54936#54937#0" expanded="true" />
+            <element signature="e#55010#55011#0" expanded="true" />
+            <element signature="e#57656#57657#0" expanded="true" />
+            <element signature="e#57684#57685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software_libary/Java/jdk1.8.0_144/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding>
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/leetcode/CoinChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="66">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/First2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Second2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Third2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jack/nowcoder/spring/TTouTiao/春招2019/Four2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
           </folding>
         </state>
       </provider>

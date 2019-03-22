@@ -3,6 +3,7 @@
     <words>
       <w>aaaa</w>
       <w>aaabbaaac</w>
+      <w>aabb</w>
       <w>aabc</w>
       <w>aabcc</w>
       <w>aadbbbaccc</w>
@@ -63,6 +64,7 @@
       <w>levenshtein</w>
       <w>loveleetcode</w>
       <w>matlab</w>
+      <w>nlog</w>
       <w>nums</w>
       <w>olderest</w>
       <w>pineapplepenapple</w>
